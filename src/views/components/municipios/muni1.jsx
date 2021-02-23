@@ -21,6 +21,8 @@ import {
   import img5 from '../../../assets/images/oficios/flechaDer.svg';
   import img6 from '../../../assets/images/oficios/flachaIzq.svg';
   import img7 from '../../../assets/images/capacitaciones/castelli.svg';
+  import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
+
 
   
 const Muni1 = (props) => {
@@ -51,10 +53,11 @@ const Muni1 = (props) => {
                                         </div>
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
                                             <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad encuentre inspiración y herramientas concretas para mejorar su situación laboral. Acompañarte en tu desarrollo personal, en el mejoramiento de tu presente y la construcción de tu futuro es lo que nos moviliza.
-
-
                                             </p>
                                         </div>
+                                        <Row className="imagenInfo">
+                                            <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform" width="200" />
+                                        </Row>
                                     </div>
                                 </section>
                                 </Col>
