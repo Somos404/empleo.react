@@ -11,7 +11,7 @@ import {
 import Header from "../../components/header/header.jsx";
 import HeaderBannerEmpleo from "../../components/banner/bannerEmpleo.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
-import UserService from 'services/UserService';
+import UserService from '../../services/UserService';
 
 // secciones
 
