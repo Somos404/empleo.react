@@ -21,6 +21,7 @@ import {
   import img5 from '../../../assets/images/oficios/flechaDer.svg';
   import img6 from '../../../assets/images/oficios/flachaIzq.svg';
   import img7 from '../../../assets/images/capacitaciones/barranqueras.svg';
+  import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
 
   
 const Muni9 = (props) => {
@@ -59,6 +60,9 @@ const Muni9 = (props) => {
 
                                             </p>
                                         </div>
+                                        <Row className="imagenInfo">
+                                            <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform" width="200" />
+                                        </Row>
                                     </div>
                                 </section>
                                 </Col>
@@ -68,9 +72,7 @@ const Muni9 = (props) => {
                                     </Row>
                                     <Row className="textoInfo" >
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica.
-
-Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Actualmente se encuentran abiertas las inscripciones al INFORMATORIO, un espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica. Este programa lanzado desde la Municipalidad junto al Gobierno del Chaco, cuenta con el acompañamiento de las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
 
                                             </p>
                                         </div>
