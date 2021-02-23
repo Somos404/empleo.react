@@ -47,17 +47,11 @@ const Muni6 = (props) => {
 
                                         <hr className="lineaDivisorRed" />
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Ponemos a disposición de la población chaqueña una 
-                                            plataforma online de capacitaciones con cursos cortos, 
-                                            dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Desde la Municipalidad junto al Gobierno Provincial, ponemos a tu disposición una plataforma online de capacitaciones con cursos cortos, dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
                                             </p>
                                         </div>
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad chaqueña encuentre inspiración y herramientas concretas para 
-                                            mejorar su situación laboral. Acompañarte en tu 
-                                            desarrollo personal, en el mejoramiento de tu presente
-                                            y la construcción de tu futuro es lo que nos moviliza.
-
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad encuentre inspiración y herramientas concretas para mejorar su situación laboral. Acompañarte en tu desarrollo personal, en el mejoramiento de tu presente y la construcción de tu futuro es lo que nos moviliza.
                                             </p>
                                         </div>
                                         <Row className="imagenInfo">
