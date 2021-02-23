@@ -11,6 +11,7 @@ import {
 import Header from "../../components/header/header.jsx";
 import HeaderBannerEmpleo from "../../components/banner/bannerEmpleo.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
+import UserService from '../../services/UserService';
 
 // secciones
 
@@ -42,7 +43,24 @@ class ContactoEmpresas extends Component {
       handleSubmit(event) {
         event.preventDefault();  
         this.setState({ status: "" });  
-        axios({
+
+        UserService.sendMailsEmpresa(this.state).then(
+            data => {
+              if (data.status === "sent") {
+                alert("Mensaje Enviado");
+                this.setState({ name: "", email: "",localidad: "",telefono: "",cuil: "",empresa: "",status: "" });
+              } else if (data.status === "failed") {
+                alert("Message Failed");
+              }
+            },
+            error => {
+              //mensaje de error sacael el spiner 
+              alert("Error Envio");
+              console.log(' ==> error', error);
+              console.log('error', error);
+            }
+          );
+        /* axios({
           method: "POST",
           url: "http://localhost:5000/contacto-empresas",
             data: this.state,
@@ -53,7 +71,7 @@ class ContactoEmpresas extends Component {
           } else if (response.data.status === "failed") {
             alert("Message Failed");
           }
-        });
+        }); */
       }
       constructor() {
         super();

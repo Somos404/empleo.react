@@ -41,7 +41,7 @@ class Contacto extends Component {
         data => {
           if (data.status === "sent") {
             alert("Mensaje Enviado");
-            this.setState({ name: "", email: "", message: "", status: "" });
+            this.setState({ name: "", email: "", asunto: "", message: "", status: "" });
           } else if (data.status === "failed") {
             alert("Message Failed");
           }

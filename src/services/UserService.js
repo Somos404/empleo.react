@@ -18,5 +18,21 @@ class UserService {
       console.log('error: ', error);
     }
   }
+
+  sendMailsEmpresa(body) {
+    try {
+      return axios.post(API_URL + 'mail/contactEmpresa',
+        body
+      ).then(response => {
+        return response.data;
+      }).catch((err) => {
+        return { err, data: { msg: 'Server error!!!' } };
+      });
+
+    } catch (error) {
+      console.log('error: ', error);
+    }
+  }
+
 }
 export default new UserService();
