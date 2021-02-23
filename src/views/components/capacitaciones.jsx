@@ -36,7 +36,7 @@ const Capacitaciones = (props) => {
                             <Row xs="2">
                                 <Col lg="6" className="">
                                 <section className="text-gray-600 body-font">
-                                    <div className="container px-5 py-24 mx-auto cont1Izq">
+                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzqResponsive">
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
                                             <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/>                    laboral y emprendedora
                                             </h1>

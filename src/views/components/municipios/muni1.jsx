@@ -55,9 +55,9 @@ const Muni1 = (props) => {
                                             <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad encuentre inspiración y herramientas concretas para mejorar su situación laboral. Acompañarte en tu desarrollo personal, en el mejoramiento de tu presente y la construcción de tu futuro es lo que nos moviliza.
                                             </p>
                                         </div>
-                                        <Row className="imagenInfo">
+                                        {/* <Row className="imagenInfo">
                                             <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform" width="200" />
-                                        </Row>
+                                        </Row> */}
                                     </div>
                                 </section>
                                 </Col>
@@ -65,7 +65,7 @@ const Muni1 = (props) => {
                                     <Row className="imagenInfo">
                                     <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
                                     </Row>
-                                    <Row className="textoInfo" >
+                                    <Row className="textoInfo textoInfoTop">
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
                                             <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Actualmente se encuentran abiertas las inscripciones al INFORMATORIO, un espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica. Este programa lanzado desde la Municipalidad junto al Gobierno del Chaco, cuenta con el acompañamiento de las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
 
@@ -73,7 +73,7 @@ const Muni1 = (props) => {
                                         </div>
                                     </Row>
                                
-                                <Link className="linkRedirecciones" to="/informatorio">
+                                {/* <Link className="linkRedirecciones" to="/informatorio">
                                     <Card className="card-reqBoton cardReqBotonCap">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
@@ -85,8 +85,30 @@ const Muni1 = (props) => {
                                             </Col>
                                         </CardBody>
                                     </Card>
-                                </Link>
+                                </Link> */}
                             </Row>
+                            </Row>
+                            <Row>
+                                <Col lg="6" className="">
+                                <Row className="imagenInfo">
+                                            <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform imgInformRespon" width="200" />
+                                        </Row>
+                                </Col>
+                                <Col lg="6" className="">
+                                <Link className="linkRedirecciones" to="/informatorio">
+                                    <Card className="card-reqBoton cardReqBotonCap botonMuniNuevo card-reqBotonResponsive">
+                                        <CardBody className=" card-body-reqBtn">
+                                            <Col>
+                                                <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
+                                                <Col className="colbtnBtnEmpleo">
+                                                <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">Quiero capacitarme</h5>
+                                                </Col>
+                                                <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img6} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2" width="200" /></span>
+                                            </Col>
+                                        </CardBody>
+                                    </Card>
+                                </Link>
+                                    </Col>
                             </Row>
                         </Container>
                         <div className="container-fluid segContRed">

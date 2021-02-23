@@ -33,12 +33,12 @@ const Empleo = (props) => {
                             <Row xs="2">
                                 <Col lg="6">
                                 <section className="text-gray-600 body-font">
-                                    <div className="container px-5 py-24 mx-auto cont1Izq">
+                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzqResponsive">
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
                                             <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1Cont">Te ayudamos en tus búsquedas  laborales</h1>
                                         </div>
 
-                                        <hr className="lineaDivisorRedEmpleo" />
+                                        <hr className="lineaDivisorRedEmpleo lineaDivisorRedEmpleoWidth" />
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftPEmpleo">
                                             <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Ofrecemos a la población chaqueña un servicio de 
                                             vinculación laboral, conectando a la gente que busca empleo con las empresas que necesitan personal; además contamos con programas de incentivos económicos para la contratación de trabajadoras y trabajadores.
