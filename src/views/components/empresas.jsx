@@ -34,14 +34,14 @@ const Empresas = (props) => {
                         <Row xs="2">
                             <Col lg="6">
                             <section class="text-gray-600 body-font">
-                                <div class="container px-5 py-24 mx-auto cont1Izq">
+                                <div class="container px-5 py-24 mx-auto cont1Izq contIzqResponsive">
                                     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
                                         <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1Cont"> Te brindamos beneficios para contratar y
                                                                                                                                     <br/>
                                                                                                                                     capacitar personal
                                         </h1>
                                     </div>
-                                    <hr class="lineaDivisorRedEmpleo" />
+                                    <hr class="lineaDivisorRedEmpleo lineaDivisorRedEmpleoWidth" />
                                     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftPEmpleo">
                                         <p class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Ponemos a disposición de empresas chaqueñas distintos 
                                             programas que ofrecen incentivos económicos para la 
@@ -74,7 +74,7 @@ const Empresas = (props) => {
                                     <Card className="card-reqBoton">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
-                                                <span className="img-ho cont-img cont-img1BtnEmp"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
+                                                <span className="img-ho cont-img cont-img1BtnEmp cont-img1BtnOF"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
                                                 <Col className="colbtnBtn">
                                                 <h5 className="font-medium m-b-0 tituloRequerimientosResponsive3 titulo-requerimientosBtn">Quiero que</h5>
                                                 <h5 className="font-medium m-b-0 tituloRequerimientosResponsive3 titulo-requerimientosBtn">me contacten</h5>

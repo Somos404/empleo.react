@@ -24,3 +24,5 @@ yarn-error.log*
 
 /front.zip
 /api.zip
+
+/build.zip

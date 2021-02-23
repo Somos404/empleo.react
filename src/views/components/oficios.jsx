@@ -38,13 +38,13 @@ const Oficios = (props) => {
                         <Row xs="2">
                             <Col lg="6">
                             <section className="text-gray-600 body-font">
-                                <div className="container px-5 py-24 mx-auto cont1Izq">
+                                <div className="container px-5 py-24 mx-auto cont1Izq  contIzqResponsive">
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
                                         <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1Cont"> Herramientas para la promoción y <br/>
                                             comercialización de tus servicios</h1>
                                     </div>
 
-                                    <hr className="lineaDivisorRedEmpleo" />
+                                    <hr className="lineaDivisorRedEmpleo lineaDivisorRedEmpleoWidth" />
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftPEmpleo">
                                         <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Incorporate a nuestro Registro de Oficios para que podamos brindarte herramientas que contribuyan al desarrollo de tu trabajo. 
 
