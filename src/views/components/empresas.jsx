@@ -71,7 +71,7 @@ const Empresas = (props) => {
                                 </Row> */}
                                 <Row md="8" className="colRequerimientos">
                                 <Link className="linkRedirecciones" to="/contacto-empresas">
-                                    <Card className="card-reqBoton">
+                                    <Card className="card-reqBoton cardReqBotonCapMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span className="img-ho cont-img cont-img1BtnEmp cont-img1BtnOF"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>

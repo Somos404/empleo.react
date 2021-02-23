@@ -68,7 +68,7 @@ const Emprendimientos = (props) => {
                                 </Row> */}
                                 <Row md="8" className="colRequerimientos">
                                 <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSdmgQi-o9ScNzxUKeGMl7-1ODUKWyfN5UxBFOz-10MMQIcZmA/viewform" target="_blank" rel="noopener noreferrer">
-                                    <Card className="card-reqBoton">
+                                    <Card className="card-reqBoton cardReqBotonCapMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span className="img-ho cont-img cont-img1BtnEmprend"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>

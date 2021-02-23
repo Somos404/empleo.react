@@ -28,8 +28,8 @@ const Components = (props) => {
         <div id="main-wrapper">
             <Header />
        
-            <div className="page-wrapper">
-                <div className="container-fluid">
+            <div className="page-wrapper page-wrapperrHidden">
+                <div className="container-fluid page-wrapperrHidden">
                
                     <HeaderBanner />           
                     <Redirecciones />

@@ -77,7 +77,7 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
                                     </Row>
                                
                                 <Link className="linkRedirecciones" to="/informatorio">
-                                    <Card className="card-reqBoton cardReqBotonCap">
+                                    <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>

@@ -69,7 +69,7 @@ const Oficios = (props) => {
                                 </Row> */}
                                 <Row md="8" className="colRequerimientos">
                                 <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSdI_-U-i2_UemVLFX23auRufzVvd-m6ZY_Uic3uEixAZaqyDA/viewform" target="_blank" rel="noopener noreferrer">
-                                    <Card className="card-reqBoton">
+                                    <Card className="card-reqBoton cardReqBotonCapMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span className="img-ho cont-img cont-img1BtnOF"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
@@ -90,11 +90,11 @@ const Oficios = (props) => {
                     </Container>
                     
                 </div>
-                <Footer2 /> 
+         
             </div>
            
         </div> 
-   
+        <Footer2 /> 
     </div>
     );
 }

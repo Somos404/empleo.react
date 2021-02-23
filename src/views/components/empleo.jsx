@@ -62,7 +62,7 @@ const Empleo = (props) => {
                                 </Row> */}
                                 <Row md="8" className="colRequerimientos">
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2BKiBwquELxdINd3iM_VMC7bFh-35umaWa_VhEjxNk50sjg/viewform" className="linkRedirecciones" target="_blank" rel="noopener noreferrer">
-                                    <Card className="card-reqBoton">
+                                    <Card className="card-reqBoton cardReqBotonCapMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span to="/oficios" className="img-ho cont-img cont-img1BtnEmpleo"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
