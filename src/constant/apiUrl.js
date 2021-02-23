@@ -1,0 +1,1 @@
+export default "https://empleo.chaco.gob.ar/api/"
