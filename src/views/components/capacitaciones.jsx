@@ -7,6 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Header from "../../components/header/header.jsx";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
+import CardCursos from "../custom-components/sections/cardCursos";
 
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
@@ -143,9 +144,12 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
                                 </Card>
                             </CardGroup>
                         </Container>
+                       
+
                         </div>
                     </div> 
                 </div>
+                <CardCursos />
             </div> 
             <Footer2 /> 
         </div>

@@ -22,6 +22,7 @@ import Empresas from "./views/components/empresas.jsx";
 import Oficios from "./views/components/oficios.jsx";
 import Contacto from "./views/components/contacto.jsx";
 import ContactoEmpresas from "./views/components/contactoEmpresas.jsx";
+import Buscar from "./views/components/buscar.jsx";
 
 import Contacto1 from "./views/components/contactForm.js";
 
@@ -161,6 +162,19 @@ function App() {
                 />
             )}
             />
+
+            {/* ---------------BUSCAR */}
+            <Route 
+                 
+                 path="/buscar-cursos" 
+                 render={props => (
+                 <Buscar
+                 {...props}
+                 />
+             )}
+             />
+            {/* ---------------SUB PÁGINAS DE MUNICIPIOS */}
+
             <Route 
                  
                  path="/castelli" 

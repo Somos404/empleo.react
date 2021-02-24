@@ -16,7 +16,7 @@ import Redirecciones from "./sections/redirecciones.jsx";
 import Sumate from "./sections/sumatecomponent.jsx";
 import Postulate from "./sections/sumatecomponent.jsx";
 import PricingComponent from "./sections/pricingcomponent.jsx";
-import TeamComponent from "./sections/teamcomponent.jsx";
+import CardCursos from "./sections/cardCursos.jsx";
 import TestimonialComponent from "./sections/testimonialcomponent.jsx";
 import BlogComponent from "./sections/blogcomponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
@@ -39,7 +39,7 @@ const CustomComponents = () => {
                     <Sumate />
                     <Postulate />
                     <PricingComponent />
-                    <TeamComponent />
+                    <CardCursos />
                     <TestimonialComponent />
                     <BlogComponent />
                     <C2aComponent />
