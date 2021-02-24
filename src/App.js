@@ -16,6 +16,8 @@ import './assets/scss/style.scss';
 import Components from "./views/components/components.jsx";
 import Informatorio from "./views/components/informatorio.jsx";
 import Capacitaciones from "./views/components/capacitaciones.jsx";
+import CapacitacionesDemo from "./views/components/capacitacionesDemo.jsx";
+
 import Empleo from "./views/components/empleo.jsx";
 import Emprendimientos from "./views/components/emprendimientos.jsx";
 import Empresas from "./views/components/empresas.jsx";
@@ -36,7 +38,9 @@ import Muni7 from "./views/components/municipios/muni7.jsx";
 import Muni8 from "./views/components/municipios/muni8.jsx";
 import Muni9 from "./views/components/municipios/muni9.jsx";
 import Muni10 from "./views/components/municipios/muni10.jsx";
-import Muni11 from "./views/components/municipios/muni10.jsx";
+import Muni11 from "./views/components/municipios/muni11.jsx";
+import Muni12 from "./views/components/municipios/muni12.jsx";
+
 
 
 import CustomComponents from "./views/custom-components/custom-components.jsx";
@@ -88,6 +92,17 @@ function App() {
                 path="/capacitaciones" 
                 render={props => (
                 <Capacitaciones
+                {...props}
+                />
+            )}
+            />
+            
+                {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
+                <Route 
+                
+                path="/capacitaciones-demo" 
+                render={props => (
+                <CapacitacionesDemo
                 {...props}
                 />
             )}
@@ -270,6 +285,15 @@ function App() {
                  path="/vilelas" 
                  render={props => (
                  <Muni11
+                 {...props}
+                 />
+             )}
+             />
+               <Route 
+                 
+                 path="/elisa" 
+                 render={props => (
+                 <Muni12
                  {...props}
                  />
              )}

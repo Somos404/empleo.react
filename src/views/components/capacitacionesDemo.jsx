@@ -24,7 +24,7 @@ import {
   import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
 
   
-const Capacitaciones = (props) => {
+const CapacitacionesDemo = (props) => {
     return (
         <div>
             <Header />
@@ -149,14 +149,15 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
                         </div>
                     </div> 
                 </div>
+                <CardCursos />
             </div> 
             <Footer2 /> 
         </div>
     );
 }
 
-Capacitaciones.propTypes = {
+CapacitacionesDemo.propTypes = {
     classes: PropTypes.object
 };
 
-export default Capacitaciones;
+export default CapacitacionesDemo;

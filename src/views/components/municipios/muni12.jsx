@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from 'reactstrap';
 // core components
-import Header from "../../components/header/header.jsx";
-import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
-import Footer2 from "../../components/footer/footer2.jsx";
-import CardCursos from "../custom-components/sections/cardCursos";
+import Header from "../../../components/header/header.jsx";
+import HeaderBannerCapacitaciones from "../../../components/banner/bannerCapacitaciones.jsx";
+import Footer2 from "../../../components/footer/footer2.jsx";
 
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody
   } from 'reactstrap';
 
-  import img1 from '../../assets/images/capacitaciones/icon1Red.svg';
-  import img2 from '../../assets/images/capacitaciones/icon3Red.svg';
-  import img3 from '../../assets/images/capacitaciones/img2Red.svg';
-  import img4 from '../../assets/images/capacitaciones/img4Red.svg';
+  import img1 from '../../../assets/images/capacitaciones/icon1Red.svg';
+  import img2 from '../../../assets/images/capacitaciones/icon3Red.svg';
+  import img3 from '../../../assets/images/capacitaciones/img2Red.svg';
+  import img4 from '../../../assets/images/capacitaciones/img4Red.svg';
 
-  import img5 from '../../assets/images/oficios/flechaDer.svg';
-  import img6 from '../../assets/images/oficios/flachaIzq.svg';
-  import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
+  import img5 from '../../../assets/images/oficios/flechaDer.svg';
+  import img6 from '../../../assets/images/oficios/flachaIzq.svg';
+  import img7 from '../../../assets/images/capacitaciones/ColoniaElisa.svg';
+  import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
 
   
-const Capacitaciones = (props) => {
+const Muni12 = (props) => {
     return (
         <div>
             <Header />
@@ -33,52 +33,69 @@ const Capacitaciones = (props) => {
                     <HeaderBannerCapacitaciones />
 
                     <div  className="spacer-Header">
-                        <Container>
+                    <Container>
                             <Row xs="2">
                                 <Col lg="6" className="">
                                 <section className="text-gray-600 body-font">
-                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzqResponsive">
+                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzMun">
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
-                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/>                    laboral y emprendedora
+                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/> laboral y emprendedora
                                             </h1>
-                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContResponsive">Te brindamos cursos para tu formación laboral y emprendedora
+                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContResponsive">Te brindamos cursos para tu formación <br/>                    laboral y emprendedora 
                                             </h1>
                                         </div>
 
                                         <hr className="lineaDivisorRed" />
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Ponemos a disposición de la población chaqueña una 
-                                            plataforma online de capacitaciones con cursos cortos, 
-                                            dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Desde la Municipalidad junto al Gobierno Provincial, ponemos a tu disposición una plataforma online de capacitaciones con cursos cortos, dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
                                             </p>
                                         </div>
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad chaqueña encuentre inspiración y herramientas concretas para 
-                                            mejorar su situación laboral. Acompañarte en tu 
-                                            desarrollo personal, en el mejoramiento de tu presente
-                                            y la construcción de tu futuro es lo que nos moviliza.
-
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad encuentre inspiración y herramientas concretas para mejorar su situación laboral. Acompañarte en tu desarrollo personal, en el mejoramiento de tu presente y la construcción de tu futuro es lo que nos moviliza.
                                             </p>
                                         </div>
+                                        {/* <Row className="imagenInfo">
+                                            <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform" width="200" />
+                                        </Row> */}
                                     </div>
                                 </section>
                                 </Col>
                                 <Row md="8" lg="12" className="colRequerimientosCap">
                                     <Row className="imagenInfo">
-                                    <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat" width="200" />
+                                    <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
                                     </Row>
-                                    <Row className="textoInfo" >
+                                    <Row className="textoInfo textoInfoTop">
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
-                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica.
-
-Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
+                                            <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Actualmente se encuentran abiertas las inscripciones al INFORMATORIO, un espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica. Este programa lanzado desde la Municipalidad junto al Gobierno del Chaco, cuenta con el acompañamiento de las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
 
                                             </p>
                                         </div>
                                     </Row>
                                
+                                {/* <Link className="linkRedirecciones" to="/informatorio">
+                                    <Card className="card-reqBoton cardReqBotonCap">
+                                        <CardBody className=" card-body-reqBtn">
+                                            <Col>
+                                                <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
+                                                <Col className="colbtnBtnEmpleo">
+                                                <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">Quiero capacitarme</h5>
+                                                </Col>
+                                                <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img6} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2" width="200" /></span>
+                                            </Col>
+                                        </CardBody>
+                                    </Card>
+                                </Link> */}
+                            </Row>
+                            </Row>
+                            <Row>
+                                <Col lg="6" className="">
+                                <Row className="imagenInfo">
+                                            <img src={img8} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgInform imgInformRespon" width="200" />
+                                        </Row>
+                                </Col>
+                                <Col lg="6" className="">
                                 <Link className="linkRedirecciones" to="/informatorio">
-                                    <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin">
+                                    <Card className="card-reqBoton cardReqBotonCap botonMuniNuevo card-reqBotonResponsive">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
@@ -90,7 +107,7 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
                                         </CardBody>
                                     </Card>
                                 </Link>
-                            </Row>
+                                    </Col>
                             </Row>
                         </Container>
                         <div className="container-fluid segContRed">
@@ -144,8 +161,6 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
                                 </Card>
                             </CardGroup>
                         </Container>
-                       
-
                         </div>
                     </div> 
                 </div>
@@ -155,8 +170,8 @@ Es un programa del Gobierno del Chaco, trabajando en conjunto con las empresas d
     );
 }
 
-Capacitaciones.propTypes = {
+Muni12.propTypes = {
     classes: PropTypes.object
 };
 
-export default Capacitaciones;
+export default Muni12;
