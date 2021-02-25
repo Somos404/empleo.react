@@ -40,6 +40,7 @@ import Muni9 from "./views/components/municipios/muni9.jsx";
 import Muni10 from "./views/components/municipios/muni10.jsx";
 import Muni11 from "./views/components/municipios/muni11.jsx";
 import Muni12 from "./views/components/municipios/muni12.jsx";
+import Muni13 from "./views/components/municipios/muni13.jsx";
 
 
 
@@ -294,6 +295,15 @@ function App() {
                  path="/elisa" 
                  render={props => (
                  <Muni12
+                 {...props}
+                 />
+             )}
+             />
+                 <Route 
+                 
+                 path="/corzuela" 
+                 render={props => (
+                 <Muni13
                  {...props}
                  />
              )}
