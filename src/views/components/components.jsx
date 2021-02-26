@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // core components
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
-   
+
 
 import Footer from "../../components/footer/footer.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
@@ -27,20 +27,20 @@ const Components = (props) => {
     return (
         <div id="main-wrapper">
             <Header />
-       
+
             <div className="page-wrapper page-wrapperrHidden">
                 <div className="container-fluid page-wrapperrHidden">
-               
-                    <HeaderBanner />           
+
+                    <HeaderBanner />
                     <Redirecciones />
                     <PortfolioComponent />
                     <Sumate />
                     <Postulate />
-                    <Footer /> 
+                    <Footer />
                 </div>
             </div>
-            
-            <Footer2 /> 
+
+            <Footer2 />
         </div>
     );
 }

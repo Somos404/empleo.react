@@ -37,7 +37,7 @@ const Muni8 = (props) => {
                             <Row xs="2">
                                 <Col lg="6" className="">
                                 <section className="text-gray-600 body-font">
-                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzMun">
+                                    <div className="container px-5 py-24 mx-auto cont1Izq contIzMun contIzMunMargin">
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
                                             <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/> laboral y emprendedora
                                             </h1>
@@ -95,7 +95,7 @@ const Muni8 = (props) => {
                                 </Col>
                                 <Col lg="6" className="">
                                 <Link className="linkRedirecciones" to="/informatorio">
-                                    <Card className="card-reqBoton cardReqBotonCap botonMuniNuevo card-reqBotonResponsive">
+                                    <Card className="card-reqBoton cardReqBotonCap botonMuniNuevo card-reqBotonResponsiveMargin">
                                         <CardBody className=" card-body-reqBtn">
                                             <Col>
                                                 <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>

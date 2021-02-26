@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody,  Container, Row, Col, Collapse
-  } from 'reactstrap';
+    CardSubtitle, CardBody, Container, Row, Col, Collapse
+} from 'reactstrap';
 
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -71,14 +71,14 @@ import '../../informatorio/css/styles.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      width: '100%',
+        width: '100%',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: "bold"
+        fontSize: theme.typography.pxToRem(15),
+        fontWeight: "bold"
     },
-  }));
-  
+}));
+
 
 
 const Informatorio = (props) => {
@@ -91,258 +91,258 @@ const Informatorio = (props) => {
 
     return (
         <div>
-        <Header />
-       
+            <Header />
+
             <div className="container-fluid empleoHeight">
                 {/* <div  className="spacer-Header"></div> */}
                 <div>
-                    
-                <div className="informatorio">
-                            <section className="home d-flex align-items-center">
-                                <div className="container">
+
+                    <div className="informatorio">
+                        <section className="home d-flex align-items-center">
+                            <div className="container">
 
                                 <div className="col-md-12">
                                     <div className="text-home">
                                         <h2 className="h2Informatorio"><strong>Lo mejor de estudiar</strong><br />
                                         un curso del futuro<br />
                                         es encontrar un<br />
-						                <strong>trabajo en el presente</strong></h2>
+                                            <strong>trabajo en el presente</strong></h2>
                                     </div>
                                 </div>
-                                </div>
-                            </section>
-                            <section className="botones">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-md-4">
-                                            <div className="ico"><img src={img3} alt="" /></div>
-                                                <h4>INSCRIPCIONES ABIERTAS<br />lntroducción a la Programación</h4>
-                                            </div>
-                                            <div className="col-md-4 bg-primary">
-                                                <div className="ico"><img src={img4} alt="" /></div>
-                                                <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-                                                    <Card className="card-reqBoton card-reqBotonInform">
-                                                        <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
-                                                            <Col>
-                                                                <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform" width="200" /></span>
-                                                                <Col className="colbtnBtnEmpleo">
-                                                                <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Quiero inscribirme</h5>
-                                                                </Col>
-                                                                <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2" width="200" /></span>
-                                                            </Col>
-                                                        </CardBody>
-                                                    </Card>
-                                                </a>
-                                            </div>
-                                            <div className="col-md-4">
-                                                <div className="ico"><img src={img6} alt="" /></div>
-                                                <h4>Tenés tiempo hasta el<br />05/03 inclusive</h4>
-                                            </div>
+                            </div>
+                        </section>
+                        <section className="botones">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="ico"><img src={img3} alt="" /></div>
+                                        <h4>INSCRIPCIONES ABIERTAS<br />lntroducción a la Programación</h4>
+                                    </div>
+                                    <div className="col-md-4 bg-primary">
+                                        <div className="ico"><img src={img4} alt="" /></div>
+                                        <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                                            <Card className="card-reqBoton card-reqBotonInform">
+                                                <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
+                                                    <Col>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform" width="200" /></span>
+                                                        <Col className="colbtnBtnEmpleo">
+                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Quiero inscribirme</h5>
+                                                        </Col>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2" width="200" /></span>
+                                                    </Col>
+                                                </CardBody>
+                                            </Card>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="ico"><img src={img6} alt="" /></div>
+                                        <h4>Tenés tiempo hasta el<br />05/03 inclusive</h4>
+                                    </div>
 
-                                        </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="ques d-flex align-items-center">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <h2>Qué es el Informatorio?</h2>
+                                        <div className="subrayado"><img src={img7} alt="" /></div>
                                     </div>
-                            </section>
-                            <section className="ques d-flex align-items-center">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <h2>Qué es el Informatorio?</h2>
-                                                <div className="subrayado"><img  src={img7} alt="" /></div>
-                                        </div>
-                                        <div className="col-md-6"></div>
-					                    <div className="w-100"></div>
-                                        <div className="col-md-6">
-                                            <div className="txt">
+                                    <div className="col-md-6"></div>
+                                    <div className="w-100"></div>
+                                    <div className="col-md-6">
+                                        <div className="txt">
                                             <p>
-                                                Es un programa creado para que  chaqueñas y chaqueños 
-                                                tengan más y mejores oportunidades de incorporarse a la 
-                                                economía del conocimiento, especíﬁcamente en el sector 
-                                                de  Software y Servicios Informáticos a través de la formación 
-                                                en  programación. Se trata de un espacio de aprendizaje 
-                                                práctico, con clases innovadoras y creativas, que persiguen 
-                                                la inclusión social, digital y laboral a través del empleo en 
-                                                empresas de la  industria del software, o iniciando sus 
+                                                Es un programa creado para que  chaqueñas y chaqueños
+                                                tengan más y mejores oportunidades de incorporarse a la
+                                                economía del conocimiento, especíﬁcamente en el sector
+                                                de  Software y Servicios Informáticos a través de la formación
+                                                en  programación. Se trata de un espacio de aprendizaje
+                                                práctico, con clases innovadoras y creativas, que persiguen
+                                                la inclusión social, digital y laboral a través del empleo en
+                                                empresas de la  industria del software, o iniciando sus
                                                 propios emprendimientos de base tecnológica.
                                             </p>
                                             <p>
-                                                Es un programa del Gobierno del Chaco, llevado adelante 
-                                                por la Subsecretaría de Empleo, dependiente del Ministerio 
-                                                de Producción, Industria y Empleo, trabajando en conjunto 
-                                                con las empresas del Polo IT Chaco, la UTN-FRRe y la 
+                                                Es un programa del Gobierno del Chaco, llevado adelante
+                                                por la Subsecretaría de Empleo, dependiente del Ministerio
+                                                de Producción, Industria y Empleo, trabajando en conjunto
+                                                con las empresas del Polo IT Chaco, la UTN-FRRe y la
                                                 UNCAUS.
                                             </p>
-                                            </div>
                                         </div>
-                                        <div className="col-md-6">
-                                            <div className="video">
-                                                <img className="img-fluid imgFondo" src={img43} alt="" />
-                                                <div className="embed-responsive embed-responsive-16by9">                                                    
-                                                    <iframe src="https://www.youtube.com/embed/N0G7_fL79Yw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                                </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="video">
+                                            <img className="img-fluid imgFondo" src={img43} alt="" />
+                                            <div className="embed-responsive embed-responsive-16by9">
+                                                <iframe src="https://www.youtube.com/embed/N0G7_fL79Yw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                            <section className="cursos">
-                                <div className="container-fluid">
-                                    <div className="row">
-                                        <div className="col-12">
-                                            <div className="tit-cursos">Cursos del Informatorio</div>
-                                        </div>
+                            </div>
+                        </section>
+                        <section className="cursos">
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <div className="tit-cursos">Cursos del Informatorio</div>
                                     </div>
                                 </div>
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <div className="paso-1">
-                                                <div className="paso-head">
-                                                    <img className="p1" src={img8} alt="" />
-                                                </div>
-                                                <div className="paso-tit">
-								                    Introducción a la Programación
+                            </div>
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="paso-1">
+                                            <div className="paso-head">
+                                                <img className="p1" src={img8} alt="" />
+                                            </div>
+                                            <div className="paso-tit">
+                                                Introducción a la Programación
 							                    </div>
-                                                <div className="paso-p">
-                                                    Para conocer de qué se trata el mundo de la 
-                                                    programación e iniciarte en sus lenguajes.
-                                                    Se realizará del 10/03/2021 al 10/04/2021.
+                                            <div className="paso-p">
+                                                Para conocer de qué se trata el mundo de la
+                                                programación e iniciarte en sus lenguajes.
+                                                Se realizará del 10/03/2021 al 10/04/2021.
                                                 </div>
-                                                <div className="linea">
-                                                    <img className="img-fluid" src={img9} alt="" />
-                                                </div>
-                                                <ul className="pas">
-                                                    <li className="modalio">Modalidad: Online</li>
-                                                    <li className="dura">Duración: 1 mes</li>
-                                                    <li className="requi">
-                                                        Requisitos:<br />
+                                            <div className="linea">
+                                                <img className="img-fluid" src={img9} alt="" />
+                                            </div>
+                                            <ul className="pas">
+                                                <li className="modalio">Modalidad: Online</li>
+                                                <li className="dura">Duración: 1 mes</li>
+                                                <li className="requi">
+                                                    Requisitos:<br />
                                                         - Ser mayor de edad.<br />
                                                         - Residir en Chaco.
                                                     </li>
-                                                </ul>
-                                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className="btn btn-warning btn-inscripcion"><img className="img-fluid" src={img10} alt="" /></a>
-                                            </div>
+                                            </ul>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className="btn btn-warning btn-inscripcion"><img className="img-fluid" src={img10} alt="" /></a>
                                         </div>
-                                        <div className="col-md-6">
-                                            <div className="paso-2">
-                                                <div className="paso-head">
-                                                    <img className="p2" src={img11} alt="" />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="paso-2">
+                                            <div className="paso-head">
+                                                <img className="p2" src={img11} alt="" />
+                                            </div>
+                                            <div className="paso-tit">
+                                                Programación y Desarrollo Web
                                                 </div>
-                                                <div className="paso-tit">
-                                                    Programación y Desarrollo Web
+                                            <div className="paso-p">
+                                                Podrás profundizar en herramientas básicas para
+                                                desarrollar aplicaciones web con bases de datos,
+                                                y adquirir conocimientos que te permitan seguir
+                                                construyendo tu perﬁl profesional para el sector
+                                                Software y Servicios Informáticos.
                                                 </div>
-                                                <div className="paso-p">
-                                                    Podrás profundizar en herramientas básicas para 
-                                                    desarrollar aplicaciones web con bases de datos, 
-                                                    y adquirir conocimientos que te permitan seguir 
-                                                    construyendo tu perﬁl profesional para el sector 
-                                                    Software y Servicios Informáticos.
-                                                </div>
-                                                <div className="linea">
-                                                    <img className="img-fluid" src={img12} alt="" />
-                                                </div>
-                                                <ul className="pas">
-                                                    <li className="modalio">Modalidad: Online</li>
-                                                    <li className="dura">Duración: 4 meses</li>
-                                                    <li className="requi">
-                                                        Requisitos:<br />
+                                            <div className="linea">
+                                                <img className="img-fluid" src={img12} alt="" />
+                                            </div>
+                                            <ul className="pas">
+                                                <li className="modalio">Modalidad: Online</li>
+                                                <li className="dura">Duración: 4 meses</li>
+                                                <li className="requi">
+                                                    Requisitos:<br />
                                                         - Haber aprobado curso de  Introducción a la Programación. <br />
                                                         - Residir en Chaco
                                                     </li>
-                                                </ul>
-                                            </div>
+                                            </ul>
                                         </div>
-                                        <div className="w-100"><hr className="visible-mobile" /></div>
-                                            <div className="col-md-6">
-                                                <div className="paso-1">
-                                                    <div className="paso-head">
-                                                        <img className="p3" src={img13} alt="" />
+                                    </div>
+                                    <div className="w-100"><hr className="visible-mobile" /></div>
+                                    <div className="col-md-6">
+                                        <div className="paso-1">
+                                            <div className="paso-head">
+                                                <img className="p3" src={img13} alt="" />
+                                            </div>
+                                            <div className="paso-tit">
+                                                Especialización en Lenguajes de Programación
                                                     </div>
-                                                    <div className="paso-tit">
-                                                        Especialización en Lenguajes de Programación
+                                            <div className="paso-p">
+                                                Podrás continuar con tu perfeccionamiento en
+                                                lenguajes especíﬁcos, y orientar tu fomación hacia
+                                                los perﬁles laborales requeridos por las empresas
+                                                locales.
                                                     </div>
-                                                    <div className="paso-p">
-                                                        Podrás continuar con tu perfeccionamiento en 
-                                                        lenguajes especíﬁcos, y orientar tu fomación hacia 
-                                                        los perﬁles laborales requeridos por las empresas 
-                                                        locales. 
-                                                    </div>
-                                                    <div className="linea">
-                                                        <img className="img-fluid" src={img14} alt="" />
-                                                    </div>
-                                                    <ul className="pas">
-                                                        <li className="modalis">Modalidad: Semipresencial</li>
-                                                        <li className="dura">Duración: De 2 a 4 meses, (dependiendo de la temática)</li>
-                                                        <li className="requi">
-                                                            Requisitos: <br />
+                                            <div className="linea">
+                                                <img className="img-fluid" src={img14} alt="" />
+                                            </div>
+                                            <ul className="pas">
+                                                <li className="modalis">Modalidad: Semipresencial</li>
+                                                <li className="dura">Duración: De 2 a 4 meses, (dependiendo de la temática)</li>
+                                                <li className="requi">
+                                                    Requisitos: <br />
                                                             - Haber aprobado curso Programación y Desarrollo Web. <br />
                                                             - Residir en Chaco.
                                                         </li>
-                                                    </ul>
-                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="paso-2">
+                                            <div className="paso-head">
+                                                <img className="p4" src={img15} alt="" />
                                             </div>
-                                            <div className="col-md-6">
-                                                <div className="paso-2">
-                                                    <div className="paso-head">
-                                                        <img className="p4" src={img15} alt="" />
+                                            <div className="paso-tit">
+                                                Talleres para Emprender en TICs
                                                     </div>
-                                                    <div className="paso-tit">
-                                                        Talleres para Emprender en TICs
+                                            <div className="paso-p">
+                                                Adquirirás herramientas que te permitan iniciar
+                                                un emprendimiento vinculado a las TICs, y
+                                                podrás acceder a ﬁnanciamiento para su puesta
+                                                en marcha al ﬁnalizar el ciclo.
                                                     </div>
-                                                    <div className="paso-p">
-                                                        Adquirirás herramientas que te permitan iniciar 
-                                                        un emprendimiento vinculado a las TICs, y 
-                                                        podrás acceder a ﬁnanciamiento para su puesta 
-                                                        en marcha al ﬁnalizar el ciclo.
-                                                    </div>
-                                                    <div className="linea">
-                                                        <img className="img-fluid" src={img16} alt="" />
-                                                    </div>
-                                                    <ul className="pas">
-                                                        <li className="modalis">Modalidad: Semipresencial</li>
-                                                        <li className="dura">Duración: 2 meses</li>
-                                                        <li className="requi">
-                                                            Requisitos: <br />
+                                            <div className="linea">
+                                                <img className="img-fluid" src={img16} alt="" />
+                                            </div>
+                                            <ul className="pas">
+                                                <li className="modalis">Modalidad: Semipresencial</li>
+                                                <li className="dura">Duración: 2 meses</li>
+                                                <li className="requi">
+                                                    Requisitos: <br />
                                                             - Haber aprobado curso Programación y Desarrollo Web. <br />
                                                             - Residir en Chaco.
                                                         </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="tit-cursos2"></div>
-                            </section>
-                            <section className="resultados d-flex align-items-end">
-                                <div className="container containerResutlados">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <h2>Resultados 2020</h2>
-                                            <div className="subrayado"><img src={img17} alt="" /></div>
-                                        </div>
-                                        <div className="col-md-6"></div>
+                            </div>
+                            <div className="tit-cursos2"></div>
+                        </section>
+                        <section className="resultados d-flex align-items-end">
+                            <div className="container containerResutlados">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <h2>Resultados 2020</h2>
+                                        <div className="subrayado"><img src={img17} alt="" /></div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <img className="img-fluid" src={img18} alt="" />
-                                        </div>
-                                        {/* <div className="col-md-6">
+                                    <div className="col-md-6"></div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <img className="img-fluid" src={img18} alt="" />
+                                    </div>
+                                    {/* <div className="col-md-6">
                                             <img className="img-fluid" src={img19} alt="" />
                                         </div> */}
-                                    </div>
                                 </div>
-                            </section>
-                            <section className="preguntas">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <h2>Preguntas Frecuentes</h2>
-                                            <div className="subrayado"><img src={img20} alt="" /></div>
-                                        </div>
-                                        <div className="col-md-6"></div>
-					                    <div className="w-100"></div>
-                                        <div className="col-12">
-                                            <div className="accordion" id="preguntasFrecuentes">
-                                                {/* <div className="card">
+                            </div>
+                        </section>
+                        <section className="preguntas">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <h2>Preguntas Frecuentes</h2>
+                                        <div className="subrayado"><img src={img20} alt="" /></div>
+                                    </div>
+                                    <div className="col-md-6"></div>
+                                    <div className="w-100"></div>
+                                    <div className="col-12">
+                                        <div className="accordion" id="preguntasFrecuentes">
+                                            {/* <div className="card">
                                                     <div className="card-header" id="pregunta1">
                                                         <h2 className="mb-0">
                                                             <Button className="btn btn-link btn-block text-left" onClick={toggle}>
@@ -361,30 +361,30 @@ const Informatorio = (props) => {
                                             <div className={classes.root}>
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel1a-content"
-                                                    id="panel1a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel1a-content"
+                                                        id="panel1a-header"
                                                     >
-                                                    <Typography className={classes.heading}> ¿Los cursos tienen algún costo o arancel?</Typography>
+                                                        <Typography className={classes.heading}> ¿Los cursos tienen algún costo o arancel?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Todos los cursos del Informatorio son y serán siempre gratuitos, porque es una política del Gobierno Provincial que busca formar a chaqueños y chaqueñas en programación, para potenciar la industria del software y servicios informáticos.
+                                                        <Typography>
+                                                            Todos los cursos del Informatorio son y serán siempre gratuitos, porque es una política del Gobierno Provincial que busca formar a chaqueños y chaqueñas en programación, para potenciar la industria del software y servicios informáticos.
 
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel2a-content"
-                                                    id="panel2a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel2a-content"
+                                                        id="panel2a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Al ﬁnalizar el cursado obtengo algún certiﬁcado?</Typography>
+                                                        <Typography className={classes.heading}>¿Al ﬁnalizar el cursado obtengo algún certiﬁcado?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Sí, por cada curso/taller que realices y finalices satisfactoriamente obtendrás un certificado que valide tus conocimientos. 
+                                                        <Typography>
+                                                            Sí, por cada curso/taller que realices y finalices satisfactoriamente obtendrás un certificado que valide tus conocimientos.
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
@@ -406,15 +406,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel3a-content"
-                                                    id="panel3a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel3a-content"
+                                                        id="panel3a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Qué requisitos se exigen para participar del Informatorio?</Typography>
+                                                        <Typography className={classes.heading}>¿Qué requisitos se exigen para participar del Informatorio?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Para participar de los cursos del Informatorio sólo es necesario que residas en la provincia del Chaco y que tengas 18 años o más al momento de iniciar el curso. 
+                                                        <Typography>
+                                                            Para participar de los cursos del Informatorio sólo es necesario que residas en la provincia del Chaco y que tengas 18 años o más al momento de iniciar el curso.
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
@@ -436,15 +436,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel4a-content"
-                                                    id="panel4a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel4a-content"
+                                                        id="panel4a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Se requieren conocimientos previos para participar?</Typography>
+                                                        <Typography className={classes.heading}>¿Se requieren conocimientos previos para participar?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    No es un requisito. Los contenidos del Informatorio están diseñado tanto para quienes se acercan a la programación por primera vez como también para quienes tienen conocimientos en el tema, ya que los cursos van de lo más simple a lo más complejo. Esto no significa que será fácil, tendrás que dedicarle tiempo y empeño.
+                                                        <Typography>
+                                                            No es un requisito. Los contenidos del Informatorio están diseñado tanto para quienes se acercan a la programación por primera vez como también para quienes tienen conocimientos en el tema, ya que los cursos van de lo más simple a lo más complejo. Esto no significa que será fácil, tendrás que dedicarle tiempo y empeño.
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
@@ -466,15 +466,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel5a-content"
-                                                    id="panel5a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel5a-content"
+                                                        id="panel5a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Puedo inscribirme si estoy cursando una carrera universitaria o terciaria?</Typography>
+                                                        <Typography className={classes.heading}>¿Puedo inscribirme si estoy cursando una carrera universitaria o terciaria?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    No existe impedimento alguno. Los cursos del Informatorio son complementarios con cualquier carrera terciaria o universitaria. Sin embargo, tenés que considerar que el Informatorio al ser un curso intensivo, requerirá que le dediques mucho tiempo. 
+                                                        <Typography>
+                                                            No existe impedimento alguno. Los cursos del Informatorio son complementarios con cualquier carrera terciaria o universitaria. Sin embargo, tenés que considerar que el Informatorio al ser un curso intensivo, requerirá que le dediques mucho tiempo.
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
@@ -496,15 +496,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel6a-content"
-                                                    id="panel6a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel6a-content"
+                                                        id="panel6a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Los cursos del Informatorio me sirven para reparar computadoras?</Typography>
+                                                        <Typography className={classes.heading}>¿Los cursos del Informatorio me sirven para reparar computadoras?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    No. En los cursos del Informatorio aprenderás a manejar herramientas necesarias para desempeñarte como programador o programadora en la industria local. Estos cursos no abarcan conceptos relacionados a reparación de PC o cualquier otro dispositivo electrónico. 
+                                                        <Typography>
+                                                            No. En los cursos del Informatorio aprenderás a manejar herramientas necesarias para desempeñarte como programador o programadora en la industria local. Estos cursos no abarcan conceptos relacionados a reparación de PC o cualquier otro dispositivo electrónico.
                                                     </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
@@ -524,17 +524,17 @@ const Informatorio = (props) => {
                                                     </div>
                                                     </Collapse>
                                                 </div> */}
-                                                 <Accordion>
+                                                <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel7a-content"
-                                                    id="panel7a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel7a-content"
+                                                        id="panel7a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Qué cursos tienen inscripción abierta?</Typography>
+                                                        <Typography className={classes.heading}>¿Qué cursos tienen inscripción abierta?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    El recorrido que proponemos se inicia con el curso Introducción a la Programación, cuya inscripción estará abierta desde el 20/02/2021 hasta el 05/03/2021, y su cursado se realizará de manera online del 10/03/2021 al 10/04/2021.                                                    </Typography>
+                                                        <Typography>
+                                                            El recorrido que proponemos se inicia con el curso Introducción a la Programación, cuya inscripción estará abierta desde el 20/02/2021 hasta el 05/03/2021, y su cursado se realizará de manera online del 10/03/2021 al 10/04/2021.                                                    </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 {/* <div className="card">
@@ -555,15 +555,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel8a-content"
-                                                    id="panel8a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel8a-content"
+                                                        id="panel8a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Qué necesito para hacer el curso de Introducción a la programación?</Typography>
+                                                        <Typography className={classes.heading}>¿Qué necesito para hacer el curso de Introducción a la programación?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Debés contar con un dispositivo con acceso a internet, ya que la capacitación es a través de una plataforma educativa online. </Typography>
+                                                        <Typography>
+                                                            Debés contar con un dispositivo con acceso a internet, ya que la capacitación es a través de una plataforma educativa online. </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 {/* <div className="card">
@@ -584,15 +584,15 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel9a-content"
-                                                    id="panel9a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel9a-content"
+                                                        id="panel9a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Cómo me inscribo al curso Introducción a la programación?</Typography>
+                                                        <Typography className={classes.heading}>¿Cómo me inscribo al curso Introducción a la programación?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Debés completar el formulario online con todos los datos requeridos, luego iniciar sesión en la plataforma con los datos que recibirás por correo, y completar los ejercicios propuestos; al finalizarlos habrás terminado el proceso de inscripción. </Typography>
+                                                        <Typography>
+                                                            Debés completar el formulario online con todos los datos requeridos, luego iniciar sesión en la plataforma con los datos que recibirás por correo, y completar los ejercicios propuestos; al finalizarlos habrás terminado el proceso de inscripción. </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 {/* <div className="card">
@@ -611,17 +611,17 @@ const Informatorio = (props) => {
                                                     </div>
                                                     </Collapse>
                                                 </div> */}
-                                                 <Accordion>
+                                                <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel10a-content"
-                                                    id="panel10a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel10a-content"
+                                                        id="panel10a-header"
                                                     >
-                                                    <Typography className={classes.heading}> Ingresé mal los datos en el formulario, ¿cómo hago para cambiarlo?</Typography>
+                                                        <Typography className={classes.heading}> Ingresé mal los datos en el formulario, ¿cómo hago para cambiarlo?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    Comunicate con nosotros a través del <strong><a href="mailto:informatorio@chaco.gob.ar">correo</a>,</strong> con el asunto “SOLICITUD DE CAMBIO DE DATOS” y contanos cuáles son los datos que necesitas modificar. </Typography>
+                                                        <Typography>
+                                                            Comunicate con nosotros a través del <strong><a href="mailto:informatorio@chaco.gob.ar">correo</a>,</strong> con el asunto “SOLICITUD DE CAMBIO DE DATOS” y contanos cuáles son los datos que necesitas modificar. </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 {/* <div className="card">
@@ -640,17 +640,17 @@ const Informatorio = (props) => {
                                                     </div>
                                                     </Collapse>
                                                 </div> */}
-                                                   <Accordion>
+                                                <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel11a-content"
-                                                    id="panel11a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel11a-content"
+                                                        id="panel11a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Puedo inscribirme a cualquier curso durante el período de inscripción?</Typography>
+                                                        <Typography className={classes.heading}>¿Puedo inscribirme a cualquier curso durante el período de inscripción?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    No, los cursos del Informatorio están diseñados por etapas correlativas. Es necesario aprobar el curso de “Introducción a la Programación” para luego poder cursar “Programación y Desarrollo Web”, y aprobar este último para iniciar los “Talleres de Especialización en Lenguajes de Programación” o el “Taller para Emprender en TICs”. </Typography>
+                                                        <Typography>
+                                                            No, los cursos del Informatorio están diseñados por etapas correlativas. Es necesario aprobar el curso de “Introducción a la Programación” para luego poder cursar “Programación y Desarrollo Web”, y aprobar este último para iniciar los “Talleres de Especialización en Lenguajes de Programación” o el “Taller para Emprender en TICs”. </Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                                 {/* <div className="card">
@@ -671,19 +671,19 @@ const Informatorio = (props) => {
                                                 </div> */}
                                                 <Accordion>
                                                     <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel12a-content"
-                                                    id="panel12a-header"
+                                                        expandIcon={<ExpandMoreIcon />}
+                                                        aria-controls="panel12a-content"
+                                                        id="panel12a-header"
                                                     >
-                                                    <Typography className={classes.heading}>¿Cuánto tiempo tendré que dedicarle al curso de Introducción a la Programación?</Typography>
+                                                        <Typography className={classes.heading}>¿Cuánto tiempo tendré que dedicarle al curso de Introducción a la Programación?</Typography>
                                                     </AccordionSummary>
                                                     <AccordionDetails>
-                                                    <Typography>
-                                                    El curso de Introducción a la Programación tiene una duración de un mes, con una carga semanal de 12 hs que deberás dedicarle. Lógicamente el tiempo podrá ser menor o mayor dependiendo de si tenés o no conocimientos previos y de qué tan rápido le agarres la mano.</Typography>
+                                                        <Typography>
+                                                            El curso de Introducción a la Programación tiene una duración de un mes, con una carga semanal de 12 hs que deberás dedicarle. Lógicamente el tiempo podrá ser menor o mayor dependiendo de si tenés o no conocimientos previos y de qué tan rápido le agarres la mano.</Typography>
                                                     </AccordionDetails>
                                                 </Accordion>
                                             </div>
-                                                {/* <div className="card">
+                                            {/* <div className="card">
                                                     <div className="card-header" id="pregunta12">
                                                         <h2 className="mb-0">
                                                             <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
@@ -699,78 +699,78 @@ const Informatorio = (props) => {
                                                     </div>
                                                     </Collapse>
                                                 </div> */}
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                            <section className="foot d-flex align-items-end">
-                                <div className="container">
-                                    <div className="row">
-                                    {/*<!-- desktop -->*/ }
-                                        <div className="col visible-mobile">
-                                            <div className="redes d-flex justify-content-center">
-                                                <span className="red"><a href=" https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer"><img width="48" src={img21} alt="" /></a></span>
-                                                <span className="red"><a href="https://web.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer"><img width="24" src={img22} alt="" /></a></span>
-                                            </div>
-                                            <div className="logo-informatorio">
-                                                <span><img className="log" src={img23} alt="" /></span>
-                                            </div>
-                                            <div className="los-cumpa">
-                                                <h4>ACOMPAÑAN:</h4>
-                                                <div className="d-flex justify-content-around">
-                                                    <span><img src={img24} alt="" /></span>
-                                                    <span><img width="100" src={img25} alt="" /></span>
-                                                    <span><img width="100" src={img26} alt="" /></span>
-                                                    <span><img width="100" src={img27} alt="" /></span>
-                                                </div>
-                                            </div>
-                                            <div className="gobierno d-flex justify-content-between">
-                                                <span><img width="150" src={img28} alt="" /></span>
-                                                <span><img width="320" src={img29} alt="" /></span>
-                                                <span><img width="150" src={img30} alt="" /></span>
+                            </div>
+                        </section>
+                        <section className="foot d-flex align-items-end">
+                            <div className="container">
+                                <div className="row">
+                                    {/*<!-- desktop -->*/}
+                                    <div className="col visible-mobile">
+                                        <div className="redes d-flex justify-content-center">
+                                            <span className="red"><a href=" https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer"><img width="48" src={img21} alt="" /></a></span>
+                                            <span className="red"><a href="https://web.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer"><img width="24" src={img22} alt="" /></a></span>
+                                        </div>
+                                        <div className="logo-informatorio">
+                                            <span><img className="log" src={img23} alt="" /></span>
+                                        </div>
+                                        <div className="los-cumpa">
+                                            <h4>ACOMPAÑAN:</h4>
+                                            <div className="d-flex justify-content-around">
+                                                <span><img src={img24} alt="" /></span>
+                                                <span><img width="100" src={img25} alt="" /></span>
+                                                <span><img width="100" src={img26} alt="" /></span>
+                                                <span><img width="100" src={img27} alt="" /></span>
                                             </div>
                                         </div>
-                                        {/*<!-- Mobile -->*/ }
-                                        <div className="col visible-desktop">
-                                            <div className="redes d-flex justify-content-center">
-                                                <span className="red"><img width="24" src={img31} alt="" /></span>
-                                                <span className="red"><img width="12" src={img32} alt="" /></span>
+                                        <div className="gobierno d-flex justify-content-between">
+                                            <span><img width="150" src={img28} alt="" /></span>
+                                            <span><img width="320" src={img29} alt="" /></span>
+                                            <span><img width="150" src={img30} alt="" /></span>
+                                        </div>
+                                    </div>
+                                    {/*<!-- Mobile -->*/}
+                                    <div className="col visible-desktop">
+                                        <div className="redes d-flex justify-content-center">
+                                            <span className="red"><img width="24" src={img31} alt="" /></span>
+                                            <span className="red"><img width="12" src={img32} alt="" /></span>
+                                        </div>
+                                        <div className="logo-informatorio">
+                                            <span><img className="log" src={img33} alt="" /></span>
+                                        </div>
+                                        <div className="los-cumpa">
+                                            <h4>ACOMPAÑAN:</h4>
+                                            <div className="d-flex justify-content-around">
+                                                <span><img width="70" src={img34} alt="" /></span>
+                                                <span><img width="70" src={img35} alt="" /></span>
+                                                <span><img width="70" src={img36} alt="" /></span>
+                                                <span><img width="70" src={img37} alt="" /></span>
                                             </div>
-                                            <div className="logo-informatorio">
-                                                <span><img className="log" src={img33} alt="" /></span>
-                                            </div>
-                                            <div className="los-cumpa">
-                                                <h4>ACOMPAÑAN:</h4>
-                                                <div className="d-flex justify-content-around">
-                                                    <span><img width="70" src={img34} alt="" /></span>
-                                                    <span><img width="70" src={img35} alt="" /></span>
-                                                    <span><img width="70" src={img36} alt="" /></span>
-                                                    <span><img width="70" src={img37} alt="" /></span>
-                                                </div>
-                                            </div>
-                                            <div className="gobierno d-flex flex-column">
-                                                <span><img width="100" src={img38} alt="" /></span>
-                                                <span><img width="200" src={img39} alt="" /></span>
-                                                <span><img width="100" src={img40} alt="" /></span>
-                                            </div>
+                                        </div>
+                                        <div className="gobierno d-flex flex-column">
+                                            <span><img width="100" src={img38} alt="" /></span>
+                                            <span><img width="200" src={img39} alt="" /></span>
+                                            <span><img width="100" src={img40} alt="" /></span>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                            {/* <!-- Optional JavaScript -->
+                            </div>
+                        </section>
+                        {/* <!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS --> */}
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossOrigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossOrigin="anonymous"></script>
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossOrigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossOrigin="anonymous"></script>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
             {/* <Footer2 />  */}
-        </div> 
-   
-  
+        </div>
+
+
     );
 }
 
