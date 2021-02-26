@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 
 import logo from '../../assets/images/logos/logo1.png';
+import { scroller } from 'react-scroll';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,17 @@ const Header = () => {
                                 </NavItem>
                                 <NavItem>
                                     <Link className="nav-link" to="/#posLinea">
-                                        INCENTIVOS PARA EL EMPLEO
+                                    <div onClick={() => {
+                                            scroller.scrollTo('posLinea', {
+                                                duration: 1000,
+                                                delay: 50,
+                                                smooth: true, // linear “easeInQuint” “easeOutCubic”
+                                                offset: -10,
+                                            });
+                                        }}>
+
+                                            INCENTIVOS PARA EL EMPLEO
+                                        </div>
                                     	</Link>
                                 </NavItem>
                                 <NavItem className="navHiddenSocialResponsiveFb">

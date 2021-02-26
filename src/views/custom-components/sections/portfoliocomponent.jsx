@@ -14,6 +14,7 @@ import { Hidden } from '@material-ui/core';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import VisibilitySensor from "react-visibility-sensor";
+import { Element } from 'react-scroll';
 
 
 const inlineStyle = {
@@ -192,6 +193,7 @@ const PortfolioComponent = (props) => {
                     {/* 
                     --------------ACÁ EMPIEZA EL CONTADOR EN RESPONSIVE --------------
                     */}
+                    <Element name="posLinea"></Element>
                     <Container className="contenedor-padre-incentivosReponsive">
                         <Row className="contenedor-incentivosResponsive">
                             <Row className="justify-content-center">
