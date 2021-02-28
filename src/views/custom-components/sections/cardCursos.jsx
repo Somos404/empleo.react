@@ -2,6 +2,13 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 
+/**Cursos */
+import {cursos} from '../../components/cursos/cursos';
+
+
+console.log(cursos)
+
+
 const CardCursos = () => {
     return (
         <div>
@@ -15,14 +22,45 @@ const CardCursos = () => {
                     </Row>
                 </Container>
             </div> */}
+
+        
+
             <div className="spacer team2">
+          
                 <Container>
-                    {/* <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">Experienced & Professional Team</h2>
-                            <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                {
+                                cursos.map(({titulo, descripcion}, i) => (
+                    <Row className="m-t-30">
+                        <Col lg="3" md="6" className="m-b-30">
+                                <Col md="12" className="col-md-12 pro-pic t4">
+                            <div className="cards-inline" key={i}>
+                            <div className="card-img-overlay"  >
+                                        <ul className="list-inline list-inlineRedes">
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-facebook"></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-twitter"></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-behance"></i></a></li>
+                                        </ul>
+                                        <ul className="list-inline list-inlineinfo">
+                                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{titulo}</h5></a></li>
+                                            <li className="list-inline-item"><a href="#"><p>{descripcion}</p></a></li>
+                                            <li className="list-inline-item"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn" href="#"><span>Más info<i className="ti-arrow-right"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                    
+                            </div>
+                                   
+                                </Col>
                         </Col>
-                    </Row> */}
+                    </Row>
+                      ))
+                    }
+                </Container>
+                </div> 
+               
+                {/* <Container>
+
+                 
                     <Row className="m-t-30">
                         <Col lg="3" md="6" className="m-b-30">
                             <Row className="no-gutters">
@@ -107,12 +145,7 @@ const CardCursos = () => {
                     </Row>
                 </Container>
                 <Container>
-                    {/* <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">Experienced & Professional Team</h2>
-                            <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                        </Col>
-                    </Row> */}
+                    
                     <Row className="m-t-30">
                         <Col lg="3" md="6" className="m-b-30">
                             <Row className="no-gutters">
@@ -197,12 +230,7 @@ const CardCursos = () => {
                     </Row>
                 </Container>
                 <Container>
-                    {/* <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h2 className="title">Experienced & Professional Team</h2>
-                            <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                        </Col>
-                    </Row> */}
+                   
                     <Row className="m-t-30">
                         <Col lg="3" md="6" className="m-b-30">
                             <Row className="no-gutters">
@@ -285,8 +313,10 @@ const CardCursos = () => {
                             </Row>
                         </Col>
                     </Row>
-                </Container>
-            </div>
+                </Container> */}
+
+                
+           
         </div>
     );
 }

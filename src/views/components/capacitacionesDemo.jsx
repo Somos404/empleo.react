@@ -24,6 +24,7 @@ import img6 from '../../assets/images/oficios/flachaIzq.svg';
 import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
 
 
+
 const CapacitacionesDemo = (props) => {
     return (
         <div>

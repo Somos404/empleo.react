@@ -153,11 +153,14 @@ class Contacto extends Component {
                         </Col>
                       </Row>
                     </div>
+                    
                   </Container>
+                  <Footer2 />
+
                 </Row>
               </div>
             </div>
-            <Footer2 />
+      
           </div>
 
         </div>
