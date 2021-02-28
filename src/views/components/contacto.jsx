@@ -86,10 +86,10 @@ class Contacto extends Component {
       <div>
         <Header />
         <div className="page-wrapper">
-          <div className="container-fluid empleoHeight">
+          <div className="container-fluid">
             <HeaderBannerEmpleo />
             <div className="spacer-Header"></div>
-            <div>
+       
               <div className="contact1">
                 <Row>
                   <Container>
@@ -155,7 +155,7 @@ class Contacto extends Component {
                     </div>
                     
                   </Container>
-                  <Footer2 />
+              
 
                 </Row>
               </div>
@@ -163,7 +163,7 @@ class Contacto extends Component {
       
           </div>
 
-        </div>
+          <Footer2 />
 
       </div>
     );

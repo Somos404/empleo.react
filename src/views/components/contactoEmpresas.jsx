@@ -92,7 +92,7 @@ class ContactoEmpresas extends Component {
       <div>
         <Header />
         <div className="page-wrapper">
-          <div className="container-fluid empleoHeight">
+          <div className="container-fluid">
             <HeaderBannerEmpleo />
             <div className="spacer-Header"></div>
             <div>
