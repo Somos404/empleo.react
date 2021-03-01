@@ -178,7 +178,7 @@ const CardCursos = () => {
                                     <SearchIcon />
                                     </div>
                                     <InputBase
-                                        placeholder="Search…"
+                                        placeholder="Buscar"
                                         onChange={searchFilter}
                                         value={state.search}
                                         classes={{
