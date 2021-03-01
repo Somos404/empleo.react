@@ -102,7 +102,7 @@ const CardCursos = () => {
             cursosFiltrados: filtro(cursos, state.categoria).filter(
                 function (list) 
                 {
-                    return list.titulo.includes(event.target.value)
+                    return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
                 })
         });
     
