@@ -3,21 +3,19 @@ import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
 import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 
 /**Cursos */
 import {cursos} from '../../components/cursos/cursos';
+import 'animate.css/animate.min.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -195,16 +193,16 @@ const CardCursos = () => {
                     </div>
                     <Row className="m-t-30">
                         {
-                            state.cursosFiltrados.map(({titulo, descripcion}, i) => (
-                                <Col lg="3" md="6" className="m-b-30" key={i+'cards'}>
-                                    <Col md="12" className="col-md-12 pro-pic t4">
+                            state.cursosFiltrados.map(({titulo, descripcion, imgUrl, facebook, twitter, instagram, behance}, i) => (
+                                <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s" key={i+'cards'}>
+                                    <Col md="12" className={`col-md-12 ${imgUrl}`}>
                                         <div className="cards-inline">
                                             <div className="card-img-overlay"  >
                                                 <ul className="list-inline list-inlineRedes">
-                                                    <li className="list-inline-item"><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                                    <li className="list-inline-item"><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                                    <li className="list-inline-item"><a href="#"><i className="fa fa-instagram"></i></a></li>
-                                                    <li className="list-inline-item"><a href="#"><i className="fa fa-behance"></i></a></li>
+                                                    <li className="list-inline-item"><a href={facebook}><i className="fa fa-facebook"></i></a></li>
+                                                    <li className="list-inline-item"><a href={twitter}><i className="fa fa-twitter"></i></a></li>
+                                                    <li className="list-inline-item"><a href={instagram}><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a href={behance}><i className="fa fa-behance"></i></a></li>
                                                 </ul>
                                                 <ul className="list-inline list-inlineinfo">
                                                     <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{titulo}</h5></a></li>
