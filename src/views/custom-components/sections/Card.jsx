@@ -22,7 +22,7 @@ const Card = (props) => {
                                 <a>
                                     <FacebookShareButton
                                         url={props.UrlToRedirect}
-                                        quote='test'
+                                        quote={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
                                         <FacebookIcon 
@@ -36,7 +36,7 @@ const Card = (props) => {
                                 <a>
                                     <TwitterShareButton
                                         url={props.UrlToRedirect}
-                                        title='test'
+                                        title={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
                                         <TwitterIcon 
