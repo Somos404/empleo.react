@@ -5,21 +5,21 @@ export const cursos = [
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio: Etapa 2',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Programación web',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio: Etapa 2',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Variedades',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio: Etapa 2',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     /** -----------EMPLEO Y EMPRENDIMIENTOS------------ */
     {
@@ -27,91 +27,91 @@ export const cursos = [
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Formalización de emprendimientos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Diseño Gráfico',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Herramientras para el empleo',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Administración de emprendimientos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Edición de videos para emprendimientos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Introducición al desarrollo de videojuegos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Vender online',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Manipulación higiénica de alimentos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Excel inicial',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Excel Avanzado',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Word inicial',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Word inicial',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     /** -----------INFORMATORIO------------ */
     {
@@ -119,28 +119,28 @@ export const cursos = [
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Especialización en tecnologías de desarrollo',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Programación y desarrollo web',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
     {
         titulo: 'Introducción a la Programación',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio',
         imgUrl: 'pro-pic t4 ',
-        UrlToRedirect: '',
+        UrlToRedirect: 'http://localhost:3000/capacitaciones-demo#/'
     },
 ]
 
