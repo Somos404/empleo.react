@@ -4,51 +4,44 @@ import { Row, Col, Container } from 'reactstrap';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
-import NativeSelect from '@material-ui/core/NativeSelect';
-
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 /**Cursos */
 import {cursos} from '../../components/cursos/cursos';
 import 'animate.css/animate.min.css'
 
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import IconButton from '@material-ui/core/IconButton';
+import clsx from 'clsx';
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
+      paddingLeft: '0px !Important',
+      paddingRight: '0px !Important',
     },
     title: {
       flexGrow: 1,
       display: 'none',
-      color: 'white',
+      color: '#6f7074',
       [theme.breakpoints.up('sm')]: {
         display: 'block',
       },
     },
-    search: {
-      position: 'relative',
-      borderRadius: theme.shape.borderRadius,
-      backgroundColor: fade(theme.palette.common.white, 0.15),
-      '&:hover': {
-        backgroundColor: fade(theme.palette.common.white, 0.25),
-      },
-      marginLeft: 0,
-      width: '100%',
-      [theme.breakpoints.up('sm')]: {
-        marginLeft: theme.spacing(1),
-        width: 'auto',
-      },
+
+    textColor: {
+        color: '#6f7074',
     },
     searchIcon: {
       padding: theme.spacing(0, 2),
       height: '100%',
+      color:'#6f7074',
       position: 'absolute',
       pointerEvents: 'none',
       display: 'flex',
@@ -56,20 +49,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
     },
     inputRoot: {
-      color: 'inherit',
-    },
-    inputInput: {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-      transition: theme.transitions.create('width'),
-      width: '100%',
-      [theme.breakpoints.up('sm')]: {
-        width: '12ch',
-        '&:focus': {
-          width: '20ch',
-        },
-      },
+        color:'#6f7074',
     },
     formControl: {
         margin: theme.spacing(1),
@@ -149,44 +129,55 @@ const CardCursos = () => {
           
                 <Container>
                     <div className={classes.root}>
-                        <AppBar position="static" style={{backgroundColor:'#01B7E8'}}>
-                            <Toolbar>
+                        <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
+                            <Toolbar className="toolbarPadin">
                                 <Typography className={classes.title} variant="h6" noWrap>
-                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
+                                    {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
                                 </Typography>
-                                <FormControl className={classes.formControl}>
-                                    <InputLabel className={classes.title} htmlFor="categoria-native-helper">Categoria</InputLabel>
-                                    <NativeSelect
+
+                                <FormControl variant="outlined" className={classes.formControl}>
+                                    <InputLabel className={classes.textColor} id="demo-simple-select-outlined-label">Categoria</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-outlined-label"
+                                        id="demo-simple-select-outlined"
                                         value={state.categoria}
                                         onChange={handleChange}
-                                        inputProps={{
-                                            name: 'categoria',
-                                            id: 'categoria-native-helper',
-                                        }}
-                                        > 
-                                            <option aria-label="None" value='' />
-                                            {
-                                                cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
-                                                    <option key={i+'dropdow'} value={categoria}>{categoria}</option>
-                                                ))
-                                            }
-                                    </NativeSelect>
-                                    <FormHelperText className={classes.title}>Seleccione Categoria</FormHelperText>
+                                        label="Categoria"
+                                        >
+                                        <MenuItem value="">
+                                            <em>None</em>
+                                        </MenuItem>
+                                        {
+                                            cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
+                                                <MenuItem key={i+'MenuItemdropdow'} value={categoria}>{categoria}</MenuItem>
+                                            ))
+                                        }
+                                    </Select>
                                 </FormControl>
                                 <div className={classes.search}>
-                                    <div className={classes.searchIcon}>
-                                    <SearchIcon />
-                                    </div>
-                                    <InputBase
-                                        placeholder="Buscar"
-                                        onChange={searchFilter}
-                                        value={state.search}
-                                        classes={{
-                                            root: classes.inputRoot,
-                                            input: classes.inputInput,
-                                        }}
-                                        inputProps={{ 'aria-label': 'search' }}
-                                    />
+                                    <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
+                                        <OutlinedInput
+                                            className={classes.textColor}
+                                            id="outlined-adornment-weight"
+                                            onChange={searchFilter}
+                                            value={state.search}
+                                            endAdornment={
+                                                <InputAdornment position="end">
+                                                  <IconButton
+                                                    aria-label="toggle password visibility"
+                                                    edge="end"
+                                                  >
+                                                    <SearchIcon />
+                                                  </IconButton>
+                                                </InputAdornment>
+                                              }
+                                            aria-describedby="outlined-weight-helper-text"
+                                            inputProps={{
+                                            'aria-label': 'weight',
+                                            }}
+                                            labelWidth={0}
+                                        />
+                                    </FormControl>
                                 </div>
                             </Toolbar>
                         </AppBar>
@@ -202,6 +193,7 @@ const CardCursos = () => {
                                                     <li className="list-inline-item"><a href={facebook}><i className="fa fa-facebook"></i></a></li>
                                                     <li className="list-inline-item"><a href={twitter}><i className="fa fa-twitter"></i></a></li>
                                                     <li className="list-inline-item"><a href={instagram}><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a href={behance}><i className="fa fa-behance"></i></a></li>
                                                 </ul>
                                                 <ul className="list-inline list-inlineinfo">
                                                     <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{titulo}</h5></a></li>
