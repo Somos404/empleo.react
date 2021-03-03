@@ -2973,7 +2973,133 @@ Modal in center
     margin-top: 0%!important;
 }
 
-.toolbarPadin{
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+.BannerPContenedorEsc{
+    background: rgb(44,176,207);
+    background: linear-gradient(90deg, rgba(44,176,207,0.3) 0%, rgba(212,17,131,0.3) 100%);
+}
+.rowSecondParrafoLight{
+    color: black;
+}
+.rowSecondParrafoBold{
+    font-weight: 900;
+    color: black;
+}
+.backImagenSeconCont{
+    margin-right: -35%!important;
+    position: relative;
+}
+
+.imagenEspecificacionesEscritorio{
+    width: 2em;
+}
+.btnCursosModificadoEscritorio{
+    border: 1px solid black !important;
+    color: black;
+    height: 2.5em;
+    padding-top: 0.4em;
+    font-weight: 700;
+}
+
+.textoEspeEscritorio{
+    line-height: 30px;
+}
+.cardEspecificacionesEscritorio{
+    margin-bottom: -1.5em;
+}
+
+.marginRowCursos{
+    margin-top: 2em;
+}
+.tituloCotnenidoCursos{
+    font-weight: 600;
+    color: black;
+}
+
+.acordeonEscritorio {
+    border-radius: 20em!important;
+    background-color: black;
+
+}
+
+.tituloCardCursosEscritorio{
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+.numeroContenidoEscritorio{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-left: 0.3em;
+    position: absolute;
+    margin-top: -.4em;
+}
+.progress-bar{
+    // background:linear-gradient(rgba(212,17,131,1),transparent);
+    background-color:#2CB0CF;/*this your primary color*/
+    background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+}
+.backAccordeonRespuesta{
+    background-color: white!important;
+}
+.btnCursosModificado2{
+    margin-top: 1em;
+    color: white;
+    background-color: #3C3C3B;
+    font-weight: 800;
+    margin-bottom: 2em;
+}
+.MuiAccordion-root:before{
+    opacity: 0!important;
+}
+.containerSemanasEscritorio{
+    margin-left: 19em;
+}
+
+.flechaSem4{
+    margin-top: -2.2%;
+    margin-right: 2%;
+    text-align: right;
+    color: gray;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.lineaCopada {
+    background-color: black;
+    border: 0 none;
+    color: black;
+    height: 1px;
+}
+
+.ContenedorResponsiveCursosHidden{
+    display: none;
+}
+
+
+@media (max-width:1468px){
+    .backImagenSeconCont{
+        margin-right: -16%!important;
+       
+    }
+    .textoEspeEscritorio{
+        line-height: 35px;
+    }
+
+    .containerSemanasEscritorio{
+        margin-left: -2em;
+    }
+    .tituloCardCursosEscritorio{
+        margin-left: 8em;
+    }
+}
+
+.contenedorImagenyContenido{
+    display: block;
+}
+
+.contenidoCursos{
+    position: absolute;
+    margin-top: -22em;
+    margin-left: 6em;
 }

@@ -492,7 +492,7 @@ redirecciones
         overflow: hidden;
         background-size: cover;
         background-position: center center;
-        background-image: $banner-image6;
+        background-image: $banner-image5;
     
         .title {
             color: $white;
@@ -659,7 +659,12 @@ redirecciones
         font-size: 1.2em;
     }
 
-   
+   .containerEscritorioCursosHidden{
+       display: none;
+   }
+   .ContenedorResponsiveCursosHidden{
+       display: initial;
+   }
 
     
     .carousel-item>img {
