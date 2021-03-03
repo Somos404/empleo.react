@@ -116,7 +116,7 @@ const CardCursos = () => {
             <Container>
                 <div className={classes.root}>
                     <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
-                        <Toolbar className="toolbarPadin">
+                        <Toolbar className="toolbarPading">
                             <Typography className={classes.title} variant="h6" noWrap>
                                 {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
                             </Typography>
