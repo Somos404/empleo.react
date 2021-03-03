@@ -89,16 +89,16 @@ const Curso9 = (props) => {
                                         <Container>
                                             <Row>
                                                 <Col lg="5" md="7" className="align-self-center">
-                                                    <h2 className="title font-bold rowSecondParrafoBold">Gestión de Redes Sociales</h2>
+                                                    <h2 className="title font-bold rowSecondParrafoBold">Edición de Videos para Emprendimientos</h2>
                                                     <hr class="justify-content-center lineaCopada" />
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
                                                 comunicación, de acuerdo a las características de tu proyecto y
                                                 a las posibilidades que ofrece cada red social.</p>
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
                                                         Para cursarlo necesitarás: <br />
-                                                    1.Computadora o celular con acceso a redes sociales. <br />
-                                                    2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                    3. Cuenta de Youtube y Linkedin (opcional).<br /></p>
+                                                        1. Dispositivo con acceso a internet. <br />
+                                                        2. Celular con la aplicación YouCut instalada.<br />
+                                                    </p>
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
                                                  
                                                 </Col>
@@ -119,7 +119,7 @@ const Curso9 = (props) => {
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                 <div>
-                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">3 HORAS SEMANALES</h6>
+                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">4 HORAS SEMANALES</h6>
                                                                 </div>
                                                             </CardBody>
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
@@ -168,8 +168,7 @@ const Curso9 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Herramientas para la planificación del rodaje de un video. Nociones básicas de composición audiovisual.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -189,8 +188,7 @@ const Curso9 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails className="backAccordeonRespuesta">
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Elementos básicos para crear un video: plano y secuencia, movimiento de cámara y grabación de voz.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -210,8 +208,7 @@ const Curso9 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Aprender a usar la App YouCut: cortar, pegar y unir, importar música, voz en off, capturar sonido, importar imágenes y agregar texto.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -232,8 +229,7 @@ const Curso9 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Exportar videos a las redes sociales para difundir mi emprendimiento.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -249,29 +245,25 @@ const Curso9 = (props) => {
                             </div>
                         </div>
                             <div className="ContenedorResponsiveCursosHidden">
-                                <Container className="backgroundPrimerContenedor">                     
+                                <Container className="backgroundPrimerContenedor  backgroundPrimerContenedorResponsiveCursosHeightlargo09">                     
                                     <Col>
                                         <Row className="justify-content-center">
                                             <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>
                                             {/**REsponsive */}
-                                            <h1 className="text-center title titleCursosResponsive">Gestión de <br /> Redes Sociales</h1>
-
+                                            <h1 className="text-center title titleCursosResponsive">Edición de Videos para Emprendimientos</h1>
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
                                         <div className="separadorM"></div>
                                         <Row className="justify-content-left">
-                                            <p className="text-left parrafoCursos">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                    comunicación, de acuerdo a las características de tu proyecto y
-                                                    a las posibilidades que ofrece cada red social.
-                                                    </p>
+                                            <p className="text-left parrafoCursos">En este curso aprenderás a generar y editar contenido audiovisual con tu celular mediante la aplicación "YouCut", para compartir tu emprendimiento con seguidores, clientes actuales y potenciales. Te servirá para generar contenido audiovisual que contribuya al posicionamiento de tu marca y la promoción de tus productos.
+                                            </p>
                                         </Row>
                                         <div className="separadorSM"></div>
                                         <Row className="justify-content-left">
                                             <p className="text-left parrafoCursosBold">
                                                 Para cursarlo necesitarás: <br />
-                                                1.Computadora o celular con acceso a redes sociales. <br />
-                                                2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                3. Cuenta de Youtube y Linkedin (opcional).<br />
+                                                1. Dispositivo con acceso a internet.<br />
+                                                2. Celular con la aplicación YouCut instalada.<br />                                        
                                             </p>
                                         </Row>
                                         <div className="separadormM"></div>
@@ -300,7 +292,7 @@ const Curso9 = (props) => {
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
-                                                    <h6 className="font-medium textoEspe">3 HORAS SEMANALES</h6>
+                                                    <h6 className="font-medium textoEspe">4 HORAS SEMANALES</h6>
                                                 </div>
                                             </CardBody>
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
@@ -340,8 +332,7 @@ const Curso9 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            Herramientas para la planificación del rodaje de un video. Nociones básicas de composición audiovisual.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
@@ -361,8 +352,7 @@ const Curso9 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails className="backAccordeonRespuesta">
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            Elementos básicos para crear un video: plano y secuencia, movimiento de cámara y grabación de voz.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
@@ -382,8 +372,7 @@ const Curso9 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            Aprender a usar la App YouCut: cortar, pegar y unir, importar música, voz en off, capturar sonido, importar imágenes y agregar texto.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
@@ -404,8 +393,7 @@ const Curso9 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            Exportar videos a las redes sociales para difundir mi emprendimiento.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>

@@ -89,16 +89,12 @@ const Curso11 = (props) => {
                                         <Container>
                                             <Row>
                                                 <Col lg="5" md="7" className="align-self-center">
-                                                    <h2 className="title font-bold rowSecondParrafoBold">Gestión de Redes Sociales</h2>
+                                                    <h2 className="title font-bold rowSecondParrafoBold">Vender Online</h2>
                                                     <hr class="justify-content-center lineaCopada" />
-                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                comunicación, de acuerdo a las características de tu proyecto y
-                                                a las posibilidades que ofrece cada red social.</p>
+                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso aprenderás a usar las redes sociales como herramientas que facilitan y amplían las posibilidades de venta de tus productos o servicios, y crean la identidad digital de tu emprendimiento.</p>
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
-                                                        Para cursarlo necesitarás: <br />
-                                                    1.Computadora o celular con acceso a redes sociales. <br />
-                                                    2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                    3. Cuenta de Youtube y Linkedin (opcional).<br /></p>
+                                                Para este curso necesitarás un dispositivo con acceso a internet.<br />
+                                                  </p>
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
                                                  
                                                 </Col>
@@ -119,7 +115,7 @@ const Curso11 = (props) => {
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                 <div>
-                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">3 HORAS SEMANALES</h6>
+                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">2 y 1/2 horas semanales</h6>
                                                                 </div>
                                                             </CardBody>
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
@@ -168,8 +164,8 @@ const Curso11 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    ¿Cómo crear un perfil de tu empresa en las redes sociales?<br/>
+Te mostraremos cómo crear y administrar tu página en Facebook, Instagram y Whatsapp Business, y a usar algunas herramientas de diseño para principiantes.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -189,12 +185,12 @@ const Curso11 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails className="backAccordeonRespuesta">
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Plataformas de tiendas online, distintos métodos de pago y de envío.<br/>
+Veremos cómo crear y gestionar tu tienda online, y cuáles son las distintas alternativas que tenés para hacerlo.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
-                                            <Accordion className={classes.acordeonEscritorio}>
+                                            {/* <Accordion className={classes.acordeonEscritorio}>
                                                 <AccordionSummary
                                                     expandIcon={<ExpandMoreIcon />}
                                                     aria-controls="panel1a-content"
@@ -236,7 +232,7 @@ const Curso11 = (props) => {
 
                                                 </Typography>
                                                 </AccordionDetails>
-                                            </Accordion>
+                                            </Accordion> */}
                                                
                                         </div>
                                        
@@ -249,29 +245,26 @@ const Curso11 = (props) => {
                             </div>
                         </div>
                             <div className="ContenedorResponsiveCursosHidden">
-                                <Container className="backgroundPrimerContenedor">                     
+                                <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosHeightlargo">                     
                                     <Col>
                                         <Row className="justify-content-center">
                                             <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>
                                             {/**REsponsive */}
-                                            <h1 className="text-center title titleCursosResponsive">Gestión de <br /> Redes Sociales</h1>
+                                            <h1 className="text-center title titleCursosResponsive">Vender Online</h1>
 
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
                                         <div className="separadorM"></div>
                                         <Row className="justify-content-left">
-                                            <p className="text-left parrafoCursos">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                    comunicación, de acuerdo a las características de tu proyecto y
-                                                    a las posibilidades que ofrece cada red social.
+                                            <p className="text-left parrafoCursos">En este curso aprenderás a usar las redes sociales como herramientas que facilitan y amplían las posibilidades de venta de tus productos o servicios, y crean la identidad digital de tu emprendimiento.
                                                     </p>
                                         </Row>
                                         <div className="separadorSM"></div>
                                         <Row className="justify-content-left">
                                             <p className="text-left parrafoCursosBold">
-                                                Para cursarlo necesitarás: <br />
-                                                1.Computadora o celular con acceso a redes sociales. <br />
-                                                2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                3. Cuenta de Youtube y Linkedin (opcional).<br />
+                                            Para este curso necesitarás un dispositivo con acceso a internet.
+
+
                                             </p>
                                         </Row>
                                         <div className="separadormM"></div>
@@ -300,7 +293,7 @@ const Curso11 = (props) => {
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
-                                                    <h6 className="font-medium textoEspe">3 HORAS SEMANALES</h6>
+                                                    <h6 className="font-medium textoEspe"> 2 y 1/2 horas semanales</h6>
                                                 </div>
                                             </CardBody>
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
@@ -340,8 +333,8 @@ const Curso11 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            ¿Cómo crear un perfil de tu empresa en las redes sociales?<br/>
+Te mostraremos cómo crear y administrar tu página en Facebook, Instagram y Whatsapp Business, y a usar algunas herramientas de diseño para principiantes.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
@@ -361,12 +354,14 @@ const Curso11 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails className="backAccordeonRespuesta">
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                            Plataformas de tiendas online, distintos métodos de pago y de envío.<br/>
+Veremos cómo crear y gestionar tu tienda online, y cuáles son las distintas alternativas que tenés para hacerlo.
+
 
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
-                                                    <Accordion className={classes.acordeon1}>
+                                                    {/* <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
                                                             aria-controls="panel1a-content"
@@ -408,7 +403,7 @@ const Curso11 = (props) => {
 
                                                         </Typography>
                                                         </AccordionDetails>
-                                                    </Accordion>
+                                                    </Accordion> */}
                                         <Row className="justify-content-center">
                                             <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                         </Row>

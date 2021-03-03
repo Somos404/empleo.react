@@ -410,9 +410,7 @@ const Cursos1 = (props) => {
                                         </Row>
                                         </div>
                                     </Col>
-                                
                                 </Container>
-                                
                             </div>
                             </div>
                             
