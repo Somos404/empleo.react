@@ -44,6 +44,26 @@ import Muni13 from "./views/components/municipios/muni13.jsx";
 
 
 import Cursos1 from "views/components/cursos/curso1";
+import Cursos2 from "views/components/cursos/curso2";
+import Cursos3 from "views/components/cursos/curso3";
+import Cursos4 from "views/components/cursos/curso4";
+import Cursos5 from "views/components/cursos/curso5";
+import Cursos6 from "views/components/cursos/curso6";
+import Cursos7 from "views/components/cursos/curso7";
+import Cursos8 from "views/components/cursos/curso8";
+import Cursos9 from "views/components/cursos/curso9";
+import Cursos10 from "views/components/cursos/curso10";
+import Cursos11 from "views/components/cursos/curso11";
+import Cursos12 from "views/components/cursos/curso12";
+import Cursos13 from "views/components/cursos/curso13";
+import Cursos14 from "views/components/cursos/curso14";
+import Cursos15 from "views/components/cursos/curso15";
+import Cursos16 from "views/components/cursos/curso16";
+import Cursos17 from "views/components/cursos/curso17";
+import Cursos18 from "views/components/cursos/curso18";
+import Cursos19 from "views/components/cursos/curso19";
+import Cursos20 from "views/components/cursos/curso20";
+
 
 import CustomComponents from "./views/custom-components/custom-components.jsx";
 import FormCustomComponents from "./views/custom-components/form";
@@ -322,7 +342,178 @@ function App() {
                  />
              )}
              />
-           
+                <Route 
+                 
+                 path="/curso2" 
+                 render={props => (
+                 <Cursos2
+                 {...props}
+                 />
+                 
+             )}
+             />
+                <Route 
+                 
+                 path="/curso3" 
+                 render={props => (
+                 <Cursos3
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso4" 
+                 render={props => (
+                 <Cursos4
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso5" 
+                 render={props => (
+                 <Cursos5
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso6" 
+                 render={props => (
+                 <Cursos6
+                 {...props}
+                 />
+             )}
+             />
+              <Route 
+                 
+                 path="/curso7"
+                 render={props => (
+                 <Cursos7
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso8" 
+                 render={props => (
+                 <Cursos8
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso9" 
+                 render={props => (
+                 <Cursos9
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso10" 
+                 render={props => (
+                 <Cursos10
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso11" 
+                 render={props => (
+                 <Cursos11
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso12" 
+                 render={props => (
+                 <Cursos12
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso13" 
+                 render={props => (
+                 <Cursos13
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso14" 
+                 render={props => (
+                 <Cursos14
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso15" 
+                 render={props => (
+                 <Cursos15
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso16" 
+                 render={props => (
+                 <Cursos16
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso17" 
+                 render={props => (
+                 <Cursos17
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso18" 
+                 render={props => (
+                 <Cursos18
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso19" 
+                 render={props => (
+                 <Cursos19
+                 {...props}
+                 />
+             )}
+             />
+                <Route 
+                 
+                 path="/curso20" 
+                 render={props => (
+                 <Cursos20
+                 {...props}
+                 />
+             )}
+             />
             </Switch>
         </BrowserRouter>
 
