@@ -43,12 +43,15 @@ import Muni12 from "./views/components/municipios/muni12.jsx";
 import Muni13 from "./views/components/municipios/muni13.jsx";
 
 
+import Cursos1 from "views/components/cursos/curso1";
 
 import CustomComponents from "./views/custom-components/custom-components.jsx";
 import FormCustomComponents from "./views/custom-components/form";
 
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
+
+
 var hist = createBrowserHistory();
 
 function App() {
@@ -304,6 +307,17 @@ function App() {
                  path="/corzuela" 
                  render={props => (
                  <Muni13
+                 {...props}
+                 />
+             )}
+             />
+
+             {/* ---------------SUB PÁGINAS DE CURSOS */}
+             <Route 
+                 
+                 path="/curso1" 
+                 render={props => (
+                 <Cursos1
                  {...props}
                  />
              )}

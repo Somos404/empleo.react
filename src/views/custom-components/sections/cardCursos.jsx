@@ -202,7 +202,6 @@ const CardCursos = () => {
                                                     <li className="list-inline-item"><a href={facebook}><i className="fa fa-facebook"></i></a></li>
                                                     <li className="list-inline-item"><a href={twitter}><i className="fa fa-twitter"></i></a></li>
                                                     <li className="list-inline-item"><a href={instagram}><i className="fa fa-instagram"></i></a></li>
-                                                    <li className="list-inline-item"><a href={behance}><i className="fa fa-behance"></i></a></li>
                                                 </ul>
                                                 <ul className="list-inline list-inlineinfo">
                                                     <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{titulo}</h5></a></li>

@@ -362,6 +362,49 @@ redes-sociales-nav
     }
 }
 
+/******************* 
+cursos
+*******************/
+
+.static-slider-headCursos {
+    min-height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: $banner-image5;
+
+    .title {
+        color: $white;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .title-1 {
+        color: $white;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .title-2 {
+        color: $white;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .subtitle {
+        color: $white;
+        line-height: 30px;
+    }
+}
+
+.titleCursosResponsive{
+    display: none;
+}
+
 .carousel-item>img {
     width: 100%;
 }

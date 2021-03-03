@@ -450,7 +450,8 @@ redirecciones
         overflow: auto;
         background-size: cover;
         background-position: center center;
-        background-image: $banner-image3;
+        background-image: $banner-image4;
+        align-items: center;
     
         .title {
             color: $white;
@@ -478,6 +479,188 @@ redirecciones
             line-height: 30px;
         }
     }
+
+    /*<----------CURSOS-------->*/
+    .page-wrapperCursos{
+        overflow: hidden;
+    }
+    .static-slider-headCursos {
+        min-height: 365px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-image: $banner-image6;
+    
+        .title {
+            color: $white;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 60px;
+        }
+        .title-1 {
+            color: $white;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+        }
+        .title-2 {
+            color: $white;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 60px;
+        }
+    
+        .subtitle {
+            color: $white;
+            line-height: 30px;
+        }
+    }
+
+    .backgroundPrimerContenedor{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-image: $banner-image7;
+    }
+    .titleCursosEscritorio{
+        display: none;
+    }
+    .titleCursosResponsive{
+        display: initial;
+        font-weight: 900;
+        margin-top: 1em;
+        color: rgb(0, 0, 0); 
+
+    }
+
+    .lineaCopada{
+        background-color: rgb(0, 0, 0); 
+        border: 0 none; 
+        color: rgb(0, 0, 0); 
+        height: 1px;
+    }
+    .parrafoCursos{
+        color: rgb(0, 0, 0); 
+        font-weight: 400;
+
+    }
+    .separadorM{
+        padding: .5em;
+    }
+    .separadorSM{
+        padding: 1em;
+    }
+    .parrafoCursosBold{
+        font-weight: 700;
+        color: rgb(0, 0, 0); 
+
+    }
+
+
+
+    //Segundo contenedor
+
+    .btnCursosModificado{
+        margin-top: 1em;
+        border: 1px solid black!important;
+        color: black;
+
+    }
+    .contenedorImgEspecificaciones{
+        padding: 0em;
+    }
+    .imagenEspecificaciones{
+        width: 2em;
+    }
+    .textoEspe{
+        margin: .3rem;
+    }
+
+    .cardEspecificacionesResponsive{
+        margin-top: 1.2em;
+        padding: 2rem;
+    }
+    
+    .cardEspecificacionesResponsive2{
+        margin-top: -3em;
+        padding: 2rem;
+    }
+    .acordeon1 {
+        border-radius: 20em!important;
+        background-color: black;
+
+    }
+    .acordeon1::before{
+        border-radius: 20em!important;
+        // background-color: linear-gradient(to left, #333 60%, #333 60%, #2CB0CF 70%, #2CB0CF 70% );
+    }
+    .acordeonSumary1{
+        // background-color:  rgba(44, 176, 207, 0.87)!important;
+        border-radius: 20em!important;
+
+     
+    }
+    .acordeonSumary1::before{
+        background-color:  rgba(44, 176, 207, 0.87)!important;
+        border-radius: 20em!important;
+
+     
+    }
+    
+    .tituloCardCursos{
+        text-align: left;
+        margin-left: 1em;
+        margin-top: 0.5em;
+    }
+
+    .numeroContenido{
+        font-size: 2rem;
+        font-weight: 900;
+        padding-left: 0.3em;
+        position: absolute;
+        margin-top: -.4em;
+    }
+
+    .MuiAccordion-root:before{
+        opacity: 0!important;
+    }
+
+    .progress-bar{
+        // background:linear-gradient(rgba(212,17,131,1),transparent);
+        background-color:#2CB0CF;/*this your primary color*/
+        background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+    }
+    .backAccordeonRespuesta{
+        background-color: white!important;
+    }
+    .btnCursosModificado2{
+        margin-top: 1em;
+        color: white;
+        background-color: #3C3C3B;
+        font-weight: 800;
+        margin-bottom: 2em;
+    }
+    .flechaSem4{
+        margin-top: -7%;
+        margin-right: 7%;
+        text-align: right;
+        color: gray;
+        font-weight: 900;
+        
+        font-size: 1.2em;
+    }
+
+   
+
     
     .carousel-item>img {
         width: 100%;
