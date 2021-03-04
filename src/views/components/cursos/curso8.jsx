@@ -89,16 +89,14 @@ const Curso8 = (props) => {
                                         <Container>
                                             <Row>
                                                 <Col lg="5" md="7" className="align-self-center">
-                                                    <h2 className="title font-bold rowSecondParrafoBold">Gestión de Redes Sociales</h2>
+                                                    <h2 className="title font-bold rowSecondParrafoBold">Administración de Emprendimientos</h2>
                                                     <hr class="justify-content-center lineaCopada" />
-                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                comunicación, de acuerdo a las características de tu proyecto y
-                                                a las posibilidades que ofrece cada red social.</p>
+                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.</p>
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
                                                         Para cursarlo necesitarás: <br />
-                                                    1.Computadora o celular con acceso a redes sociales. <br />
-                                                    2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                    3. Cuenta de Youtube y Linkedin (opcional).<br /></p>
+                                                    1.Dispositivo con acceso a internet. <br />
+                                                    2.Idea o emprendimiento en marcha. <br />
+                                                   </p>
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
                                                  
                                                 </Col>
@@ -119,7 +117,7 @@ const Curso8 = (props) => {
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                 <div>
-                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">3 HORAS SEMANALES</h6>
+                                                                    <h6 className="font-medium textoEspe textoEspeEscritorio">4 HORAS SEMANALES</h6>
                                                                 </div>
                                                             </CardBody>
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
@@ -168,7 +166,8 @@ const Curso8 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                    Clasificación de costos e implicancia según la actividad <br/>
+Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios.
 
                                                 </Typography>
                                                 </AccordionDetails>
@@ -189,7 +188,8 @@ const Curso8 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails className="backAccordeonRespuesta">
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                    Política de precios <br/>
+Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.
 
                                                 </Typography>
                                                 </AccordionDetails>
@@ -210,8 +210,8 @@ const Curso8 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Rentabilidad e inversión<br/>
+Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -232,8 +232,8 @@ const Curso8 = (props) => {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                    Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                    Finanzas <br/>
+Definición de Inversión. Tiempo de retorno de la inversión. Definición de "financiación". Toma de decisiones de financiación. Definición de "liquidez". Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
@@ -249,29 +249,26 @@ const Curso8 = (props) => {
                             </div>
                         </div>
                             <div className="ContenedorResponsiveCursosHidden">
-                                <Container className="backgroundPrimerContenedor">                     
+                                <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosSecos">                     
                                     <Col>
                                         <Row className="justify-content-center">
                                             <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>
                                             {/**REsponsive */}
-                                            <h1 className="text-center title titleCursosResponsive">Gestión de <br /> Redes Sociales</h1>
+                                            <h1 className="text-center title titleCursosResponsive">Administración de Emprendimientos</h1>
 
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
                                         <div className="separadorM"></div>
                                         <Row className="justify-content-left">
-                                            <p className="text-left parrafoCursos">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                    comunicación, de acuerdo a las características de tu proyecto y
-                                                    a las posibilidades que ofrece cada red social.
+                                            <p className="text-left parrafoCursos">En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.
                                                     </p>
                                         </Row>
                                         <div className="separadorSM"></div>
                                         <Row className="justify-content-left">
                                             <p className="text-left parrafoCursosBold">
                                                 Para cursarlo necesitarás: <br />
-                                                1.Computadora o celular con acceso a redes sociales. <br />
-                                                2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                3. Cuenta de Youtube y Linkedin (opcional).<br />
+                                                1. Dispositivo con acceso a internet. <br />
+                                                2. Idea o emprendimiento en marcha.<br />
                                             </p>
                                         </Row>
                                         <div className="separadormM"></div>
@@ -300,7 +297,7 @@ const Curso8 = (props) => {
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
-                                                    <h6 className="font-medium textoEspe">3 HORAS SEMANALES</h6>
+                                                    <h6 className="font-medium textoEspe">4 HORAS SEMANALES</h6>
                                                 </div>
                                             </CardBody>
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
@@ -340,8 +337,8 @@ const Curso8 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
-
+                                                            Clasificación de costos e implicancia según la actividad <br />
+Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios.
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
@@ -361,7 +358,8 @@ const Curso8 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails className="backAccordeonRespuesta">
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                            Política de precios<br />
+Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.
 
                                                         </Typography>
                                                         </AccordionDetails>
@@ -382,7 +380,8 @@ const Curso8 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                            Rentabilidad e inversión<br />
+Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.
 
                                                         </Typography>
                                                         </AccordionDetails>
@@ -404,7 +403,8 @@ const Curso8 = (props) => {
                                                         </AccordionSummary>
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
-                                                            Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.
+                                                            Finanzas<br />
+Definición de Inversión. Tiempo de retorno de la inversión. Definición de "financiación". Toma de decisiones de financiación. Definición de "liquidez". Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.
 
                                                         </Typography>
                                                         </AccordionDetails>

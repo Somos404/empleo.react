@@ -89,20 +89,18 @@ const Cursos3 = (props) => {
                                         <Container>
                                             <Row>
                                                 <Col lg="5" md="7" className="align-self-center">
-                                                    <h2 className="title font-bold rowSecondParrafoBold">Gestión de Redes Sociales</h2>
+                                                    <h2 className="title font-bold rowSecondParrafoBold">Variedades</h2>
                                                     <hr class="justify-content-center lineaCopada" />
-                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                comunicación, de acuerdo a las características de tu proyecto y
-                                                a las posibilidades que ofrece cada red social.</p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
+                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">Debe ingresar con su usuario y contraseña. Muchas gracias.</p>
+                                                {/* <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
                                                         Para cursarlo necesitarás: <br />
                                                     1.Computadora o celular con acceso a redes sociales. <br />
                                                     2. Cuenta de Facebook e Instagram (requerido). <br />
                                                     3. Cuenta de Youtube y Linkedin (opcional).<br /></p>
-                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
+                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p> */}
                                                  
                                                 </Col>
-                                                <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
+                                                {/* <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
                                                     <div className="contenedorImagenyContenido">
                                                     <img src={banner} alt="We are Digital Agency" className="img-fluid"></img>
 
@@ -136,7 +134,7 @@ const Cursos3 = (props) => {
                                                             </CardBody>
                                                     </div>
                                                     </div>
-                                                </Col>
+                                                </Col> */}
                                               
 
                                             </Row>
@@ -145,7 +143,7 @@ const Cursos3 = (props) => {
                                     </div>
                                 </section>
                                 <section>
-                                    <Container>
+                                    {/* <Container>
                                         <Row className="justify-content-left marginRowCursos">
                                             <h1 className="text-left tituloCotnenidoCursos">Contenido</h1>
                                         </Row>
@@ -240,7 +238,7 @@ const Cursos3 = (props) => {
                                                
                                         </div>
                                        
-                                    </Container>
+                                    </Container> */}
                                     <Row className="justify-content-center">
                                                     <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                     </Row>
@@ -249,35 +247,33 @@ const Cursos3 = (props) => {
                             </div>
                         </div>
                             <div className="ContenedorResponsiveCursosHidden">
-                                <Container className="backgroundPrimerContenedor">                     
+                                <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosSecos">                     
                                     <Col>
                                         <Row className="justify-content-center">
-                                            <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>
+                                            <h1 className="text-center title titleCursosEscritorio">Variedades</h1>
                                             {/**REsponsive */}
-                                            <h1 className="text-center title titleCursosResponsive">Gestión de <br /> Redes Sociales</h1>
+                                            <h1 className="text-center title titleCursosResponsive">Programación Web</h1>
 
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
                                         <div className="separadorM"></div>
                                         <Row className="justify-content-left">
-                                            <p className="text-left parrafoCursos">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                    comunicación, de acuerdo a las características de tu proyecto y
-                                                    a las posibilidades que ofrece cada red social.
+                                            <p className="text-left parrafoCursos">Debe ingresar con su usuario y contraseña. Muchas gracias.
                                                     </p>
                                         </Row>
                                         <div className="separadorSM"></div>
-                                        <Row className="justify-content-left">
+                                        {/* <Row className="justify-content-left">
                                             <p className="text-left parrafoCursosBold">
                                                 Para cursarlo necesitarás: <br />
                                                 1.Computadora o celular con acceso a redes sociales. <br />
                                                 2. Cuenta de Facebook e Instagram (requerido). <br />
                                                 3. Cuenta de Youtube y Linkedin (opcional).<br />
                                             </p>
-                                        </Row>
+                                        </Row> */}
                                         <div className="separadormM"></div>
                                         <Row className="justify-content-left">
                                             <p className="text-left parrafoCursos">
-                                                Aprovechalo!
+                                                ¡Aprovechalo!
                                             </p>
                                         </Row>
                                     </Col>
@@ -286,7 +282,7 @@ const Cursos3 = (props) => {
                             <div>
                                 <Container>
                                     <Col>
-                                        <Row className="justify-content-center">
+                                        {/* <Row className="justify-content-center">
                                             <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado">Especificaciones</a>
                                         </Row>
                                         <Row className="justify-content-center">
@@ -317,14 +313,14 @@ const Cursos3 = (props) => {
                                             </CardBody>
                                         </Col>
                                         
-                                        </Row>
-                                        <Row className="justify-content-center">
+                                        </Row> */}
+                                        {/* <Row className="justify-content-center">
                                             <h1 className="text-center title titleCursosResponsive">Contenido</h1>
                                         </Row>
-                                        <hr class="justify-content-center lineaCopada" />
+                                        <hr class="justify-content-center lineaCopada" /> */}
 
                                         <div className={classes.root}>
-                                                    <Accordion className={classes.acordeon1}>
+                                                    {/* <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
                                                             aria-controls="panel1a-content"
@@ -408,15 +404,13 @@ const Cursos3 = (props) => {
 
                                                         </Typography>
                                                         </AccordionDetails>
-                                                    </Accordion>
+                                                    </Accordion> */}
                                         <Row className="justify-content-center">
                                             <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                         </Row>
                                         </div>
                                     </Col>
-                                
                                 </Container>
-                                
                             </div>
                             </div>
                             
