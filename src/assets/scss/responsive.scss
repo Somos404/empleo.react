@@ -549,8 +549,8 @@ redirecciones
         height: 1px;
     }
     .parrafoCursos{
-        color: rgb(0, 0, 0); 
         font-weight: 400;
+        font-size: .8rem;
 
     }
     .separadorM{
@@ -564,7 +564,9 @@ redirecciones
         color: rgb(0, 0, 0); 
 
     }
-
+    .cardReqBotonCapMarginModificado{
+        margin-left: 0em!important;
+    }
 
 
     //Segundo contenedor
@@ -674,6 +676,14 @@ redirecciones
    }
 .backgroundPrimerContenedorResponsiveCursosHeightlargo09{
     height: 630px;
+}
+
+//Cpacitaciones
+.parrafoHiddenCap{
+    display: none;
+}
+.ComponentHiddenRepsonsive{
+    display: none;
 }
     
     .carousel-item>img {
@@ -1475,6 +1485,14 @@ width: 30%;
     color: #01B7E8;
     text-align: center;
 }
+.titulo1ContResponsiveModificado{
+    font-size: 17px;
+    display: inherit;
+    line-height: 23px;
+    font-weight: 900!important;
+    color: #01B7E8;
+    text-align: center;
+}
 .tituloRequerimientosResponsive3 {
     margin-top: -3%;
     font-size: 14px !important;
@@ -1484,6 +1502,19 @@ width: 30%;
 .lineaDivisorRed{
     width: 20em;
     margin-left: 2em;
+}
+
+.lineaDivisorRedModificado{
+    width: 20em;
+    
+}
+
+.ResponsiveHiddenCapacitaciones{
+    display: initial!important;
+}
+
+.tituloHiddenCap{
+    display: none;
 }
 .cont-img1BtnCap {
     margin-left: -1em !important;
@@ -1595,6 +1626,10 @@ width: 30%;
     height: 6em;
     display: inline-block;
     margin-left: 2em;
+}
+.imgResponsiveInformatMod{
+    margin-left: 0em!important;
+
 }
 .imgInform{
     width: 60%!important;

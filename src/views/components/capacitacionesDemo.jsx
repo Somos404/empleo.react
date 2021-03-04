@@ -40,22 +40,65 @@ const CapacitacionesDemo = (props) => {
                             <Row xs="2">
                                 <Col lg="6" className="">
                                     <section className="text-gray-600 body-font">
+                                        <div className="ResponsiveHiddenCapacitaciones">
+                                            <Row className="justify-content-center">
+                                                <h1 className="text-center  titulo1ContResponsiveModificado">Te brindamos cursos para tu formación laboral y emprendedora
+                                                </h1>
+                                            </Row>
+                                                <hr class="justify-content-center lineaCopada" />
+                                            <Row className="justify-content-center">
+                                                    <p className="text-center parrafoCursos">Ponemos a disposición de la población chaqueña una
+                                                        plataforma online de capacitaciones con cursos cortos,
+                                                        dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
+                                                            </p>
+                                                            <p className="text-center parrafoCursos">Buscamos que cada persona de la comunidad chaqueña encuentre inspiración y herramientas concretas para
+                                                    mejorar su situación laboral. Acompañarte en tu
+                                                    desarrollo personal, en el mejoramiento de tu presente
+                                                    y la construcción de tu futuro es lo que nos moviliza.
+
+                                                            </p>
+                                            </Row>
+                                            <Row className="justify-content-center">
+                                                <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMod" width="200" />
+                                                    <p className="text-center parrafoCursos">Espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica.s un programa del Gobierno del Chaco, trabajando en conjunto con las empresas del Polo IT Chaco, Globant, la UTN-FRRe y la UNCAUS.
+                                                    </p>
+                                             </Row>
+                                             <Row className="justify-content-center">
+                                             <Link className="linkRedirecciones" to="/informatorio">
+                                                <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin cardReqBotonCapMarginModificado">
+                                                    <CardBody className=" card-body-reqBtn">
+                                                        <Col>
+                                                            <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
+                                                            <Col className="colbtnBtnEmpleo">
+                                                                <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">Quiero capacitarme</h5>
+                                                            </Col>
+                                                            <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img6} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2" width="200" /></span>
+                                                        </Col>
+                                                    </CardBody>
+                                                </Card>
+                                            </Link>
+                                             </Row>
+                                        </div>
+                                        {/* <Row className="justify-content-center">
+                                        <h1 className="text-center  titulo1ContResponsiveModificado">Te brindamos cursos para tu formación laboral y emprendedora
+                                            </h1>
+                                        </Row> */}
+                                     
+                                       
                                         <div className="container px-5 py-24 mx-auto cont1Izq contIzqResponsive">
-                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
+                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft tituloHiddenCap">
                                                 <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br />                    laboral y emprendedora
                                             </h1>
-                                                <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContResponsive">Te brindamos cursos para tu formación laboral y emprendedora
-                                            </h1>
+                                               
                                             </div>
 
-                                            <hr className="lineaDivisorRed" />
-                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
+                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP parrafoHiddenCap">
                                                 <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Ponemos a disposición de la población chaqueña una
                                                 plataforma online de capacitaciones con cursos cortos,
                                                 dinámicos y entretenidos para que puedas desarrollar tus capacidades, mejorar tus posibilidades para conseguir empleo, e iniciar o fortalecer tu emprendimiento.
                                             </p>
                                             </div>
-                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP">
+                                            <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP parrafoHiddenCap">
                                                 <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Buscamos que cada persona de la comunidad chaqueña encuentre inspiración y herramientas concretas para
                                                 mejorar su situación laboral. Acompañarte en tu
                                                 desarrollo personal, en el mejoramiento de tu presente
@@ -67,10 +110,10 @@ const CapacitacionesDemo = (props) => {
                                     </section>
                                 </Col>
                                 <Row md="8" lg="12" className="colRequerimientosCap">
-                                    <Row className="imagenInfo">
+                                    <Row className="imagenInfo ComponentHiddenRepsonsive">
                                         <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat" width="200" />
                                     </Row>
-                                    <Row className="textoInfo" >
+                                    <Row className="textoInfo ComponentHiddenRepsonsive" >
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
                                             <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Espacio de formación intensiva en programación, para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos, a través del empleo en empresas de la industria o iniciando tu propio emprendimiento de base tecnológica.
 
@@ -80,7 +123,7 @@ const CapacitacionesDemo = (props) => {
                                         </div>
                                     </Row>
 
-                                    <Link className="linkRedirecciones" to="/informatorio">
+                                    <Link className="linkRedirecciones ComponentHiddenRepsonsive" to="/informatorio">
                                         <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin">
                                             <CardBody className=" card-body-reqBtn">
                                                 <Col>
