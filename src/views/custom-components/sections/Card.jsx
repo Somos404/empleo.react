@@ -69,7 +69,7 @@ const Card = (props) => {
                         <ul className="list-inline list-inlineinfo">
                             <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{props.titulo}</h5></a></li>
                             <li className="list-inline-item"><a href="#"><p>{props.descripcion}</p></a></li>
-                            <li className="list-inline-item">
+                            <li className="list-inline-item itemBtn">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn">
                                     {
                                         props.from?
