@@ -7,6 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Header from "../../components/header/header.jsx";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
+import CardCategorias from "../custom-components/sections/cardCategorias";
 import CardCursos from "../custom-components/sections/cardCursos";
 
 import {
@@ -26,6 +27,7 @@ import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
 
 
 const CapacitacionesDemo = (props) => {
+    const [categoria, setCategoria] = React.useState('')
     return (
         <div>
             <Header />
@@ -150,7 +152,19 @@ const CapacitacionesDemo = (props) => {
                         </div>
                     </div>
                 </div>
-                <CardCursos />
+                {
+                    categoria===''?
+                        <CardCategorias
+                            changeCategory={(categ) => {
+                                setCategoria(categ)
+                            }}
+                        />
+                    :
+                        <CardCursos 
+                            categoria={categoria}
+                        />
+                }
+                
             </div>
             <Footer2 />
         </div>
