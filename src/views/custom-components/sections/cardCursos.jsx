@@ -89,7 +89,6 @@ const CardCursos = (props) => {
                     return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
                 })
         });
-    
         
     }
 

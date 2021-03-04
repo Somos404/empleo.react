@@ -67,21 +67,30 @@ const CardCursos = (props) => {
 
     const [state, setState] = React.useState({
         search: '',
-        cursosFiltrados: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i)
+        categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+        filtroCategoria: []
     });
 
 
     const searchFilter = (event) => {
+        if (event.target.value === '') {
+            setState({
+                ...state,
+                search: event.target.value,
+                categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+            });
+        }else{
+            setState({
+                ...state,
+                search: event.target.value,
+                categoriasFiltradas: state.categoriasFiltradas.filter(
+                    function (list) 
+                    {
+                        return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
+                    })
+            });
+        }
         
-        setState({
-            ...state,
-            search: event.target.value,
-            cursosFiltrados: cursos.filter(
-                function (list) 
-                {
-                    return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
-                })
-        });
     }
 
     return (
@@ -91,7 +100,7 @@ const CardCursos = (props) => {
                     <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
                         <Toolbar className="toolbarPading">
                             <Typography className={classes.title} variant="h6" noWrap>
-                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Categorias
+                                {state.categoriasFiltradas.length?state.categoriasFiltradas.length:'0'} Categorias
                             </Typography>
                             <div className={classes.search}>
                                 <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
@@ -123,7 +132,7 @@ const CardCursos = (props) => {
                 </div>
                 <Row className="m-t-30">
                     {
-                        state.cursosFiltrados.map(({categoria, imgUrl}, i) =>  (
+                        state.categoriasFiltradas.map(({categoria, imgUrl}, i) =>  (
                             <Card
                                 changeCategory={props.changeCategory}
                                 key={i+'cardsCategoria'}
