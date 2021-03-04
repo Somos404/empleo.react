@@ -11,13 +11,16 @@ import {
 } from "react-share";
 
 import { Link } from "react-router-dom";
+
+import { makeStyles } from '@material-ui/core/styles';
 import 'animate.css/animate.min.css'
 
 const Card = (props) => {
+    const classes = useStyles();
     return (
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
             <Col md="12" className={`col-md-12 ${props.imgUrl}`}>
-                <div className="cards-inline">
+                <div className={`cards-inline ${classes.card}`}>
                     <div className="card-img-overlay"  >
                         <ul className="list-inline list-inlineRedes">
                             <li className="list-inline-item">
@@ -81,5 +84,12 @@ const Card = (props) => {
         </Col>
     );
 };
+
+const useStyles = makeStyles((theme) => ({
+    card: {
+      flexGrow: 1,
+      minHeight: '10 em'
+    }
+}));
 
 export default Card;
