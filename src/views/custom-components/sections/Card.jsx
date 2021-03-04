@@ -71,10 +71,23 @@ const Card = (props) => {
                             <li className="list-inline-item"><a href="#"><p>{props.descripcion}</p></a></li>
                             <li className="list-inline-item">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn">
-                                    <span>
-                                        <Link className="nav-link" to={props.UrlToRedirect}>Más info</Link>
-                                        <i className="ti-arrow-right"></i>
-                                    </span>
+                                    {
+                                        props.from?
+                                        <span 
+                                            onClick={(categ) => {
+                                                props.changeCategory(props.titulo)
+                                            }}
+                                        >
+                                            <Link className="nav-link">Más info</Link>
+                                            <i className="ti-arrow-right"></i>
+                                        </span>
+                                        :
+                                        <span>
+                                            <Link className="nav-link" to={props.UrlToRedirect}>Más info</Link>
+                                            <i className="ti-arrow-right"></i>
+                                        </span>
+                                    }
+                                    
                                 </a>
                             </li>
                         </ul>

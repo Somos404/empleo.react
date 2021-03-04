@@ -65,17 +65,10 @@ const useStyles = makeStyles((theme) => ({
 const CardCursos = (props) => {
     const classes = useStyles();
 
-    const filtro = (Arr, value) => {
-        if(value === ''){
-            return cursos
-        }else{
-        return Arr.filter(
-            function (list) 
-            {
-                return list.categoria === value
-            })
-        }
-    }
+    const [state, setState] = React.useState({
+        search: '',
+        cursosFiltrados: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i)
+    });
 
 
     const searchFilter = (event) => {
@@ -83,36 +76,13 @@ const CardCursos = (props) => {
         setState({
             ...state,
             search: event.target.value,
-            cursosFiltrados: filtro(cursos, state.categoria).filter(
+            cursosFiltrados: cursos.filter(
                 function (list) 
                 {
-                    return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
+                    return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
                 })
         });
-    
-        
     }
-
-    const [state, setState] = React.useState({
-        categoria: props.categoria,
-        search: '',
-        name: 'hai',
-        cursosFiltrados: filtro(cursos, props.categoria)
-    });
-
-
-    
-
-    const handleChange = (event) => {
-        const name = event.target.name;
-        setState({
-            ...state,
-            categoria: event.target.value,
-            search: '',
-            [name]: event.target.value,
-            cursosFiltrados: filtro(cursos, event.target.value)
-        });
-    };
 
     return (
         <div className="spacer team2">
@@ -121,28 +91,8 @@ const CardCursos = (props) => {
                     <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
                         <Toolbar className="toolbarPading">
                             <Typography className={classes.title} variant="h6" noWrap>
-                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
+                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Categorias
                             </Typography>
-
-                            <FormControl variant="outlined" className={classes.formControl}>
-                                <InputLabel className={classes.textColor} id="demo-simple-select-outlined-label">Categoria</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-outlined-label"
-                                    id="demo-simple-select-outlined"
-                                    value={state.categoria}
-                                    onChange={handleChange}
-                                    label="Categoria"
-                                    >
-                                    <MenuItem value="">
-                                        <em>Todos</em>
-                                    </MenuItem>
-                                    {
-                                        cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
-                                            <MenuItem key={i+'MenuItemdropdow'} value={categoria}>{categoria}</MenuItem>
-                                        ))
-                                    }
-                                </Select>
-                            </FormControl>
                             <div className={classes.search}>
                                 <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
                                     <OutlinedInput
@@ -173,13 +123,14 @@ const CardCursos = (props) => {
                 </div>
                 <Row className="m-t-30">
                     {
-                        state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect}, i) =>  (
+                        state.cursosFiltrados.map(({categoria, imgUrl}, i) =>  (
                             <Card
-                                key={i+'cards'}
-                                titulo={titulo}
-                                descripcion={descripcion}
+                                changeCategory={props.changeCategory}
+                                key={i+'cardsCategoria'}
+                                titulo={categoria}
                                 imgUrl={imgUrl} 
-                                UrlToRedirect={UrlToRedirect}
+                                UrlToRedirect={categoria}
+                                from= {true}
                             />
                         ))
                     }
