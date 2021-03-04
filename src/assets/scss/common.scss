@@ -2983,9 +2983,10 @@ Modal in center
 .rowSecondParrafoBold{
     font-weight: 900;
     color: black;
+    width: 16em;
 }
 .backImagenSeconCont{
-    margin-right: -35%!important;
+    margin-right: -36%!important;
     position: relative;
 }
 
@@ -3079,7 +3080,7 @@ Modal in center
 
 @media (max-width:1468px){
     .backImagenSeconCont{
-        margin-right: -16%!important;
+        margin-right: -11.1%!important;
        
     }
     .textoEspeEscritorio{
@@ -3108,3 +3109,19 @@ Modal in center
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

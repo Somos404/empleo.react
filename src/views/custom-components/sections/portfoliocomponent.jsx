@@ -362,7 +362,7 @@ const PortfolioComponent = (props) => {
 
                     <Row className="m-t-40 row-contenedora-incentivos">
                         <Col md="3" className="colIncentivos">
-                            <Card className="card-shadow card-incentivos">
+                            <Card className="card-shadow card-incentivos fade-in ">
                                 <CardBody className="hvr-float-shadow">
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Programa de</h5>
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Inserción Laboral (PIL) </h5>
@@ -371,7 +371,7 @@ const PortfolioComponent = (props) => {
                             </Card>
                         </Col>
                         <Col md="3" className="colIncentivos">
-                            <Card className="card-shadow card-incentivos">
+                            <Card className="card-shadow card-incentivos fade-in ">
                                 <CardBody className="hvr-float-shadow">
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Entrenamiento</h5>
                                     <h5 className="font-medium m-b-0 titulo-incentivo">para el Trabajo (EPT)</h5>
@@ -380,7 +380,7 @@ const PortfolioComponent = (props) => {
                             </Card>
                         </Col>
                         <Col md="3" className="colIncentivos">
-                            <Card className="card-shadow card-incentivos">
+                            <Card className="card-shadow card-incentivos fade-in ">
                                 <CardBody className="hvr-float-shadow">
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Otros Estímulos</h5>
                                     <h5 className="font-medium m-b-0 titulo-incentivo">al Empleo</h5>
@@ -389,7 +389,7 @@ const PortfolioComponent = (props) => {
                             </Card>
                         </Col>
                         <Col md="3" className="colIncentivos">
-                            <Card className="card-shadow card-incentivos">
+                            <Card className="card-shadow card-incentivos fade-in ">
                                 <CardBody className="hvr-float-shadow">
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Vinculación</h5>
                                     <h5 className="font-medium m-b-0 titulo-incentivo">Laboral</h5>

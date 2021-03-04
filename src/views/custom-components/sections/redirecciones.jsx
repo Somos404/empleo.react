@@ -19,7 +19,7 @@ const Redirecciones = () => {
                         <Col md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/capacitaciones">
                                 <Card
-                                    className="card-shadow card-req">
+                                    className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -35,7 +35,7 @@ const Redirecciones = () => {
                         </Col>
                         <Col md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/empleo">
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody
                                         className="card-body-req"
                                     >
@@ -53,7 +53,7 @@ const Redirecciones = () => {
                         </Col>
                         <Col md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/oficios">
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -69,7 +69,7 @@ const Redirecciones = () => {
                         </Col>
                         <Col md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/empresas">
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img4} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -86,7 +86,7 @@ const Redirecciones = () => {
                         </Col>
                         <Col md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/emprendimientos" >
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -111,7 +111,7 @@ const Redirecciones = () => {
                         <Row md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/capacitaciones">
                                 <Card
-                                    className="card-shadow card-req">
+                                    className="card-shadow card-req fade-in">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -127,7 +127,7 @@ const Redirecciones = () => {
                         </Row>
                         <Row md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/empleo">
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody
                                         className="card-body-req"
                                     >
@@ -145,7 +145,7 @@ const Redirecciones = () => {
                         </Row>
                         <Row md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/oficios">
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -161,7 +161,7 @@ const Redirecciones = () => {
                         </Row>
                         <Row md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/empresas" >
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img4} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>
@@ -178,7 +178,7 @@ const Redirecciones = () => {
                         </Row>
                         <Row md="3" className="colRequerimientos">
                             <Link className="linkRedirecciones" to="/emprendimientos" >
-                                <Card className="card-shadow card-req">
+                                <Card className="card-shadow card-req fade-in ">
                                     <CardBody className="card-body-req">
                                         <Row>
                                             <span className="img-ho cont-img"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></span>

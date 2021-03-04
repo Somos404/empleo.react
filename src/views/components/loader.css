@@ -65,3 +65,10 @@
   #placeholder .d-flex .text-normal{
     color: #FEBD2C;
   }
+
+  @media(max-width:768px){
+    .spinner-border {
+        margin-left: 50%!important;
+        margin-top: 50%!important;
+    }
+  }

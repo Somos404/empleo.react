@@ -18,7 +18,7 @@ const Footer = () => {
                     
                     <Col lg="3" md="6">
                     <Link to="/contact" className="link-icono-contacto">
-                        <div className="boton-contacto">
+                        <div className="boton-contacto fade-in">
                           
                         </div>
                         </Link>
@@ -27,8 +27,8 @@ const Footer = () => {
                <Row>
                <Col lg="6" md="6" className="contenedor-social-footer">
                         <div className="round-social light">
-                            <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right"  target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
-                            <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>        
+                            <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right fade-in "  target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
+                            <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>        
                         </div>
                     </Col>
                </Row>
