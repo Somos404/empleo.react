@@ -89,10 +89,8 @@ const Curso4 = (props) => {
 
     useEffect(() => {   
         if(props.location.state){
-            console.log('===================>', 'guardo los estados para reusarlos al recargar page');
             saveState(props.location.state)
         }else{
-            console.log('===================>', 'no tengo estados');
             setState(loadState())
         } 
     },[]);
