@@ -85,7 +85,17 @@ const Card = (props) => {
                                         </span>
                                         :
                                         <span>
-                                            <Link className="nav-link" to={props.UrlToRedirect}>Más info</Link>
+                                            <Link 
+                                                className="nav-link" 
+                                                to={{
+                                                    pathname: '/curso',
+                                                    /* search: "?sort=name",
+                                                    hash: "#the-hash", */
+                                                    state: 'hola que tal'
+                                                }}
+                                            >
+                                                Más info
+                                            </Link>
                                             <i className="ti-arrow-right"></i>
                                         </span>
                                     }

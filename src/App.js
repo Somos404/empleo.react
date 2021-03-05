@@ -64,6 +64,8 @@ import Cursos18 from "views/components/cursos/curso18";
 import Cursos19 from "views/components/cursos/curso19";
 import Cursos20 from "views/components/cursos/curso20";
 
+import CursoMesh from "views/components/cursos/CusoMesh";
+
 
 import CustomComponents from "./views/custom-components/custom-components.jsx";
 import FormCustomComponents from "./views/custom-components/form";
@@ -513,6 +515,14 @@ function App() {
                  {...props}
                  />
              )}
+             />
+             <Route 
+                 path="/curso" 
+                 render={props => (
+                    <CursoMesh
+                        {...props}
+                    />
+                )}
              />
             </Switch>
         </BrowserRouter>
