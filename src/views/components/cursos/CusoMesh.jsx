@@ -77,15 +77,56 @@ const Curso4 = (props) => {
     const classes = useStyles();
 
     const [state, setState] = useState({
-        nombre: props.location.state.nombre,
-        descripcionLarga: props.location.state.descripcionLarga,
-        requerimientos: props.location.state.requerimientos,
-        especificaciones: props.location.state.especificaciones,
-        contenido: props.location.state.contenido,
-        UrlToRedirect: props.location.state.UrlToRedirect,
-        horasSemanales: props.location.state.horasSemanales,
-        semanas: props.location.state.contenido.length,
+        nombre: '',
+        descripcionLarga: '',
+        requerimientos: [],
+        especificaciones: [],
+        contenido: [],
+        UrlToRedirect: '',
+        horasSemanales: '',
+        semanas: '',
     });
+
+    useEffect(() => {   
+        if(props.location.state){
+            console.log('===================>', 'guardo los estados para reusarlos al recargar page');
+            saveState(props.location.state)
+        }else{
+            console.log('===================>', 'no tengo estados');
+            setState(loadState())
+        } 
+    },[]);
+
+    const loadState = () => {
+        try {
+          const serializedState = localStorage.getItem('state');
+          if(serializedState === null) {
+            return undefined;
+          }
+          return JSON.parse(serializedState);
+        } catch (e) {
+          return undefined;
+        }
+      };
+      
+      const saveState = (state) => {
+        try {
+            setState({
+                nombre: props.location.state.nombre,
+                descripcionLarga: props.location.state.descripcionLarga,
+                requerimientos: props.location.state.requerimientos,
+                especificaciones: props.location.state.especificaciones,
+                contenido: props.location.state.contenido,
+                UrlToRedirect: props.location.state.UrlToRedirect,
+                horasSemanales: props.location.state.horasSemanales,
+                semanas: props.location.state.contenido.length,
+            })
+            const serializedState = JSON.stringify(state);
+            localStorage.setItem('state', serializedState);
+        } catch (e) {
+          // Ignore write errors;
+        }
+      };
 
     return (
         <div className="page-wrapper page-wrapperCursos">
