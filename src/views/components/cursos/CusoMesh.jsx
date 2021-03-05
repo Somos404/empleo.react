@@ -76,8 +76,6 @@ const Curso4 = (props) => {
     const toggle2 = () => setIsOpen2(!isOpen2);
     const classes = useStyles();
 
-    console.log('====>',props.location.state);
-
     return (
         <div className="page-wrapper page-wrapperCursos">
             <Header />
