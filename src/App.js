@@ -26,7 +26,7 @@ import Contacto from "./views/components/contacto.jsx";
 import ContactoEmpresas from "./views/components/contactoEmpresas.jsx";
 import Buscar from "./views/components/buscar.jsx";
 
-import MuniMesh from "./views/components/municipios/muni1.jsx";
+import MuniMesh from "./views/components/municipios/municipioMesh";
 
 import CursoMesh from "views/components/cursos/CusoMesh";
 
