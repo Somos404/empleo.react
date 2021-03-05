@@ -1,10 +1,6 @@
 import React from 'react';
 import {Col} from 'reactstrap';
-import {
-    FacebookIcon,
-    TwitterIcon,
-  } from "react-share";
-
+import { SocialIcon } from 'react-social-icons';
 import {
     FacebookShareButton,
     TwitterShareButton,
@@ -30,9 +26,11 @@ const Card = (props) => {
                                         quote={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
-                                        <FacebookIcon 
-                                            size={32}
-                                            borderRadius={45}
+                                        <SocialIcon 
+                                            style={{ height: 35, width: 35 }}
+                                            network="facebook"
+                                            bgColor="#01B7E8"
+                                            fgColor="white"
                                         />
                                     </FacebookShareButton>
                                 </a>
@@ -44,9 +42,11 @@ const Card = (props) => {
                                         title={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
-                                        <TwitterIcon 
-                                            size={32}
-                                            borderRadius={45}
+                                        <SocialIcon 
+                                            style={{ height: 35, width: 35 }}
+                                            network="twitter"
+                                            bgColor="#01B7E8"
+                                            fgColor="white"
                                         />
                                     </TwitterShareButton>
                                 </a>
@@ -58,9 +58,11 @@ const Card = (props) => {
                                         title='test'
                                         className="Demo__some-network__share-button"
                                     >
-                                        <TwitterIcon 
-                                            size={32}
-                                            borderRadius={45}
+                                        <SocialIcon 
+                                            style={{ height: 35, width: 35 }}
+                                            network="instagram"
+                                            bgColor="#01B7E8"
+                                            fgColor="white"
                                         />
                                     </TwitterShareButton>
                                 </a>
