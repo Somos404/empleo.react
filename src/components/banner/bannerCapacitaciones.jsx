@@ -10,7 +10,7 @@ const HeaderBannerCapacitaciones = () => {
             <Container>
                 <Row className="justify-content-center row-banner">
                     <Col lg="8" className="align-self-center text-center p-b-30">
-                        <Breadcrumbs maxItems={2} aria-label="breadcrumb">
+                        {/* <Breadcrumbs maxItems={2} aria-label="breadcrumb">
                             <Link color="inherit" href="#">
                                 Home
                             </Link>
@@ -24,7 +24,7 @@ const HeaderBannerCapacitaciones = () => {
                                 New Collection
                             </Link>
                             <Typography color="textPrimary">Belts</Typography>
-                        </Breadcrumbs>
+                        </Breadcrumbs> */}
                         {/* <h1 className="title-1">Capacitaciones</h1> */}
                         {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
                         {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}

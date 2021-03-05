@@ -91,7 +91,7 @@ const Card = (props) => {
                                                     pathname: '/curso',
                                                     /* search: "?sort=name",
                                                     hash: "#the-hash", */
-                                                    state: 'hola que tal'
+                                                    state: props.infoCursos
                                                 }}
                                             >
                                                 Más info

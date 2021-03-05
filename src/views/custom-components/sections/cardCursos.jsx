@@ -172,13 +172,14 @@ const CardCursos = (props) => {
                 </div>
                 <Row className="m-t-30">
                     {
-                        state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect}, i) =>  (
+                        state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect, infoCursos}, i) =>  (
                             <Card
                                 key={i+'cards'}
                                 titulo={titulo}
                                 descripcion={descripcion}
                                 imgUrl={imgUrl} 
                                 UrlToRedirect={UrlToRedirect}
+                                infoCursos = {infoCursos}
                             />
                         ))
                     }
