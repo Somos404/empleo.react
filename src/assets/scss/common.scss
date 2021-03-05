@@ -3114,7 +3114,7 @@ Modal in center
 
 .itemBtn{
     width: 66%;
-    margin-top: 2%;
+    margin-top: -4%;
 }
 
 .heightWidthCard{
@@ -3122,10 +3122,13 @@ Modal in center
 }
 .tituloCardWeight{
     font-weight: 600!important;
-    font-size: .9rem!important;
+    font-size: 1.1rem!important;
 }
 .DescripcionCardWeight{
-    font-size: .8rem!important;
+    font-size: .9rem!important;
+}
+.btonCategoriaMargin{
+    margin-top: .5em!important;
 }
 
 @media (max-width:1468px){
