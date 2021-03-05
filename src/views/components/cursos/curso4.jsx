@@ -249,7 +249,7 @@ const Curso4 = (props) => {
                             </div>
                         </div>
                             <div className="ContenedorResponsiveCursosHidden">
-                                <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosSecos">                     
+                                <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosHeightlargo09">                     
                                     <Col>
                                         <Row className="justify-content-center">
                                             <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>

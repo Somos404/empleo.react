@@ -5,7 +5,10 @@ export const cursos = [
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio: Etapa 2',
         imgUrl: 'pro-pic t1',
-        UrlToRedirect: 'curso1'
+        UrlToRedirect: 'curso1',
+        // infoCursos:{
+        //     nombre
+        // }
     },
     {
         titulo: 'Programación web',
@@ -27,7 +30,28 @@ export const cursos = [
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic t4',
-        UrlToRedirect: 'curso4'
+        UrlToRedirect: 'curso4',
+        infoCursos:{
+            nombre: 'Gestión de redes sociales',
+            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+            requerimientos: 
+                ['1.Computadora o celular con acceso a redes sociales.',
+                 '2. Cuenta de Facebook e Instagram (requerido).',
+                    '3. Cuenta de Youtube y Linkedin (opcional).'
+                ],
+            especificaciones: 
+                ['4 SEMANAS DE DURACIÓN',
+                 '3 HORAS SEMANALES',
+                  'GRATUITO', 'CERTIFICADO'
+                ],
+            contenido: 
+                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
+                ],
+            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3'
+        },
     },
     {
         titulo: 'Formalización de emprendimientos',
