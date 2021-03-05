@@ -15,7 +15,7 @@ const Card = (props) => {
     const classes = useStyles();
     return (
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
-            <Col md="12" className={`col-md-12 ${props.imgUrl}`}>
+            <Col md="12" className={`col-md-12 heightWidthCard ${props.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
                     <div className="card-img-overlay"  >
                         <ul className="list-inline list-inlineRedes">
@@ -69,8 +69,8 @@ const Card = (props) => {
                             </li>
                         </ul>
                         <ul className="list-inline list-inlineinfo">
-                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium">{props.titulo}</h5></a></li>
-                            <li className="list-inline-item"><a href="#"><p>{props.descripcion}</p></a></li>
+                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight">{props.titulo}</h5></a></li>
+                            <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.descripcion}</p></a></li>
                             <li className="list-inline-item itemBtn">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn">
                                     {

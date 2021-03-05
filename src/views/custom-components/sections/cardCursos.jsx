@@ -170,7 +170,7 @@ const CardCursos = (props) => {
                         </Toolbar>
                     </AppBar>
                 </div>
-                <Row className="m-t-30">
+                <Row className="m-t-30 ">
                     {
                         state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect, infoCursos}, i) =>  (
                             <Card

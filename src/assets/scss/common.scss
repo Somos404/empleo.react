@@ -3114,9 +3114,19 @@ Modal in center
 
 .itemBtn{
     width: 66%;
-    margin-top: 13%;
+    margin-top: 2%;
 }
 
+.heightWidthCard{
+    min-height: 235px!important;
+}
+.tituloCardWeight{
+    font-weight: 600!important;
+    font-size: .9rem!important;
+}
+.DescripcionCardWeight{
+    font-size: .8rem!important;
+}
 
 @media (max-width:1468px){
     .backImagenSeconCont{

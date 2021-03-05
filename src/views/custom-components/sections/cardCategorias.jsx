@@ -130,7 +130,7 @@ const CardCursos = (props) => {
                         </Toolbar>
                     </AppBar>
                 </div>
-                <Row className="m-t-30">
+                <Row className="m-t-30 justify-content-around">
                     {
                         state.categoriasFiltradas.map(({categoria, imgUrl}, i) =>  (
                             <Card
@@ -141,7 +141,9 @@ const CardCursos = (props) => {
                                 UrlToRedirect={categoria}
                                 from= {true}
                             />
+                            
                         ))
+                        
                     }
                 </Row>
             </Container>
