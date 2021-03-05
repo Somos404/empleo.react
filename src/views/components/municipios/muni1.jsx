@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
@@ -11,21 +11,25 @@ import Footer2 from "../../../components/footer/footer2.jsx";
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody
-  } from 'reactstrap';
+} from 'reactstrap';
 
-  import img1 from '../../../assets/images/capacitaciones/icon1Red.svg';
-  import img2 from '../../../assets/images/capacitaciones/icon3Red.svg';
-  import img3 from '../../../assets/images/capacitaciones/img2Red.svg';
-  import img4 from '../../../assets/images/capacitaciones/img4Red.svg';
+import img1 from '../../../assets/images/capacitaciones/icon1Red.svg';
+import img2 from '../../../assets/images/capacitaciones/icon3Red.svg';
+import img3 from '../../../assets/images/capacitaciones/img2Red.svg';
+import img4 from '../../../assets/images/capacitaciones/img4Red.svg';
 
-  import img5 from '../../../assets/images/oficios/flechaDer.svg';
-  import img6 from '../../../assets/images/oficios/flachaIzq.svg';
-  import img7 from '../../../assets/images/capacitaciones/castelli.svg';
-  import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
+import img5 from '../../../assets/images/oficios/flechaDer.svg';
+import img6 from '../../../assets/images/oficios/flachaIzq.svg';
+import img7 from '../../../assets/images/capacitaciones/castelli.svg';
+import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
 
+import {municipios} from './municipios';
+import { stat } from "fs";
 
-  
 const Muni1 = (props) => {
+
+    let muni = municipios.find(element => element.nombre == props.muni)
+    const [state, setState] = useState(muni); 
     return (
         <div>
             <Header />
@@ -40,7 +44,7 @@ const Muni1 = (props) => {
                                 <section className="text-gray-600 body-font">
                                     <div className="container px-5 py-24 mx-auto cont1Izq contIzMun contIzMunMargin">
                                         <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft">
-                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/> laboral y emprendedora
+                                            <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">Te brindamos cursos para tu formación <br/> laboral y emprendedoras
                                             </h1>
                                             <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContResponsive">Te brindamos cursos para tu formación <br/>                    laboral y emprendedora 
                                             </h1>

@@ -11,9 +11,13 @@ import CardCategorias from "../custom-components/sections/cardCategorias";
 import CardCursos from "../custom-components/sections/cardCursos";
 
 import {
-    Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody
-} from 'reactstrap';
+    Card,
+    CardImg, 
+    CardTitle, 
+    CardText, 
+    CardGroup, 
+    CardBody
+} from 'reactstrap'
 
 import img1 from '../../assets/images/capacitaciones/icon1Red.svg';
 import img2 from '../../assets/images/capacitaciones/icon3Red.svg';

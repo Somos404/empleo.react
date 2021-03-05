@@ -1,6 +1,6 @@
 export const cursos = [
     /** -----------INFORMATORIO: ETAPA2------------ */
-    {
+   /*  {
         titulo: 'Base de datos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Informatorio: Etapa 2',
@@ -23,7 +23,7 @@ export const cursos = [
         categoria: 'Informatorio: Etapa 2',
         imgUrl: 'pro-pic t3',
         UrlToRedirect: 'curso3'
-    },
+    }, */
     /** -----------EMPLEO Y EMPRENDIMIENTOS------------ */
     {
         titulo: 'Gestión de redes sociales',

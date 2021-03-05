@@ -26,43 +26,7 @@ import Contacto from "./views/components/contacto.jsx";
 import ContactoEmpresas from "./views/components/contactoEmpresas.jsx";
 import Buscar from "./views/components/buscar.jsx";
 
-import Contacto1 from "./views/components/contactForm.js";
-
-import Muni1 from "./views/components/municipios/muni1.jsx";
-import Muni2 from "./views/components/municipios/muni2.jsx";
-import Muni3 from "./views/components/municipios/muni3.jsx";
-import Muni4 from "./views/components/municipios/muni4.jsx";
-import Muni5 from "./views/components/municipios/muni5.jsx";
-import Muni6 from "./views/components/municipios/muni6.jsx";
-import Muni7 from "./views/components/municipios/muni7.jsx";
-import Muni8 from "./views/components/municipios/muni8.jsx";
-import Muni9 from "./views/components/municipios/muni9.jsx";
-import Muni10 from "./views/components/municipios/muni10.jsx";
-import Muni11 from "./views/components/municipios/muni11.jsx";
-import Muni12 from "./views/components/municipios/muni12.jsx";
-import Muni13 from "./views/components/municipios/muni13.jsx";
-
-
-import Cursos1 from "views/components/cursos/curso1";
-import Cursos2 from "views/components/cursos/curso2";
-import Cursos3 from "views/components/cursos/curso3";
-import Cursos4 from "views/components/cursos/curso4";
-import Cursos5 from "views/components/cursos/curso5";
-import Cursos6 from "views/components/cursos/curso6";
-import Cursos7 from "views/components/cursos/curso7";
-import Cursos8 from "views/components/cursos/curso8";
-import Cursos9 from "views/components/cursos/curso9";
-import Cursos10 from "views/components/cursos/curso10";
-import Cursos11 from "views/components/cursos/curso11";
-import Cursos12 from "views/components/cursos/curso12";
-import Cursos13 from "views/components/cursos/curso13";
-import Cursos14 from "views/components/cursos/curso14";
-import Cursos15 from "views/components/cursos/curso15";
-import Cursos16 from "views/components/cursos/curso16";
-import Cursos17 from "views/components/cursos/curso17";
-import Cursos18 from "views/components/cursos/curso18";
-import Cursos19 from "views/components/cursos/curso19";
-import Cursos20 from "views/components/cursos/curso20";
+import MuniMesh from "./views/components/municipios/muni1.jsx";
 
 import CursoMesh from "views/components/cursos/CusoMesh";
 
@@ -72,6 +36,7 @@ import FormCustomComponents from "./views/custom-components/form";
 
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
+import {municipios} from './views/components/municipios/municipios';
 
 
 var hist = createBrowserHistory();
@@ -216,312 +181,27 @@ function App() {
              />
             {/* ---------------SUB PÁGINAS DE MUNICIPIOS */}
 
-            <Route 
-                 
-                 path="/castelli" 
-                 render={props => (
-                 <Muni1
-                 {...props}
-                 />
-             )}
-             />
-             <Route 
-                 
-                 path="/san-martin" 
-                 render={props => (
-                 <Muni2
-                 {...props}
-                 />
-             )}
-             />
-             <Route 
-                 
-                 path="/villa-angela" 
-                 render={props => (
-                 <Muni3
-                 {...props}
-                 />
-             )}
-             />
-             <Route 
-                 
-                 path="/charata" 
-                 render={props => (
-                 <Muni4
-                 {...props}
-                 />
-             )}
-             />
-             <Route 
-                 
-                 path="/margarita" 
-                 render={props => (
-                 <Muni5
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/machagai" 
-                 render={props => (
-                 <Muni6
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/plaza" 
-                 render={props => (
-                 <Muni7
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/fontana" 
-                 render={props => (
-                 <Muni8
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/barranqueras" 
-                 render={props => (
-                 <Muni9
-                 {...props}
-                 />
-             )}
-             />
-               <Route 
-                 
-                 path="/pinedo" 
-                 render={props => (
-                 <Muni10
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/vilelas" 
-                 render={props => (
-                 <Muni11
-                 {...props}
-                 />
-             )}
-             />
-               <Route 
-                 
-                 path="/elisa" 
-                 render={props => (
-                 <Muni12
-                 {...props}
-                 />
-             )}
-             />
-                 <Route 
-                 
-                 path="/corzuela" 
-                 render={props => (
-                 <Muni13
-                 {...props}
-                 />
-             )}
-             />
-
-             {/* ---------------SUB PÁGINAS DE CURSOS */}
-             <Route 
-                 
-                 path="/curso1" 
-                 render={props => (
-                 <Cursos1
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso2" 
-                 render={props => (
-                 <Cursos2
-                 {...props}
-                 />
-                 
-             )}
-             />
-                <Route 
-                 
-                 path="/curso3" 
-                 render={props => (
-                 <Cursos3
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso4" 
-                 render={props => (
-                 <Cursos4
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso5" 
-                 render={props => (
-                 <Cursos5
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso6" 
-                 render={props => (
-                 <Cursos6
-                 {...props}
-                 />
-             )}
-             />
-              <Route 
-                 
-                 path="/curso7"
-                 render={props => (
-                 <Cursos7
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso8" 
-                 render={props => (
-                 <Cursos8
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso9" 
-                 render={props => (
-                 <Cursos9
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso10" 
-                 render={props => (
-                 <Cursos10
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso11" 
-                 render={props => (
-                 <Cursos11
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso12" 
-                 render={props => (
-                 <Cursos12
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso13" 
-                 render={props => (
-                 <Cursos13
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso14" 
-                 render={props => (
-                 <Cursos14
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso15" 
-                 render={props => (
-                 <Cursos15
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso16" 
-                 render={props => (
-                 <Cursos16
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso17" 
-                 render={props => (
-                 <Cursos17
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso18" 
-                 render={props => (
-                 <Cursos18
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso19" 
-                 render={props => (
-                 <Cursos19
-                 {...props}
-                 />
-             )}
-             />
-                <Route 
-                 
-                 path="/curso20" 
-                 render={props => (
-                 <Cursos20
-                 {...props}
-                 />
-             )}
-             />
-             <Route 
-                 path="/curso" 
-                 render={props => (
-                    <CursoMesh
-                        {...props}
+            {
+                municipios.map(muni =>  (
+                    <Route
+                        path={`/${muni.nombre}`}
+                        render={props => (
+                            <MuniMesh
+                                muni={muni.nombre}
+                                {...props}
+                            />
+                        )}
                     />
+                ))
+            }
+
+            {/* ---------------SUB PÁGINAS DE CURSOS */}
+            <Route 
+                path="/curso" 
+                render={props => (
+                <CursoMesh
+                    {...props}
+                />
                 )}
              />
             </Switch>
