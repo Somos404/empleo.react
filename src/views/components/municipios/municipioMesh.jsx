@@ -67,7 +67,7 @@ const MunicipioMesh = (props) => {
                                 </Col>
                                 <Row md="8" lg="12" className="colRequerimientosCap">
                                     <Row className="imagenInfo">
-                                    <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
+                                    <img src={state.img} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
                                     </Row>
                                     <Row className="textoInfo textoInfoTop">
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
