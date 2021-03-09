@@ -60,7 +60,7 @@ const Card = (props) => {
                                     >
                                         <SocialIcon 
                                             style={{ height: 35, width: 35 }}
-                                            network="instagram"
+                                            url="https://www.instagram.com/?hl=es-la"
                                             bgColor="#01B7E8"
                                             fgColor="white"
                                         />

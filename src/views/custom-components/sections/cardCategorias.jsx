@@ -24,17 +24,36 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: '0px !Important',
       paddingRight: '0px !Important',
     },
+    appbar: {
+        background: 'rgba(204, 204, 204, 0.05)', 
+        paddingTop: '1vh',
+        paddingBottom: '1vh',
+    },
     title: {
-      flexGrow: 1,
-      display: 'none',
-      color: '#6f7074',
-      [theme.breakpoints.up('sm')]: {
-        display: 'block',
-      },
+        flexGrow: 1,
+        display: 'none',
+        alignItems: 'left',
+        justifyContent: 'left',
+        color: '#6f7074',
+        [theme.breakpoints.up('sm')]: {
+            display: 'block',
+        },
     },
 
     textColor: {
         color: '#6f7074',
+    },
+    search: {
+        flexGrow: 1,
+        align: "center",
+        position: 'relative',
+        borderRadius: theme.shape.borderRadius,
+        marginLeft: 0,
+        width: '100%',
+        [theme.breakpoints.up('sm')]: {
+          marginLeft: theme.spacing(1),
+          width: 'auto',
+        },
     },
     searchIcon: {
       padding: theme.spacing(0, 2),
@@ -91,11 +110,11 @@ const CardCursos = (props) => {
     }
 
     return (
-        <div className="spacer team2">
+        <div className="team2 m-t-10">
             <Container>
                 <div className={classes.root}>
-                    <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
-                        <Toolbar className="toolbarPading">
+                    <AppBar position="static" className={classes.appbar}>
+                        <Toolbar >
                             <Typography className={classes.title} variant="h6" noWrap>
                                 {state.categoriasFiltradas.length?state.categoriasFiltradas.length:'0'} Categorias
                             </Typography>
@@ -104,13 +123,14 @@ const CardCursos = (props) => {
                                     <OutlinedInput
                                         className={classes.textColor}
                                         id="outlined-adornment-weight"
+                                        placeholder='Buscar...'
                                         onChange={searchFilter}
                                         value={state.search}
                                         endAdornment={
                                             <InputAdornment position="end">
                                                 <IconButton
-                                                aria-label="toggle password visibility"
-                                                edge="end"
+                                                    aria-label="toggle password visibility"
+                                                    edge="end"
                                                 >
                                                 <SearchIcon />
                                                 </IconButton>

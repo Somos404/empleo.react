@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: '0px !Important',
       paddingRight: '0px !Important',
     },
+    appbar: {
+        background: 'rgba(204, 204, 204, 0.05)', 
+        paddingTop: '1vh',
+        paddingBottom: '1vh',
+    },
     title: {
       flexGrow: 1,
       display: 'none',
@@ -38,6 +43,18 @@ const useStyles = makeStyles((theme) => ({
 
     textColor: {
         color: '#6f7074',
+    },
+    search: {
+        flexGrow: 1,
+        align: "center",
+        position: 'relative',
+        borderRadius: theme.shape.borderRadius,
+        marginLeft: 0,
+        width: '100%',
+        [theme.breakpoints.up('sm')]: {
+          marginLeft: theme.spacing(1),
+          width: 'auto',
+        },
     },
     searchIcon: {
       padding: theme.spacing(0, 2),
@@ -117,8 +134,8 @@ const CardCursos = (props) => {
         <div className="spacer team2">
             <Container>
                 <div className={classes.root}>
-                    <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
-                        <Toolbar className="toolbarPading">
+                    <AppBar position="static" className={classes.appbar}>
+                        <Toolbar /* className="toolbarPading" */>
                             <Typography className={classes.title} variant="h6" noWrap>
                                 {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
                             </Typography>
@@ -131,15 +148,15 @@ const CardCursos = (props) => {
                                     value={state.categoria}
                                     onChange={handleChange}
                                     label="Categoria"
-                                    >
-                                    <MenuItem value="">
-                                        <em>Todos</em>
-                                    </MenuItem>
-                                    {
-                                        cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
-                                            <MenuItem key={i+'MenuItemdropdow'} value={categoria}>{categoria}</MenuItem>
-                                        ))
-                                    }
+                                >
+                                <MenuItem value="">
+                                    <em>Todos</em>
+                                </MenuItem>
+                                {
+                                    cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
+                                        <MenuItem key={i+'MenuItemdropdow'} value={categoria}>{categoria}</MenuItem>
+                                    ))
+                                }
                                 </Select>
                             </FormControl>
                             <div className={classes.search}>
@@ -147,13 +164,14 @@ const CardCursos = (props) => {
                                     <OutlinedInput
                                         className={classes.textColor}
                                         id="outlined-adornment-weight"
+                                        placeholder='Buscar...'
                                         onChange={searchFilter}
                                         value={state.search}
                                         endAdornment={
                                             <InputAdornment position="end">
                                                 <IconButton
-                                                aria-label="toggle password visibility"
-                                                edge="end"
+                                                    aria-label="toggle password visibility"
+                                                    edge="end"
                                                 >
                                                 <SearchIcon />
                                                 </IconButton>
