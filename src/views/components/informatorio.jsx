@@ -120,13 +120,13 @@ const Informatorio = (props) => {
                                     </div>
                                     <div className="col-md-4 bg-primary">
                                         <div className="ico"><img src={img4} alt="" /></div>
-                                        <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                                        <a className="linkRedirecciones" href="https://mumuki.io/informatorio" target="_blank" rel="noopener noreferrer">
                                             <Card className="card-reqBoton card-reqBotonInform">
                                                 <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
                                                     <Col>
                                                         <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform" width="200" /></span>
                                                         <Col className="colbtnBtnEmpleo">
-                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Quiero inscribirme</h5>
+                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Ingresar</h5>
                                                         </Col>
                                                         <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2" width="200" /></span>
                                                     </Col>
@@ -219,8 +219,19 @@ const Informatorio = (props) => {
                                                         - Residir en Chaco.
                                                     </li>
                                             </ul>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4qLbW1cZPB3ybxwk1StVTYzPtsr5NKfge4u7CeiU1Wbxfkg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className="btn btn-warning btn-inscripcion"><img className="img-fluid" src={img10} alt="" /></a>
-                                        </div>
+                                            <a className="linkRedirecciones" href="https://mumuki.io/informatorio" target="_blank" rel="noopener noreferrer">
+                                            <Card className="card-reqBoton card-reqBotonInform card-reqBotonInformResponsive">
+                                                <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
+                                                    <Col>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform img-redireccionesBtnInscribirme" width="200" /></span>
+                                                        <Col className="colbtnBtnEmpleo colbtnBtnInscribirm">
+                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Ingresar</h5>
+                                                        </Col>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2 img-redireccionesBtnInform2Responsive" width="200" /></span>
+                                                    </Col>
+                                                </CardBody>
+                                            </Card>
+                                        </a>                                        </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="paso-2">
