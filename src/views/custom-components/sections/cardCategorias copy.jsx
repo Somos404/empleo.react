@@ -7,12 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 
-import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 /**Cursos */
-import {cursosAndCategias} from '../../components/cursos/cursosAndCategias';
+import {cursos} from '../../components/cursos/cursos';
 import 'animate.css/animate.min.css'
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -33,12 +30,14 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: '1vh',
     },
     title: {
-      flexGrow: 1,
-      display: 'none',
-      color: '#6f7074',
-      [theme.breakpoints.up('sm')]: {
-        display: 'block',
-      },
+        flexGrow: 1,
+        display: 'none',
+        alignItems: 'left',
+        justifyContent: 'left',
+        color: '#6f7074',
+        [theme.breakpoints.up('sm')]: {
+            display: 'block',
+        },
     },
 
     textColor: {
@@ -80,89 +79,45 @@ const useStyles = makeStyles((theme) => ({
 
 
 const CardCursos = (props) => {
-
     const classes = useStyles();
 
-    const filtro = (Arr, value) => {
-        console.log('===========', value);
-        if(value === ''){
-            console.log('=========== malo');
-            return cursos
-        }else{
-            Arr.forEach( e => {
-                if(e.categoria === value){
-                    console.log('array =====',e.cursos);
-                    return e.cursos
-                }
-            });
-        }
-    }
-
-
-    const searchFilter = (event) => {
-        
-      /*   setState({
-            ...state,
-            search: event.target.value,
-            cursosFiltrados: filtro(cursos, state.categoria).filter(
-                function (list) 
-                {
-                    return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
-                })
-        }); */
-        
-    }
-
     const [state, setState] = React.useState({
-        categoria: props.categoria,
         search: '',
-        name: 'hai',
-        cursosFiltrados: filtro(cursosAndCategias, props.categoria)
+        categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+        filtroCategoria: []
     });
 
 
-    
-
-    const handleChange = (event) => {
-        const name = event.target.name;
-        setState({
-            ...state,
-            categoria: event.target.value,
-            search: '',
-            [name]: event.target.value,
-            cursosFiltrados: filtro(cursos, event.target.value)
-        });
-    };
+    const searchFilter = (event) => {
+        if (event.target.value === '') {
+            setState({
+                ...state,
+                search: event.target.value,
+                categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+            });
+        }else{
+            setState({
+                ...state,
+                search: event.target.value,
+                categoriasFiltradas: state.categoriasFiltradas.filter(
+                    function (list) 
+                    {
+                        return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
+                    })
+            });
+        }
+        
+    }
 
     return (
-        <div className="spacer team2">
+        <div className="team2 m-t-10">
             <Container>
                 <div className={classes.root}>
                     <AppBar position="static" className={classes.appbar}>
-                        <Toolbar /* className="toolbarPading" */>
+                        <Toolbar >
                             <Typography className={classes.title} variant="h6" noWrap>
-                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
+                                {state.categoriasFiltradas.length?state.categoriasFiltradas.length:'0'} Categorias
                             </Typography>
-
-                            <FormControl variant="outlined" className={classes.formControl}>
-                                <InputLabel className={classes.textColor} id="demo-simple-select-outlined-label">Categoria</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-outlined-label"
-                                    id="demo-simple-select-outlined"
-                                    value={state.categoria}
-                                    onChange={handleChange}
-                                    label="Categoria"
-                                >
-                                <MenuItem value="">
-                                    <em>Todos</em>
-                                </MenuItem>
-                                {
-                                    cursosAndCategias.cursosFiltrados.map((e) =>  (
-                                        <MenuItem key={i+'MenuItemdropdow'} value={e.categoria}>{e.categoria}</MenuItem>
-                                    ))
-                                }
-                                </Select>
-                            </FormControl>
                             <div className={classes.search}>
                                 <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
                                     <OutlinedInput
@@ -192,18 +147,20 @@ const CardCursos = (props) => {
                         </Toolbar>
                     </AppBar>
                 </div>
-                <Row className="m-t-30 ">
+                <Row className="m-t-30 justify-content-around">
                     {
-                        state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect, infoCursos}, i) =>  (
+                        state.categoriasFiltradas.map(({categoria, imgUrl}, i) =>  (
                             <Card
-                                key={i+'cards'}
-                                titulo={titulo}
-                                descripcion={descripcion}
+                                changeCategory={props.changeCategory}
+                                key={i+'cardsCategoria'}
+                                titulo={categoria}
                                 imgUrl={imgUrl} 
-                                UrlToRedirect={UrlToRedirect}
-                                infoCursos = {infoCursos}
+                                UrlToRedirect={categoria}
+                                from= {true}
                             />
+                            
                         ))
+                        
                     }
                 </Row>
             </Container>

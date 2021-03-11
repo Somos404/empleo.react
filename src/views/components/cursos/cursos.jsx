@@ -29,7 +29,7 @@ export const cursos = [
         titulo: 'Gestión de redes sociales',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
-        imgUrl: 'pro-pic t4',
+        imgUrl: 'pro-pic GestiónDeRedesSociales',
         infoCursos:{
             nombre: 'Gestión de redes sociales',
             descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
@@ -57,7 +57,7 @@ export const cursos = [
         titulo: 'Formalización de emprendimientos',
         descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
-        imgUrl: 'pro-pic t5',
+        imgUrl: 'pro-pic FormalizaciónDeEmprendimientos',
         UrlToRedirect: 'curso5',
         infoCursos:{
             nombre: 'Formalización de emprendimientos',

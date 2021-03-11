@@ -9,7 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import FormControl from '@material-ui/core/FormControl';
 /**Cursos */
-import {cursos} from '../../components/cursos/cursos';
+import {cursosAndCategias} from '../../components/cursos/cursosAndCategias';
 import 'animate.css/animate.min.css'
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -83,7 +83,7 @@ const CardCursos = (props) => {
 
     const [state, setState] = React.useState({
         search: '',
-        categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+        categoriasFiltradas: cursosAndCategias,
         filtroCategoria: []
     });
 
@@ -93,7 +93,7 @@ const CardCursos = (props) => {
             setState({
                 ...state,
                 search: event.target.value,
-                categoriasFiltradas: cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i),
+                categoriasFiltradas: cursosAndCategias,
             });
         }else{
             setState({

@@ -12,7 +12,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 /**Cursos */
-import {cursosAndCategias} from '../../components/cursos/cursosAndCategias';
+import {cursos} from '../../components/cursos/cursos';
 import 'animate.css/animate.min.css'
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -80,28 +80,24 @@ const useStyles = makeStyles((theme) => ({
 
 
 const CardCursos = (props) => {
-
     const classes = useStyles();
 
     const filtro = (Arr, value) => {
-        console.log('===========', value);
         if(value === ''){
-            console.log('=========== malo');
             return cursos
         }else{
-            Arr.forEach( e => {
-                if(e.categoria === value){
-                    console.log('array =====',e.cursos);
-                    return e.cursos
-                }
-            });
+        return Arr.filter(
+            function (list) 
+            {
+                return list.categoria === value
+            })
         }
     }
 
 
     const searchFilter = (event) => {
         
-      /*   setState({
+        setState({
             ...state,
             search: event.target.value,
             cursosFiltrados: filtro(cursos, state.categoria).filter(
@@ -109,7 +105,7 @@ const CardCursos = (props) => {
                 {
                     return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
                 })
-        }); */
+        });
         
     }
 
@@ -117,7 +113,7 @@ const CardCursos = (props) => {
         categoria: props.categoria,
         search: '',
         name: 'hai',
-        cursosFiltrados: filtro(cursosAndCategias, props.categoria)
+        cursosFiltrados: filtro(cursos, props.categoria)
     });
 
 
@@ -157,8 +153,8 @@ const CardCursos = (props) => {
                                     <em>Todos</em>
                                 </MenuItem>
                                 {
-                                    cursosAndCategias.cursosFiltrados.map((e) =>  (
-                                        <MenuItem key={i+'MenuItemdropdow'} value={e.categoria}>{e.categoria}</MenuItem>
+                                    cursos.filter((v,i,a)=>a.findIndex(t=>(t.categoria === v.categoria))===i).map(({categoria}, i) => (
+                                        <MenuItem key={i+'MenuItemdropdow'} value={categoria}>{categoria}</MenuItem>
                                     ))
                                 }
                                 </Select>
