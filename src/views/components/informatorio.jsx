@@ -116,7 +116,7 @@ const Informatorio = (props) => {
                                 <div className="row">
                                     <div className="col-md-4">
                                         <div className="ico"><img src={img3} alt="" /></div>
-                                        <h4>INSCRIPCIONES ABIERTAS<br />lntroducción a la Programación</h4>
+                                        <h4 className="tituloInfoIngresar">INSCRIPCIONES CERRADAS<br />lntroducción a la Programación</h4>
                                     </div>
                                     <div className="col-md-4 bg-primary">
                                         <div className="ico"><img src={img4} alt="" /></div>
@@ -136,7 +136,7 @@ const Informatorio = (props) => {
                                     </div>
                                     <div className="col-md-4">
                                         <div className="ico"><img src={img6} alt="" /></div>
-                                        <h4>Tenés tiempo hasta el<br />05/03 inclusive</h4>
+                                        <h4 className="tituloInfoIngresar">Tenés tiempo para completar hasta el<br />10/04 inclusive</h4>
                                     </div>
 
                                 </div>
