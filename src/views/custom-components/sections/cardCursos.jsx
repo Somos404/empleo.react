@@ -136,7 +136,7 @@ const CardCursos = (props) => {
 
     return (
         <div className="spacer team2">
-            <Container>
+            <Container className="containerCardCategorias">
                 <div className={classes.root}>
                     <AppBar position="static" className={classes.appbar}>
                         <Toolbar /* className="toolbarPading" */>

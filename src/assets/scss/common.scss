@@ -3002,7 +3002,7 @@ Modal in center
 }
 
 .list-inlineinfo{
-    top: -19%!important;
+    top: -5%!important;
 }   
 .inline-itemBtn{
     margin-top: 0%!important;
@@ -3114,7 +3114,11 @@ Modal in center
 
 .itemBtn{
     width: 66%;
-    margin-top: -4%;
+    margin-top: 5%;
+}
+
+.containerCardCategorias{
+    max-width: 1569px;
 }
 
 .heightWidthCard{
@@ -3189,4 +3193,8 @@ Modal in center
 
   .img-redireccionesBtnInscribirme{
     margin-left: -1em!important;
+  }
+
+  .tituloInfoIngresar{
+    font-size: 1.1rem!important;
   }
