@@ -1490,7 +1490,7 @@ width: 30%;
     display: inherit;
     line-height: 23px;
     font-weight: 900!important;
-    color: #01B7E8;
+    color: black;
     text-align: center;
 }
 .tituloRequerimientosResponsive3 {
@@ -1669,8 +1669,77 @@ width: 30%;
 //     margin-left: 68% !important;
 //   }
 
+.static-slider-headCapacitaciones{
+    min-height: 742px;
+}
+
 .img-redireccionesBtnInform2Responsive{
     margin-left: 68% !important;
+}
+
+.marginColHeaderCap {
+    margin-top: -70%;
+  
+}
+
+.containerPCap {
+    margin-bottom: 11%;
+}
+
+.colDescripcionInfoResponsive{
+    margin-left: -11.5em !important;
+    margin-top: -3% !important;
+}
+.card-title-redResponsive{
+    margin-left: 3%;
+}
+.card-sub-title-redResponsive{
+    text-align: left;
+    margin-left: 3%;
+}
+.lineaCard1Responsive{
+    width: 33%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7% !important;
+    background-color: #2CB0CF;
+    background-image: linear-gradient(to right, #2CB0CF, #7d446e, #a5427c);
+    margin-left: -30% !important;
+    margin-top: 8%!important;
+}
+.lineaCard1Responsive2{
+    width: 33%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7% !important;
+    background-color: #2CB0CF;
+    background-image: linear-gradient(to right, #2CB0CF, #7d446e, #a5427c);
+    margin-left: -40% !important;
+    margin-top: 8%!important;
+}
+.lineaCard1Responsive3{
+    width: 33%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7% !important;
+    background-color: #2CB0CF;
+    background-image: linear-gradient(to right, #2CB0CF, #7d446e, #a5427c);
+    margin-left: -34% !important;
+    margin-top: 8%!important;
+}
+.lineaCard1Responsive4{
+    width: 33%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7% !important;
+    background-color: #2CB0CF;
+    background-image: linear-gradient(to right, #2CB0CF, #7d446e, #a5427c);
+    margin-left: -77% !important;
+    margin-top: 10%!important;
 }
 
 @media (max-width: 360px){

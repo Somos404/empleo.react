@@ -363,14 +363,61 @@ redes-sociales-nav
 }
 
 .static-slider-headCapacitaciones {
-    min-height: 640px;
+    min-height: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
     background-size: cover;
     background-position: center center;
     background-image: $banner-imageCapacitaciones;
+
+    .title {
+        color: $white;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .title-1 {
+        color: $white;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .title-2 {
+        color: $white;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .subtitle {
+        color: $white;
+        line-height: 30px;
+    }
+}
+
+.contIzqTop{
+    margin-top: -14%!important;
+}
+
+.colRequerimientosCapTop{
+    margin-top: -0.5%!important;
+}
+
+.containerPCap{
+    margin-bottom: 2%;
+}
+
+.static-slider-headCapacitacionesWave {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: $banner-imageCapacitacionesWave;
 
     .title {
         color: $white;
@@ -2767,9 +2814,9 @@ Modal in center
 
 .titulo1ContCap{
     line-height: 35px;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 700!important;
-    color: #01B7E8;
+    color: black;
 }
 .titulo1Cont{
     line-height: 35px;
@@ -2831,18 +2878,18 @@ Modal in center
 }
 
 .segContRed{
-    background-color: #333333;
+    background-color: #F2F2F2;
     height: auto;
 }
 
 .cardsecondContRed{
-    background-color: #333333;
+    background-color: #F2F2F2;
     border: none!important;
     margin-top: 4%;
     
 }
 .cardsecondContRed2{
-    background-color: #333333;
+    background-color: #F2F2F2;
     border: none!important;
     margin-top: 4%;
     margin-left: 10%!important;
@@ -2870,12 +2917,13 @@ Modal in center
     margin-left: 0%;
 }
 .card-title-red{
-    color: #FEBD2C;
+    color: black;
     font-weight: 700;
 }
 .card-sub-title-red{
-    color: white!important;
-    font-size: 12px;    
+    color: black!important;
+    font-size: 12px;
+    font-weight: 400;    
 }
 .card-title-redUlt{
     color: #FEBD2C;
@@ -3035,12 +3083,19 @@ Modal in center
     padding-top: 0.4em;
     font-weight: 700;
 }
+.btnCursosModificadoEscritorioCursorNone{
+    cursor: text!important;
+}
 
 .textoEspeEscritorio{
     line-height: 30px;
 }
 .cardEspecificacionesEscritorio{
     margin-bottom: -1.5em;
+}
+
+.colCursosInfo{
+    max-width: 60%!important;
 }
 
 .marginRowCursos{
@@ -3120,7 +3175,17 @@ Modal in center
 .containerCardCategorias{
     max-width: 1569px;
 }
-
+.marginColHeaderCap{
+    margin-top: -7%;
+    margin-left: 5.4%;
+    position: relative;
+}
+.containerHeaderCap{
+    max-width: 100%;
+}
+.TitHeaderCapbold{
+    font-weight: 900!important;
+}
 .heightWidthCard{
     min-height: 235px!important;
 }
@@ -3133,6 +3198,55 @@ Modal in center
 }
 .btonCategoriaMargin{
     margin-top: .5em!important;
+}
+.containerInfoCursosCap{
+    max-width: 1250px!important;
+}
+
+.colDescripcionInfo{
+    margin-left: 4.5em!important;
+    margin-top: -2%!important;
+}
+
+.lineaCard1{
+    width: 25%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7%!important;
+    background-color:#2CB0CF;/*this your primary color*/
+    background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+    margin-left: -17%!important;
+}
+.lineaCard2{
+    width: 25%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7%!important;
+    background-color:#2CB0CF;/*this your primary color*/
+    background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+    margin-left: -23%!important;
+}
+.lineaCard3{
+    width: 25%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7%!important;
+    background-color:#2CB0CF;/*this your primary color*/
+    background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+    margin-left: -19%!important;
+}
+.lineaCard4{
+    width: 25%;
+    height: .3em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 7%!important;
+    background-color:#2CB0CF;/*this your primary color*/
+    background-image: linear-gradient(to right,#2CB0CF, #7d446e, rgb(165,66,124)  );
+    margin-left: -43% !important;
 }
 
 @media (max-width:1468px){
