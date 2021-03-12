@@ -77,7 +77,8 @@ $img-shadow:0px 0px 30px rgba(115, 128, 157, 0.3);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
 }
-$banner-imageCapacitaciones: url(../images/cursos/headerCapacitaciones.png);
+$banner-imageCapacitaciones: url(../images/header/headerCapacitaciones.png);
+$banner-imageCapacitacionesWave: url(../images/header/waveBackground.png);
 $banner-image: url(../images/header/header.png);
 $banner-image2: url(../images/header/header2.png);
 $banner-image3: url(../images/header/header3.png);

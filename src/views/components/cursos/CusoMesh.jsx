@@ -138,7 +138,7 @@ const Curso4 = (props) => {
                                     <div className="banner spacer BannerPContenedorEsc">
                                         <Container>
                                             <Row>
-                                                <Col lg="5" md="7" className="align-self-center">
+                                                <Col lg="5" md="7" className="align-self-center colCursosInfo">
                                                     <h2 className="title font-bold rowSecondParrafoBold">{state.nombre}</h2>
                                                     <hr class="justify-content-center lineaCopada" />
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoLight">{state.descripcionLarga}</p>
@@ -159,7 +159,7 @@ const Curso4 = (props) => {
                                                     <img src={banner} alt="We are Digital Agency" className="img-fluid"></img>
                                                         <div className="contenidoCursos">
                                                             <Row className="justify-content-center">
-                                                                <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificadoEscritorio">Especificaciones</a>
+                                                                <span className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificadoEscritorio btnCursosModificadoEscritorioCursorNone">Especificaciones</span>
                                                             </Row>
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img1} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
