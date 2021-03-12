@@ -6,7 +6,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Gestión de redes sociales',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1. Computadora o celular con acceso a redes sociales.',
                     '2. Cuenta de Facebook e Instagram (requerido).',
@@ -29,7 +29,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Word Avanzado',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
                      '2. Cuenta de Facebook e Instagram (requerido).',
@@ -58,7 +58,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Especialización en tecnologías de desarrollo',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
                      '2. Cuenta de Facebook e Instagram (requerido).',
@@ -80,7 +80,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Programación y desarrollo web',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
                      '2. Cuenta de Facebook e Instagram (requerido).',
@@ -109,7 +109,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Blockchain',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
                     '2. Cuenta de Facebook e Instagram (requerido).',
@@ -131,7 +131,7 @@ export const cursosAndCategias = [
             {
                 nombre: 'Blockchain',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
+                imgUrl: 'pro-pic t17',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
                      '2. Cuenta de Facebook e Instagram (requerido).',

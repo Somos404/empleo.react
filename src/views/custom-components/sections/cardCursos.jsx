@@ -79,39 +79,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+const filtro = (Arr, value) => {
+    if(value === ''){
+        let array = []
+        Arr.forEach(element => {
+            array = array.concat(element.cursos);
+        });
+        return array
+    }else{
+        return Arr.find(e => e.categoria === value).cursos
+    }
+}
+
 const CardCursos = (props) => {
 
     const classes = useStyles();
-
-    const filtro = (Arr, value) => {
-        console.log('===========', value);
-        if(value === ''){
-            console.log('=========== malo');
-            return cursos
-        }else{
-            Arr.forEach( e => {
-                if(e.categoria === value){
-                    console.log('array =====',e.cursos);
-                    return e.cursos
-                }
-            });
-        }
-    }
-
-
-    const searchFilter = (event) => {
-        
-      /*   setState({
-            ...state,
-            search: event.target.value,
-            cursosFiltrados: filtro(cursos, state.categoria).filter(
-                function (list) 
-                {
-                    return list.titulo.toUpperCase().includes(event.target.value.toUpperCase())
-                })
-        }); */
-        
-    }
 
     const [state, setState] = React.useState({
         categoria: props.categoria,
@@ -120,8 +102,19 @@ const CardCursos = (props) => {
         cursosFiltrados: filtro(cursosAndCategias, props.categoria)
     });
 
-
-    
+    const searchFilter = (event) => {
+        
+        setState({
+            ...state,
+            search: event.target.value,
+            cursosFiltrados: filtro(cursosAndCategias, state.categoria).filter(
+                function (list) 
+                {
+                    return list.nombre.toUpperCase().includes(event.target.value.toUpperCase())
+                })
+        });
+        
+    }
 
     const handleChange = (event) => {
         const name = event.target.name;
@@ -130,7 +123,7 @@ const CardCursos = (props) => {
             categoria: event.target.value,
             search: '',
             [name]: event.target.value,
-            cursosFiltrados: filtro(cursos, event.target.value)
+            cursosFiltrados: filtro(cursosAndCategias, event.target.value)
         });
     };
 
@@ -157,7 +150,7 @@ const CardCursos = (props) => {
                                     <em>Todos</em>
                                 </MenuItem>
                                 {
-                                    cursosAndCategias.cursosFiltrados.map((e) =>  (
+                                    cursosAndCategias.map((e, i) =>  (
                                         <MenuItem key={i+'MenuItemdropdow'} value={e.categoria}>{e.categoria}</MenuItem>
                                     ))
                                 }
@@ -194,14 +187,10 @@ const CardCursos = (props) => {
                 </div>
                 <Row className="m-t-30 ">
                     {
-                        state.cursosFiltrados.map(({titulo, descripcion, imgUrl, UrlToRedirect, infoCursos}, i) =>  (
+                        state.cursosFiltrados.map((curso, i) =>  (
                             <Card
                                 key={i+'cards'}
-                                titulo={titulo}
-                                descripcion={descripcion}
-                                imgUrl={imgUrl} 
-                                UrlToRedirect={UrlToRedirect}
-                                infoCursos = {infoCursos}
+                                infoCursos = {curso}
                             />
                         ))
                     }
