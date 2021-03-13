@@ -24,8 +24,7 @@ import img4 from '../../../assets/images/cursos/btnCertificado.png';
 //import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
  import banner from '../../../assets/images/cursos/imagenPrimConten.png';
 
-// se cambia por llamad api cunado tengamos back
-import {cursosAndCategias} from '../cursos/cursosAndCategias';
+
 
 //Material UI
 
@@ -71,14 +70,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Curso4 = (props) => {
-
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const [isOpen2, setIsOpen2] = useState(false);
     const toggle2 = () => setIsOpen2(!isOpen2);
     const classes = useStyles();
 
-    const [curso, setCurso] = useState({
+    const [state, setState] = useState({
         nombre: '',
         descripcionLarga: '',
         requerimientos: [],
@@ -90,15 +88,43 @@ const Curso4 = (props) => {
     });
 
     useEffect(() => {   
-        if(props.location.curso){
-            setCurso(props.location.curso)
+        if(props.location.state){
+            saveState(props.location.state)
         }else{
-            setCurso(
-                cursosAndCategias.find(element => element.categoria == props.categoria).cursos
-                                    .find(element => element.nombre == props.nombre)
-            )
+            setState(loadState())
         } 
     },[]);
+
+    const loadState = () => {
+        try {
+          const serializedState = localStorage.getItem('state');
+          if(serializedState === null) {
+            return undefined;
+          }
+          return JSON.parse(serializedState);
+        } catch (e) {
+          return undefined;
+        }
+      };
+      
+      const saveState = (state) => {
+        try {
+            setState({
+                nombre: props.location.state.nombre,
+                descripcionLarga: props.location.state.descripcionLarga,
+                requerimientos: props.location.state.requerimientos,
+                especificaciones: props.location.state.especificaciones,
+                contenido: props.location.state.contenido,
+                UrlToRedirect: props.location.state.UrlToRedirect,
+                horasSemanales: props.location.state.horasSemanales,
+                semanas: props.location.state.contenido.length,
+            })
+            const serializedState = JSON.stringify(state);
+            localStorage.setItem('state', serializedState);
+        } catch (e) {
+          // Ignore write errors;
+        }
+      };
 
     return (
         <div className="page-wrapper page-wrapperCursos">
@@ -113,13 +139,13 @@ const Curso4 = (props) => {
                                         <Container>
                                             <Row>
                                                 <Col lg="5" md="7" className="align-self-center colCursosInfo">
-                                                    <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
+                                                    <h2 className="title font-bold rowSecondParrafoBold">{state.nombre}</h2>
                                                     <hr class="justify-content-center lineaCopada" />
-                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">{curso.descripcionLarga}</p>
+                                                    <p className="m-t-40 m-b-30 rowSecondParrafoLight">{state.descripcionLarga}</p>
                                                     <p className="m-t-40 m-b-30 rowSecondParrafoBold">    
                                                         Para cursarlo necesitarás: <br />
                                                         {
-                                                            curso.requerimientos.map(Text =>  (
+                                                            state.requerimientos.map(Text =>  (
                                                                 <>
                                                                     {Text} <br />
                                                                 </>
@@ -138,13 +164,13 @@ const Curso4 = (props) => {
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img1} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                     <div>
-                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.semanas} SEMANAS DE DURACIÓN</h6>
+                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{state.semanas} SEMANAS DE DURACIÓN</h6>
                                                                     </div>
                                                                 </CardBody>
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                     <div>
-                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.horasSemanales} HORAS SEMANALES</h6>
+                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{state.horasSemanales} HORAS SEMANALES</h6>
                                                                     </div>
                                                                 </CardBody>
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
@@ -177,7 +203,7 @@ const Curso4 = (props) => {
                                     </Container>
                                     <Container className="containerSemanasEscritorio">
                                         <div className={classes.root}>
-                                        {curso.semanas >= 1 &&
+                                        {state.semanas >= 1 &&
                                             <Accordion className={classes.acordeonEscritorio}>
                                                 <AccordionSummary
                                                     expandIcon={<ExpandMoreIcon />}
@@ -195,14 +221,14 @@ const Curso4 = (props) => {
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                     {
-                                                        curso.contenido[0]
+                                                        state.contenido[0]
                                                     }
 
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
-                                        {curso.semanas >= 2 &&    
+                                        {state.semanas >= 2 &&    
                                             <Accordion className={classes.acordeonEscritorio}>
                                                 <AccordionSummary
                                                     expandIcon={<ExpandMoreIcon />}
@@ -220,13 +246,13 @@ const Curso4 = (props) => {
                                                 <AccordionDetails className="backAccordeonRespuesta">
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                     {
-                                                        curso.contenido[1]
+                                                        state.contenido[1]
                                                     }
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
-                                        {curso.semanas >= 3 &&    
+                                        {state.semanas >= 3 &&    
                                             <Accordion className={classes.acordeonEscritorio}>
                                                 <AccordionSummary
                                                     expandIcon={<ExpandMoreIcon />}
@@ -244,13 +270,13 @@ const Curso4 = (props) => {
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                     {
-                                                        curso.contenido[2]
+                                                        state.contenido[2]
                                                     }
                                                 </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
-                                        {curso.semanas >= 4 &&
+                                        {state.semanas >= 4 &&
                                             <Accordion className={classes.acordeonEscritorio}>
                                                 <AccordionSummary
                                                     expandIcon={<ExpandMoreIcon />}
@@ -269,7 +295,7 @@ const Curso4 = (props) => {
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                     {
-                                                        curso.contenido[3]
+                                                        state.contenido[3]
                                                     }
                                                 </Typography>
                                                 </AccordionDetails>
@@ -279,7 +305,7 @@ const Curso4 = (props) => {
                                        
                                     </Container>
                                     <Row className="justify-content-center">
-                                                    <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
+                                                    <a href={state.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                     </Row>
                                 </section>
                                
@@ -361,7 +387,7 @@ const Curso4 = (props) => {
                                         <hr class="justify-content-center lineaCopada" />
 
                                         <div className={classes.root}>
-                                                {curso.semanas >= 1 &&
+                                                {state.semanas >= 1 &&
                                                     <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
@@ -379,13 +405,13 @@ const Curso4 = (props) => {
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
                                                             {
-                                                                curso.contenido[0]
+                                                                state.contenido[0]
                                                             }
                                                         </Typography>
                                                         </AccordionDetails>
                                                         </Accordion>
                                                 }
-                                                {curso.semanas >= 2 &&
+                                                {state.semanas >= 2 &&
                                                      <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
@@ -403,13 +429,13 @@ const Curso4 = (props) => {
                                                         <AccordionDetails className="backAccordeonRespuesta">
                                                             <Typography className={classes.parrafoAcordeon}>
                                                             {
-                                                                curso.contenido[1]
+                                                                state.contenido[1]
                                                             }
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
                                                 }  
-                                                {curso.semanas >= 3 && 
+                                                {state.semanas >= 3 && 
                                                     <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
@@ -427,14 +453,14 @@ const Curso4 = (props) => {
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
                                                             {
-                                                                curso.contenido[2]
+                                                                state.contenido[2]
                                                             }
                                                         </Typography>
                                                         </AccordionDetails>
 
                                                     </Accordion>
                                                 }  
-                                                {curso.semanas >= 4 &&
+                                                {state.semanas >= 4 &&
                                                    <Accordion className={classes.acordeon1}>
                                                         <AccordionSummary
                                                             expandIcon={<ExpandMoreIcon />}
@@ -453,14 +479,14 @@ const Curso4 = (props) => {
                                                         <AccordionDetails>
                                                             <Typography className={classes.parrafoAcordeon}>
                                                             {
-                                                                curso.contenido[3]
+                                                                state.contenido[3]
                                                             }
                                                         </Typography>
                                                         </AccordionDetails>
                                                     </Accordion>
                                                 }
                                        <Row className="justify-content-center">
-                                            <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
+                                            <a href={state.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                         </Row>
                                         </div>
                                     </Col>

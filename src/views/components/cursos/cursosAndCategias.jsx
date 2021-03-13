@@ -1,6 +1,7 @@
 export const cursosAndCategias = [
     {
         categoria: 'Empleo y Emprendimientos',
+        urlPath: 'Empleo-y-Emprendimientos',
         imgUrl: 'pro-pic t17',
         cursos:[
             {
@@ -56,7 +57,7 @@ export const cursosAndCategias = [
         imgUrl: 'pro-pic t17',
         cursos:[
             {
-                nombre: 'Especialización en tecnologías de desarrollo',
+                nombre: 'desarrollo',
                 descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'pro-pic t17',
                 requerimientos: 
@@ -104,6 +105,7 @@ export const cursosAndCategias = [
     /** ----------- UniMOOC ------------ */
     {
         categoria: 'UniMOOC',
+        urlPath: 'UniMOOC',
         imgUrl: 'pro-pic t17',
         cursos:[
             {

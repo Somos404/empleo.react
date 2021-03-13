@@ -95,6 +95,8 @@ const CardCursos = (props) => {
 
     const classes = useStyles();
 
+    console.log('=========', props.categoria);
+
     const [state, setState] = React.useState({
         categoria: props.categoria,
         search: '',
@@ -190,6 +192,7 @@ const CardCursos = (props) => {
                         state.cursosFiltrados.map((curso, i) =>  (
                             <Card
                                 key={i+'cards'}
+                                categoria={state.categoria}
                                 infoCursos = {curso}
                             />
                         ))

@@ -15,15 +15,15 @@ const Card = (props) => {
     const classes = useStyles();
     return (
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
-            <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
+            <Col md="12" className={`col-md-12 heightWidthCard ${props.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
                     <div className="card-img-overlay"  >
                         <ul className="list-inline list-inlineRedes">
                             <li className="list-inline-item">
                                 <a>
                                     <FacebookShareButton
-                                        url={props.infoCursos.UrlToRedirect}
-                                        quote={props.infoCursos.titulo}
+                                        url={props.UrlToRedirect}
+                                        quote={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
                                         <SocialIcon 
@@ -38,8 +38,8 @@ const Card = (props) => {
                             <li>  
                                 <a>
                                     <TwitterShareButton
-                                        url={props.infoCursos.UrlToRedirect}
-                                        title={props.infoCursos.titulo}
+                                        url={props.UrlToRedirect}
+                                        title={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
                                         <SocialIcon 
@@ -54,7 +54,7 @@ const Card = (props) => {
                             <li>  
                                 <a>
                                     <TwitterShareButton
-                                        url={props.infoCursos.UrlToRedirect}
+                                        url={props.UrlToRedirect}
                                         title='test'
                                         className="Demo__some-network__share-button"
                                     >
@@ -69,15 +69,15 @@ const Card = (props) => {
                             </li>
                         </ul>
                         <ul className="list-inline list-inlineinfo">
-                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight">{props.infoCursos.titulo}</h5></a></li>
+                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
                             {/* <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.descripcion}</p></a></li> */}
                             <li className="list-inline-item itemBtn">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
-                                        props.infoCursos.from?
+                                        props.from?
                                         <span 
-                                            onClick={(categ) => {
-                                                props.infoCursos.changeCategory(props.infoCursos.titulo)
+                                            onClick={() => {
+                                                props.changeCategory(props.titulo)
                                             }}
                                         >
                                             <Link className="nav-link">Más info</Link>
@@ -88,10 +88,12 @@ const Card = (props) => {
                                             <Link 
                                                 className="nav-link" 
                                                 to={{
-                                                    pathname: '/curso',
+                                                    pathname: `/curso/${props.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}`,
+                                                    nombre: props.infoCursos.nombre,
+                                                    categoria: props.categoria,
                                                     /* search: "?sort=name",
                                                     hash: "#the-hash", */
-                                                    state: props.infoCursos
+                                                    curso: props.infoCursos
                                                 }}
                                             >
                                                 Más info
