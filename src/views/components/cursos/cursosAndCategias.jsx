@@ -2,7 +2,7 @@ export const cursosAndCategias = [
     {
         categoria: 'Empleo y Emprendimientos',
         urlPath: 'Empleo-y-Emprendimientos',
-        imgUrl: 'pro-pic t17',
+        imgUrl: 'pro-pic EmpleoyEmprendimientos',
         cursos:[
             {
                 nombre: 'Gestión de redes sociales',
@@ -54,7 +54,7 @@ export const cursosAndCategias = [
     /** -----------INFORMATORIO------------ */
     {
         categoria: 'Informatorio',
-        imgUrl: 'pro-pic t17',
+        imgUrl: 'pro-pic Informatorio',
         cursos:[
             {
                 nombre: 'desarrollo',
@@ -106,7 +106,7 @@ export const cursosAndCategias = [
     {
         categoria: 'UniMOOC',
         urlPath: 'UniMOOC',
-        imgUrl: 'pro-pic t17',
+        imgUrl: 'pro-pic UniMOOC',
         cursos:[
             {
                 nombre: 'Blockchain',

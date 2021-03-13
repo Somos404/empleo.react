@@ -370,65 +370,122 @@ team 2
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        &.t1 {
+        &.EmpleoyEmprendimientos {
+            background-image: $cat1;
+        }
+        &.Informatorio {
+            background-image: $cat2;
+        }
+        &.UniMOOC {
+            background-image: $cat3;
+        }
+        &.Administracióndeemprendimientos {
             background-image: $t1;
         }
-        &.t2 {
+        &.BigDataPAraAplicacionesDeNegocios {
             background-image: $t2;
         }
-        &.t3 {
+        &.BlockchainlainnovacióndisruptivadetrásdeBitcoin {
             background-image: $t3;
         }
-        &.t4 {
+        &.CambiosEnLaOfertaTuristica {
             background-image: $t4;
         }
-        &.t5 {
+        &.ClavePAraDiseñarUnModeloDeNegocio {
             background-image: $t5;
         }
-        &.t6 {
+        &.ComoTenerPresenciaEnInternet {
             background-image: $t6;
         }
-        &.t7 {
+        &.dactilografia {
             background-image: $t7;
         }
-        &.t8 {
+        &.DesarrollaTuPropuestaDeValor {
             background-image: $t8;
         }
-        &.t9 {
+        &.DiseñoGraficoParaEnprendimientos {
             background-image: $t9;
         }
-        &.t10 {
+        &.EconomiaDelConocimientoYElSectorTuristico {
             background-image: $t10;
         }
-        &.t11 {
+        &.EdicionDeVideosParaEmmprendimientos {
             background-image: $t11;
         }
-        &.t12 {
+        &.ElBusinessInteligencePAraControlarLaEStrategiaEmpresarial {
             background-image: $t12;
         }
-        &.t13 {
+        &.EmprenderProyectosOnline {
             background-image: $t13;
         }
-        &.t14 {
+        &.EspecializacionEnLenguajesDeProgramaion {
             background-image: $t14;
         }
-        &.t15 {
+        &.ExcelAvanzado {
             background-image: $t15;
         }
-        &.t16 {
+        &.ExcelInicial {
             background-image: $t16;
         }
-        &.t17 {
+        &.FormalizaciónDeEmprendimientos {
             background-image: $t17;
         }
-        &.t18 {
+        &.GeeracionDeIdeasDeNegocios {
             background-image: $t18;
         }
-        &.t19 {
+        &.GestiónDeRedesSociales {
             background-image: $t19;
         }
-        &.t20 {
+        &.HerramientasPAraAlanizarALaCompetenciaYATuPublicoObjetivo {
             background-image: $t20;
+        }
+        &.HerramientasparaelBusinessIntelligence {
+            background-image: $t21;
+        }
+        &.HerramientasParaMejorarLaUsabilidadWebBalsaminq {
+            background-image: $t22;
+        }
+        &.HerramienttasParaElEmpleo {
+            background-image: $t23;
+        }
+        &.IntroducciónalaProgramación {
+            background-image: $t24;
+        }
+        &.IntroduccionalDesarrolloDeVideojuegos {
+            background-image: $t25;
+        }
+        &.LaFranquiciaParaLaExpansionDeLaMarca {
+            background-image: $t26;
+        }
+        &.LeanStartupDesarrolloDeModelosDeNegocio {
+            background-image: $t27;
+        }
+        &.MachineLearning {
+            background-image: $t28;
+        }
+        &.ManipulacionHigenicaDeAlimentos {
+            background-image: $t29;
+        }
+        &.ProgramayDesarrolloWeb {
+            background-image: $t30;
+        }
+        &.TalleresparaemprenderenTICs {
+            background-image: $t31;
+        }
+        &.TRabajoDeslocalizadoYGestionDeTareasEnEquiposREmotos {
+            background-image: $t32;
+        }
+        &.UsoDELasRedesSocialesParaLaGestionDeLaMarca {
+            background-image: $t33;
+        }
+        &.VenderOnline {
+            background-image: $t34;
+        }
+        &.WordAvanzado {
+            background-image: $t35;
+        }
+        &.WOrdInicial {
+            background-image: $t36;
         }
         .card-img-overlay{
             background: rgba(26, 139, 243, 0.87);
