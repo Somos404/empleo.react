@@ -1,13 +1,9 @@
 /* eslint-disable */
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 
-import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -20,41 +16,43 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import IconButton from '@material-ui/core/IconButton';
 import clsx from 'clsx';
 import Card from '../../custom-components/sections/Card'
+import img from '../../../assets/images/cursos/card/Rectangulo.png'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      paddingLeft: '0px !Important',
-      paddingRight: '0px !Important',
-    },
-    appbar: {
-        background: 'rgba(204, 204, 204, 0.05)', 
-        paddingTop: '1vh',
-        paddingBottom: '1vh',
-    },
-    title: {
-      flexGrow: 1,
-      display: 'none',
-      color: '#6f7074',
-      [theme.breakpoints.up('sm')]: {
-        display: 'block',
-      },
-    },
-
-    textColor: {
-        color: '#6f7074',
-    },
-    search: {
-        flexGrow: 1,
-        align: "center",
+    container:{
         position: 'relative',
-        borderRadius: theme.shape.borderRadius,
-        marginLeft: 0,
         width: '100%',
-        [theme.breakpoints.up('sm')]: {
-          marginLeft: theme.spacing(1),
-          width: 'auto',
-        },
+        height: '40em',
+    },
+    sectionSearch:{
+        backgroundImage: `url(${img})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        position: 'absolute',
+        height: '15em',
+        width: '100%',
+    },
+    sectionCard:{
+        zIndex: '9',
+        position: 'absolute',
+        marginTop: '10em',
+        width: '100%',
+        height: '15em',
+    },
+    inputProps: {
+        color: '#6f7074',
+        borderRadius: '50px',
+        backgroundColor: '#ffffff',
+    },
+    titulo:{
+        fontWeight: 'bold',
+        color: '#ffffff',
+        marginTop: '1em'
+    },
+    search:{
+        marginTop: '1em',
+        marginBottom: '5em'
     },
     searchIcon: {
       padding: theme.spacing(0, 2),
@@ -69,12 +67,9 @@ const useStyles = makeStyles((theme) => ({
     inputRoot: {
         color:'#6f7074',
     },
+
     formControl: {
-        margin: theme.spacing(1),
-        minWidth: 120,
-    },
-    selectEmpty: {
-        marginTop: theme.spacing(2),
+        minWidth: '15em',
     },
 }));
 
@@ -94,8 +89,6 @@ const filtro = (Arr, value) => {
 const CardCursos = (props) => {
 
     const classes = useStyles();
-
-    console.log('=========', props.categoria);
 
     const [state, setState] = React.useState({
         categoria: props.categoria,
@@ -130,11 +123,88 @@ const CardCursos = (props) => {
     };
 
     return (
+        <div className="team2" style={{position: 'relative',width: '100%',height: `${(state.cursosFiltrados.length>4?state.cursosFiltrados.length/4:2)*15}em`}}>
+            <div className={classes.sectionSearch}>
+                <Row className="justify-content-center">
+                    <Col md="12" className="text-center">
+                        <h1 className={classes.titulo}>Seleccioná tu curso</h1>
+                        <div className={classes.search}>
+                            <FormControl variant="outlined" className={classes.formControl}>
+                                <Select
+                                    className={classes.inputProps}
+                                    value={state.categoria}
+                                    onChange={handleChange}
+                                    inputProps={{ 'aria-label': 'Without label' }}
+                                >
+                                <MenuItem value="">
+                                    Todos
+                                </MenuItem>
+                                {
+                                    cursosAndCategias.map((e, i) =>  (
+                                        <MenuItem key={i+'MenuItemdropdow'} value={e.categoria}>{e.categoria}</MenuItem>
+                                    ))
+                                }
+                                </Select>
+                            </FormControl>
+                            <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
+                                <OutlinedInput
+                                    className={classes.inputProps}
+                                    id="outlined-adornment-weight"
+                                    placeholder='Buscar...'
+                                    onChange={searchFilter}
+                                    value={state.search}
+                                    endAdornment={
+                                        <InputAdornment position="end">
+                                            <IconButton
+                                                aria-label="toggle password visibility"
+                                                edge="end"
+                                            >
+                                            <SearchIcon />
+                                            </IconButton>
+                                        </InputAdornment>
+                                        }
+                                    aria-describedby="outlined-weight-helper-text"
+                                    inputProps={{
+                                    'aria-label': 'weight',
+                                    }}
+                                    labelWidth={0}
+                                />
+                            </FormControl>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+            <div  className={classes.sectionCard}>
+                <section>
+                    <div>
+                        <Container className="containerCardCategorias">
+                            <Row className="m-t-30 ">
+                                {
+                                    state.cursosFiltrados.map((curso, i) =>  (
+                                        <Card
+                                            key={i+'cards'}
+                                            categoria={state.categoria}
+                                            infoCursos = {curso}
+                                            imgUrl={curso.imgUrl} 
+                                            UrlToRedirect={curso.UrlToRedirect}
+                                        />
+                                    ))
+                                }
+                            </Row>
+                        </Container>
+                    </div>
+                </section>
+            </div>
+        </div>
+    )
+
+
+   /*  return (
         <div className="spacer team2">
             <Container className="containerCardCategorias">
                 <div className={classes.root}>
                     <AppBar position="static" className={classes.appbar}>
-                        <Toolbar /* className="toolbarPading" */>
+                        <Toolbar>
                             <Typography className={classes.title} variant="h6" noWrap>
                                 {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
                             </Typography>
@@ -194,13 +264,15 @@ const CardCursos = (props) => {
                                 key={i+'cards'}
                                 categoria={state.categoria}
                                 infoCursos = {curso}
+                                imgUrl={curso.imgUrl} 
+                                UrlToRedirect={curso.UrlToRedirect}
                             />
                         ))
                     }
                 </Row>
             </Container>
         </div> 
-    );
+    ) */
 }
 
 export default CardCursos;
