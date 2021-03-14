@@ -39,7 +39,7 @@ const CustomComponents = () => {
                     <Sumate />
                     <Postulate />
                     <PricingComponent />
-                    <CardCursos />
+                    {/* <CardCursos /> */}
                     <TestimonialComponent />
                     <BlogComponent />
                     <C2aComponent />

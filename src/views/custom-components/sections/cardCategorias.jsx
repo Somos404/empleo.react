@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
         background: 'rgba(204, 204, 204, 0.05)', 
         paddingTop: '1vh',
         paddingBottom: '1vh',
+        margin: 0
     },
     title: {
         flexGrow: 1,
@@ -110,7 +111,7 @@ const CardCursos = (props) => {
     }
 
     return (
-        <div className="team2 m-t-10">
+        <div className="team2">
             <Container className="containerCardCategorias">
                 <div className={classes.root}>
                     <AppBar position="static" className={classes.appbar}>
