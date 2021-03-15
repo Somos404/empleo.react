@@ -3254,7 +3254,7 @@ Modal in center
     background: #D9E9F5;
     // background: linear-gradient(90deg, rgba(0,113,188,1) 0%, rgba(0,113,188,1) 37%, rgba(0,92,200,1) 44%, rgba(0,59,219,1) 51%, rgba(0,33,235,1) 57%, rgba(0,14,246,1) 63%, rgba(0,3,252,1) 68%, rgba(0,3,252,1) 72%, rgba(0,0,255,1) 100%);
     border-top-left-radius: 46px !important;
-    height: 27em;
+    height: 30em;
 }
 
 .tituloCardInfoCap{
@@ -3263,7 +3263,11 @@ Modal in center
     margin-top: 6%;
     font-weight: 700!important;
     color: black;
-}   
+}
+
+.rowBtnMas{
+    margin-top: 15%!important;
+}
 .paraffoInfoCap{
     font-size: 0.8rem;
     color: black;
@@ -3277,11 +3281,30 @@ Modal in center
     background-color: inherit !important;
     
 }
+.imgLinea-InfoCap {
+    width: 77% !important;
+    height: 2em !important;
+    position: relative !important;
+    background-color: inherit !important;
+}
+
+.contenedorImgLineaCap1 {
+  
+    margin-top: 9%;
+    position: relative !important;
+  
+}
 
 .contenedorImgCap{
     text-align: center;
     margin-top: 9%;
 }
+.contenedorImgLineaCap{
+    text-align: left;
+    margin-left: 4%;
+    
+}
+
 
 .imgAmarillaInfoCap{
     background: rgb(247,162,30);
@@ -3299,6 +3322,10 @@ Modal in center
     border-top-right-radius: 15px !important;
     border-top-left-radius: 15px !important;
     transform: rotate(-89deg);
+}
+
+.capacitacionesInfoCard1{
+    background: #D9DBFD;
 }
 
 .numeroCardInfoCap{

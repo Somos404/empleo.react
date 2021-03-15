@@ -6,8 +6,38 @@ import img1 from '../../../assets/images/capacitaciones/icono01InfoCap.svg';
 import img2 from '../../../assets/images/capacitaciones/icono02InfoCap.svg';
 import img3 from '../../../assets/images/capacitaciones/icono03InfoCap.svg';
 import img4 from '../../../assets/images/capacitaciones/icono04InfoCap.svg';
+import img5 from '../../../assets/images/capacitaciones/lineaInforCap.svg';
+import img6 from '../../../assets/images/capacitaciones/lineaInforCap2.svg';
+import img7 from '../../../assets/images/capacitaciones/lineaInforCap3.svg';
+import img8 from '../../../assets/images/capacitaciones/lineaInforCap4.svg';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import EditIcon from '@material-ui/icons/Edit';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import NavigationIcon from '@material-ui/icons/Navigation';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1),
+        },
+    },
+    extendedIcon: {
+        marginRight: theme.spacing(1),
+    },
+    botonFab: {
+        color: "#fff",
+        backgroundColor: "#0629F9 !important",
+        width: "35px",
+        height: "35px"
+    }
+
+}));
 
 const BlogComponent = () => {
+    const classes = useStyles();
     return (
         <div>
             <div className="spacer bg-light">
@@ -31,12 +61,18 @@ const BlogComponent = () => {
                     <Row className="m-t-40 justify-content-center">
                         <Col lg="3" md="4">
                             <Card className="capacitacionesInfoCard">
-                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img1} alt="wrappixel kit" /></span>
+                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Introducción a <br />la Programación</a></h5>
+                                <span className="img-ho contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img5} alt="wrappixel kit" /></span>
+
                                 <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
                                 programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
-                                <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
+                                <Row className="justify-content-center">
+                                    <Fab className={classes.botonFab} aria-label="add">
+                                        <AddIcon />
+                                    </Fab>
+                                </Row>
                             </Card>
                         </Col>
                         <Col lg="3" md="4">
@@ -45,13 +81,18 @@ const BlogComponent = () => {
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">02</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Programación y <br />
                                 Desarrollo Web</a></h5>
+                                <span className="img-ho contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img6} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
                                 Informáticos.</p>
-                                <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
+                                <Row className="justify-content-center">
+                                    <Fab className={classes.botonFab} aria-label="add">
+                                        <AddIcon />
+                                    </Fab>
+                                </Row>
                             </Card>
                         </Col>
                         <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard">
+                            <Card className="capacitacionesInfoCard capacitacionesInfoCard1">
                                 <span className="img-ho contenedorImgCap">
                                     <img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img3} alt="wrappixel kit" width="200" />
                                 </span>
@@ -59,23 +100,33 @@ const BlogComponent = () => {
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Especialización <br />
                                 en Lenguajes<br />
 de Programación</a></h5>
+                                <span className="img-ho contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img7} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
 perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
-                                <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
+                                <Row className="justify-content-center rowBtnMas">
+                                    <Fab className={classes.botonFab} aria-label="add">
+                                        <AddIcon />
+                                    </Fab>
+                                </Row>
                             </Card>
                         </Col>
                         <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard">
+                            <Card className="capacitacionesInfoCard capacitacionesInfoCard1">
                                 <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img4} alt="wrappixel kit" /></span>
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">04</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Talleres para<br />
                                 Emprender<br />
                                 en TICs
 </a></h5>
+                                <span className="img-ho contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img8} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Adquirirás herramientas que te
                                 permitan iniciar un emprendimiento vinculado a las TICs, y podrás
 acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
-                                <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
+                                <Row className="justify-content-center rowBtnMas">
+                                    <Fab className={classes.botonFab} aria-label="add">
+                                        <AddIcon />
+                                    </Fab>
+                                </Row>
                             </Card>
                         </Col>
                     </Row>
