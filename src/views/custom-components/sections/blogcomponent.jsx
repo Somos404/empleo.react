@@ -2,9 +2,10 @@
 import React from 'react';
 import { Row, Col, Container, Card } from 'reactstrap';
 
-import img1 from '../../../assets/images/blog/blog-home/img3.jpg';
-import img2 from '../../../assets/images/blog/blog-home/img2.jpg';
-import img3 from '../../../assets/images/blog/blog-home/img1.jpg';
+import img1 from '../../../assets/images/capacitaciones/icono01InfoCap.svg';
+import img2 from '../../../assets/images/capacitaciones/icono02InfoCap.svg';
+import img3 from '../../../assets/images/capacitaciones/icono03InfoCap.svg';
+import img4 from '../../../assets/images/capacitaciones/icono04InfoCap.svg';
 
 const BlogComponent = () => {
     return (
@@ -28,30 +29,52 @@ const BlogComponent = () => {
                         </Col>
                     </Row>
                     <Row className="m-t-40 justify-content-center">
-                        <Col lg="4" md="6">
-                            <Card>
-                                <a href="#"><img className="card-img-top" src={img1} alt="wrappixel kit" /></a>
-                                <div className="date-pos bg-info-gradiant">Oct<span>23</span></div>
-                                <h5 className="font-medium m-t-30"><a href="#" className="link">You should have eagle’s eye on new trends and techonogies</a></h5>
-                                <p className="m-t-20">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <Col lg="3" md="4">
+                            <Card className="capacitacionesInfoCard">
+                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img1} alt="wrappixel kit" /></span>
+                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
+                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Introducción a <br />la Programación</a></h5>
+                                <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
+                                programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
                                 <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
                             </Card>
                         </Col>
-                        <Col lg="4" md="6">
-                            <Card>
-                                <a href="#"><img className="card-img-top" src={img2} alt="wrappixel kit" /></a>
-                                <div className="date-pos bg-info-gradiant">Oct<span>23</span></div>
-                                <h5 className="font-medium m-t-30"><a href="#" className="link">New Seminar on Newest Food Recipe from World’s Best</a></h5>
-                                <p className="m-t-20">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <Col lg="3" md="4">
+                            <Card className="capacitacionesInfoCard">
+                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img2} alt="wrappixel kit" /></span>
+                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">02</span></div>
+                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Programación y <br />
+                                Desarrollo Web</a></h5>
+                                <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
+                                Informáticos.</p>
                                 <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
                             </Card>
                         </Col>
-                        <Col lg="4" md="6">
-                            <Card>
-                                <a href="#"><img className="card-img-top" src={img3} alt="wrappixel kit" /></a>
-                                <div className="date-pos bg-info-gradiant">Oct<span>23</span></div>
-                                <h5 className="font-medium m-t-30"><a href="#" className="link">Learn from small things to create something bigger.</a></h5>
-                                <p className="m-t-20">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <Col lg="3" md="4">
+                            <Card className="capacitacionesInfoCard">
+                                <span className="img-ho contenedorImgCap">
+                                    <img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img3} alt="wrappixel kit" width="200" />
+                                </span>
+                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">03</span></div>
+                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Especialización <br />
+                                en Lenguajes<br />
+de Programación</a></h5>
+                                <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
+perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
+                                <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
+                            </Card>
+                        </Col>
+                        <Col lg="3" md="4">
+                            <Card className="capacitacionesInfoCard">
+                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img4} alt="wrappixel kit" /></span>
+                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">04</span></div>
+                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Talleres para<br />
+                                Emprender<br />
+                                en TICs
+</a></h5>
+                                <p className="m-t-20 paraffoInfoCap">Adquirirás herramientas que te
+                                permitan iniciar un emprendimiento vinculado a las TICs, y podrás
+acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                                 <a href="#" className="linking text-themecolor m-t-10">Learn More <i className="ti-arrow-right"></i></a>
                             </Card>
                         </Col>
