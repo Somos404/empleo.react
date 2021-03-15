@@ -90,12 +90,33 @@ const Curso4 = (props) => {
     });
 
     useEffect(() => {   
-        if(props.location.curso){
-            setCurso(props.location.curso)
-        }else{
+        let curso = props.location.curso
+        if(curso){
             setCurso(
-                cursosAndCategias.find(element => element.categoria == props.categoria).cursos
-                                    .find(element => element.nombre == props.nombre)
+                {
+                    nombre: curso.nombre,
+                    descripcionLarga: curso.descripcionLarga,
+                    requerimientos: curso.requerimientos,
+                    especificaciones: curso.especificaciones,
+                    contenido: curso.contenido,
+                    UrlToRedirect: curso.UrlToRedirect,
+                    horasSemanales: curso.horasSemanales,
+                    semanas: curso.contenido.length,
+                }
+            )
+        }else{
+            curso = cursosAndCategias.find(element => element.categoria == props.categoria).cursos.find(element => element.nombre == props.nombre)
+            setCurso(
+                {
+                    nombre: curso.nombre,
+                    descripcionLarga: curso.descripcionLarga,
+                    requerimientos: curso.requerimientos,
+                    especificaciones: curso.especificaciones,
+                    contenido: curso.contenido,
+                    UrlToRedirect: curso.UrlToRedirect,
+                    horasSemanales: curso.horasSemanales,
+                    semanas: curso.contenido.length,
+                }
             )
         } 
     },[]);
