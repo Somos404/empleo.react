@@ -18,6 +18,8 @@ import clsx from 'clsx';
 import Card from '../../custom-components/sections/Card'
 import img from '../../../assets/images/cursos/card/Rectangulo.png'
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 const useStyles = makeStyles((theme) => ({
     container:{
         position: 'relative',
@@ -89,6 +91,21 @@ const filtro = (Arr, value) => {
 const CardCursos = (props) => {
 
     const classes = useStyles();
+    const desk = useMediaQuery('(min-width:992px)');
+    const table = useMediaQuery('(max-width:992px)');
+    const mobile = useMediaQuery('(max-width:768px)');
+
+
+    const setHeight = () => {
+        // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
+        //se muestran 4 por fila
+        if(desk) return (((state.cursosFiltrados.length>=4?Math.ceil((state.cursosFiltrados.length)/4):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/4)*30))  
+        //se muestran 4 por fila
+        if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
+        //se muestran 4 por fila
+        if(mobile) return ((state.cursosFiltrados.length)*235)+200+(Math.ceil((state.cursosFiltrados.length)*30))
+    }
+
 
     const [state, setState] = React.useState({
         categoria: props.categoria,
@@ -97,6 +114,8 @@ const CardCursos = (props) => {
         cursosFiltrados: filtro(cursosAndCategias, props.categoria)
     });
 
+
+   
     const searchFilter = (event) => {
         
         setState({
@@ -123,7 +142,7 @@ const CardCursos = (props) => {
     };
 
     return (
-        <div className="team2" style={{position: 'relative',width: '100%',height: `${(state.cursosFiltrados.length>4?state.cursosFiltrados.length/4:2)*15}em`}}>
+        <div className="team2" style={{position: 'relative',width: '100%',height: `${setHeight()}px`}}>
             <div className={classes.sectionSearch}>
                 <Row className="justify-content-center">
                     <Col md="12" className="text-center">

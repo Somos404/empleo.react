@@ -18,6 +18,7 @@ import IconButton from '@material-ui/core/IconButton';
 import clsx from 'clsx';
 import Card from '../../custom-components/sections/Card'
 import img from '../../../assets/images/cursos/card/Rectangulo.png'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
     container:{
@@ -77,12 +78,23 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const checkDevice = () => {
+
+    if(useMediaQuery('(min-width:1200px)') && useMediaQuery('(max-width:1600px)')){
+        return 4
+    }else if(useMediaQuery('(min-width:800px)') && useMediaQuery('(max-width:1200)')){
+        return 4
+    }else if(useMediaQuery('(min-width:320px)') && useMediaQuery('(max-width:800px)')){
+        return 4
+    }
+}
 
 const CardCursos = (props) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
         search: '',
+        dispositivo: checkDevice,
         categoriasFiltradas: cursosAndCategias,
         filtroCategoria: []
     });
