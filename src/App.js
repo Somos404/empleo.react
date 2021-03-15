@@ -37,6 +37,8 @@ import FormCustomComponents from "./views/custom-components/form";
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
 import {municipios} from './views/components/municipios/municipios';
+import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
+import { Category } from "@material-ui/icons";
 
 
 var hist = createBrowserHistory();
@@ -195,15 +197,34 @@ function App() {
                 ))
             }
 
+            {/* ----------------SUB PÁGINAS DE CURSOS */}
+
+            {
+                cursosAndCategias.map(Category =>  (
+                    Category.cursos.map(curso =>  (
+                        <Route
+                            path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}`}
+                            render={props => (
+                                <CursoMesh
+                                    nombre={curso.nombre}
+                                    categoria={Category.categoria}
+                                    {...props}
+                                />
+                            )}
+                        />
+                    ))
+                ))
+            }
+
             {/* ---------------SUB PÁGINAS DE CURSOS */}
-            <Route 
+      {/*       <Route 
                 path="/curso" 
                 render={props => (
                 <CursoMesh
                     {...props}
                 />
                 )}
-             />
+             /> */}
             </Switch>
         </BrowserRouter>
 

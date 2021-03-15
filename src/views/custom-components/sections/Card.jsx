@@ -69,14 +69,14 @@ const Card = (props) => {
                             </li>
                         </ul>
                         <ul className="list-inline list-inlineinfo">
-                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight">{props.titulo}</h5></a></li>
-                            {/* <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.descripcion}</p></a></li> */}
+                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
+                            {/* <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.descripcion}</p></a></li> */}
                             <li className="list-inline-item itemBtn">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
                                         props.from?
                                         <span 
-                                            onClick={(categ) => {
+                                            onClick={() => {
                                                 props.changeCategory(props.titulo)
                                             }}
                                         >
@@ -88,10 +88,12 @@ const Card = (props) => {
                                             <Link 
                                                 className="nav-link" 
                                                 to={{
-                                                    pathname: '/curso',
+                                                    pathname: `/curso/${props.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-')}`,
+                                                    nombre: props.infoCursos.nombre,
+                                                    categoria: props.categoria,
                                                     /* search: "?sort=name",
                                                     hash: "#the-hash", */
-                                                    state: props.infoCursos
+                                                    curso: props.infoCursos
                                                 }}
                                             >
                                                 Más info

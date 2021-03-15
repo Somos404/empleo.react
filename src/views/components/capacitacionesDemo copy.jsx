@@ -9,7 +9,6 @@ import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaci
 import Footer2 from "../../components/footer/footer2.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
 import CardCursos from "../custom-components/sections/cardCursos";
-import BlogComponent from "./informatorioCapacitaciones";
 
 import {
     Card,
@@ -231,26 +230,25 @@ const CapacitacionesDemo = (props) => {
                                     </Card>
                                 </CardGroup>
                             </Container>
+
+
                         </div>
-                        {
-                            categoria === '' ?
-                                <CardCategorias
-                                    changeCategory={(categ) => {
-                                        setCategoria(categ)
-                                    }}
-                                />
-                                :
-                                <CardCursos
-                                    categoria={categoria}
-                                />
-                        }
                     </div>
                 </div>
+                {
+                    categoria === '' ?
+                        <CardCategorias
+                            changeCategory={(categ) => {
+                                setCategoria(categ)
+                            }}
+                        />
+                        :
+                        <CardCursos
+                            categoria={categoria}
+                        />
+                }
+
             </div>
-                <div>
-                <BlogComponent />
-                </div>
-            
             <Footer2 />
         </div>
     );
