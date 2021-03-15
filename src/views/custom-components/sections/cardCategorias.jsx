@@ -78,23 +78,26 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const checkDevice = () => {
-
-    if(useMediaQuery('(min-width:1200px)') && useMediaQuery('(max-width:1600px)')){
-        return 4
-    }else if(useMediaQuery('(min-width:800px)') && useMediaQuery('(max-width:1200)')){
-        return 4
-    }else if(useMediaQuery('(min-width:320px)') && useMediaQuery('(max-width:800px)')){
-        return 4
-    }
-}
 
 const CardCursos = (props) => {
     const classes = useStyles();
 
+    const desk = useMediaQuery('(min-width:992px)');
+    const table = useMediaQuery('(max-width:992px)');
+    const mobile = useMediaQuery('(max-width:768px)');
+
+    const setHeight = () => {
+        // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
+        //se muestran 4 por fila
+        if(desk) return (((state.categoriasFiltradas.length>=4?Math.ceil((state.categoriasFiltradas.length)/4):1))*235)+200+(Math.ceil((state.categoriasFiltradas.length/4)*30))  
+        //se muestran 4 por fila
+        if(table && !mobile) return (((state.categoriasFiltradas.length>=2?Math.ceil((state.categoriasFiltradas.length)/2):1))*235)+200+(Math.ceil((state.categoriasFiltradas.length/2)*30))
+        //se muestran 4 por fila
+        if(mobile) return ((state.categoriasFiltradas.length)*235)+200+(Math.ceil((state.categoriasFiltradas.length)*30))
+    }
+
     const [state, setState] = React.useState({
         search: '',
-        dispositivo: checkDevice,
         categoriasFiltradas: cursosAndCategias,
         filtroCategoria: []
     });
@@ -122,7 +125,7 @@ const CardCursos = (props) => {
     }
 
     return (
-        <div className="team2" style={{position: 'relative',width: '100%',height: `${state.categoriasFiltradas.length*6}em`}}>
+        <div className="team2" style={{position: 'relative',width: '100%',height: `${setHeight()}px`}}>
             <div className={classes.sectionSearch}>
                 <Row className="justify-content-center">
                     <Col md="12" className="text-center">

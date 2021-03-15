@@ -95,7 +95,6 @@ const CardCursos = (props) => {
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
 
-
     const setHeight = () => {
         // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
         //se muestran 4 por fila
@@ -106,15 +105,12 @@ const CardCursos = (props) => {
         if(mobile) return ((state.cursosFiltrados.length)*235)+200+(Math.ceil((state.cursosFiltrados.length)*30))
     }
 
-
     const [state, setState] = React.useState({
         categoria: props.categoria,
         search: '',
         name: 'hai',
         cursosFiltrados: filtro(cursosAndCategias, props.categoria)
     });
-
-
    
     const searchFilter = (event) => {
         
