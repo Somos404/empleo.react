@@ -111,6 +111,23 @@ Static slide 10
         color:$white;
     }
 }
+.static-slider10InfoCap {
+    padding: 20% 0;
+    background-image: $banner-slider1;
+    background-size:cover;
+    background-position: center center;
+    height: auto !important;
+    .title{
+        color:$white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .subtitle{
+        color:$white;
+    }
+}
 @media(max-width:900px) {
     .static-slider10 {
         .title {

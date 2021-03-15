@@ -1,5 +1,7 @@
 /* eslint-disable */
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import { Row, Col, Container, Card } from 'reactstrap';
 
 import img1 from '../../../assets/images/capacitaciones/icono01InfoCap.svg';
@@ -10,6 +12,9 @@ import img5 from '../../../assets/images/capacitaciones/lineaInforCap.svg';
 import img6 from '../../../assets/images/capacitaciones/lineaInforCap2.svg';
 import img7 from '../../../assets/images/capacitaciones/lineaInforCap3.svg';
 import img8 from '../../../assets/images/capacitaciones/lineaInforCap4.svg';
+import imgInfo from '../../../assets/images/capacitaciones/logo_membrete.png';
+
+
 
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
@@ -40,23 +45,38 @@ const BlogComponent = () => {
     const classes = useStyles();
     return (
         <div>
-            <div className="spacer bg-light">
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col md="7" className="text-center">
-                            <h1 className="title font-bold">Blog</h1>
-                            <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
+            <div className="coming-soon" id="coming">
+                <Container className="py-5 mt-5">
+                    <Row>
+                        <Col md="6">
+                            <div className="d-flex align-items-center">
+                                <div>
+                                    {/* <h2 className="title text-white font-weight-bold">Pro Version coming soon</h2>
+                                <h6 className="subtitle font-light text-white">We will add Pro Version with tons of great features and multiple category demos which is ready to use...</h6>
+                                <a href="/#coming" className="btn btn-outline-light m-r-20 btn-md m-t-30 font-14">Comming Soon</a> */}
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div className="blog-home2 spacer">
+            <div className="blog-home2 spacer TopContenedorInfo">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md="8" className="text-center">
-                            <h2 className="title">Recent Blogs</h2>
-                            <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                        </Col>
+                        <Row className=" justify-content-center imagenInfo">
+                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
+                        </Row>
+                        <Row className="rowSubtInfoCap">
+                            <Col md="6" className="text-left">
+                                <p className="m-t-20">Para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector del Software a través de la formación en programación.
+</p>
+                            </Col>
+                            <Col md="6" className="text-left">
+                                <p className="m-t-20">Es un programa del Gobierno del Chaco en conjunto con las empresas del Polo IT Chaco, Globant, UTN y UNCAUS.
+</p>
+                            </Col>
+                        </Row>
+
                     </Row>
                     <Row className="m-t-40 justify-content-center">
                         <Col lg="3" md="4">
@@ -64,7 +84,7 @@ const BlogComponent = () => {
                                 <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Introducción a <br />la Programación</a></h5>
-                                <span className="img-ho contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img5} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img5} alt="wrappixel kit" /></span>
 
                                 <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
                                 programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
@@ -81,7 +101,7 @@ const BlogComponent = () => {
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">02</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Programación y <br />
                                 Desarrollo Web</a></h5>
-                                <span className="img-ho contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img6} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img6} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
                                 Informáticos.</p>
                                 <Row className="justify-content-center">
@@ -100,7 +120,7 @@ const BlogComponent = () => {
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Especialización <br />
                                 en Lenguajes<br />
 de Programación</a></h5>
-                                <span className="img-ho contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img7} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img7} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
 perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
                                 <Row className="justify-content-center rowBtnMas">
@@ -118,7 +138,7 @@ perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los p
                                 Emprender<br />
                                 en TICs
 </a></h5>
-                                <span className="img-ho contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img8} alt="wrappixel kit" /></span>
+                                <span className="contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img8} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Adquirirás herramientas que te
                                 permitan iniciar un emprendimiento vinculado a las TICs, y podrás
 acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
@@ -131,6 +151,29 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                         </Col>
                     </Row>
                 </Container>
+            </div>
+            <div className="static-slider10InfoCap">
+                <Container>
+                    <Row className="justify-content-left">
+                        <Col md="6" className="align-self-left text-left">
+                           
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>CONTACTO <i className="ti-arrow-right"></i></span></a>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-left">
+                    <Col lg="6" md="6" className="contenedor-social-footerInfCap align-self-center text-center">
+                        <div className="round-social light">
+                                <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right fade-in "  target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
+                                <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>        
+                            </div>
+                    </Col>
+                    </Row>
+                   
+                  
+                </Container>
+               
             </div>
         </div>
     );

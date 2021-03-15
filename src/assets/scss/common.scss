@@ -868,6 +868,22 @@ footer
 
 }
 
+.container-socialesInfoCap{
+    background-image: url(../../assets/images/capacitaciones/backInfoCapContacto.png);
+    min-height: 567px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 14em;
+    margin-bottom: -4em;
+    margin-top: 3em;
+
+}
+
+
 
 .row-social{
     margin-bottom: 2.5em;
@@ -2712,6 +2728,13 @@ Footer 4
     position: absolute;
 }
 
+.contenedor-social-footerInfCap{
+    margin-left: -8%;
+    margin-top: 2%;
+    position: relative;
+}
+
+
 .boton-contacto{
     width: 200px !important;
     height: 48px;
@@ -2760,6 +2783,16 @@ Footer
     left: 0;
     align-items: center;
     margin-top: 0em;
+}
+
+.contenedor-logos-footerInforCap{
+    background-color: none;
+    background-size: cover;
+
+    display: flex;
+    left: 0;
+    align-items: center;
+    
 }
 
 .img-subse{
@@ -3273,7 +3306,32 @@ Modal in center
     color: black;
     padding: 7%;
 }
+.coming-soon {
+    min-height: 723px;
+    overflow: hidden;
+    width: 103%;
+    background-size: cover;
+    background-position: top 20% center;
+    background-image: $c2a-image1;
+}
 
+.TopContenedorInfo{
+    padding: 6px 0;
+    position: relative;
+    margin-top: -10em;
+}
+
+.rowSubtInfoCap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.imgResponsiveInformatCap{
+    width: 30em;
+    height: 7em;
+}
 .img-InfoCap{
     width: 3.5em !important;
     height: 3em !important;
@@ -3353,8 +3411,36 @@ Modal in center
     .tituloCardCursosEscritorio{
         margin-left: 8em;
     }
+    .static-slider10InfoCap {
+        padding: 30% 0!important;
+      
+        
+    }
+}
+@media (max-width:1467px){
+    
+    .static-slider10InfoCap {
+        padding: 23% 0!important;
+      
+        
+    }
 }
 
+@media (min-width:1468px){
+    
+    .static-slider10InfoCap {
+        padding: 25% 0!important;
+      
+        
+    }
+}
+.btonContactoInfoCap{
+    background-color: white!important;
+    border: 1px solid black!important;
+    color: black;
+    font-weight: 600;
+    width: 23em;
+}
 .contenedorImagenyContenido{
     display: block;
 }
