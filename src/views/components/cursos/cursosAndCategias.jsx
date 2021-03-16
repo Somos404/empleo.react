@@ -1,389 +1,427 @@
 export const cursosAndCategias = [
-    {
-        categoria: 'Empleo y Emprendimientos',
-        imgUrl: 'pro-pic EmpleoyEmprendimientos',
-        cursos:[
-            {
-                nombre: 'Gestión de redes sociales',
-                imgUrl: 'pro-pic GestiónDeRedesSociales',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                requerimientos: 
-                    ['1. Computadora o celular con acceso a redes sociales.',
-                     '2. Cuenta de Facebook e Instagram (requerido).',
-                        '3. Cuenta de Youtube y Linkedin (opcional).'
-                    ],
-                especificaciones: 
-                    ['4 SEMANAS DE DURACIÓN',
-                     '3 HORAS SEMANALES',
-                      'GRATUITO', 'CERTIFICADO'
-                    ],
-                contenido: 
-                    ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                    ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/login/index.php?',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Formalización de emprendimientos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic FormalizaciónDeEmprendimientos',
-                requerimientos: [
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Diseño gráfico  para emprendimientos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic DiseñoGraficoParaEnprendimientos',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Administración de emprendimientos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic Administracióndeemprendimientos',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                 ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Edición de videos para emprendimientos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic EdicionDeVideosParaEmmprendimientos',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Introducición al desarrollo de videojuegos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic IntroduccionalDesarrolloDeVideojuegos',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido: [
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Herramientas para el empleo',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic HerramienttasParaElEmpleo',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Vender online',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic VenderOnline',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',    
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Manipulación higiénica de alimentos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic ManipulacionHigenicaDeAlimentos',
-                requerimientos: [
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Excel inicial',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic ExcelInicial',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Excel Avanzado',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic ExcelAvanzado',
-                requerimientos: [
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Word inicial',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic WOrdInicial',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones: [
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido: [
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            },
-            {
-                nombre: 'Word Avanzado',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic WordAvanzado',
-                requerimientos:[
-                    '1.Computadora o celular con acceso a redes sociales.',
-                    '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-                especificaciones:[
-                    '4 SEMANAS DE DURACIÓN',
-                    '3 HORAS SEMANALES',
-                    'GRATUITO', 'CERTIFICADO'
-                ],
-                contenido:[
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
-            }
+  {
+    categoria: "Empleo y Emprendimientos",
+    imgUrl: "pro-pic EmpleoyEmprendimientos",
+    cursos: [
+      {
+        nombre: "Gestión de redes sociales",
+        imgUrl: "pro-pic GestiónDeRedesSociales",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        requerimientos: [
+          "1. Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
         ],
-    },
-    /** -----------INFORMATORIO------------ */
- /*    {
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect: "https://capacitaciones.chaco.gob.ar/course/view.php?id=28",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Formalización de emprendimientos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic FormalizaciónDeEmprendimientos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=27",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Diseño gráfico  para emprendimientos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic DiseñoGraficoParaEnprendimientos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=26",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Administración de emprendimientos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic Administracióndeemprendimientos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=25",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Edición de videos para emprendimientos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic EdicionDeVideosParaEmmprendimientos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=21",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Introducición al desarrollo de videojuegos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic IntroduccionalDesarrolloDeVideojuegos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=19",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Herramientas para el empleo",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic HerramienttasParaElEmpleo",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=16",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Vender online",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic VenderOnline",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=15",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Manipulación higiénica de alimentos",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic ManipulacionHigenicaDeAlimentos",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/index.php?categoryid=6",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Excel inicial",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic ExcelInicial",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=11",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Excel Avanzado",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic ExcelAvanzado",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=12",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Word inicial",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic WOrdInicial",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=9",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+      {
+        nombre: "Word Avanzado",
+        descripcionLarga:
+          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        imgUrl: "pro-pic WordAvanzado",
+        requerimientos: [
+          "1.Computadora o celular con acceso a redes sociales.",
+          "2. Cuenta de Facebook e Instagram (requerido).",
+          "3. Cuenta de Youtube y Linkedin (opcional).",
+        ],
+        especificaciones: [
+          "4 SEMANAS DE DURACIÓN",
+          "3 HORAS SEMANALES",
+          "GRATUITO",
+          "CERTIFICADO",
+        ],
+        contenido: [
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+        ],
+        UrlToRedirect:
+          "https://capacitaciones.chaco.gob.ar/course/view.php?id=10",
+        horasSemanales: 3,
+        fechaInscrpcion: [
+          {
+            empieza: "",
+            termina: ``,
+          },
+        ],
+      },
+    ],
+  },
+  /** -----------INFORMATORIO------------ */
+  /*    {
         categoria: 'Informatorio',
         imgUrl: 'pro-pic Informatorio',
         cursos:[
@@ -509,8 +547,8 @@ export const cursosAndCategias = [
             }
         ]
     }, */
-    /** ----------- UniMOOC ------------ */
-   /*  {
+  /** ----------- UniMOOC ------------ */
+  /*  {
         categoria: 'UniMOOC',
         imgUrl: 'pro-pic UniMOOC',
         cursos:[
@@ -1055,5 +1093,4 @@ export const cursosAndCategias = [
             }
         ]
     }, */
-]
-
+];
