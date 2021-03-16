@@ -45,8 +45,20 @@ const useStyles = makeStyles((theme) => ({
     inputProps: {
         color: '#6f7074',
         borderRadius: '50px',
+        border: '1px solid #707070',
         backgroundColor: '#ffffff',
+        fontWeight: 'bold',
     },
+
+    SelectProps: {
+        color: '#6f7074',
+        borderRadius: '50px',
+        border: '1px solid #707070',
+        backgroundColor: '#ffffff',
+        textAlign: 'left',
+        fontWeight: 'bold'
+    },
+
     titulo:{
         fontWeight: 'bold',
         color: '#ffffff',
@@ -151,7 +163,7 @@ const CardCursos = (props) => {
                         <div className={classes.search}>
                             <FormControl variant="outlined" className={classes.formControl}>
                                 <Select
-                                    className={classes.inputProps}
+                                    className={classes.SelectProps}
                                     value={state.categoria}
                                     onChange={handleChange}
                                     inputProps={{ 'aria-label': 'Without label' }}
