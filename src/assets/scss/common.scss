@@ -363,13 +363,16 @@ redes-sociales-nav
 }
 
 .static-slider-headCapacitaciones {
-    min-height: 1024px;
+    min-height: 162vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     background-size: cover;
     background-position: center center;
+    background-image: url(/static/media/headerCapacitaciones.e99be426.png);
+    margin-top: -7%;
     background-image: $banner-imageCapacitaciones;
 
     .title {
@@ -3220,10 +3223,50 @@ Modal in center
     max-width: 1569px;
 }
 .marginColHeaderCap{
-    margin-top: -7%;
+    margin-top: 5%;
     margin-left: 5.4%;
     position: relative;
 }
+
+.titleInfoCaHab{
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+
+.titleInfoCaHabBold{
+    color: white;
+
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.titleInfoCaHabBold{
+    font-weight: 900;
+}
+
+.textTituloboldInfoCap{
+    font-weight: 900;
+}
+.lineaInfoCaHab{
+    width: 35%!important;
+    height: .8em;
+    border: none;
+    border-radius: 20em;
+   
+    background: rgb(255,146,1)!important;
+    background: linear-gradient(90deg, rgba(255,146,1,1) 0%, rgba(254,155,0,1) 7%, rgba(253,180,0,1) 19%, rgba(252,221,0,1) 77%, rgba(252,221,0,1) 100%)!important;
+    margin-left: 0% !important;
+    margin-top: 4%!important;
+}
+.titulosInfoCapHab{
+    position: relative; 
+    margin-top: -29em;
+  
+ 
+}
+
 .containerHeaderCap{
     max-width: 100%;
 }
@@ -3435,6 +3478,9 @@ Modal in center
       
         
     }
+    .static-slider-headCapacitaciones {
+        min-height: 157vh;
+    }    
 }
 
 @media (min-width:1468px){
@@ -3483,6 +3529,18 @@ Modal in center
     }
   }
 
+  .lineaHeaderInfoCap{
+    width: 20%;
+    height: .8em;
+    border: none;
+    border-radius: 20em;
+    margin-top: 2% !important;
+    background-color: #2CB0CF;
+    background-image: linear-gradient(to right, #2CB0CF, #7d446e, #D41183);
+    margin-left: 0% !important;
+
+  }
+  
   .ResponsiveHiddenCapacitaciones{
       display: none!important;
   }

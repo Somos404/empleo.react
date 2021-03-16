@@ -64,7 +64,17 @@ const BlogComponent = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Row className=" justify-content-center imagenInfo">
+                        <div className="titulosInfoCapHab justify-content-left">
+                            <h1 className="title-1 titleInfoCaHab">Animate a trabajar</h1>
+                    <h1 className="title-1 titleInfoCaHab">en el mundo del <span className="textTituloboldInfoCap">software</span> </h1>
+                    <h1 className="title-1 titleInfoCaHabBold TitHeaderCapbold">y programación</h1> 
+                    {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
+                    {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}
+                    <hr className="lineaCard lineaCard1 lineaCard1Responsive lineaHeaderInfoCap lineaInfoCaHab" />
+                            </div>
                             <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
+                           
+                  
                         </Row>
                         <Row className="rowSubtInfoCap">
                             <Col md="6" className="text-left">
