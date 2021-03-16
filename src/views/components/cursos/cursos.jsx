@@ -55,7 +55,7 @@ export const cursos = [
     },
     {
         titulo: 'Formalización de emprendimientos',
-        descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
+        // descripcion: 'Lorem ipsum dolor sit, consectetur adipiscing elit.',
         categoria: 'Empleo y Emprendimientos',
         imgUrl: 'pro-pic FormalizaciónDeEmprendimientos',
         UrlToRedirect: 'curso5',

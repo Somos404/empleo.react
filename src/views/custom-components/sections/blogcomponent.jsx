@@ -64,7 +64,7 @@ const BlogComponent = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Row className=" justify-content-center imagenInfo">
-                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
+                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
                         </Row>
                         <Row className="rowSubtInfoCap">
                             <Col md="6" className="text-left">
@@ -84,7 +84,7 @@ const BlogComponent = () => {
                                 <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Introducción a <br />la Programación</a></h5>
-                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img5} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={img5} alt="wrappixel kit" /></span>
 
                                 <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
                                 programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
@@ -101,7 +101,7 @@ const BlogComponent = () => {
                                 <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">02</span></div>
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Programación y <br />
                                 Desarrollo Web</a></h5>
-                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1" src={img6} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={img6} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
                                 Informáticos.</p>
                                 <Row className="justify-content-center">
@@ -120,7 +120,7 @@ const BlogComponent = () => {
                                 <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Especialización <br />
                                 en Lenguajes<br />
 de Programación</a></h5>
-                                <span className=" contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img7} alt="wrappixel kit" /></span>
+                                <span className=" contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap img-responsiveInfoCapLinea" src={img7} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
 perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
                                 <Row className="justify-content-center rowBtnMas">
@@ -138,7 +138,7 @@ perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los p
                                 Emprender<br />
                                 en TICs
 </a></h5>
-                                <span className="contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap" src={img8} alt="wrappixel kit" /></span>
+                                <span className="contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap img-responsiveInfoCapLinea" src={img8} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Adquirirás herramientas que te
                                 permitan iniciar un emprendimiento vinculado a las TICs, y podrás
 acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
@@ -152,14 +152,14 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                     </Row>
                 </Container>
             </div>
-            <div className="static-slider10InfoCap">
+            <div className="static-slider10InfoCap static-slider10InfoCapREsponsive">
                 <Container>
                     <Row className="justify-content-left">
                         <Col md="6" className="align-self-left text-left">
                            
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap" data-toggle="collapse" href=""><span>CONTACTO <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>CONTACTO <i className="ti-arrow-right"></i></span></a>
                         </Col>
                     </Row>
                     <Row className="justify-content-left">

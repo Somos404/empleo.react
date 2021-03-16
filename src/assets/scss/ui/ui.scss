@@ -116,7 +116,7 @@ Static slide 10
     background-image: $banner-slider1;
     background-size:cover;
     background-position: center center;
-    height: auto !important;
+    height: 100% !important;
     .title{
         color:$white;
         text-transform: uppercase;

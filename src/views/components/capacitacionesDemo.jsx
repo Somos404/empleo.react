@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'reactstrap';
 // core components
 import Header from "../../components/header/header.jsx";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
-import Footer2 from "../../components/footer/footer2.jsx";
+import Footer3 from "../../components/footer/footer3.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
 import CardCursos from "../custom-components/sections/cardCursos";
 import BlogComponent from "./informatorioCapacitaciones";
@@ -159,7 +159,7 @@ const CapacitacionesDemo = (props) => {
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
                                             <Col class="col-md-2">
-                                                <div className="m-r-20"><img src={img1} width="70" className="rounded" alt="img" /></div>
+                                                <div className="m-r-20"><img src={img1} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
                                             <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
@@ -176,7 +176,7 @@ const CapacitacionesDemo = (props) => {
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
                                             <Col class="col-md-2">
-                                                <div className="m-r-20"><img src={img2} width="70" className="rounded" alt="img" /></div>
+                                                <div className="m-r-20"><img src={img2} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
                                             <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
@@ -197,7 +197,7 @@ const CapacitacionesDemo = (props) => {
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
                                             <Col class="col-md-2">
-                                                <div className="m-r-20"><img src={img3} width="70" className="rounded" alt="img" /></div>
+                                                <div className="m-r-20"><img src={img3} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
                                             <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
@@ -214,7 +214,7 @@ const CapacitacionesDemo = (props) => {
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
                                             <Col class="col-md-2">
-                                                <div className="m-r-20"><img src={img4} width="70" className="rounded" alt="img" /></div>
+                                                <div className="m-r-20"><img src={img4} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
                                             <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
@@ -249,9 +249,10 @@ const CapacitacionesDemo = (props) => {
             </div>
                 <div>
                 <BlogComponent />
+                <Footer3 />
                 </div>
             
-            <Footer2 />
+     
         </div>
     );
 }

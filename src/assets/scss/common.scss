@@ -2785,6 +2785,17 @@ Footer
     margin-top: 0em;
 }
 
+
+.contenedor-logos-footerInfoCap{
+    background-size: cover;
+    height: 0em;
+    display: flex;
+    left: 0;
+    align-items: center;
+    margin-top: -5%;
+    margin-left: 6%;
+}
+
 .contenedor-logos-footerInforCap{
     background-color: none;
     background-size: cover;
@@ -3420,7 +3431,7 @@ Modal in center
 @media (max-width:1467px){
     
     .static-slider10InfoCap {
-        padding: 23% 0!important;
+        padding: 12% 0!important;
       
         
     }
@@ -3429,7 +3440,7 @@ Modal in center
 @media (min-width:1468px){
     
     .static-slider10InfoCap {
-        padding: 25% 0!important;
+        padding: 17% 0!important;
       
         
     }

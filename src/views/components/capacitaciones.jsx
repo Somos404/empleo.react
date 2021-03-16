@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { Container, Row, Col } from 'reactstrap';
 // core components
 import Header from "../../components/header/header.jsx";
-import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
+import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer2 from "../../components/footer/footer2.jsx";
 import CardCursos from "../custom-components/sections/cardCursos";
 
@@ -30,7 +30,7 @@ const Capacitaciones = (props) => {
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
-                    <HeaderBannerCapacitaciones />
+                <HeaderBanner />
 
                     <div className="spacer-Header">
                         <Container>
@@ -139,7 +139,7 @@ const Capacitaciones = (props) => {
                                     <Card className="cardsecondContRed2">
                                         <CardImg top width="100%" src={img4} alt="Card image cap" className="cardImgRed" alt="Card image cap" />
                                         <CardBody className="cardBodyRed">
-                                            <CardTitle className="card-title-redUlt" tag="h5">Sin días y horarios fijos</CardTitle>
+                                            <CardTitle className="card-title-red card-title-redResponsive" tag="h5">Sin días y horarios fijos</CardTitle>
                                             <hr className="lineaCard" />
                                             <CardText className="card-sub-title-red">Podrás realizarlo manejando tus propios tiempos, pero siempre
                                             tendrás objetivos semanales que cumplir.
