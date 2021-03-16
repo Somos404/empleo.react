@@ -13,7 +13,6 @@ import BlogComponent from "./informatorioCapacitaciones";
 
 import {
     Card,
-    CardImg,
     CardTitle,
     CardText,
     CardGroup,
@@ -25,15 +24,9 @@ import img2 from '../../assets/images/capacitaciones/iconoCertificados.svg';
 import img3 from '../../assets/images/capacitaciones/iconoTutorados.svg';
 import img4 from '../../assets/images/capacitaciones/iconoHorarios.svg';
 
-import img5 from '../../assets/images/oficios/flechaDer.svg';
-import img6 from '../../assets/images/oficios/flachaIzq.svg';
-import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
-import { Colorize } from "@material-ui/icons";
-
-
 
 const CapacitacionesDemo = (props) => {
-    const [categoria, setCategoria] = React.useState('')
+    const [categoria, setCategoria] = React.useState('Todos')
     return (
         <div>
             <Header />
@@ -233,7 +226,7 @@ const CapacitacionesDemo = (props) => {
                             </Container>
                         </div>
                         {
-                            categoria === '' ?
+                            categoria === 'categoria' ?
                                 <CardCategorias
                                     changeCategory={(categ) => {
                                         setCategoria(categ)

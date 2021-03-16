@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     container:{
         position: 'relative',
         width: '100%',
-        height: '40em',
+        height: props => props.height,
     },
     sectionSearch:{
         backgroundImage: `url(${img})`,
@@ -32,15 +32,15 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         position: 'absolute',
-        height: '15em',
+        height: '16em',
         width: '100%',
     },
     sectionCard:{
         zIndex: '9',
         position: 'absolute',
-        marginTop: '10em',
+        marginTop: props => props.marginTop,
         width: '100%',
-        height: '15em',
+        height: '16em',
     },
     inputProps: {
         color: '#6f7074',
@@ -72,12 +72,13 @@ const useStyles = makeStyles((theme) => ({
 
     formControl: {
         minWidth: '15em',
+        margin: '.5em'
     },
 }));
 
 
 const filtro = (Arr, value) => {
-    if(value === ''){
+    if(value === 'Todos'){
         let array = []
         Arr.forEach(element => {
             array = array.concat(element.cursos);
@@ -89,21 +90,9 @@ const filtro = (Arr, value) => {
 }
 
 const CardCursos = (props) => {
-
-    const classes = useStyles();
     const desk = useMediaQuery('(min-width:992px)');
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
-
-    const setHeight = () => {
-        // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
-        //se muestran 4 por fila
-        if(desk) return (((state.cursosFiltrados.length>=4?Math.ceil((state.cursosFiltrados.length)/4):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/4)*30))  
-        //se muestran 4 por fila
-        if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
-        //se muestran 4 por fila
-        if(mobile) return ((state.cursosFiltrados.length)*235)+200+(Math.ceil((state.cursosFiltrados.length)*30))
-    }
 
     const [state, setState] = React.useState({
         categoria: props.categoria,
@@ -112,6 +101,22 @@ const CardCursos = (props) => {
         cursosFiltrados: filtro(cursosAndCategias, props.categoria)
     });
    
+    const setHeight = () => {
+        // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
+        //se muestran 4 por fila
+        if(desk) return (((state.cursosFiltrados.length>=4?Math.ceil((state.cursosFiltrados.length)/4):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/4)*30))  
+        //se muestran 4 por fila
+        if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
+        //se muestran 4 por fila
+        if(mobile) return ((state.cursosFiltrados.length)*235)+250+(Math.ceil((state.cursosFiltrados.length)*30))
+    }
+
+    const classes = useStyles(
+        {
+            marginTop: mobile?'13em':'10em',
+            height: `${setHeight()}px`
+        }
+    );
     const searchFilter = (event) => {
         
         setState({
@@ -138,7 +143,7 @@ const CardCursos = (props) => {
     };
 
     return (
-        <div className="team2" style={{position: 'relative',width: '100%',height: `${setHeight()}px`}}>
+        <div className={`${classes.container} team2`} /* style={{position: 'relative',width: '100%',height: `${setHeight()}px`}} */>
             <div className={classes.sectionSearch}>
                 <Row className="justify-content-center">
                     <Col md="12" className="text-center">
@@ -151,8 +156,8 @@ const CardCursos = (props) => {
                                     onChange={handleChange}
                                     inputProps={{ 'aria-label': 'Without label' }}
                                 >
-                                <MenuItem value="">
-                                    Todos
+                                <MenuItem value="Todos">
+                                    Todas
                                 </MenuItem>
                                 {
                                     cursosAndCategias.map((e, i) =>  (
@@ -161,7 +166,7 @@ const CardCursos = (props) => {
                                 }
                                 </Select>
                             </FormControl>
-                            <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
+                            <FormControl className={clsx(classes.margin, classes.textField), classes.formControl} variant="outlined">
                                 <OutlinedInput
                                     className={classes.inputProps}
                                     id="outlined-adornment-weight"

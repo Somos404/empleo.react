@@ -203,7 +203,7 @@ function App() {
                 cursosAndCategias.map(Category =>  (
                     Category.cursos.map(curso =>  (
                         <Route
-                            path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?¿/g, "")}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?¿/g, "")}`}
+                            path={`/curso/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
                             render={props => (
                                 <CursoMesh
                                     nombre={curso.nombre}
