@@ -93,7 +93,7 @@ const filtro = (Arr, value) => {
     if(value === 'Todos'){
         let array = []
         Arr.forEach(element => {
-            array = array.concat(element.cursos);
+            array = array.concat(element.cursos.map(v => ({...v, categoria: element.categoria})));
         });
         return array
     }else{

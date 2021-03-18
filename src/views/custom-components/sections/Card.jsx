@@ -88,7 +88,7 @@ const Card = (props) => {
                                             <Link 
                                                 className="nav-link" 
                                                 to={{
-                                                    pathname: `/curso/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
+                                                    pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
                                                     nombre: props.infoCursos.nombre,
                                                     /* search: "?sort=name",
                                                     hash: "#the-hash", */

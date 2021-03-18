@@ -81,6 +81,7 @@ const Curso4 = (props) => {
     const [curso, setCurso] = useState({
         nombre: '',
         descripcionLarga: '',
+        categoria: '',
         requerimientos: [],
         especificaciones: [],
         contenido: [],
@@ -95,6 +96,7 @@ const Curso4 = (props) => {
             setCurso(
                 {
                     nombre: curso.nombre,
+                    categoria: props.categoria,
                     descripcionLarga: curso.descripcionLarga,
                     requerimientos: curso.requerimientos,
                     especificaciones: curso.especificaciones,
@@ -109,6 +111,7 @@ const Curso4 = (props) => {
             setCurso(
                 {
                     nombre: curso.nombre,
+                    categoria: props.categoria,
                     descripcionLarga: curso.descripcionLarga,
                     requerimientos: curso.requerimientos,
                     especificaciones: curso.especificaciones,
@@ -126,7 +129,10 @@ const Curso4 = (props) => {
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
-                    <HeaderBannerCursos />
+                    <HeaderBannerCursos 
+                        cursoactual= {curso.nombre} 
+                        categoria= {curso.categoria} 
+                    />
                         <div>
                             <div className="containerEscritorioCursosHidden">
                                 <section>
