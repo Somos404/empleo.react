@@ -23,6 +23,7 @@ import img1 from '../../assets/images/capacitaciones/iconoGratis.svg';
 import img2 from '../../assets/images/capacitaciones/iconoCertificados.svg';
 import img3 from '../../assets/images/capacitaciones/iconoTutorados.svg';
 import img4 from '../../assets/images/capacitaciones/iconoHorarios.svg';
+import imgInfo from '../../assets/images/capacitaciones/logoCapHeader.svg';
 
 
 const CapacitacionesDemo = (props) => {
@@ -33,13 +34,20 @@ const CapacitacionesDemo = (props) => {
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBannerCapacitaciones />
+                    <Row className="justify-content-center">
+                                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader" width="200" />
 
+                                            </Row>
                     <div className="spacer-Header">
                         <Container className="containerPCap">
                             <Row xs="2">
                                 <Col lg="6" className="">
                                     <section className="text-gray-600 body-font">
                                         <div className="ResponsiveHiddenCapacitaciones">
+                                            {/* <Row className="justify-content-center">
+                                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
+
+                                            </Row> */}
                                             <Row className="justify-content-center">
                                                 <h1 className="text-center  titulo1ContResponsiveModificado">Cursos para tu formación laboral y emprendedora
                                                 </h1>

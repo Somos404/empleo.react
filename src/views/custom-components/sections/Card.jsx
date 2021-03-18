@@ -18,7 +18,7 @@ const Card = (props) => {
             <Col md="12" className={`col-md-12 heightWidthCard ${props.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
                     <div className="card-img-overlay"  >
-                        <ul className="list-inline list-inlineRedes">
+                        <ul className="list-inline list-inlineRedes list-inlineRedesTop">
                             <li className="list-inline-item">
                                 <a>
                                     <FacebookShareButton
@@ -71,7 +71,7 @@ const Card = (props) => {
                         <ul className="list-inline list-inlineinfo">
                             <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
                             {/* <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.descripcion}</p></a></li> */}
-                            <li className="list-inline-item itemBtn">
+                            <li className="list-inline-item itemBtn itembtnTop">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
                                         props.from?
