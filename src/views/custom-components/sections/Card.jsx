@@ -70,7 +70,7 @@ const Card = (props) => {
                         </ul>
                         <ul className="list-inline list-inlineinfo">
                             <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
-                            {/* <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.descripcion}</p></a></li> */}
+                            <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.nombre}</p></a></li>
                             <li className="list-inline-item itemBtn itembtnTop">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
