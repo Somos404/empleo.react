@@ -169,7 +169,7 @@ const CardCursos = (props) => {
                                     inputProps={{ 'aria-label': 'Without label' }}
                                 >
                                 <MenuItem value="Todos">
-                                    Todas
+                                    Categoría
                                 </MenuItem>
                                 {
                                     cursosAndCategias.map((e, i) =>  (
@@ -182,7 +182,7 @@ const CardCursos = (props) => {
                                 <OutlinedInput
                                     className={classes.inputProps}
                                     id="outlined-adornment-weight"
-                                    placeholder='Buscar...'
+                                    placeholder='Buscar curso'
                                     onChange={searchFilter}
                                     value={state.search}
                                     endAdornment={
