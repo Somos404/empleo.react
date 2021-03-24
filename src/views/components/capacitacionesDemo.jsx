@@ -27,7 +27,7 @@ import imgInfo from '../../assets/images/capacitaciones/logoCapHeader.svg';
 
 
 const CapacitacionesDemo = (props) => {
-    const [categoria, setCategoria] = React.useState('Todos')
+    const [categoria, setCategoria] = React.useState(props.location.categoria?props.location.categoria:'Todos')
     return (
         <div>
             <Header />

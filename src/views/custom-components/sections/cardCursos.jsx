@@ -97,7 +97,7 @@ const filtro = (Arr, value) => {
         });
         return array
     }else{
-        return Arr.find(e => e.categoria === value).cursos
+        return Arr.find(e => e.categoria === value).cursos.map(obj=> ({ ...obj, categoria: value}))
     }
 }
 
@@ -215,10 +215,10 @@ const CardCursos = (props) => {
                                     state.cursosFiltrados.map((curso, i) =>  (
                                         <Card
                                             key={i+'cards'}
-                                            categoria={state.categoria}
-                                            infoCursos = {curso}
-                                            imgUrl={curso.imgUrl} 
-                                            UrlToRedirect={curso.UrlToRedirect}
+                                            infoCursos = {{
+                                                ...curso, 
+                                                share: `https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`
+                                            }}
                                         />
                                     ))
                                 }

@@ -104,23 +104,17 @@ const CardCursos = (props) => {
 
 
     const searchFilter = (event) => {
-        if (event.target.value === '') {
-            setState({
-                ...state,
-                search: event.target.value,
-                categoriasFiltradas: cursosAndCategias,
-            });
-        }else{
-            setState({
-                ...state,
-                search: event.target.value,
-                categoriasFiltradas: state.categoriasFiltradas.filter(
-                    function (list) 
-                    {
-                        return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
-                    })
-            });
-        }
+        
+        setState({
+            ...state,
+            search: event.target.value,
+            categoriasFiltradas: cursosAndCategias.filter(
+                function (list) 
+                {
+                    return list.categoria.toUpperCase().includes(event.target.value.toUpperCase())
+                })
+        });
+    
         
     }
 
@@ -169,9 +163,12 @@ const CardCursos = (props) => {
                                         <Card
                                             changeCategory={props.changeCategory}
                                             key={i+'cardsCategoria'}
-                                            titulo={categoria}
-                                            imgUrl={imgUrl} 
-                                            UrlToRedirect={categoria}
+                                            infoCursos={{
+                                                categoria: categoria, 
+                                                titulo: categoria,
+                                                imgUrl: imgUrl,
+                                                share: `https://empleo.chaco.gob.ar/capacitaciones-demo`
+                                            }}
                                             from= {true}
                                         />
                                         
