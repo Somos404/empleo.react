@@ -15,7 +15,7 @@ Topbar
     transition: 0.2s ease-in;
     width: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, .60);
+    // background-color: rgba(255, 255, 255, .60);
     z-index: 20;
     position: fixed;
 }
@@ -363,7 +363,10 @@ redes-sociales-nav
 }
 
 .static-slider-headCapacitaciones {
-    min-height: 135vh;
+  
+        min-height: 140vh;
+        margin-left: -1%;
+     
     
     display: flex;
     flex-direction: column;
@@ -1608,7 +1611,7 @@ position
         display: none !important;
 
         .topbar {
-            background-color: rgba(204, 204, 204, 0.8);
+            // background-color: rgba(204, 204, 204, 0.8);
         }
     }
 }
@@ -3399,7 +3402,7 @@ top: 9% !important;
     padding: 7%;
 }
 .coming-soon {
-    min-height: 723px;
+    min-height: 95vh;
     overflow: hidden;
     width: 103%;
     background-size: cover;
@@ -3518,7 +3521,8 @@ top: 9% !important;
         
     }
     .static-slider-headCapacitaciones {
-        min-height: 157vh;
+        min-height: 140vh;
+        margin-left: -1%;
     }    
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col} from 'reactstrap';
+import { Col } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
 import {
     FacebookShareButton,
@@ -22,11 +22,13 @@ const Card = (props) => {
                             <li className="list-inline-item">
                                 <a>
                                     <FacebookShareButton
-                                        url={props.UrlToRedirect}
+                                        url={`https://empleo.chaco.gob.ar/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+
                                         quote={props.titulo}
                                         className="Demo__some-network__share-button"
                                     >
-                                        <SocialIcon 
+
+                                        <SocialIcon
                                             style={{ height: 35, width: 35 }}
                                             network="facebook"
                                             bgColor="#01B7E8"
@@ -35,14 +37,15 @@ const Card = (props) => {
                                     </FacebookShareButton>
                                 </a>
                             </li>
-                            <li>  
+                            <li>
                                 <a>
                                     <TwitterShareButton
                                         url={props.UrlToRedirect}
                                         title={props.titulo}
                                         className="Demo__some-network__share-button"
+                                        target_blank
                                     >
-                                        <SocialIcon 
+                                        <SocialIcon
                                             style={{ height: 35, width: 35 }}
                                             network="twitter"
                                             bgColor="#01B7E8"
@@ -51,20 +54,19 @@ const Card = (props) => {
                                     </TwitterShareButton>
                                 </a>
                             </li>
-                            <li>  
+                            <li>
                                 <a>
-                                    <TwitterShareButton
-                                        url={props.UrlToRedirect}
+                                    <FacebookShareButton
                                         title='test'
                                         className="Demo__some-network__share-button"
                                     >
-                                        <SocialIcon 
+                                        <SocialIcon
                                             style={{ height: 35, width: 35 }}
-                                            url="https://www.instagram.com/?hl=es-la"
+                                            url="https://www.instagram.com/empleochaco/"
                                             bgColor="#01B7E8"
                                             fgColor="white"
                                         />
-                                    </TwitterShareButton>
+                                    </FacebookShareButton>
                                 </a>
                             </li>
                         </ul>
@@ -74,33 +76,33 @@ const Card = (props) => {
                             <li className="list-inline-item itemBtn itembtnTop">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
-                                        props.from?
-                                        <span 
-                                            onClick={() => {
-                                                props.changeCategory(props.titulo)
-                                            }}
-                                        >
-                                            <Link className="nav-link">Más info</Link>
-                                            <i className="ti-arrow-right"></i>
-                                        </span>
-                                        :
-                                        <span>
-                                            <Link 
-                                                className="nav-link" 
-                                                to={{
-                                                    pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
-                                                    nombre: props.infoCursos.nombre,
-                                                    /* search: "?sort=name",
-                                                    hash: "#the-hash", */
-                                                    curso: props.infoCursos
+                                        props.from ?
+                                            <span
+                                                onClick={() => {
+                                                    props.changeCategory(props.titulo)
                                                 }}
                                             >
-                                                Más info
+                                                <Link className="nav-link">Más info</Link>
+                                                <i className="ti-arrow-right"></i>
+                                            </span>
+                                            :
+                                            <span>
+                                                <Link
+                                                    className="nav-link"
+                                                    to={{
+                                                        pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
+                                                        nombre: props.infoCursos.nombre,
+                                                        /* search: "?sort=name",
+                                                        hash: "#the-hash", */
+                                                        curso: props.infoCursos
+                                                    }}
+                                                >
+                                                    Más info
                                             </Link>
-                                            <i className="ti-arrow-right"></i>
-                                        </span>
+                                                <i className="ti-arrow-right"></i>
+                                            </span>
                                     }
-                                    
+
                                 </a>
                             </li>
                         </ul>
@@ -113,8 +115,8 @@ const Card = (props) => {
 
 const useStyles = makeStyles((theme) => ({
     card: {
-      flexGrow: 1,
-      minHeight: '10 em'
+        flexGrow: 1,
+        minHeight: '10 em'
     }
 }));
 

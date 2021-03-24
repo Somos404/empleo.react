@@ -50,7 +50,7 @@ export const cursos = [
                     'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
                     'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
                 ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/login/index.php?',
+            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=29rso3',
             horasSemanales: 3,
         },
     },
