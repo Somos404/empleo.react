@@ -13,6 +13,7 @@ import 'animate.css/animate.min.css'
 
 const Card = (props) => {
     const classes = useStyles();
+
     return (
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
             <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
@@ -71,7 +72,16 @@ const Card = (props) => {
                         </ul>
                         <ul className="list-inline list-inlineinfo">
                             <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
+                            {props.infoCursos.nombre.length > 25 
+                            ?
+                            <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight DescripcionCardWeightLarga">{props.infoCursos.nombre}</p></a></li>
+
+                            :
                             <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.nombre}</p></a></li>
+                            
+                            }
+                            {props.infoCursos.nombre.length > 25 
+                            ?
                             <li className="list-inline-item itemBtn itembtnTop">
                                 <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
                                     {
@@ -104,6 +114,39 @@ const Card = (props) => {
 
                                 </a>
                             </li>
+                            :
+                            <li className="list-inline-item itemBtn itembtnTop itembtnTopLargo">
+                                <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
+                                    {
+                                        props.from ?
+                                            <span
+                                                onClick={() => {
+                                                    props.changeCategory(props.infoCursos.titulo)
+                                                }}
+                                            >
+                                                <Link className="nav-link">Más info</Link>
+                                                <i className="ti-arrow-right"></i>
+                                            </span>
+                                            :
+                                            <span>
+                                                <Link
+                                                    className="nav-link"
+                                                    to={{
+                                                        pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
+                                                        nombre: props.infoCursos.nombre,
+                                                        /* search: "?sort=name",
+                                                        hash: "#the-hash", */
+                                                        curso: props.infoCursos
+                                                    }}
+                                                >
+                                                    Más info
+                                            </Link>
+                                                <i className="ti-arrow-right"></i>
+                                            </span>
+                                    }
+
+                                </a>
+                            </li>}
                         </ul>
                     </div>
                 </div>

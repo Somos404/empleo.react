@@ -157,7 +157,7 @@ const Curso4 = (props) => {
                                                 </Col>
                                                 <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
                                                     <div className="contenedorImagenyContenido">
-                                                    <img src={banner} alt="We are Digital Agency" className="img-fluid"></img>
+                                                    <img src={banner} alt="We are Digital Agency" className="img-fluid imgBackReqCursos"></img>
                                                         <div className="contenidoCursos">
                                                             <Row className="justify-content-center">
                                                                 <span className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificadoEscritorio btnCursosModificadoEscritorioCursorNone">Especificaciones</span>
