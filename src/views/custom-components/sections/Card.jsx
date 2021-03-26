@@ -18,7 +18,7 @@ const Card = (props) => {
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
             <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
-                    <div className="card-img-overlay"  >
+                    <div className="card-img-overlay">
                         <ul className="list-inline list-inlineRedes list-inlineRedesTop">
                             <li className="list-inline-item">
                                 <a>

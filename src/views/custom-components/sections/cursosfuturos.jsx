@@ -1,18 +1,13 @@
 /* eslint-disable */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import SearchIcon from '@material-ui/icons/Search';
 import { Row, Col, Container } from 'reactstrap';
 import FormControl from '@material-ui/core/FormControl';
 import 'animate.css/animate.min.css'
 
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import IconButton from '@material-ui/core/IconButton';
 import clsx from 'clsx';
-import Card from '../../custom-components/sections/Card'
-import {cursosAndCategias} from '../../components/cursos/cursosAndCategias';
-import Icon from '@material-ui/core/Icon';
+import CardCFuturos from '../../custom-components/sections/CardCFuturos'
+import {cursosFuturos} from '../../components/cursos/cursosFuturos';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -90,14 +85,10 @@ const CardCursos = (props) => {
                             <Container className="containerCardCategorias">
                                 <Row>
                                 {
-                                            cursosAndCategias[0].cursos.map((curso, i) =>  (
-                                                <Card
+                                            cursosFuturos.map((curso, i) =>  (
+                                                <CardCFuturos
                                                     key={i+'cards'}
-                                                    infoCursos = {{
-                                                        ...curso, 
-                                                        share: `https://empleo.chaco.gob.ar/capacitaciones-demo`
-                                                    }}
-                                                    from= {true}
+                                                    imgUrl={curso.imgUrl}
                                                 />
                                             ))
                                         }
