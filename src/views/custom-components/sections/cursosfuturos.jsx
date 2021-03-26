@@ -20,8 +20,6 @@ const useStyles = makeStyles((theme) => ({
         height: '4em',
         Width: '20em',
         borderRadius: '50px',
-        border: '1px solid #707070',
-        backgroundColor: '#ffffff',
         fontWeight: 'bold',
         background: 'linear-gradient(90deg, rgba(212,17,131,1) 4%, rgba(44,176,207,1) 100%)',
         "& .MuiButton-endIcon": {
