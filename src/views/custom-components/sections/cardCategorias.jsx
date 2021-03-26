@@ -166,6 +166,7 @@ const CardCursos = (props) => {
                                             infoCursos={{
                                                 categoria: categoria, 
                                                 titulo: categoria,
+                                                nombre: categoria,
                                                 imgUrl: imgUrl,
                                                 share: `https://empleo.chaco.gob.ar/capacitaciones-demo`
                                             }}

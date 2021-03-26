@@ -8,6 +8,7 @@ import Header from "../../components/header/header.jsx";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
 import Footer3 from "../../components/footer/footer3.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
+import Cursosfuturos from "../custom-components/sections/cursosfuturos";
 import CardCursos from "../custom-components/sections/cardCursos";
 import BlogComponent from "./informatorioCapacitaciones";
 
@@ -245,7 +246,9 @@ const CapacitacionesDemo = (props) => {
                                     categoria={categoria}
                                 />
                         }
+                        <Cursosfuturos />
                     </div>
+                    
                 </div>
             </div>
                 <div>
