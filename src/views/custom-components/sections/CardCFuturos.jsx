@@ -1,12 +1,5 @@
 import React from 'react';
 import { Col } from 'reactstrap';
-import { SocialIcon } from 'react-social-icons';
-import {
-    FacebookShareButton,
-    TwitterShareButton,
-} from "react-share";
-
-import { Link } from "react-router-dom";
 
 import { makeStyles } from '@material-ui/core/styles';
 import 'animate.css/animate.min.css'

@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from 'react';
-import { Link } from "react-router-dom";
 
 import { Row, Col, Container, Card } from 'reactstrap';
 
@@ -19,9 +18,6 @@ import imgInfo from '../../../assets/images/capacitaciones/logo_membrete.png';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import NavigationIcon from '@material-ui/icons/Navigation';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -170,7 +166,6 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                 <Container>
                     <Row className="justify-content-left">
                         <Col md="6" className="align-self-left text-left">
-                           
                             <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
                             <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
                             <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>CONTACTO <i className="ti-arrow-right"></i></span></a>

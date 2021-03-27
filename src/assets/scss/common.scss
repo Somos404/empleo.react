@@ -3558,8 +3558,12 @@ top: 9% !important;
     }
 }
 .btonContactoInfoCap{
-    background-color: white!important;
-    border: 1px solid black!important;
+
+    background: linear-gradient(#ffffff,#ffffff) padding-box, linear-gradient(to right, rgba(212,17,131,1) 4%, rgba(44,176,207,1) 100%);
+    border: 2px solid transparent;
+
+   /*  background-color: white!important;
+    border: 1px solid black!important; */
     color: black;
     font-weight: 600;
     width: 23em;
