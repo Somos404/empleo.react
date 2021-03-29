@@ -375,7 +375,9 @@ mark,
   display: inline-block; }
   
 .list-inline-item:not(:last-child) {
-    margin-right: 0.5rem; margin-top: 5%!important;}
+     margin-right: 0em!important; 
+     margin-top: 5%!important;
+    }
 
 .initialism {
   font-size: 90%;

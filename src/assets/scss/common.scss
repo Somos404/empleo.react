@@ -3627,3 +3627,16 @@ top: 9% !important;
   .tituloInfoIngresar{
     font-size: 1.1rem!important;
   }
+
+   
+.list-inline-item:not(:last-child) {
+    margin-right: 0em!important; 
+   }
+
+   .btnIstagramCard{
+    background-color: #01B7E8;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.4em;
+    padding: 0.2em;
+   }

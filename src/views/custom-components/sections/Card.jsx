@@ -23,13 +23,13 @@ const Card = (props) => {
                             <li className="list-inline-item">
                                 <a>
                                     <FacebookShareButton
-                                        url= {props.share}
+                                        url={props.share}
                                         quote={props.infoCursos.titulo}
                                         className="Demo__some-network__share-button"
                                     >
 
                                         <SocialIcon
-                                            style={{ height: 35, width: 35 }}
+                                            style={{ height: 35, width: 35, marginTop: -9.5 }}
                                             network="facebook"
                                             bgColor="#01B7E8"
                                             fgColor="white"
@@ -46,7 +46,7 @@ const Card = (props) => {
                                         target_blank
                                     >
                                         <SocialIcon
-                                            style={{ height: 35, width: 35 }}
+                                            style={{ height: 35, width: 35, marginTop: -9.5 }}
                                             network="twitter"
                                             bgColor="#01B7E8"
                                             fgColor="white"
@@ -55,98 +55,95 @@ const Card = (props) => {
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href="https://www.instagram.com/empleochaco/"  target="_blank" rel="noopener noreferrer">
                                     <FacebookShareButton
                                         title='test'
                                         className="Demo__some-network__share-button"
+                                        target="_blank" rel="noopener noreferrer"
+
                                     >
-                                        <SocialIcon
-                                            style={{ height: 35, width: 35 }}
-                                            url="https://www.instagram.com/empleochaco/"
-                                            bgColor="#01B7E8"
-                                            fgColor="white"
-                                        />
+                                        <i className="fa fa-instagram facefooter btnIstagramCard"></i>
                                     </FacebookShareButton>
                                 </a>
                             </li>
                         </ul>
                         <ul className="list-inline list-inlineinfo">
-                            <li className="list-inline-item"><a href="#"><h5 className="title font-medium tituloCardWeight"></h5></a></li>
-                            {props.infoCursos.nombre.length > 25 
-                            ?
-                            <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight DescripcionCardWeightLarga">{props.infoCursos.nombre}</p></a></li>
+                            <li className="list-inline-item"><a><h5 className="title font-medium tituloCardWeight"></h5></a></li>
+                            {props.infoCursos.nombre.length > 25
+                                ?
+                                <li className="list-inline-item"><a><p className="DescripcionCardWeight DescripcionCardWeightLarga">{props.infoCursos.nombre}</p></a></li>
 
-                            :
-                            <li className="list-inline-item"><a href="#"><p className="DescripcionCardWeight">{props.infoCursos.nombre}</p></a></li>
-                            
+                                :
+                                <li className="list-inline-item"><a><p className="DescripcionCardWeight">{props.infoCursos.nombre}</p></a></li>
+
                             }
-                            {props.infoCursos.nombre.length > 25 
-                            ?
-                            <li className="list-inline-item itemBtn itembtnTop">
-                                <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
-                                    {
-                                        props.from ?
-                                            <span
-                                                onClick={() => {
-                                                    props.changeCategory(props.infoCursos.titulo)
-                                                }}
-                                            >
-                                                <Link className="nav-link">Más info</Link>
-                                                <i className="ti-arrow-right"></i>
-                                            </span>
-                                            :
-                                            <span>
-                                                <Link
-                                                    className="nav-link"
-                                                    to={{
-                                                        pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
-                                                        nombre: props.infoCursos.nombre,
-                                                        /* search: "?sort=name",
-                                                        hash: "#the-hash", */
-                                                        curso: props.infoCursos
+                            {props.infoCursos.nombre.length > 25
+                                ?
+                                <li className="list-inline-item itemBtn itembtnTop">
+                                    <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
+                                        {
+                                            props.from ?
+                                                <span
+                                                    onClick={() => {
+                                                        props.changeCategory(props.infoCursos.titulo)
                                                     }}
                                                 >
-                                                    Más info
+                                                    <Link className="nav-link">Más info</Link>
+                                                    <i className="ti-arrow-right"></i>
+                                                </span>
+                                                :
+                                                <span>
+                                                    <Link
+                                                        className="nav-link"
+                                                        to={{
+                                                            pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
+                                                            nombre: props.infoCursos.nombre,
+                                                            /* search: "?sort=name",
+                                                            hash: "#the-hash", */
+                                                            curso: props.infoCursos
+                                                        }}
+                                                    >
+                                                        Más info
                                             </Link>
-                                                <i className="ti-arrow-right"></i>
-                                            </span>
-                                    }
+                                                    <i className="ti-arrow-right"></i>
+                                                </span>
+                                        }
 
-                                </a>
-                            </li>
-                            :
-                            <li className="list-inline-item itemBtn itembtnTop itembtnTopLargo">
-                                <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
-                                    {
-                                        props.from ?
-                                            <span
-                                                onClick={() => {
-                                                    props.changeCategory(props.infoCursos.titulo)
-                                                }}
-                                            >
-                                                <Link className="nav-link">Más info</Link>
-                                                <i className="ti-arrow-right"></i>
-                                            </span>
-                                            :
-                                            <span>
-                                                <Link
-                                                    className="nav-link"
-                                                    to={{
-                                                        pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
-                                                        nombre: props.infoCursos.nombre,
-                                                        /* search: "?sort=name",
-                                                        hash: "#the-hash", */
-                                                        curso: props.infoCursos
+                                    </a>
+                                </li>
+                                :
+                                <li className="list-inline-item itemBtn itembtnTop itembtnTopLargo">
+                                    <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">
+                                        {
+                                            props.from ?
+                                                <span
+                                                    onClick={() => {
+                                                        props.changeCategory(props.infoCursos.titulo)
                                                     }}
                                                 >
-                                                    Más info
+                                                    <Link className="nav-link">Más info</Link>
+                                                    <i className="ti-arrow-right"></i>
+                                                </span>
+                                                :
+                                                <span>
+                                                    <Link
+                                                        className="nav-link"
+                                                        to={{
+                                                            pathname: `/curso/${props.infoCursos.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${props.infoCursos.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`,
+                                                            nombre: props.infoCursos.nombre,
+                                                            /* search: "?sort=name",
+                                                            hash: "#the-hash", */
+                                                            curso: props.infoCursos
+                                                        }}
+                                                    >
+                                                        Más info
                                             </Link>
-                                                <i className="ti-arrow-right"></i>
-                                            </span>
-                                    }
+                                                    <i className="ti-arrow-right"></i>
+                                                </span>
+                                        }
 
-                                </a>
-                            </li>}
+                                    </a>
+                                </li>}
                         </ul>
                     </div>
                 </div>

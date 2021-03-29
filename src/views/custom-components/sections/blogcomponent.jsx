@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { Row, Col, Container, Card } from 'reactstrap';
 
 import img1 from '../../../assets/images/capacitaciones/icono01InfoCap.svg';
@@ -60,19 +62,19 @@ const BlogComponent = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Row className=" justify-content-center imagenInfo">
-                        <div className="titulosInfoCapHab justify-content-left">
-                            <h1 className="title-1 titleInfoCaHab titleInfoCaHabHeight">Animate a trabajar</h1>
-                    <h1 className="title-1 titleInfoCaHab">en el mundo del <span className="textTituloboldInfoCap">software</span> </h1>
-                    <h1 className="title-1 titleInfoCaHabBold TitHeaderCapbold">y programación</h1> 
-                    {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
-                    {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}
-                    <hr className="lineaCard lineaCard1 lineaCard1Responsive lineaHeaderInfoCap lineaInfoCaHab" />
+                            <div className="titulosInfoCapHab justify-content-left">
+                                <h1 className="title-1 titleInfoCaHab titleInfoCaHabHeight">Animate a trabajar</h1>
+                                <h1 className="title-1 titleInfoCaHab">en el mundo del <span className="textTituloboldInfoCap">software</span> </h1>
+                                <h1 className="title-1 titleInfoCaHabBold TitHeaderCapbold">y programación</h1>
+                                {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
+                                {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}
+                                <hr className="lineaCard lineaCard1 lineaCard1Responsive lineaHeaderInfoCap lineaInfoCaHab" />
                             </div>
-                           
-                  
+
+
                         </Row>
                         <Row className="justify-content-center ">
-                        <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapMArginLeft " width="200" />
+                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapMArginLeft " width="200" />
 
                         </Row >
 
@@ -99,9 +101,11 @@ const BlogComponent = () => {
                                 <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
                                 programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
                                 <Row className="justify-content-center">
-                                    <Fab className={classes.botonFab} aria-label="add">
-                                        <AddIcon />
-                                    </Fab>
+                                    <Link to="/curso/Informatorio/Introducción-a-la-Programación">
+                                        <Fab className={classes.botonFab} aria-label="add">
+                                            <AddIcon />
+                                        </Fab>
+                                    </Link>
                                 </Row>
                             </Card>
                         </Col>
@@ -115,9 +119,11 @@ const BlogComponent = () => {
                                 <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
                                 Informáticos.</p>
                                 <Row className="justify-content-center">
-                                    <Fab className={classes.botonFab} aria-label="add">
-                                        <AddIcon />
-                                    </Fab>
+                                    <Link to="/curso/Informatorio/Programación-y-Desarrollo-Web">
+                                        <Fab className={classes.botonFab} aria-label="add">
+                                            <AddIcon />
+                                        </Fab>
+                                    </Link>
                                 </Row>
                             </Card>
                         </Col>
@@ -134,9 +140,12 @@ de Programación</a></h5>
                                 <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
 perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
                                 <Row className="justify-content-center rowBtnMas">
-                                    <Fab className={classes.botonFab} aria-label="add">
-                                        <AddIcon />
-                                    </Fab>
+                                    <Link to="/curso/Informatorio/Especialización-en-tecnologías-de-desarrollo">
+                                        <Fab className={classes.botonFab} aria-label="add">
+                                            <AddIcon />
+                                        </Fab>
+                                    </Link>
+
                                 </Row>
                             </Card>
                         </Col>
@@ -153,9 +162,12 @@ perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los p
                                 permitan iniciar un emprendimiento vinculado a las TICs, y podrás
 acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                                 <Row className="justify-content-center rowBtnMas">
-                                    <Fab className={classes.botonFab} aria-label="add">
-                                        <AddIcon />
-                                    </Fab>
+                                    <Link to="/curso/Informatorio/    Talleres-para-emprender-en-TICs">
+                                        <Fab className={classes.botonFab} aria-label="add">
+                                            <AddIcon />
+                                        </Fab>
+                                    </Link>
+                                
                                 </Row>
                             </Card>
                         </Col>
@@ -172,17 +184,17 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                         </Col>
                     </Row>
                     <Row className="justify-content-left">
-                    <Col lg="6" md="6" className="contenedor-social-footerInfCap align-self-center text-center">
-                        <div className="round-social light">
-                                <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right fade-in "  target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
-                                <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>        
+                        <Col lg="6" md="6" className="contenedor-social-footerInfCap align-self-center text-center">
+                            <div className="round-social light">
+                                <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
+                                <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>
                             </div>
-                    </Col>
+                        </Col>
                     </Row>
-                   
-                  
+
+
                 </Container>
-               
+
             </div>
         </div>
     );

@@ -407,7 +407,7 @@ export const cursosAndCategias = [
     ],
   },
   /** -----------INFORMATORIO------------ */
-  /*    {
+     {
         categoria: 'Informatorio',
         imgUrl: 'pro-pic Informatorio',
         cursos:[
@@ -532,7 +532,7 @@ export const cursosAndCategias = [
                 ]
             }
         ]
-    }, */
+    }, 
   /** ----------- UniMOOC ------------ */
   /*  {
         categoria: 'UniMOOC',
