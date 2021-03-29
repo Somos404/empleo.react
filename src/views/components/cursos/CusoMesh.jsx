@@ -104,6 +104,7 @@ const Curso4 = (props) => {
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
+                    eje: curso.eje?true:false,
                 }
             )
         }else{
@@ -119,6 +120,7 @@ const Curso4 = (props) => {
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
+                    eje: curso.eje?true:false,
                 }
             )
         } 
@@ -162,18 +164,27 @@ const Curso4 = (props) => {
                                                             <Row className="justify-content-center">
                                                                 <span className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificadoEscritorio btnCursosModificadoEscritorioCursorNone">Especificaciones</span>
                                                             </Row>
+                                                            {
+                                                                curso.especificaciones[0] != undefined &&
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img1} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                     <div>
-                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.semanas} SEMANAS DE DURACIÓN</h6>
+                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.especificaciones[0]}</h6>
                                                                     </div>
                                                                 </CardBody>
+                                                            }
+                                                                
+                                                            {
+                                                                curso.especificaciones[1] != undefined &&
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                     <div>
-                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.horasSemanales} HORAS SEMANALES</h6>
+                                                                        <h6 className="font-medium textoEspe textoEspeEscritorio">{curso.especificaciones[1]}</h6>
                                                                     </div>
                                                                 </CardBody>
+
+                                                            }    
+                                                               
                                                                 <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                                     <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img3} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
                                                                     <div>
@@ -199,7 +210,10 @@ const Curso4 = (props) => {
                                 <section>
                                     <Container>
                                         <Row className="justify-content-left marginRowCursos">
-                                            <h1 className="text-left tituloCotnenidoCursos">Contenido</h1>
+                                            {
+                                               curso.semanas != 0 &&
+                                                <h1 className="text-left tituloCotnenidoCursos">Contenido</h1>
+                                            }
                                         </Row>
                                     </Container>
                                     <Container className="containerSemanasEscritorio">
@@ -214,7 +228,7 @@ const Curso4 = (props) => {
                                                     
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{width: '55%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                        <span className="tituloCardCursosEscritorio">SEMANA <stronger className="numeroContenidoEscritorio">1</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenidoEscritorio">1</stronger></span>
                                                     
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -239,7 +253,7 @@ const Curso4 = (props) => {
                                                     
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{width: '70%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                    <span className="tituloCardCursosEscritorio">SEMANA <stronger className="numeroContenidoEscritorio">2</stronger></span>
+                                                    <span className="tituloCardCursosEscritorio">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenidoEscritorio">2</stronger></span>
                                                     
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -263,7 +277,7 @@ const Curso4 = (props) => {
                                                     
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{width: '89%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                        <span className="tituloCardCursosEscritorio">SEMANA <stronger className="numeroContenidoEscritorio">3</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenidoEscritorio">3</stronger></span>
                                                     
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -288,7 +302,7 @@ const Curso4 = (props) => {
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{width: '100%', position: 'absolute', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em', marginTop: '-1.5em'}} >
                                                     
-                                                    <span className="tituloCardCursosEscritorio">SEMANA <stronger className="numeroContenidoEscritorio">4</stronger></span>
+                                                    <span className="tituloCardCursosEscritorio">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenidoEscritorio">4</stronger></span>
                                                         <i className="fa fa-angle-down m-l-5 flechaSem4"></i>
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -316,26 +330,26 @@ const Curso4 = (props) => {
                                 <Container className="backgroundPrimerContenedor backgroundPrimerContenedorResponsiveCursosSecos">                     
                                     <Col>
                                         <Row className="justify-content-center">
-                                            <h1 className="text-center title titleCursosEscritorio">Gestión de Redes Sociales</h1>
                                             {/**REsponsive */}
-                                            <h1 className="text-center title titleCursosResponsive">Gestión de <br /> Redes Sociales</h1>
+                                            <h1 className="text-center title titleCursosResponsive">{curso.nombre}</h1>
 
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
                                         <div className="separadorM"></div>
                                         <Row className="justify-content-left">
-                                            <p className="text-left parrafoCursos">En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento,                 planificando       y        gestionando estrategias de 
-                                                    comunicación, de acuerdo a las características de tu proyecto y
-                                                    a las posibilidades que ofrece cada red social.
-                                                    </p>
+                                            <p className="text-left parrafoCursos">{curso.descripcionLarga}</p>
                                         </Row>
                                         <div className="separadorSM"></div>
                                         <Row className="justify-content-left">
                                             <p className="text-left parrafoCursosBold">
                                                 Para cursarlo necesitarás: <br />
-                                                1.Computadora o celular con acceso a redes sociales. <br />
-                                                2. Cuenta de Facebook e Instagram (requerido). <br />
-                                                3. Cuenta de Youtube y Linkedin (opcional).<br />
+                                                {
+                                                    curso.requerimientos.map(Text =>  (
+                                                        <>
+                                                            {Text} <br />
+                                                        </>
+                                                    ))
+                                                }
                                             </p>
                                         </Row>
                                         <div className="separadormM"></div>
@@ -355,7 +369,29 @@ const Curso4 = (props) => {
                                         </Row>
                                         <Row className="justify-content-center">
                                         <Col md="8">
+                                            
+                                        {
+                                            curso.especificaciones[0] != undefined &&
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive">
+                                                <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img1} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
+                                                <div>
+                                                    <h6 className="font-medium textoEspe">{curso.especificaciones[0]}</h6>
+                                                </div>
+                                            </CardBody>
+                                        }
+                                            
+                                        {
+                                            curso.especificaciones[1] != undefined &&
+                                            <CardBody className="d-flex no-block cardEspecificacionesResponsive">
+                                                <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
+                                                <div>
+                                                    <h6 className="font-medium textoEspe">{curso.especificaciones[1]}</h6>
+                                                </div>
+                                            </CardBody>
+
+                                        }  
+
+                                           {/*  <CardBody className="d-flex no-block cardEspecificacionesResponsive">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img1} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
                                                     <h6 className="font-medium textoEspe">4 SEMANAS DE DURACIÓN</h6>
@@ -366,7 +402,7 @@ const Curso4 = (props) => {
                                                 <div>
                                                     <h6 className="font-medium textoEspe">3 HORAS SEMANALES</h6>
                                                 </div>
-                                            </CardBody>
+                                            </CardBody> */}
                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive2">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img3} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
@@ -383,7 +419,11 @@ const Curso4 = (props) => {
                                         
                                         </Row>
                                         <Row className="justify-content-center">
+                                        {
+                                            curso.semanas != 0 &&
                                             <h1 className="text-center title titleCursosResponsive">Contenido</h1>
+                                        }
+                                           
                                         </Row>
                                         <hr class="justify-content-center lineaCopada" />
 
@@ -398,7 +438,7 @@ const Curso4 = (props) => {
                                                             
                                                         >
                                                             <div className="progress-bar" role="progressbar" style={{width: '55%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                                <span className="tituloCardCursos">SEMANA <stronger className="numeroContenido">1</stronger></span>
+                                                                <span className="tituloCardCursos">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenido">1</stronger></span>
                                                             
                                                             </div>
                                                             <Typography className={classes.heading}> </Typography>
@@ -422,7 +462,7 @@ const Curso4 = (props) => {
                                                             
                                                         >
                                                             <div className="progress-bar" role="progressbar" style={{width: '70%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                            <span className="tituloCardCursos">SEMANA <stronger className="numeroContenido">2</stronger></span>
+                                                            <span className="tituloCardCursos">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenido">2</stronger></span>
                                                             
                                                             </div>
                                                             <Typography className={classes.heading}> </Typography>
@@ -446,7 +486,7 @@ const Curso4 = (props) => {
                                                             
                                                         >
                                                             <div className="progress-bar" role="progressbar" style={{width: '99%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em'}} >
-                                                                <span className="tituloCardCursos">SEMANA <stronger className="numeroContenido">3</stronger></span>
+                                                                <span className="tituloCardCursos">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenido">3</stronger></span>
                                                             
                                                             </div>
                                                             <Typography className={classes.heading}> </Typography>
@@ -472,7 +512,7 @@ const Curso4 = (props) => {
                                                         >
                                                             <div className="progress-bar" role="progressbar" style={{width: '100%', position: 'absolute', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em', marginTop: '-1.5em'}} >
                                                             
-                                                            <span className="tituloCardCursos">SEMANA <stronger className="numeroContenido">4</stronger></span>
+                                                            <span className="tituloCardCursos">{curso.eje?'Eje':'SEMANA'} <stronger className="numeroContenido">4</stronger></span>
                                                                 <i className="fa fa-angle-down m-l-5 flechaSem4"></i>
                                                             </div>
                                                             <Typography className={classes.heading}> </Typography>
