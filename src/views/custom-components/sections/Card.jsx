@@ -23,7 +23,7 @@ const Card = (props) => {
                             <li className="list-inline-item">
                                 <a>
                                     <FacebookShareButton
-                                        url= {props.share}
+                                        url= {props.infoCursos.share}
                                         quote={props.infoCursos.titulo}
                                         className="Demo__some-network__share-button"
                                     >
