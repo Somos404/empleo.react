@@ -70,6 +70,27 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const checkDate = (fecha) =>{
+    let valido = false
+    if(fecha.length > 0){
+        fecha.forEach(element => {
+            let d1 = element.empieza.split("/");
+            let d2 = element.termina.split("/");
+        
+            let from = new Date(d1[2], parseInt(d1[1])-1, d1[0]);  // -1 because months are from 0 to 11
+            let to   = new Date(d2[2], parseInt(d2[1])-1, d2[0]);
+            let check = new Date();
+    
+            if(check > from && check < to){
+                valido = true 
+            }
+        });
+    }else{
+        valido = true
+    }
+    return valido
+}
+
 const Curso4 = (props) => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -106,6 +127,7 @@ const Curso4 = (props) => {
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
                     eje: curso.eje?true:false,
+                    fechaInscrpcion: checkDate(curso.fechaInscrpcion)
                 }
             )
         }else{
@@ -122,6 +144,7 @@ const Curso4 = (props) => {
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
                     eje: curso.eje?true:false,
+                    fechaInscrpcion: checkDate(curso.fechaInscrpcion)
                 }
             )
         } 
@@ -321,7 +344,17 @@ const Curso4 = (props) => {
                                        
                                     </Container>
                                     <Row className="justify-content-center">
+                                    {
+                                                curso.fechaInscrpcion?
+                                                (
                                                     <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
+                                                )
+                                                :
+                                                (
+                                                    <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero que me avisen cuando abran inscripciones </a>
+                                                )
+                                               
+                                           }
                                     </Row>
                                 </section>
                                
@@ -528,7 +561,18 @@ const Curso4 = (props) => {
                                                     </Accordion>
                                                 }
                                        <Row className="justify-content-center">
-                                            <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
+                                           {
+                                                curso.fechaInscrpcion?
+                                                (
+                                                    <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
+                                                )
+                                                :
+                                                (
+                                                    <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero que me avisen cuando abran inscripciones </a>
+                                                )
+                                               
+                                           }
+                                            
                                         </Row>
                                         </div>
                                     </Col>
