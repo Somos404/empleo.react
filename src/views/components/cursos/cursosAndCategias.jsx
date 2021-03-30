@@ -1,3 +1,4 @@
+
 export const cursosAndCategias = [
   {
     categoria: "Empleo y Emprendimientos",
@@ -412,124 +413,127 @@ export const cursosAndCategias = [
         imgUrl: 'pro-pic Informatorio',
         cursos:[
             {
-                nombre: 'Talleres para emprender en TICs',
-                descripcionLarga: `Adquirirás herramientas que te permitan iniciar un emprendimiento vinculado a las TICs, y podrás acceder a ﬁnanciamiento para su puesta en marcha al ﬁnalizar el ciclo. Aprenderás a transformar tu idea en proyecto, a administración un emprendimiento, y a desarrollar un plan de negocios.
+              eje: true,
+              nombre: 'Talleres para emprender en TICs',
+              descripcionLarga: `Adquirirás herramientas que te permitan iniciar un emprendimiento vinculado a las TICs, y podrás acceder a ﬁnanciamiento para su puesta en marcha al ﬁnalizar el ciclo. Aprenderás a transformar tu idea en proyecto, a administración un emprendimiento, y a desarrollar un plan de negocios.
 
                 Este curso es la etapa de 4 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación.
                 
                 Para realizarlo es requisito haber aprobado la etapa 3 del Informatorio: el curso de "Especialización en Tecnologías de Desarrollo".`,
-                imgUrl: 'pro-pic TalleresparaemprenderenTICs',
-                requerimientos: 
-                    ['1.Computadora o celular con acceso a redes sociales.',
-                     '2. Cuenta de Facebook e Instagram (requerido).',
-                        '3. Cuenta de Youtube y Linkedin (opcional).'
-                    ],
-                especificaciones: 
-                    ['4 SEMANAS DE DURACIÓN',
-                     '3 HORAS SEMANALES',
-                      'GRATUITO', 'CERTIFICADO'
-                    ],
-                contenido: 
-                    ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                    ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
+              imgUrl: 'pro-pic TalleresparaemprenderenTICs',
+              requerimientos: 
+                [
+                  '1.Computadora o celular con acceso a redes sociales.',
+                  '2. Cuenta de Facebook e Instagram (requerido).',
+                  '3. Cuenta de Youtube y Linkedin (opcional).'
+                ],
+              especificaciones: [],
+              contenido: [],
+              UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=717',
+              horasSemanales: 0,
+              fechaInscrpcion: 
+              [
+                {
+                  empieza: '',
+                  termina: ``
+                }
+              ]
             },
             {
-                nombre: 'Especialización en tecnologías de desarrollo',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic Informatorio',
-                requerimientos: 
-                    ['1.Computadora o celular con acceso a redes sociales.',
-                     '2. Cuenta de Facebook e Instagram (requerido).',
-                        '3. Cuenta de Youtube y Linkedin (opcional).'
-                    ],
-                especificaciones: 
-                    ['4 SEMANAS DE DURACIÓN',
-                     '3 HORAS SEMANALES',
-                      'GRATUITO', 'CERTIFICADO'
-                    ],
-                contenido: 
-                    ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                    ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
+              eje: true,
+              nombre: 'Especialización en tecnologías de desarrollo',
+              descripcionLarga: 'Podrás continuar con tu perfeccionamiento en lenguajes especíﬁcos, y orientar tu formación hacia los perﬁles laborales requeridos por las empresas locales. Profundizarás en desarrollo web con JAVA, y podrás elegir entre herramientas de testing para desarrollos o front end con React JS. Este curso es la etapa de 3 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".',
+              imgUrl: 'pro-pic Informatorio',
+              requerimientos: 
+              [
+                '1. Computadora o celular con acceso a redes sociales.',
+                '2. Cuenta de Facebook e Instagram (requerido).',
+                '3. Cuenta de Youtube y Linkedin (opcional).'
+              ],
+              especificaciones: 
+              [
+                '4 MESES DE DURACIÓN',
+                '10 HORAS SEMANALES',
+                'GRATUITO', 
+                'CERTIFICADO'
+              ],
+              contenido: 
+              [
+                'Desarrollo Web con JAVA Introducción al desarrollo web con JAVA. Versionado. Programación orientada a objetos. Colecciones y Map. Errores y excepciones. Funciones. Spring Framework. Spring Boot. Manejo de Errores. Validaciones. SQL en Proyectos JAVA. HTML y CSS. Spring Data. Spring Security. REST. JSON. Spring REST.',
+                'Front end con React JS Introducción a React JS. Desarrollar con React JS. Componentes. Crear paginas y layouts. React Router. Mejorar la UI utilizando Layouts y React Fragment. Ciclo de vida de los componentes. API y llamadas. Manejo de datos vía API. UI Components y Container Components. Portales. Ventana modals. Hooks. Search Filter. Proyecto Integrado.',
+                'Herramientas de Testing para desarrollo Introducción. Calidad en el contexto del desarrollo de software. Principios del testing. Niveles y tipos de testing. ruebas relacionadas a cambios: re-testing y regression testing. Caso de prueba. Testing Caja Negra. Testing Caja Blanca. Pruebas basadas en la experiencia. Técnicas: predicción de errores, “fault attack”, testing exploratorio. Ciclo de vida del Bug. Reporte de seguimientos. Testing unitario. TDD (Test Driven Development)',
+              ],
+              UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=716',
+              horasSemanales: 10,
+              fechaInscrpcion: [
+                {
+                  empieza: '',
+                  termina: ``
+                }
+              ]
             },
             {
-                nombre: 'Programación y Desarrollo Web',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic ProgramayDesarrolloWeb',
-                requerimientos: 
-                    ['1.Computadora o celular con acceso a redes sociales.',
-                     '2. Cuenta de Facebook e Instagram (requerido).',
-                        '3. Cuenta de Youtube y Linkedin (opcional).'
-                    ],
-                especificaciones: 
-                    ['4 SEMANAS DE DURACIÓN',
-                     '3 HORAS SEMANALES',
-                      'GRATUITO', 'CERTIFICADO'
-                    ],
-                contenido: 
-                    ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                    ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
+              eje: true,
+              nombre: 'Programación y Desarrollo Web',
+              descripcionLarga: 'Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perﬁl profesional para el sector Software y Servicios Informáticos. Profundizarás en programación con Python y Django, y en bases de datos con SQL Server y MySQL. Este curso es la etapa de 2 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 1 del Informatorio: el curso de "Introducción a la Programación".',
+              imgUrl: 'pro-pic ProgramayDesarrolloWeb',
+              requerimientos: 
+              [
+                '1. Computadora o celular con acceso a redes sociales.',
+                '2. Cuenta de Facebook e Instagram (requerido).',
+                '3. Cuenta de Youtube y Linkedin (opcional).'
+              ],
+              especificaciones: 
+              [
+                '4 MESES DE DURACIÓN',
+                '10 HORAS SEMANALES',
+                'GRATUITO', 
+                'CERTIFICADO'
+              ],
+              contenido: 
+              [
+                'Programación Web Introducción a Python. Variables y tipos de datos. Estructuras de control. Funciones. Listas. Tuplas. Diccionarios. Programación orientada a objetos. Versionado. Framework Django.',
+                'Bases de Datos Introducción a las bases de datos. Modelo entidad-relación (MER). Tablas. SQL Server. MySQL. Ejemplificaciones y prácticas.',
+              ],
+              UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=715',
+              horasSemanales: 10,
+              fechaInscrpcion: [
+                  {
+                      empieza: '',
+                      termina: ``
+                  }
+              ]
             },
             {
-                nombre: 'Introducción a la Programación',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-                imgUrl: 'pro-pic IntroducciónalaProgramación',
-                requerimientos: 
-                    ['1.Computadora o celular con acceso a redes sociales.',
-                     '2. Cuenta de Facebook e Instagram (requerido).',
-                        '3. Cuenta de Youtube y Linkedin (opcional).'
-                    ],
-                especificaciones: 
-                    ['4 SEMANAS DE DURACIÓN',
-                     '3 HORAS SEMANALES',
-                      'GRATUITO', 'CERTIFICADO'
-                    ],
-                contenido: 
-                    ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                        'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                    ],
-                UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-                horasSemanales: 3,
-                fechaInscrpcion: [
-                    {
-                        empieza: '',
-                        termina: ``
-                    }
-                ]
+              eje: true,
+              nombre: 'Introducción a la Programación',
+              descripcionLarga: 'En este curso conocerás de qué se trata el mundo de la programación y te iniciarás en sus lenguajes. Durante un mes te proporcionaremos las bases mínimas necesarias para tener una primera noción de  las implicancias del desarrollo de software y sus principales componentes. Este curso es la etapa de 1 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para este curso necesitarás un dispositivo con acceso a internet, y no se requieren conocimientos previos.',
+              imgUrl: 'pro-pic IntroducciónalaProgramación',
+              requerimientos: 
+              [
+                '1.Computadora o celular con acceso a redes sociales.',
+                '2. Cuenta de Facebook e Instagram (requerido).',
+                '3. Cuenta de Youtube y Linkedin (opcional).'
+              ],
+              especificaciones: 
+              [
+                '4 SEMANAS DE DURACIÓN',
+                '12 HORAS SEMANALES',
+                'GRATUITO', 'CERTIFICADO'
+              ],
+              contenido: 
+              [
+                'Fundamentos de Programación Conceptos iniciales. Primeros programas. Procedimientos y prácticas. Estructuras repetitivas simples. Expresiones. Estructuras condicionales. Funciones. Prácticas integradoras. Estructuras repetitivas condicionales.',
+                'Programación Imperativa Funciones y tipos de datos. Variables y procedimientos. Lógica Booleana. Listas. Registros.',
+              ],
+              UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=714',
+              horasSemanales: 12,
+              fechaInscrpcion: [
+                  {
+                      empieza: '',
+                      termina: ``
+                  }
+              ]
             }
         ]
     }, 
