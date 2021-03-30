@@ -162,7 +162,7 @@ export const cursosAndCategias = [
         ],
       },
       {
-        nombre: "Introducición al desarrollo de videojuegos",
+        nombre: "Introducción al desarrollo de videojuegos",
         descripcionLarga:
           "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
         imgUrl: "pro-pic IntroduccionalDesarrolloDeVideojuegos",

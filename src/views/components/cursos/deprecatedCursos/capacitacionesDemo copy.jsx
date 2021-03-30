@@ -165,7 +165,7 @@ const CapacitacionesDemo = (props) => {
                                                 <Row className="justify-content-left">
                                                     <CardTitle className="card-title-red card-title-redResponsive" tag="h5">Gratuitos</CardTitle>
                                                     {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
-                                                    <hr className="lineaCard lineaCard1 lineaCard1Responsive" />
+                                                    <hr className="lineaCard lineaCard1 lineaCard1Responsive linaDescripcionREsponsiveCap" />
                                                     <CardText className="card-sub-title-red card-sub-title-redResponsive">Se trata de una inversión que realizan 1.200.000 chaqueñas y chaqueños para el desarrollo laboral de la población.</CardText>
                                                 </Row>
                                             </Col>
@@ -182,7 +182,7 @@ const CapacitacionesDemo = (props) => {
                                                 <Row className="justify-content-left">
                                                     <CardTitle className="card-title-red card-title-redResponsive" tag="h5">Certificados</CardTitle>
                                                     {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
-                                                    <hr className="lineaCard lineaCard2 lineaCard1Responsive2" />
+                                                    <hr className="lineaCard lineaCard2 lineaCard1Responsive2 linaDescripcionREsponsiveCap" />
                                                     <CardText className="card-sub-title-red card-sub-title-redResponsive">Por cada curso que finalices obtendrás un certificado validado por el Ministerio de Producción, Industria y Empleo de la
                                                     provincia del Chaco. Cada certificación es personalizada, con un identificador único que sirve para verificar su autenticidad.
                                                     </CardText>
@@ -203,7 +203,7 @@ const CapacitacionesDemo = (props) => {
                                                 <Row className="justify-content-left">
                                                     <CardTitle className="card-title-red  card-title-redResponsive" tag="h5">Tutorados</CardTitle>
                                                     {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
-                                                    <hr className="lineaCard lineaCard3 lineaCard1Responsive3" />
+                                                    <hr className="lineaCard lineaCard3 lineaCard1Responsive3 linaDescripcionREsponsiveCap" />
                                                     <CardText className="card-sub-title-red card-sub-title-redResponsive">Tendrás el acompañamiento de una persona que te acompañará facilitando el proceso de aprendizaje, guiándote en el recorrido, y aclarando todas las dudas que tengas.</CardText>
                                                 </Row>
                                             </Col>
@@ -220,7 +220,7 @@ const CapacitacionesDemo = (props) => {
                                                 <Row className="justify-content-left">
                                                     <CardTitle className="card-title-red card-title-redResponsive" tag="h5">Sin días y horarios fijos</CardTitle>
                                                     {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
-                                                    <hr className="lineaCard lineaCard4 lineaCard1Responsive4" />
+                                                    <hr className="lineaCard lineaCard4 lineaCard1Responsive4 linaDescripcionREsponsiveCap" />
                                                     <CardText className="card-sub-title-red card-sub-title-redResponsive">Podrás realizarlo manejando tus propios tiempos, pero siempre
                                                     tendrás objetivos semanales que cumplir.
                                                     </CardText>

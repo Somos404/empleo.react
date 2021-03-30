@@ -159,7 +159,7 @@ const CardCursos = (props) => {
             <div className={classes.sectionSearch}>
                 <Row className="justify-content-center">
                     <Col md="12" className="text-center">
-                        <h1 className={classes.titulo}>Seleccioná tu curso</h1>
+                        <h1 className="tituloCursosFiltro">Seleccioná tu curso</h1>
                         <div className={classes.search}>
                             <FormControl variant="outlined" className={classes.formControl}>
                                 <Select
