@@ -91,6 +91,7 @@ const Curso4 = (props) => {
     });
 
     useEffect(() => {   
+        window.scrollTo(0, 0);
         let curso = props.location.curso
         if(curso){
             setCurso(
