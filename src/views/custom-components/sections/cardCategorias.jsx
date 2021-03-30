@@ -157,7 +157,7 @@ const CardCursos = (props) => {
                 <section>
                     <div>
                         <Container className="containerCardCategorias">
-                            <Row className="m-t-30 justify-content-around">
+                            <Row className="m-t-30 justify-content-center">
                                 {
                                     state.categoriasFiltradas.map(({categoria, imgUrl}, i) =>  (
                                         <Card
