@@ -48,6 +48,12 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #707070',
         backgroundColor: '#ffffff',
         fontWeight: 'bold',
+        "&:active":
+        { outline: 0 }
+    },
+    iconoSearchMarco: {
+        "&:focus":
+        { outline: 0 }
     },
 
     SelectProps: {
@@ -56,7 +62,9 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #707070',
         backgroundColor: '#ffffff',
         textAlign: 'left',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        "&:focus":
+        { backgroundColor: "transparent" }
     },
 
     titulo:{
@@ -190,6 +198,8 @@ const CardCursos = (props) => {
                                             <IconButton
                                                 aria-label="toggle password visibility"
                                                 edge="end"
+                                                className={classes.iconoSearchMarco}
+                                                
                                             >
                                             <SearchIcon />
                                             </IconButton>

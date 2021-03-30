@@ -73,18 +73,18 @@ const BlogComponent = () => {
 
 
                         </Row>
-                        <Row className="justify-content-center ">
-                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapMArginLeft " width="200" />
+                        <Row className="justify-content-center">
+                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapMArginLeft " />
 
                         </Row >
 
                         <Row className="rowSubtInfoCap">
-                            <Col md="6" className="text-left">
-                                <p className="m-t-20">Para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector del Software a través de la formación en programación.
+                            <Col md="6" className="text-left marginDescInfo">
+                                <p className="m-t-20 parrafoCursos">Para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector del Software a través de la formación en programación.
 </p>
                             </Col>
-                            <Col md="6" className="text-left">
-                                <p className="m-t-20">Es un programa del Gobierno del Chaco en conjunto con las empresas del Polo IT Chaco, Globant, UTN y UNCAUS.
+                            <Col md="6" className="text-left marginDescInfo">
+                                <p className="m-t-20 parrafoCursos">Es un programa del Gobierno del Chaco en conjunto con las empresas del Polo IT Chaco, Globant, UTN y UNCAUS.
 </p>
                             </Col>
                         </Row>

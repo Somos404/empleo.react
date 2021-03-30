@@ -1715,8 +1715,9 @@ width: 30%;
 
 .titulosInfoCapHab{
     position: relative;
-margin-top: -4em;
-margin-left: 8%;
+    margin-top: -1em;
+    margin-left: 8%;
+    width: 20em;
 }
 .tituloCursosFiltro{
     font-size: 31px!important;
@@ -1725,13 +1726,17 @@ margin-left: 8%;
     margin-top: 1em;
 }
 .titleInfoCaHab{
-    font-size: 1rem;
+    font-size: 1.3rem;
 line-height: 1.2;
+}
+
+.coming-soon{
+    min-height: 28vh;
 }
 
 .titleInfoCaHabBold{
     color: white;
-font-size: 2rem;
+font-size: 1.3rem;
 line-height: 1;
 }
 
@@ -1792,12 +1797,18 @@ line-height: 1;
 }
 
 .imgResponsiveInformatCap{
-    width: 14em !important;
-    height: 10em !important;
+    width: 15em !important;
+    height: 4em !important;
 }
-
+.imgResponsiveInformatCapMArginLeft{
+    margin-left: inherit!important;
+}
 .img-responsiveInfoCapLinea{
     width: 16em !important;
+}
+
+.marginDescInfo{
+    margin: 1%!important;
 }
 
 .btonContactoInfoCapResponsive{
