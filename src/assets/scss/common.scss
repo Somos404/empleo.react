@@ -3239,7 +3239,7 @@ Modal in center
 .imgResponsiveInformatCapHeader{
     width: 28em!important;
     height: 51%!important;
-    margin-top: -15%!important;
+    margin-top: -10%!important;
     margin-left: 1%!important;
 }
 
@@ -3324,8 +3324,8 @@ top: 9% !important;
     font-size: 1.1rem!important;
 }
 .DescripcionCardWeight{
-    font-size: 1.2rem !important;
-    font-weight: 700;
+    font-size: 1rem !important;
+    font-weight: 500;
     margin-top: 2.5em !important;
 }
 
@@ -3544,7 +3544,7 @@ top: 9% !important;
         
     }
     .static-slider-headCapacitaciones {
-        min-height: 140vh;
+        min-height: 110vh;
         margin-left: -1%;
     }    
 }
@@ -3640,3 +3640,11 @@ top: 9% !important;
     height: 1.4em;
     padding: 0.2em;
    }
+   
+   
+.tituloCursosFiltro{
+    font-size: 31px!important;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 1em;
+}

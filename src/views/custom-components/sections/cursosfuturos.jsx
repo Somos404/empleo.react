@@ -7,12 +7,12 @@ import 'animate.css/animate.min.css'
 
 import clsx from 'clsx';
 import CardCFuturos from '../../custom-components/sections/CardCFuturos'
-import {cursosFuturos} from '../../components/cursos/cursosFuturos';
+import { cursosFuturos } from '../../components/cursos/cursosFuturos';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
-    container:{
+    container: {
         width: '100%',
     },
     button: {
@@ -25,20 +25,24 @@ const useStyles = makeStyles((theme) => ({
         "& .MuiButton-endIcon": {
             marginLeft: '5em',
             marginRight: -30
-          }
+        },
+
+        "&:focus":
+            { outline: 0 }
+
     },
     searchIcon: {
-      padding: theme.spacing(0, 2),
-      height: '100%',
-      color:'#6f7074',
-      position: 'absolute',
-      pointerEvents: 'none',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
+        padding: theme.spacing(0, 2),
+        height: '100%',
+        color: '#6f7074',
+        position: 'absolute',
+        pointerEvents: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     inputRoot: {
-        color:'#6f7074',
+        color: '#6f7074',
     },
 
     formControl: {
@@ -59,7 +63,7 @@ const CardCursos = (props) => {
                         <div className={classes.search}>
                             <FormControl className={clsx(classes.margin, classes.textField), classes.formControl} variant="outlined">
                                 <Button
-                                    onClick={()=> {
+                                    onClick={() => {
                                         setShow(!show)
                                     }}
                                     className={classes.button}
@@ -68,7 +72,7 @@ const CardCursos = (props) => {
                                         <ExpandMoreIcon />
                                     }
                                 >
-                                    VER MÁS CURSOS           
+                                    VER MÁS CURSOS
                                 </Button>
                             </FormControl>
                         </div>
@@ -76,26 +80,26 @@ const CardCursos = (props) => {
                 </Row>
             </div>
             {
-                show &&                       
-                <div  className={classes.sectionCard}>
+                show &&
+                <div className={classes.sectionCard}>
                     <section>
                         <div>
                             <Container className="containerCardCategorias">
                                 <Row>
-                                {
-                                            cursosFuturos.map((curso, i) =>  (
-                                                <CardCFuturos
-                                                    key={i+'cards'}
-                                                    imgUrl={curso.imgUrl}
-                                                />
-                                            ))
-                                        }
+                                    {
+                                        cursosFuturos.map((curso, i) => (
+                                            <CardCFuturos
+                                                key={i + 'cards'}
+                                                imgUrl={curso.imgUrl}
+                                            />
+                                        ))
+                                    }
                                 </Row>
                             </Container>
                         </div>
                     </section>
                 </div>
-            }    
+            }
         </div>
     )
 }

@@ -1685,8 +1685,8 @@ width: 30%;
 //   }
 
 .static-slider-headCapacitaciones{
-    min-height: 742px;
-    margin-top: -4em!important;
+    min-height: 28vh;
+    margin-top: -2em !important;
 }
 
 .img-redireccionesBtnInform2Responsive{
@@ -1694,12 +1694,45 @@ width: 30%;
 }
 
 .marginColHeaderCap {
-    margin-top: -70%;
+    margin-top: 12%!important;
   
+}
+
+.title-1ResponsiveCapheader{
+    font-size: 21px!important;
+    line-height: 15px!important;
 }
 
 .containerPCap {
     margin-bottom: 11%;
+}
+
+.linaDescripcionREsponsiveCap{
+    margin-left: 4% !important;
+    position: absolute;
+    margin-top: 8% !important;
+}
+
+.titulosInfoCapHab{
+    position: relative;
+margin-top: -4em;
+margin-left: 8%;
+}
+.tituloCursosFiltro{
+    font-size: 31px!important;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 1em;
+}
+.titleInfoCaHab{
+    font-size: 1rem;
+line-height: 1.2;
+}
+
+.titleInfoCaHabBold{
+    color: white;
+font-size: 2rem;
+line-height: 1;
 }
 
 .colDescripcionInfoResponsive{
@@ -1721,8 +1754,8 @@ width: 30%;
     margin-top: 7% !important;
     background-color: #2CB0CF;
     background-image: linear-gradient(to right, #2CB0CF, #7d446e, #a5427c);
-    margin-left: -30% !important;
-    margin-top: 8%!important;
+    margin-left: 1% !important;
+    margin-top: 0% !important;
 }
 .lineaCard1Responsive2{
     width: 33%;
@@ -1759,8 +1792,8 @@ width: 30%;
 }
 
 .imgResponsiveInformatCap{
-    width: 19em !important;
-height: 5em !important;
+    width: 14em !important;
+    height: 10em !important;
 }
 
 .img-responsiveInfoCapLinea{

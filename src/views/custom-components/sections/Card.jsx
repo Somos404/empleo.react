@@ -69,7 +69,7 @@ const Card = (props) => {
                         </ul>
                         <ul className="list-inline list-inlineinfo">
                             <li className="list-inline-item"><a><h5 className="title font-medium tituloCardWeight"></h5></a></li>
-                            {props.infoCursos.nombre.length > 25
+                            {props.infoCursos.nombre.length > 33
                                 ?
                                 <li className="list-inline-item"><a><p className="DescripcionCardWeight DescripcionCardWeightLarga">{props.infoCursos.nombre}</p></a></li>
 
@@ -77,7 +77,7 @@ const Card = (props) => {
                                 <li className="list-inline-item"><a><p className="DescripcionCardWeight">{props.infoCursos.nombre}</p></a></li>
 
                             }
-                            {props.infoCursos.nombre.length > 25
+                            {props.infoCursos.nombre.length > 33
                                 ?
                                 <li className="list-inline-item itemBtn itembtnTop">
                                     <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20  inline-itemBtn btonCategoriaMargin">

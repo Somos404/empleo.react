@@ -26,9 +26,9 @@ const HeaderBannerCapacitaciones = () => {
                         </Link>
                         <Typography color="textPrimary">Belts</Typography>
                     </Breadcrumbs> */}
-                <h1 className="title-1">Aprendé</h1>
-                    <h1 className="title-1">habilidades para</h1>
-                    <h1 className="title-1 TitHeaderCapbold">tu futuro laboral.</h1> 
+                <h1 className="title-1 title-1ResponsiveCapheader">Aprendé</h1>
+                    <h1 className="title-1 title-1ResponsiveCapheader">habilidades para</h1>
+                    <h1 className="title-1 TitHeaderCapbold title-1ResponsiveCapheader">tu futuro laboral.</h1> 
                     {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
                     {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}
                     <hr className="lineaCard lineaCard1 lineaCard1Responsive lineaHeaderInfoCap" />
