@@ -1,7 +1,7 @@
 
 export const cursosAndCategias = [
   {
-    categoria: "Empleo y Emprendimientos",
+    categoria: "Empleo y emprendimientos",
     imgUrl: "pro-pic EmpleoyEmprendimientos",
     cursos: [
       {
