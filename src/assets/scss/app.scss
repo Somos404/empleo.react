@@ -1303,6 +1303,7 @@ Buttons
 
 .btn-info-gradiant {
     @include linear-gradient (to right, $info 0%, $primary 100%);
+    width: 11em;
     border: 0px;
 
     &:hover {
