@@ -162,7 +162,7 @@ perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los p
                                 permitan iniciar un emprendimiento vinculado a las TICs, y podrás
 acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                                 <Row className="justify-content-center rowBtnMas">
-                                    <Link to="/curso/Informatorio/    Talleres-para-emprender-en-TICs">
+                                    <Link to="/curso/Informatorio/Talleres-para-emprender-en-TICs">
                                         <Fab className={classes.botonFab} aria-label="add">
                                             <AddIcon />
                                         </Fab>

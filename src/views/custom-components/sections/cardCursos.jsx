@@ -58,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
 
     SelectProps: {
         color: '#6f7074',
+        overflow: 'hidden',
         borderRadius: '50px',
         border: '1px solid #707070',
         backgroundColor: '#ffffff',
@@ -92,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
 
     formControl: {
         minWidth: '15em',
-        margin: '.5em'
+        margin: '.5em',
     },
 }));
 
