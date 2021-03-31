@@ -25,6 +25,11 @@ const CardCustom = (props) => {
         <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
             <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
+                    <div className={classes.titulo}> 
+                        <Typography className={classes.tituloText} variant="body2" component="p">
+                            {props.infoCursos.nombre}
+                        </Typography>
+                    </div>
                     <div className="card-img-overlay">
                         <Card className={classes.root}>
                             <CardContent className={classes.CardContent}>
@@ -82,7 +87,7 @@ const CardCustom = (props) => {
                                     <ul className="list-inline list-inlineinfo">
                                         <li className="list-inline-item"><a><p>{props.infoCursos.nombre}</p></a></li>
                                     </ul>
-                            </Typography>
+                                </Typography>
                             </CardContent>
                             
                             <CardActions className={classes.CardActions}>
@@ -176,6 +181,20 @@ const useStyles = makeStyles((theme) => ({
         marginRight: '3em',
         minHeight: '3em',
         //backgroundColor: 'yellow',
+    },
+    titulo:{
+        minHeight: '15em',
+        maxHeight: '15em',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+        //backgroundColor: 'blue',
+    },
+    tituloText:{
+        color: 'white',
+        fontSize: 25,
+        textAlign: 'center',
     }
 }));
 
