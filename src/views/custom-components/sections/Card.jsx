@@ -26,9 +26,12 @@ const CardCustom = (props) => {
             <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
                     <div className={classes.titulo}> 
+                    {
+                        !props.from &&
                         <Typography className={classes.tituloText} variant="body2" component="p">
                             {props.infoCursos.nombre}
                         </Typography>
+                    }
                     </div>
                     <div className="card-img-overlay">
                         <Card className={classes.root}>

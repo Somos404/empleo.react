@@ -381,7 +381,7 @@ export const cursosAndCategias = [
           eje: true,
           nombre: 'Especialización en tecnologías de desarrollo',
           descripcionLarga: 'Podrás continuar con tu perfeccionamiento en lenguajes especíﬁcos, y orientar tu formación hacia los perﬁles laborales requeridos por las empresas locales. Profundizarás en desarrollo web con JAVA, y podrás elegir entre herramientas de testing para desarrollos o front end con React JS. Este curso es la etapa de 3 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".',
-          imgUrl: 'pro-pic Informatorio',
+          imgUrl: 'pro-pic Especializaciónentecnologíasdedesarrollo',
           requerimientos: 
           [
             '1. Computadora o celular con acceso a redes sociales.',
