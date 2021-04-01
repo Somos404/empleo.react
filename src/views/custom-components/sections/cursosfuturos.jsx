@@ -74,7 +74,7 @@ const CardCursos = (props) => {
     )
 }
 
-const useStyles = makeStyles((theme, show) => ({
+const useStyles = makeStyles((theme) => ({
     container: {
         width: '100%',
     },
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme, show) => ({
         fontWeight: 'bold',
         background: 'linear-gradient(90deg, rgba(212,17,131,1) 4%, rgba(44,176,207,1) 100%)',
         "& .MuiButton-endIcon": {
-            marginLeft: '4em',
+            marginLeft: (props) => props?'3.5em':'5em',
             marginRight: -30
         },
 
