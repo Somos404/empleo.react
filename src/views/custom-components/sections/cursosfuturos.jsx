@@ -10,8 +10,71 @@ import CardCFuturos from '../../custom-components/sections/CardCFuturos'
 import { cursosFuturos } from '../../components/cursos/cursosFuturos';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
-const useStyles = makeStyles((theme) => ({
+const CardCursos = (props) => {
+
+    const [state, setState] = React.useState({
+        show : false,
+        text : 'VER MÁS CURSOS'
+    })
+    const classes = useStyles(state.show);
+    return (
+        <div className={`${classes.container} team2`} /* style={{position: 'relative',width: '100%',height: `${setHeight()}px`}} */>
+            <div className='m-b-20'>
+                <Row className="justify-content-center">
+                    <Col md="12" className="text-center">
+                        <div className={classes.search}>
+                            <FormControl className={clsx(classes.margin, classes.textField), classes.formControl} variant="outlined">
+                                <Button
+                                    onClick={() => {
+                                        setState({
+                                            show: !state.show,
+                                            text: state.text === 'VER MÁS CURSOS'?'VER MENOS CURSOS':'VER MÁS CURSOS'
+                                        })
+                                    }}
+                                    className={classes.button}
+                                    size="large"
+                                    endIcon={
+                                        state.show?
+                                        <ExpandLessIcon />
+                                        :
+                                        <ExpandMoreIcon />
+                                    }
+                                >
+                                    {state.text}
+                                </Button>
+                            </FormControl>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+            {
+                state.show &&
+                <div className={classes.sectionCard}>
+                    <section>
+                        <div>
+                            <Container className="containerCardCategorias">
+                                <Row>
+                                    {
+                                        cursosFuturos.map((curso, i) => (
+                                            <CardCFuturos
+                                                key={i + 'cards'}
+                                                imgUrl={curso.imgUrl}
+                                            />
+                                        ))
+                                    }
+                                </Row>
+                            </Container>
+                        </div>
+                    </section>
+                </div>
+            }
+        </div>
+    )
+}
+
+const useStyles = makeStyles((theme, show) => ({
     container: {
         width: '100%',
     },
@@ -23,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         background: 'linear-gradient(90deg, rgba(212,17,131,1) 4%, rgba(44,176,207,1) 100%)',
         "& .MuiButton-endIcon": {
-            marginLeft: '5em',
+            marginLeft: '4em',
             marginRight: -30
         },
 
@@ -50,58 +113,5 @@ const useStyles = makeStyles((theme) => ({
         margin: '.5em'
     },
 }));
-
-const CardCursos = (props) => {
-
-    const [show, setShow] = React.useState(false)
-    const classes = useStyles();
-    return (
-        <div className={`${classes.container} team2`} /* style={{position: 'relative',width: '100%',height: `${setHeight()}px`}} */>
-            <div className='m-b-20'>
-                <Row className="justify-content-center">
-                    <Col md="12" className="text-center">
-                        <div className={classes.search}>
-                            <FormControl className={clsx(classes.margin, classes.textField), classes.formControl} variant="outlined">
-                                <Button
-                                    onClick={() => {
-                                        setShow(!show)
-                                    }}
-                                    className={classes.button}
-                                    size="large"
-                                    endIcon={
-                                        <ExpandMoreIcon />
-                                    }
-                                >
-                                    VER MÁS CURSOS
-                                </Button>
-                            </FormControl>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-            {
-                show &&
-                <div className={classes.sectionCard}>
-                    <section>
-                        <div>
-                            <Container className="containerCardCategorias">
-                                <Row>
-                                    {
-                                        cursosFuturos.map((curso, i) => (
-                                            <CardCFuturos
-                                                key={i + 'cards'}
-                                                imgUrl={curso.imgUrl}
-                                            />
-                                        ))
-                                    }
-                                </Row>
-                            </Container>
-                        </div>
-                    </section>
-                </div>
-            }
-        </div>
-    )
-}
 
 export default CardCursos;
