@@ -416,7 +416,7 @@ const Curso4 = (props) => {
                                             
                                         {
                                             curso.especificaciones[1] != undefined &&
-                                            <CardBody className="d-flex no-block cardEspecificacionesResponsive">
+                                            <CardBody className="d-flex no-block cardEspecificacionesResponsive marginTopRowEsoec">
                                                 <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img2} width="70" className="rounded imagenEspecificaciones" alt="img" /></div>
                                                 <div>
                                                     <h6 className="font-medium textoEspe">{curso.especificaciones[1]}</h6>
