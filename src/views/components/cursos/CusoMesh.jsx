@@ -159,15 +159,11 @@ const Curso4 = (props) => {
         <div className="page-wrapper page-wrapperCursos">
             
             <Helmet>
-                <meta name="description" content={curso.descripcionLarga} />
-                <meta name="image" content={`https://empleo.chaco.gob.ar/card/cursosimg/${curso.imgUrl}.png`}/>
-                <meta property="og:image" content={`https://empleo.chaco.gob.ar/card/cursosimg/${curso.imgUrl}.png`} />
-                <link rel="apple-touch-icon" href={`/card/cursosimg/${curso.imgUrl}.png`} />
                 <meta property="og:url" content="https://empleo.chaco.gob.ar" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={curso.nombre} />
                 <meta property="og:description" content={curso.descripcionLarga} />
-                {/* <meta property="og:image" content={`https://empleo.chaco.gob.ar/card/cursosimg/${curso.imgUrl}.png`} /> */}
+                <meta property="og:image" content={`https://empleo.chaco.gob.ar/card/cursosimg/${curso.imgUrl}.png`} />
                 {/* <title>curso</title>
                 <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
