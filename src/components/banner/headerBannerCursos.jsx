@@ -10,7 +10,7 @@ const HeaderBannerCursos = (props) => {
                 <Row className="justify-content-center row-banner">
                     <Col lg="8" className="align-self-center text-center">
 
-                        <Breadcrumbs aria-label="breadcrumb" style={{display: 'flex',justifyContent: 'center', color: 'white'}}>
+                        {/* <Breadcrumbs aria-label="breadcrumb" style={{display: 'flex',justifyContent: 'center', color: 'white'}}>
                             <Link
                                 style={{ color: '#FFF' }} 
                                 to={{
@@ -34,7 +34,7 @@ const HeaderBannerCursos = (props) => {
                             >
                                 {props.cursoactual}
                             </Link>
-                        </Breadcrumbs>
+                        </Breadcrumbs> */}
                         {/* <h1 className="title-1">Capacitaciones</h1> */}
                         {/*<h4 className="subtitle font-light">Powerful Reactstrap UI Kit with<br /> Beautiful Pre-Built Demos</h4> */}
                         {/* <Link to="/#coming" className="btn btn-md m-t-30 btn-info-gradiant font-14">Upgrade To Pro</Link>*/}

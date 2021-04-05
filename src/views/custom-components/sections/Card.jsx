@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
 import {
     FacebookShareButton,
     TwitterShareButton,
+    WhatsappShareButton,
 } from "react-share";
 
 import { Link } from "react-router-dom";
@@ -20,19 +21,29 @@ import { Block } from '@material-ui/icons';
 const CardCustom = (props) => {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
+    const [isHovered, toggleHover] = useState(true);
+
 
     return (
-        <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s">
+
+        <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s"
+            onMouseEnter={() => toggleHover(false)}
+            onMouseLeave={() => toggleHover(true)}
+        >
             <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
-                    <div className={classes.titulo}> 
                     {
-                        !props.from &&
-                        <Typography className={classes.tituloText} variant="body2" component="p">
-                            {props.infoCursos.nombre}
-                        </Typography>
+                        isHovered && <div className={classes.titulo}
+
+                        >
+                            {
+                                !props.from &&
+                                <Typography className={`tituloTextCss ${classes.tituloText}`} variant="body2" component="p">
+                                    {props.infoCursos.nombre}
+                                </Typography>
+                            }
+                        </div>
                     }
-                    </div>
                     <div className="card-img-overlay">
                         <Card className={classes.root}>
                             <CardContent className={classes.CardContent}>
@@ -41,7 +52,7 @@ const CardCustom = (props) => {
                                         <li className="list-inline-item">
                                             <a>
                                                 <FacebookShareButton
-                                                    url= {props.infoCursos.share}
+                                                    url={props.infoCursos.share}
                                                     quote={props.infoCursos.titulo}
                                                     className="Demo__some-network__share-button"
                                                 >
@@ -58,7 +69,7 @@ const CardCustom = (props) => {
                                         <li>
                                             <a>
                                                 <TwitterShareButton
-                                                    url={props.infoCursos.UrlToRedirect}
+                                                    url={props.infoCursos.share}
                                                     title={props.infoCursos.titulo}
                                                     className="Demo__some-network__share-button"
                                                     target_blank
@@ -73,15 +84,21 @@ const CardCustom = (props) => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.instagram.com/empleochaco/"  target="_blank" rel="noopener noreferrer">
-                                                <FacebookShareButton
-                                                    title='test'
+                                            <a target="_blank" rel="noopener noreferrer">
+                                                <WhatsappShareButton
+                                                    title={props.infoCursos.titulo}
+                                                    url={props.infoCursos.share}
                                                     className="Demo__some-network__share-button"
-                                                    target="_blank" rel="noopener noreferrer"
 
                                                 >
-                                                    <i className="fa fa-instagram facefooter btnIstagramCard"></i>
-                                                </FacebookShareButton>
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                        network="whatsapp"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                        
+                                                    />
+                                                </WhatsappShareButton >
                                             </a>
                                         </li>
                                     </ul>
@@ -92,7 +109,7 @@ const CardCustom = (props) => {
                                     </ul>
                                 </Typography>
                             </CardContent>
-                            
+
                             <CardActions className={classes.CardActions}>
                                 <ul className="list-inline list-inlineinfo">
                                     <li className="list-inline-item itemBtn itembtnTop">
@@ -133,7 +150,7 @@ const CardCustom = (props) => {
                                 </ul>
                             </CardActions>
                         </Card>
-                   </div>
+                    </div>
                 </div>
             </Col>
         </Col>
@@ -154,7 +171,7 @@ const useStyles = makeStyles((theme) => ({
         //backgroundColor: 'gray',
     },
     //====== contenido de body =======
-    CardContent:{
+    CardContent: {
         minHeight: '7em',
         paddingTop: '0px',
         paddingBottom: '0px'
@@ -163,6 +180,7 @@ const useStyles = makeStyles((theme) => ({
     CardTitle: {
         minHeight: '2em',
         //backgroundColor: 'red',
+        paddingTop: "4%",
     },
     // dentro del CardContent
     Cardbody: {
@@ -177,7 +195,7 @@ const useStyles = makeStyles((theme) => ({
         //backgroundColor: 'blue',
     },
     //=============
-    CardActions:{
+    CardActions: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -185,19 +203,20 @@ const useStyles = makeStyles((theme) => ({
         minHeight: '3em',
         //backgroundColor: 'yellow',
     },
-    titulo:{
+    titulo: {
         minHeight: '15em',
         maxHeight: '15em',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        
+
         //backgroundColor: 'blue',
     },
-    tituloText:{
+    tituloText: {
         color: 'white',
         fontSize: 25,
         textAlign: 'center',
+
     }
 }));
 
