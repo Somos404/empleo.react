@@ -157,7 +157,7 @@ const Curso4 = (props) => {
 
     return (
         <div className="page-wrapper page-wrapperCursos">
-            <head>
+            
             <Helmet>
                 <meta property="og:url" content="https://empleo.chaco.gob.ar" />
                 <meta property="og:type" content="website" />
@@ -167,7 +167,7 @@ const Curso4 = (props) => {
                 {/* <title>curso</title>
                 <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
-            </head>
+       
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">

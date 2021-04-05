@@ -19,6 +19,7 @@
         "mdbreact": "^5.0.1",
         "moment": "2.24.0",
         "node-sass": "^4.13.1",
+        "prerender-node": "^3.2.5",
         "prop-types": "15.7.2",
         "react": "^16.9.0",
         "react-countup": "^4.3.3",
