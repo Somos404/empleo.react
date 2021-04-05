@@ -138,7 +138,7 @@ const BlogComponent = () => {
 de Programación</a></h5>
                                 <span className=" contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap img-responsiveInfoCapLinea" src={img7} alt="wrappixel kit" /></span>
                                 <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
-perfeccionamiento en lenguajes específicos, y orientar tu fomación hacia los perfiles laborales requeridos por las empresas locales. </p>
+perfeccionamiento en lenguajes específicos, y orientar tu formación hacia los perfiles laborales requeridos por las empresas locales. </p>
                                 <Row className="justify-content-center rowBtnMas">
                                     <Link to="/curso/Informatorio/Especialización-en-tecnologías-de-desarrollo">
                                         <Fab className={classes.botonFab} aria-label="add">
@@ -167,7 +167,7 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                                             <AddIcon />
                                         </Fab>
                                     </Link>
-                                
+
                                 </Row>
                             </Card>
                         </Col>

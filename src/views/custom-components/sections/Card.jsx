@@ -30,7 +30,7 @@ const CardCustom = (props) => {
             onMouseEnter={() => toggleHover(false)}
             onMouseLeave={() => toggleHover(true)}
         >
-            <Col md="12" className={`col-md-12 heightWidthCard ${props.infoCursos.imgUrl}`}>
+            <Col md="12" className={`col-md-12 heightWidthCard pro-pic ${props.infoCursos.imgUrl}`}>
                 <div className={`cards-inline ${classes.card}`}>
                     {
                         isHovered && <div className={classes.titulo}
