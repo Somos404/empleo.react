@@ -157,6 +157,7 @@ const Curso4 = (props) => {
 
     return (
         <div className="page-wrapper page-wrapperCursos">
+            
             <Helmet>
                 <meta name="description" content={curso.descripcionLarga} />
                 <meta name="image" content={`https://empleo.chaco.gob.ar/card/cursosimg/${curso.imgUrl}.png`}/>
@@ -170,6 +171,7 @@ const Curso4 = (props) => {
                 {/* <title>curso</title>
                 <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
+       
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
