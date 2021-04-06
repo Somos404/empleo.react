@@ -7,8 +7,9 @@ export const cursosAndCategias = [
       {
         nombre: "Gestión de redes sociales",
         imgUrl: "GestiónDeRedesSociales",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+        ],
         requerimientos: [
           "1. Computadora o celular con acceso a redes sociales.",
           "2. Cuenta de Facebook e Instagram (requerido).",
@@ -41,8 +42,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Formalización de emprendimientos",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.",
+        ],
         imgUrl: "FormalizaciónDeEmprendimientos",
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
@@ -67,9 +69,10 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Diseño gráfico  para emprendimientos",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso aprenderás nociones básicas de diseño gráfico utilizando la herramienta Canva, la cual te permite crear soportes gráficos para difundir y promocionar tu emprendimiento en las redes sociales.",
-          imgUrl: "DiseñoGraficoParaEnprendimientos", 
+        ],
+        imgUrl: "DiseñoGraficoParaEnprendimientos", 
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
           "2. Tener o crearte un usuario en la plataforma Canva para página web o app móvil (podés ingresar con tu cuenta de Facebook o de Google)."
@@ -93,8 +96,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Administración de emprendimientos",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.",
+        ],
         imgUrl: "Administracióndeemprendimientos",
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
@@ -119,8 +123,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Edición de videos para emprendimientos",
-        descripcionLarga:
-        `En este curso aprenderás a generar y editar contenido audiovisual con tu celular mediante la aplicación "YouCut", para compartir tu emprendimiento con seguidores, clientes actuales y potenciales. Te servirá para generar contenido audiovisual que contribuya al posicionamiento de tu marca y la promoción de tus productos.`,
+        descripcionLarga:[
+          `En este curso aprenderás a generar y editar contenido audiovisual con tu celular mediante la aplicación "YouCut", para compartir tu emprendimiento con seguidores, clientes actuales y potenciales. Te servirá para generar contenido audiovisual que contribuya al posicionamiento de tu marca y la promoción de tus productos.`,
+        ],
         imgUrl: "EdicionDeVideosParaEmmprendimientos",
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
@@ -146,8 +151,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Introducición al desarrollo de videojuegos",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso te vamos a mostrar muchos elementos que tienen que ver con los videojuegos: su diseño, su desarrollo y su producción. Vamos a crear personajes y enemigos, ítems a consumir, plataformas, trampas, portales, sistemas de partículas, animaciones, power ups; vamos a manejar físicas y muchas cosas más para iniciarse en este mundo, a través del motor de desarrollo de videojuegos llamado GODOT.",
+        ],
         imgUrl: "IntroduccionalDesarrolloDeVideojuegos",
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
@@ -173,8 +179,10 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Herramientas para el empleo",
-        descripcionLarga:
+        descripcionLarga:[
           "En cuatro semanas vamos a compartir herramientas, saberes y sugerencias para favorecer tu inserción laboral. Abordaremos aquellos aspectos que son importantes a la hora de buscar trabajo, y profundizaremos en cuestiones que son valiosas al momento de acceder a un empleo.",
+
+        ],
         imgUrl: "HerramienttasParaElEmpleo",
         requerimientos: [
           "Un dispositivo con acceso a internet.",
@@ -198,8 +206,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Vender online",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso aprenderás a usar las redes sociales como herramientas que facilitan y amplían las posibilidades de venta de tus productos o servicios, y crean la identidad digital de tu emprendimiento.",
+      ],
         imgUrl: "VenderOnline",
         requerimientos: [
           "Un dispositivo con acceso a internet.",
@@ -221,8 +230,10 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Manipulación higiénica de alimentos",
-        descripcionLarga:
-          "En este curso aprenderás la importancia de la Manipulación Higiénica de los Alimentos, y a aplicar buenas prácticas de seguridad y manufactura alimentaria en emprendimientos gastronómicos o cualquier trabajo que involucre el manejo de alimentos. Durante el curso incorporarás maneras de prevenir el desarrollo de Enfermedades Transmitidas por Alimentos (ETA) y así ofrecer productos más seguros.",
+        descripcionLarga:[
+          "En este curso aprenderás la importancia de la Manipulación Higiénica de los Alimentos, y a aplicar buenas prácticas de seguridad y manufactura alimentaria en emprendimientos gastronómicos o cualquier trabajo que involucre el manejo de alimentos.",
+          "Durante el curso incorporarás maneras de prevenir el desarrollo de Enfermedades Transmitidas por Alimentos (ETA) y así ofrecer productos más seguros.",
+        ],
         imgUrl: "ManipulacionHigenicaDeAlimentos",
         requerimientos: [
         //   "1.Computadora o celular con acceso a redes sociales.",
@@ -248,8 +259,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Excel Inicial",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso aprenderemos a utilizar el programa Excel de Microsoft Office, y veremos las cuestiones más importantes para que puedas crear un archivo de datos en tu computadora, ya sea un listado con diferente información, una planilla de stock de productos, o cualquier tabla que necesites, para enviarla por medios electrónicos, imprimirla o simplemente guardarla y modificarla en tu computadora.",
+        ],
         imgUrl: "ExcelInicial",
         requerimientos: [
           "Necesitarás tener acceso a una computadora con el programa Microsoft Excel instalado.",
@@ -273,8 +285,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Excel Avanzado",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso lograrás un conocimiento avanzado del programa Excel de Microsoft Office, herramienta indispensable para el trabajo con datos en una oficina, institución o empresa. En este curso podrás mejorar tu desempeño en esta herramienta, lo que ayudará a que tengas un mejor manejo de datos e información, para así poder realizar análisis y generar valor agregado a las estrategias y proyectos que lleves adelante.",
+        ],
         imgUrl: "ExcelAvanzado",
         requerimientos: [
           "1. Tener acceso a una computadora con el programa Microsoft Excel instalado.",
@@ -300,8 +313,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Word Inicial",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso te vamos a mostrar las cuestiones más importantes para que puedas escribir en la computadora notas, cartas, informes, tu currículum vitae, entre otros. Durante cuatro semanas te iremos mostrando las funcionalidades básicas de Word, aprendiendo a trabajar con él y entendiendo su navegación. Vas a incorporar nociones básicas sobre cómo crear, modificar, configurar y corregir un documento, para tenerlo listo y compartir el trabajo finalizado por medios electrónicos, imprimirlo o simplemente guardarlo.",
+        ],
         imgUrl: "WOrdInicial",
         requerimientos: [
           "Para realizar este curso necesitarás tener acceso a una computadora con el programa Microsoft Word instalado.",
@@ -325,8 +339,9 @@ export const cursosAndCategias = [
       },
       {
         nombre: "Word Avanzado",
-        descripcionLarga:
+        descripcionLarga:[
           "En este curso aprenderás conocimientos avanzados del Programa Microsoft Word, que te servirán para elaborar documentos extensos, como ser libros, manuales, folletos o informes. Durante cuatro semanas profundizarás sobre diseño de documentos, utilización de columnas, manejo de imágenes, creación de tablas de contenido, entre otras posibilidades que ofrece la herramienta ofimática más utilizada a nivel administrativo.",
+        ],
         imgUrl: "WordAvanzado",
         requerimientos: [
           "1. Tener acceso a una computadora con el programa Microsoft Word instalado.",
@@ -358,11 +373,12 @@ export const cursosAndCategias = [
         {
           eje: true,
           nombre: 'Talleres para emprender en TICs',
-          descripcionLarga: `Adquirirás herramientas que te permitan iniciar un emprendimiento vinculado a las TICs, y podrás acceder a ﬁnanciamiento para su puesta en marcha al ﬁnalizar el ciclo. Aprenderás a transformar tu idea en proyecto, a administración un emprendimiento, y a desarrollar un plan de negocios.
-
+          descripcionLarga:[
+            `Adquirirás herramientas que te permitan iniciar un emprendimiento vinculado a las TICs, y podrás acceder a ﬁnanciamiento para su puesta en marcha al ﬁnalizar el ciclo. Aprenderás a transformar tu idea en proyecto, a administración un emprendimiento, y a desarrollar un plan de negocios.
             Este curso es la etapa de 4 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación.
-            
             Para realizarlo es requisito haber aprobado la etapa 3 del Informatorio: el curso de "Especialización en Tecnologías de Desarrollo".`,
+          
+          ],
           imgUrl: 'TalleresparaemprenderenTICs',
           requerimientos: 
             [
@@ -379,7 +395,9 @@ export const cursosAndCategias = [
         {
           eje: true,
           nombre: 'Especialización en tecnologías de desarrollo',
-          descripcionLarga: 'Podrás continuar con tu perfeccionamiento en lenguajes especíﬁcos, y orientar tu formación hacia los perﬁles laborales requeridos por las empresas locales. Profundizarás en desarrollo web con JAVA, y podrás elegir entre herramientas de testing para desarrollos o front end con React JS. Este curso es la etapa de 3 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".',
+          descripcionLarga:[
+            'Podrás continuar con tu perfeccionamiento en lenguajes especíﬁcos, y orientar tu formación hacia los perﬁles laborales requeridos por las empresas locales. Profundizarás en desarrollo web con JAVA, y podrás elegir entre herramientas de testing para desarrollos o front end con React JS. Este curso es la etapa de 3 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".',
+          ],
           imgUrl: 'Especializaciónentecnologíasdedesarrollo',
           requerimientos: 
           [
@@ -407,7 +425,9 @@ export const cursosAndCategias = [
         {
           eje: true,
           nombre: 'Programación y Desarrollo Web',
-          descripcionLarga: 'Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perﬁl profesional para el sector Software y Servicios Informáticos. Profundizarás en programación con Python y Django, y en bases de datos con SQL Server y MySQL. Este curso es la etapa de 2 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 1 del Informatorio: el curso de "Introducción a la Programación".',
+          descripcionLarga:[
+            'Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perﬁl profesional para el sector Software y Servicios Informáticos. Profundizarás en programación con Python y Django, y en bases de datos con SQL Server y MySQL. Este curso es la etapa de 2 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 1 del Informatorio: el curso de "Introducción a la Programación".',
+          ],
           imgUrl: 'ProgramayDesarrolloWeb',
           requerimientos: 
           [
@@ -434,7 +454,9 @@ export const cursosAndCategias = [
         {
           eje: true,
           nombre: 'Introducción a la Programación',
-          descripcionLarga: 'En este curso conocerás de qué se trata el mundo de la programación y te iniciarás en sus lenguajes. Durante un mes te proporcionaremos las bases mínimas necesarias para tener una primera noción de  las implicancias del desarrollo de software y sus principales componentes. Este curso es la etapa de 1 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para este curso necesitarás un dispositivo con acceso a internet, y no se requieren conocimientos previos.',
+          descripcionLarga:[
+            'En este curso conocerás de qué se trata el mundo de la programación y te iniciarás en sus lenguajes. Durante un mes te proporcionaremos las bases mínimas necesarias para tener una primera noción de  las implicancias del desarrollo de software y sus principales componentes. Este curso es la etapa de 1 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para este curso necesitarás un dispositivo con acceso a internet, y no se requieren conocimientos previos.',
+          ],
           imgUrl: 'IntroducciónalaProgramación',
           requerimientos: 
           [
@@ -466,7 +488,7 @@ export const cursosAndCategias = [
         cursos:[
             {
                 nombre: 'Blockchain: la innovación disruptiva detrás del Bitcoin',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[], 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'BlockchainlainnovacióndisruptivadetrásdeBitcoin',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -495,7 +517,7 @@ export const cursosAndCategias = [
             },
             {
                 nombre: 'Generación de ideas de negocios',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'GeeracionDeIdeasDeNegocios',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -525,7 +547,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Desarrolla tu propuesta de valor',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'DesarrollaTuPropuestaDeValor',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -555,7 +577,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Herramientas para analizar a la competencia y tu público objetivo',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'HerramientasPAraAlanizarALaCompetenciaYATuPublicoObjetivo',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -585,7 +607,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Herramientas para mejorar la usabilidad web balsamiq',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'HerramientasParaMejorarLaUsabilidadWebBalsaminq',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -615,7 +637,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Emprender proyectos online',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'EmprenderProyectosOnline',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -645,7 +667,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Como tener presencia en internet',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'ComoTenerPresenciaEnInternet',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -676,7 +698,7 @@ export const cursosAndCategias = [
 
             {
                 nombre: 'Uso de las redes sociales para la gestión de la marca',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'UsoDELasRedesSocialesParaLaGestionDeLaMarca',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -706,7 +728,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'La franquicia para la expansión de la marca',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'LaFranquiciaParaLaExpansionDeLaMarca',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -736,7 +758,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Claves para diseñar un modelo de negocios económicamente viable',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'ClavePAraDiseñarUnModeloDeNegocio',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -766,7 +788,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Cambios en la oferta turística: de Airbnb a la masificación de los destinos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'CambiosEnLaOfertaTuristica',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -796,7 +818,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Machine Learning: ¿Qué es y cómo funciona?',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'MachineLearning',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -826,7 +848,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Trabajo deslocalizado y gestión de tareas en equipos remotos',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'TRabajoDeslocalizadoYGestionDeTareasEnEquiposREmotos',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -856,7 +878,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Economía del conocimiento y sector turístico',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'EconomiaDelConocimientoYElSectorTuristico',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -886,7 +908,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'El Business intelligence para controlar la estrategia empresarial',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'ElBusinessInteligencePAraControlarLaEStrategiaEmpresarial',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -916,7 +938,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Big Data para aplicaciones de negocios',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'BigDataPAraAplicacionesDeNegocios',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -946,7 +968,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Lean Startup Desarrollo de modelos de negocio',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'LeanStartupDesarrolloDeModelosDeNegocio',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',
@@ -976,7 +998,7 @@ export const cursosAndCategias = [
             ,
             {
                 nombre: 'Herramientas para el Busines Intelligence',
-                descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+                descripcionLarga:[] 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
                 imgUrl: 'HerramientasparaelBusinessIntelligence',
                 requerimientos: 
                     ['1.Computadora o celular con acceso a redes sociales.',

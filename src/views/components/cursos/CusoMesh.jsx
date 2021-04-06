@@ -104,7 +104,7 @@ const Curso4 = (props) => {
 
     const [curso, setCurso] = useState({
         nombre: '',
-        descripcionLarga: '',
+        descripcionLarga: [],
         categoria: '',
         requerimientos: [],
         especificaciones: [],
@@ -184,13 +184,24 @@ const Curso4 = (props) => {
                                             <Col lg="5" md="7" className="align-self-center colCursosInfo">
                                                 <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
                                                 <hr class="justify-content-center lineaCopada" />
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">{curso.descripcionLarga}</p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoBold">
-                                                    Para cursarlo necesitarás: <br />
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">
                                                     {
-                                                        curso.requerimientos.map(Text => (
+                                                        curso.descripcionLarga.map(text => (
                                                             <>
-                                                                {Text} <br />
+                                                                {text} <br />
+                                                            </>
+                                                        ))
+                                                    }
+                                                </p>
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoBold">
+                                                    {
+                                                        curso.requerimientos.length > 0 &&
+                                                        <><strong>Para cursarlo necesitarás</strong> <br/></>
+                                                    }
+                                                    {
+                                                        curso.requerimientos.map(text => (
+                                                            <>
+                                                                {text} <br />
                                                             </>
                                                         ))
                                                     }
@@ -387,7 +398,15 @@ const Curso4 = (props) => {
                                 <hr class="justify-content-center lineaCopada" />
                                 <div className="separadorM"></div>
                                 <Row className="justify-content-left">
-                                    <p className="text-left parrafoCursos">{curso.descripcionLarga}</p>
+                                    <p className="text-left parrafoCursos">
+                                        {
+                                            curso.descripcionLarga.map(text => (
+                                                <>
+                                                    {text} <br />
+                                                </>
+                                            ))
+                                        }
+                                    </p>
                                 </Row>
                                 <div className="separadorSM"></div>
                                 <Row className="justify-content-left">
