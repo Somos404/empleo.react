@@ -264,7 +264,7 @@ export const cursosAndCategias = [
         ],
         imgUrl: "ExcelInicial",
         requerimientos: [
-          "Necesitarás tener acceso a una computadora con el programa Microsoft Excel instalado.",
+          "Tener acceso a una computadora con el programa Microsoft Excel instalado.",
         ],
         especificaciones: [
           "4 SEMANAS DE DURACIÓN",
@@ -318,7 +318,7 @@ export const cursosAndCategias = [
         ],
         imgUrl: "WOrdInicial",
         requerimientos: [
-          "Para realizar este curso necesitarás tener acceso a una computadora con el programa Microsoft Word instalado.",
+          "Tener acceso a una computadora con el programa Microsoft Word instalado.",
         ],
         especificaciones: [
           "4 SEMANAS DE DURACIÓN",

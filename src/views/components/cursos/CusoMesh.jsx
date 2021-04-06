@@ -196,7 +196,7 @@ const Curso4 = (props) => {
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoBold">
                                                     {
                                                         curso.requerimientos.length > 0 &&
-                                                        <><strong>Para cursarlo necesitarás</strong> <br/></>
+                                                        <><strong>Para cursarlo necesitarás:</strong> <br/></>
                                                     }
                                                     {
                                                         curso.requerimientos.map(text => (
@@ -413,7 +413,7 @@ const Curso4 = (props) => {
                                     <p className="text-left parrafoCursosBold">
                                         {
                                             curso.requerimientos.length > 0 &&
-                                            <><strong>Para cursarlo necesitarás</strong> <br/></>
+                                            <><strong>Para cursarlo necesitarás:</strong> <br/></>
                                         }
                                         {
                                             curso.requerimientos.map(Text => (
