@@ -161,7 +161,7 @@ const CardCustom = (props) => {
 const useStyles = makeStyles((theme) => ({
     card: {
         flexGrow: 1,
-        minHeight: '10em'
+        minHeight: '13.5em'
     },
     root: {
         minHeight: '13.5em',

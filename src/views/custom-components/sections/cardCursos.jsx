@@ -125,9 +125,9 @@ const CardCursos = (props) => {
     const setHeight = () => {
         // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
         //se muestran 4 por fila
-        if(desk) return (((state.cursosFiltrados.length>=4?Math.ceil((state.cursosFiltrados.length)/4):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/4)*30))  
+        if(desk) return (((state.cursosFiltrados.length>=4?Math.ceil((state.cursosFiltrados.length)/4):1))*245)+200+(Math.ceil((state.cursosFiltrados.length/4)*30))  
         //se muestran 4 por fila
-        if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*235)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
+        if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*240)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
         //se muestran 4 por fila
         if(mobile) return ((state.cursosFiltrados.length)*235)+250+(Math.ceil((state.cursosFiltrados.length)*30))
     }
