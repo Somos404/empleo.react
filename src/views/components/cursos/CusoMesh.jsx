@@ -411,7 +411,10 @@ const Curso4 = (props) => {
                                 <div className="separadorSM"></div>
                                 <Row className="justify-content-left">
                                     <p className="text-left parrafoCursosBold">
-                                        Para cursarlo necesitarás: <br />
+                                        {
+                                            curso.requerimientos.length > 0 &&
+                                            <><strong>Para cursarlo necesitarás</strong> <br/></>
+                                        }
                                         {
                                             curso.requerimientos.map(Text => (
                                                 <>
