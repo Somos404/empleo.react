@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from 'reactstrap';
 // core components
-import Header from "../../components/header/header.jsx";
+import HeaderCapacitaciones from "../../components/header/headerCapacitaciones";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
 import Footer3 from "../../components/footer/footer3.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
@@ -31,7 +31,7 @@ const CapacitacionesDemo = (props) => {
     const [categoria, setCategoria] = React.useState(props.location.categoria?props.location.categoria:'Todos')
     return (
         <div>
-            <Header />
+            <HeaderCapacitaciones />
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBannerCapacitaciones />

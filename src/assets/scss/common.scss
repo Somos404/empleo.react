@@ -15,7 +15,17 @@ Topbar
     transition: 0.2s ease-in;
     width: 100%;
     position: absolute;
-    // background-color: rgba(255, 255, 255, .60);
+    background-color: rgba(255, 255, 255, .60);
+    z-index: 20;
+    position: fixed;
+}
+
+.topbarCap {
+    padding: 0px;
+    transition: 0.2s ease-in;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .40);
     z-index: 20;
     position: fixed;
 }

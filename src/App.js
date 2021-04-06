@@ -89,7 +89,7 @@ function App() {
                 />
             )}
             />
-            
+              
                 {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
                 <Route 
                 

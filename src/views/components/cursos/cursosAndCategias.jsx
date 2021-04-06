@@ -22,9 +22,9 @@ export const cursosAndCategias = [
         ],
         contenido: [
           "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Desarrollo e identidad de marca. Nociones básicas sobre estilo y personalización, para destacarte y diferenciarte del resto.",
+          "Buenas prácticas de fotografía y videos, para diseñar y redactar publicaciones, posteos, historias, entre otros formatos.",
+          "Ejes de contenido para planificar las publicaciones, y nociones básicas para publicar anuncios pagos.",
         ],
         UrlToRedirect: "https://capacitaciones.chaco.gob.ar/course/view.php?id=28",
         horasSemanales: 3,
@@ -42,24 +42,23 @@ export const cursosAndCategias = [
       {
         nombre: "Formalización de emprendimientos",
         descripcionLarga:
-          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+          "En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.",
         imgUrl: "FormalizaciónDeEmprendimientos",
         requerimientos: [
-          "1.Computadora o celular con acceso a redes sociales.",
-          "2. Cuenta de Facebook e Instagram (requerido).",
-          "3. Cuenta de Youtube y Linkedin (opcional).",
+          "1. Dispositivo con acceso a internet.",
+          "2. Idea o emprendimiento en marcha.",
         ],
         especificaciones: [
           "4 SEMANAS DE DURACIÓN",
-          "3 HORAS SEMANALES",
+          "4 HORAS SEMANALES",
           "GRATUITO",
           "CERTIFICADO",
         ],
         contenido: [
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
-          "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
+          "Clasificación de costos e implicancia según la actividad. Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios",
+          "Política de precios. Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
+          "Rentabilidad e inversión. Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.",
+          "Finanzas. Definición de Inversión. Tiempo de retorno de la inversión. Definición de financiación. Toma de decisiones de financiación. Definición de liquidez. Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.",
         ],
         UrlToRedirect:
           "https://capacitaciones.chaco.gob.ar/course/view.php?id=27",
@@ -109,7 +108,7 @@ export const cursosAndCategias = [
         ],
         contenido: [
           "Clasificación de costos e implicancia según la actividad: Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios.",
-          "<p className:bold>Política de precios</p><br />Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
+          "Política de precios. Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
           "Rentabilidad e inversión: Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.",
           "Finanzas:Definición de Inversión. Tiempo de retorno de la inversión. Definición de financiación. Toma de decisiones de financiación. Definición de liquidez. Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.",
         ],
@@ -148,7 +147,7 @@ export const cursosAndCategias = [
       {
         nombre: "Introducición al desarrollo de videojuegos",
         descripcionLarga:
-          "En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.",
+          "En este curso te vamos a mostrar muchos elementos que tienen que ver con los videojuegos: su diseño, su desarrollo y su producción. Vamos a crear personajes y enemigos, ítems a consumir, plataformas, trampas, portales, sistemas de partículas, animaciones, power ups; vamos a manejar físicas y muchas cosas más para iniciarse en este mundo, a través del motor de desarrollo de videojuegos llamado GODOT.",
         imgUrl: "IntroduccionalDesarrolloDeVideojuegos",
         requerimientos: [
           "1. Dispositivo con acceso a internet.",
@@ -275,7 +274,7 @@ export const cursosAndCategias = [
       {
         nombre: "Excel Avanzado",
         descripcionLarga:
-          "En este curso lograrás un conocimiento avanzado del programa Excel de Microsof Office, herramienta indispensable para el trabajo con datos en una oficina, institución o empresa. En este curso podrás mejorar tu desempeño en esta herramienta, lo que ayudará a que tengas un mejor manejo de datos e información, para así poder realizar análisis y generar valor agregado a las estrategias y proyectos que lleves adelante.",
+          "En este curso lograrás un conocimiento avanzado del programa Excel de Microsoft Office, herramienta indispensable para el trabajo con datos en una oficina, institución o empresa. En este curso podrás mejorar tu desempeño en esta herramienta, lo que ayudará a que tengas un mejor manejo de datos e información, para así poder realizar análisis y generar valor agregado a las estrategias y proyectos que lleves adelante.",
         imgUrl: "ExcelAvanzado",
         requerimientos: [
           "1. Tener acceso a una computadora con el programa Microsoft Excel instalado.",
@@ -317,7 +316,7 @@ export const cursosAndCategias = [
           "En esta semana conocerás a Word y sus herramientas. Aprenderás a iniciar el programa, sus barras y menús, a deshacer y rehacer acciones, configurar la fuente, los párrafos y las sangrías. También verás cómo crear tablas y modificar sus bordes y sombreados, cómo utilizar columnas. Por último, aprenderás cómo aplicar la revisión ortográfica, ver la vista previa a la impresión y guardar el archivo en diferentes formatos, por ejemplo en PDF.",
           "En esta semana aprenderás cómo utilizar Imágenes de archivo o prediseñadas, y plantillas para armar distintos tipos de documentos, como currículums. También verás cómo insertar gráficos y redimensionar o recortar imágenes y ajustarlas al texto.",
           "En esta semana trabajarás con tablas y cómo configurar los documentos. Aprenderás a poner encabezados o pies de páginas y a insertar portadas. También verás cómo dibujar tablas, diseñarlas y configurarlas.",
-          "En esta semana aprenderás a utilizar la función de corrección de ortografía y gramática e Impresión de documentos, cómo configurar las páginas y definir su orientación.",
+          "En esta semana aprenderás a utilizar la función de corrección de ortografía y gramática e impresión de documentos, cómo configurar las páginas y definir su orientación.",
         ],
         UrlToRedirect:
           "https://capacitaciones.chaco.gob.ar/course/view.php?id=9",
@@ -335,7 +334,7 @@ export const cursosAndCategias = [
           "3. Cuenta de Youtube y Linkedin (opcional).",
         ],
         especificaciones: [
-          "4 SEMANAS DE DURACIÓN",
+          "2 SEMANAS DE DURACIÓN",
           "3 HORAS SEMANALES",
           "GRATUITO",
           "CERTIFICADO",
