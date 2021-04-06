@@ -36,7 +36,17 @@ Topbar
 REDIRECCIONES
 *******************/
 
+.btonIngCap{
+    margin-top: 20%;
+    color: black!important;
+    font-weight: bold!important;
+    border-radius: 1rem!important;
+    border: 3px solid #ca4c96ba!important;
+}
 
+.btonIngCap:hover{
+    background-color: white!important;
+}
 
 .cont-img{
     margin-left: 4em;
