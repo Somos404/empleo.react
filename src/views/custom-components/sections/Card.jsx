@@ -26,7 +26,8 @@ const CardCustom = (props) => {
 
     return (
 
-        <Col lg="3" md="6" className="m-b-30 animate__animated animate__backInUp animate__delay-.5s"
+        <Col lg="3" md="6" 
+            className="m-b-30 animate__animated animate__backInUp animate__delay-.5s"
             onMouseEnter={() => toggleHover(false)}
             onMouseLeave={() => toggleHover(true)}
         >
@@ -38,7 +39,7 @@ const CardCustom = (props) => {
                         >
                             {
                                 !props.from &&
-                                <Typography className={`tituloTextCss ${classes.tituloText}`} variant="body2" component="p">
+                                <Typography className={classes.tituloText} variant="body2" component="p">
                                     {props.infoCursos.nombre}
                                 </Typography>
                             }
@@ -160,7 +161,7 @@ const CardCustom = (props) => {
 const useStyles = makeStyles((theme) => ({
     card: {
         flexGrow: 1,
-        minHeight: '10em'
+        minHeight: '13.5em'
     },
     root: {
         minHeight: '13.5em',
