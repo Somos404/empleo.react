@@ -90,6 +90,10 @@ const useStyles = makeStyles((theme) => ({
             marginRight: -30
         },
 
+        "&:hover": {
+              background: 'linear-gradient(90deg, rgba(44,176,207,1) 4%, rgba(212,17,131,1) 100%)',
+        },
+
         "&:focus":
             { outline: 0 }
 

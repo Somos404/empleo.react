@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Form } from 'reactstrap';
 // core components
-import Header from "../../../components/header/header.jsx";
+import HeaderCapacitaciones from "../../../components/header/headerCapacitaciones";
 import HeaderBannerCursos from "../../../components/banner/headerBannerCursos";
 
 import Footer2 from "../../../components/footer/footer2.jsx";
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex: 3,
         marginBottom: '1.3em',
     },
+    
     acordeonEscritorio: {
         borderRadius: '20em!important',
         zIndex: 3,
@@ -62,9 +63,20 @@ const useStyles = makeStyles((theme) => ({
         padding: "1em",
         marginTop: "-2em"
     },
+    acordionDetails: {
+        display: 'block',
+    },
+    tituloAcordeonEscritorio: {
+        padding: "1em",
+        fontSize: "1rem",
+        marginLeft: "2%",
+        marginTop: "-1em",
+        fontWeight: "bold",
+    },
     parrafoAcordeonEscritorio: {
         padding: "1em",
         fontSize: "1rem",
+        marginLeft: "2%",
         marginTop: "-1em",
     },
     heading: {
@@ -172,7 +184,7 @@ const Curso4 = (props) => {
                 <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
 
-            <Header />
+            <HeaderCapacitaciones />
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBannerCursos
@@ -288,19 +300,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[0]
                                                         }
 
                                                     </Typography>
+                                                    </Row>
+                                                   
+                                                    <Row>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[0]
                                                         }
-
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -319,18 +336,23 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails className="backAccordeonRespuesta">
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[1]
                                                         }
 
                                                     </Typography>
+                                                    </Row>
+                                                    <Row>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[1]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -349,18 +371,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[2]
                                                         }
 
                                                     </Typography>
+                                                    </Row>
+                                                   
+                                                    <Row>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[2]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -380,18 +408,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[3]
                                                         }
 
                                                     </Typography>
+                                                    </Row>
+                                                   
+                                                    <Row>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[3]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -543,18 +577,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[0]
                                                         }
 
                                                     </Typography>
-                                                    <Typography className={classes.parrafoAcordeon}>
+                                                    </Row>
+                                                   
+                                                    <Row>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[0]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -573,18 +613,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails className="backAccordeonRespuesta">
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[1]
                                                         }
 
                                                     </Typography>
-                                                    <Typography className={classes.parrafoAcordeon}>
+                                                    </Row>
+                                                   
+                                                    <Row>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[1]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -603,18 +649,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[2]
                                                         }
 
                                                     </Typography>
-                                                    <Typography className={classes.parrafoAcordeon}>
+                                                    </Row>
+                                                   
+                                                    <Row>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[2]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
 
                                             </Accordion>
@@ -635,18 +687,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                    <Row>
+                                                    <Typography className={classes.tituloAcordeonEscritorio}>
                                                         {
                                                             curso.contenidoTitulo[3]
                                                         }
 
                                                     </Typography>
-                                                    <Typography className={classes.parrafoAcordeon}>
+                                                    </Row>
+                                                   
+                                                    <Row>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[3]
                                                         }
                                                     </Typography>
+                                                    </Row>
+                                                 
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
