@@ -21,6 +21,8 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [
+        ],
         contenido: [
           "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
           "Desarrollo e identidad de marca. Nociones básicas sobre estilo y personalización, para destacarte y diferenciarte del resto.",
@@ -44,24 +46,21 @@ export const cursosAndCategias = [
       {
         nombre: "Formalización de emprendimientos",
         descripcionLarga:[
-          "En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.",
+          `¿Querés inscribir tu emprendimiento ante los organismos correspondientes, y también aprender cómo efectivizar liquidaciones y pagos mensuales?
+          En dos semanas conocerás  herramientas, aplicativos, sugerencias y recomendaciones  para formalizar tu emprendimiento ante los organismos de recaudación impositiva, tanto Nacionales como provinciales.`,
         ],
         imgUrl: "FormalizaciónDeEmprendimientos",
-        requerimientos: [
-          "1. Dispositivo con acceso a internet.",
-          "2. Idea o emprendimiento en marcha.",
-        ],
+        requerimientos: [],
         especificaciones: [
-          "4 SEMANAS DE DURACIÓN",
-          "4 HORAS SEMANALES",
+          "2 SEMANAS DE DURACIÓN",
+          "2 HORAS SEMANALES",
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
-          "Clasificación de costos e implicancia según la actividad. Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios",
-          "Política de precios. Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
-          "Rentabilidad e inversión. Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.",
-          "Finanzas. Definición de Inversión. Tiempo de retorno de la inversión. Definición de financiación. Toma de decisiones de financiación. Definición de liquidez. Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.",
+          `En la primera semana conocerás los beneficios de la formalización, costos, y alternativas, y también verás con detalle los requisitos y procesos de inscripción en AFIP y ATP.`,
+          `En la segunda semana veremos información y herramientas que te permitan cumplimentar lo previsto en la legislación respecto a facturación, declaraciones juradas y pagos mensuales.`,
         ],
         UrlToRedirect:
           "https://capacitaciones.chaco.gob.ar/course/view.php?id=27",
@@ -84,6 +83,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "Introducción a la herramienta, al diseño gráfico y la comunicación.",
           "Fundamentos básicos del diseño gráfico y análisis de la competencia.",
@@ -145,6 +145,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "Herramientas para la planificación del rodaje de un video. Nociones básicas de composición audiovisual.",
           "Elementos básicos para crear un video: plano y secuencia, movimiento de cámara y grabación de voz.",
@@ -173,6 +174,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "Cómo crear un personaje en un motor de videojuegos, animarlo, agregarle sonido, comportamientos y una cámara. Cómo documentar adecuadamente un videojuego.",
           "Cómo crear objetos que dañen al personaje y enemigos. Cómo crear plataformas del mundo y manejar interacciones.",
@@ -200,6 +202,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "Autopercepción y elaboración de mi CV.",
           "Estrategias para la búsqueda activa de empleo.",
@@ -226,6 +229,10 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [
+          `¿Cómo crear un perfil de tu empresa en las redes sociales?`,
+          `Plataformas de tiendas online, distintos métodos de pago y de envío.`
+        ],
         contenido: [
           "¿Cómo crear un perfil de tu empresa en las redes sociales? Te mostraremos cómo crear y administrar tu página en Facebook, Instagram y Whatsapp Business, y a usar algunas herramientas de diseño para principiantes.",
           "Plataformas de tiendas online, distintos métodos de pago y de envío. Veremos cómo crear y gestionar tu tienda online, y cuáles son las distintas alternativas que tenés para hacerlo.",
@@ -243,9 +250,6 @@ export const cursosAndCategias = [
         ],
         imgUrl: "ManipulacionHigenicaDeAlimentos",
         requerimientos: [
-        //   "1.Computadora o celular con acceso a redes sociales.",
-        //   "2. Cuenta de Facebook e Instagram (requerido).",
-        //   "3. Cuenta de Youtube y Linkedin (opcional).",
        ],
         especificaciones: [
           "4 SEMANAS DE DURACIÓN",
@@ -253,6 +257,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "En la primera semana aprenderás cuestiones de calidad y seguridad alimentaria, desde buenas prácticas de manufactura, distintos tipos de contaminación y consejos para evitarla, hasta enfermedades o intoxicación transmitida por alimentos.",
           "En la segunda semana aprenderás sobre la importancia de la higiene y salud de los y las manipuladores de alimentos, el papel de la responsabilidad en el control de la inocuidad, qué debe contener sí o sí tu uniforme de trabajo y cómo podés obtener tu libreta sanitaria.",
@@ -279,6 +284,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "En esta semana conoceremos el Programa Microsoft Excel: ¿Qué es y para qué sirve? ¿Cuáles son sus componentes principales? Aprenderemos cómo crear y trabajar con archivos, desplazarnos en hojas y libros, y configurar archivos para imprimir.",
           "En esta semana conoceremos los componentes que estructuran y dan forma a la hoja de Excel, aprenderemos a utilizar distintos comandos, insertar y eliminar filas y modificar sus tamaños; también veremos cómo copiar celdas y autorrellenar.",
@@ -299,7 +305,6 @@ export const cursosAndCategias = [
         requerimientos: [
           "1. Tener acceso a una computadora con el programa Microsoft Excel instalado.",
           "2. Poseer conocimientos básicos del programa Microsoft Excel.",
-          "3. Cuenta de Youtube y Linkedin (opcional).",
         ],
         especificaciones: [
           "4 SEMANAS DE DURACIÓN",
@@ -307,6 +312,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "En esta semana aprenderás a utilizar las funciones avanzadas del programa y a construir fórmulas con referencias relativas y absolutas. Aprenderás también a utilizar funciones avanzadas de conteo y promedio, funciones lógicas, de texto, de búsqueda y referencia, de fecha y de información.",
           "En esta semana aprenderás a insertar y modificar gráficos de distintos tipos: de columnas, barras, líneas, áreas y circular. También, verás cómo jerarquizar series de datos, y generar gráficos personalizados.",
@@ -333,6 +339,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "En esta semana conocerás a Word y sus herramientas. Aprenderás a iniciar el programa, sus barras y menús, a deshacer y rehacer acciones, configurar la fuente, los párrafos y las sangrías. También verás cómo crear tablas y modificar sus bordes y sombreados, cómo utilizar columnas. Por último, aprenderás cómo aplicar la revisión ortográfica, ver la vista previa a la impresión y guardar el archivo en diferentes formatos, por ejemplo en PDF.",
           "En esta semana aprenderás cómo utilizar Imágenes de archivo o prediseñadas, y plantillas para armar distintos tipos de documentos, como currículums. También verás cómo insertar gráficos y redimensionar o recortar imágenes y ajustarlas al texto.",
@@ -361,6 +368,7 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [],
         contenido: [
           "En esta semana verás cómo utilizar tablas de Contenido y Correspondencia, cómo generar índices y actualizar las tablas. También aprenderás a crear una carta con la plantilla Word, y a separar correspondencia en diferentes documentos. Por último verás cómo separar páginas y guardarlas en diferentes documentos PDF individuales.",
           "Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.",
@@ -389,11 +397,10 @@ export const cursosAndCategias = [
           imgUrl: 'TalleresparaemprenderenTICs',
           requerimientos: 
             [
-              '1.Computadora o celular con acceso a redes sociales.',
-              '2. Cuenta de Facebook e Instagram (requerido).',
-              '3. Cuenta de Youtube y Linkedin (opcional).'
+              `haber aprobado la etapa 3 del Informatorio: el curso de "Especialización en Tecnologías de Desarrollo".`,
             ],
           especificaciones: [],
+          contenidoTitulo: [],
           contenido: [],
           UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=717',
           horasSemanales: 0,
@@ -408,9 +415,7 @@ export const cursosAndCategias = [
           imgUrl: 'Especializaciónentecnologíasdedesarrollo',
           requerimientos: 
           [
-            '1. Computadora o celular con acceso a redes sociales.',
-            '2. Cuenta de Facebook e Instagram (requerido).',
-            '3. Cuenta de Youtube y Linkedin (opcional).'
+            `haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".`
           ],
           especificaciones: 
           [
@@ -419,11 +424,16 @@ export const cursosAndCategias = [
             'GRATUITO', 
             'CERTIFICADO'
           ],
+          contenidoTitulo: [
+            `Desarrollo Web con JAVA`,
+            `Front end con React JS`,
+            `Herramientas de Testing para desarrollo`
+          ],
           contenido: 
           [
-            'Desarrollo Web con JAVA Introducción al desarrollo web con JAVA. Versionado. Programación orientada a objetos. Colecciones y Map. Errores y excepciones. Funciones. Spring Framework. Spring Boot. Manejo de Errores. Validaciones. SQL en Proyectos JAVA. HTML y CSS. Spring Data. Spring Security. REST. JSON. Spring REST.',
-            'Front end con React JS Introducción a React JS. Desarrollar con React JS. Componentes. Crear paginas y layouts. React Router. Mejorar la UI utilizando Layouts y React Fragment. Ciclo de vida de los componentes. API y llamadas. Manejo de datos vía API. UI Components y Container Components. Portales. Ventana modals. Hooks. Search Filter. Proyecto Integrado.',
-            'Herramientas de Testing para desarrollo Introducción. Calidad en el contexto del desarrollo de software. Principios del testing. Niveles y tipos de testing. ruebas relacionadas a cambios: re-testing y regression testing. Caso de prueba. Testing Caja Negra. Testing Caja Blanca. Pruebas basadas en la experiencia. Técnicas: predicción de errores, “fault attack”, testing exploratorio. Ciclo de vida del Bug. Reporte de seguimientos. Testing unitario. TDD (Test Driven Development)',
+            'Introducción al desarrollo web con JAVA. Versionado. Programación orientada a objetos. Colecciones y Map. Errores y excepciones. Funciones. Spring Framework. Spring Boot. Manejo de Errores. Validaciones. SQL en Proyectos JAVA. HTML y CSS. Spring Data. Spring Security. REST. JSON. Spring REST.',
+            'Introducción a React JS. Desarrollar con React JS. Componentes. Crear paginas y layouts. React Router. Mejorar la UI utilizando Layouts y React Fragment. Ciclo de vida de los componentes. API y llamadas. Manejo de datos vía API. UI Components y Container Components. Portales. Ventana modals. Hooks. Search Filter. Proyecto Integrado.',
+            'Introducción. Calidad en el contexto del desarrollo de software. Principios del testing. Niveles y tipos de testing. ruebas relacionadas a cambios: re-testing y regression testing. Caso de prueba. Testing Caja Negra. Testing Caja Blanca. Pruebas basadas en la experiencia. Técnicas: predicción de errores, “fault attack”, testing exploratorio. Ciclo de vida del Bug. Reporte de seguimientos. Testing unitario. TDD (Test Driven Development)',
           ],
           UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=716',
           horasSemanales: 10,
@@ -438,9 +448,7 @@ export const cursosAndCategias = [
           imgUrl: 'ProgramayDesarrolloWeb',
           requerimientos: 
           [
-            '1. Computadora o celular con acceso a redes sociales.',
-            '2. Cuenta de Facebook e Instagram (requerido).',
-            '3. Cuenta de Youtube y Linkedin (opcional).'
+            `Para realizarlo es requisito haber aprobado la etapa 1 del Informatorio: el curso de "Introducción a la Programación".`
           ],
           especificaciones: 
           [
@@ -449,10 +457,14 @@ export const cursosAndCategias = [
             'GRATUITO', 
             'CERTIFICADO'
           ],
+          contenidoTitulo: [
+            `Programación Web`,
+            `Bases de Datos`
+          ],
           contenido: 
           [
-            'Programación Web Introducción a Python. Variables y tipos de datos. Estructuras de control. Funciones. Listas. Tuplas. Diccionarios. Programación orientada a objetos. Versionado. Framework Django.',
-            'Bases de Datos Introducción a las bases de datos. Modelo entidad-relación (MER). Tablas. SQL Server. MySQL. Ejemplificaciones y prácticas.',
+            'Introducción a Python. Variables y tipos de datos. Estructuras de control. Funciones. Listas. Tuplas. Diccionarios. Programación orientada a objetos. Versionado. Framework Django.',
+            'Introducción a las bases de datos. Modelo entidad-relación (MER). Tablas. SQL Server. MySQL. Ejemplificaciones y prácticas.',
           ],
           UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=715',
           horasSemanales: 10,
@@ -467,9 +479,7 @@ export const cursosAndCategias = [
           imgUrl: 'IntroducciónalaProgramación',
           requerimientos: 
           [
-            '1.Computadora o celular con acceso a redes sociales.',
-            '2. Cuenta de Facebook e Instagram (requerido).',
-            '3. Cuenta de Youtube y Linkedin (opcional).'
+            `Un dispositivo con acceso a internet, y no se requieren conocimientos previos.`
           ],
           especificaciones: 
           [
@@ -477,10 +487,14 @@ export const cursosAndCategias = [
             '12 HORAS SEMANALES',
             'GRATUITO', 'CERTIFICADO'
           ],
+          contenidoTitulo: [
+            `Fundamentos de Programación`,
+            `Programación Imperativa`
+          ],
           contenido: 
           [
-            'Fundamentos de Programación Conceptos iniciales. Primeros programas. Procedimientos y prácticas. Estructuras repetitivas simples. Expresiones. Estructuras condicionales. Funciones. Prácticas integradoras. Estructuras repetitivas condicionales.',
-            'Programación Imperativa Funciones y tipos de datos. Variables y procedimientos. Lógica Booleana. Listas. Registros.',
+            'Conceptos iniciales. Primeros programas. Procedimientos y prácticas. Estructuras repetitivas simples. Expresiones. Estructuras condicionales. Funciones. Prácticas integradoras. Estructuras repetitivas condicionales.',
+            'Funciones y tipos de datos. Variables y procedimientos. Lógica Booleana. Listas. Registros.',
           ],
           UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/mod/forum/view.php?id=714',
           horasSemanales: 12,
