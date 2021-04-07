@@ -29,7 +29,7 @@ const Header = () => {
             <div className="header6">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
-                        <NavbarBrand href="https://capacitaciones.chaco.gob.ar/"  target="_blank" rel="noopener noreferrer"><img src={logo} alt="wrapkit" /></NavbarBrand>
+                        <NavbarBrand href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer"><img src={logo} alt="wrapkit" /></NavbarBrand>
                         {/**
                          Iconos de Redes sociales -> Header Responsive 
                          */}
@@ -56,12 +56,12 @@ const Header = () => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 ml-auto" id="h6-info">
                             <Nav navbar className="ml-auto">
                                 <NavItem>
-                                    <a className="nav-link" href="https://capacitaciones.chaco.gob.ar/"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
                                         INICIO
 										</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a className="nav-link" href="https://capacitaciones.chaco.gob.ar/course/index.php"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
                                         CURSOS
                                     </a>
                                 </NavItem>

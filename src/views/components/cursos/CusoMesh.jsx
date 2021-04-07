@@ -108,10 +108,12 @@ const Curso4 = (props) => {
         categoria: '',
         requerimientos: [],
         especificaciones: [],
+        contenidoTitulo: [],
         contenido: [],
         UrlToRedirect: '',
         horasSemanales: '',
         semanas: '',
+
     });
 
     useEffect(() => {
@@ -125,6 +127,7 @@ const Curso4 = (props) => {
                     descripcionLarga: curso.descripcionLarga,
                     requerimientos: curso.requerimientos,
                     especificaciones: curso.especificaciones,
+                    contenidoTitulo: curso.contenidoTitulo,
                     contenido: curso.contenido,
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
@@ -143,6 +146,7 @@ const Curso4 = (props) => {
                     descripcionLarga: curso.descripcionLarga,
                     requerimientos: curso.requerimientos,
                     especificaciones: curso.especificaciones,
+                    contenidoTitulo: curso.contenidoTitulo,
                     contenido: curso.contenido,
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
@@ -157,7 +161,7 @@ const Curso4 = (props) => {
 
     return (
         <div className="page-wrapper page-wrapperCursos">
-            
+
             <Helmet>
                 <meta property="og:url" content="https://empleo.chaco.gob.ar" />
                 <meta property="og:type" content="website" />
@@ -167,7 +171,7 @@ const Curso4 = (props) => {
                 {/* <title>curso</title>
                 <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
-       
+
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
@@ -276,6 +280,12 @@ const Curso4 = (props) => {
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
+                                                            curso.contenidoTitulo[0]
+                                                        }
+
+                                                    </Typography>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
                                                             curso.contenido[0]
                                                         }
 
@@ -299,6 +309,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails className="backAccordeonRespuesta">
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[1]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[1]
@@ -325,6 +341,12 @@ const Curso4 = (props) => {
                                                 <AccordionDetails>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
+                                                            curso.contenidoTitulo[2]
+                                                        }
+
+                                                    </Typography>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
                                                             curso.contenido[2]
                                                         }
                                                     </Typography>
@@ -348,6 +370,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[3]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeonEscritorio}>
                                                         {
                                                             curso.contenido[3]
@@ -494,6 +522,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[0]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeon}>
                                                         {
                                                             curso.contenido[0]
@@ -518,6 +552,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails className="backAccordeonRespuesta">
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[1]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeon}>
                                                         {
                                                             curso.contenido[1]
@@ -542,6 +582,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[2]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeon}>
                                                         {
                                                             curso.contenido[2]
@@ -568,6 +614,12 @@ const Curso4 = (props) => {
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
+                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                        {
+                                                            curso.contenidoTitulo[3]
+                                                        }
+
+                                                    </Typography>
                                                     <Typography className={classes.parrafoAcordeon}>
                                                         {
                                                             curso.contenido[3]

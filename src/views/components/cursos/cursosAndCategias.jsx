@@ -37,6 +37,7 @@ export const cursosAndCategias = [
             empieza: "01/01/2021",
             termina: "30/04/2021",
           },
+         
         ],
       },
       {
@@ -106,11 +107,17 @@ export const cursosAndCategias = [
           "GRATUITO",
           "CERTIFICADO",
         ],
+        contenidoTitulo: [
+          "Clasificación de costos e implicancia según la actividad",
+          "Política de precios",
+          "Rentabilidad e inversión:",
+          "Finanzas",
+        ],
         contenido: [
-          "Clasificación de costos e implicancia según la actividad: Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios.",
-          "Política de precios. Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
-          "Rentabilidad e inversión: Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.",
-          "Finanzas:Definición de Inversión. Tiempo de retorno de la inversión. Definición de financiación. Toma de decisiones de financiación. Definición de liquidez. Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.",
+          "Entender el impacto de los costos en todas las áreas del negocio. Costos fijos y variables. Diferencia entre costos y gastos. Costo de oportunidad e implícitos. Costos en comercios de compra y venta de productos. Costos en prestación de servicios.",
+          "Pautas para definir precios. Objetivo económico. Costos y gastos. Margen bruto y neto. Análisis de la competencia. Valor agregado para los clientes.",
+          "Importancia de la información para la gestión. Análisis de rentabilidad. Importancia de generar información valiosa como ser la rentabilidad del negocio: qué productos conviene vender más, identificar costos que pueden reducirse, errores o pérdidas. Esquema de registro de las operaciones del negocio para generar un reporte.",
+          "Definición de Inversión. Tiempo de retorno de la inversión. Definición de financiación. Toma de decisiones de financiación. Definición de liquidez. Métodos de cobro y costos. Flujo de circulación del dinero en el negocio.",
         ],
         UrlToRedirect:
           "https://capacitaciones.chaco.gob.ar/course/view.php?id=25",
