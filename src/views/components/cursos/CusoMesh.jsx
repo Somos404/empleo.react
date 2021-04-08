@@ -46,6 +46,14 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import TextField from "@material-ui/core/TextField";
 
+import { SocialIcon } from 'react-social-icons';
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+} from "react-share";
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -485,7 +493,67 @@ const Curso4 = (props) => {
                                     }
                                 </Row>
                             </section>
+                            <Container>
+                                    <Row>
+                                        <Col>
+                                        <h4 className="compartirCursoTitulo">Compartír</h4>
+                                        <ul className="list-inline list-inlineRedes list-inlineRedesTop">
+                                        <li className="list-inline-item">
+                                            <a>
+                                                <FacebookShareButton
+                                                    // url={props.infoCursos.share}
+                                                    // quote={props.infoCursos.titulo}
+                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                >
 
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                        network="facebook"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                    />
+                                                </FacebookShareButton>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <TwitterShareButton
+                                                    // url={props.infoCursos.share}
+                                                    // title={props.infoCursos.titulo}
+                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                    target_blank
+                                                >
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                        network="twitter"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                    />
+                                                </TwitterShareButton>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noopener noreferrer">
+                                                <WhatsappShareButton
+                                                    // title={props.infoCursos.titulo}
+                                                    // url={props.infoCursos.share}
+                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+
+                                                >
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                        network="whatsapp"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                        
+                                                    />
+                                                </WhatsappShareButton >
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        </Col>
+                                    </Row>
+                                </Container>
                         </div>
                     </div>
                     <div className="ContenedorResponsiveCursosHidden">
@@ -839,7 +907,7 @@ const Curso4 = (props) => {
                                                     <Button
                                                         onClick={handlerEnviar}
                                                         color="primary" autoFocus
-                                                                                                                className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
+                                                    className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
     
                                                     >
                                                         CONTINUAR
@@ -851,6 +919,68 @@ const Curso4 = (props) => {
                                         </Row>
                                     </div>
                                 </Col>
+
+                                <Container>
+                                    <Row>
+                                        <Col>
+                                        <h4 className="compartirCursoTitulo">Compartír</h4>
+                                        <ul className="list-inline list-inlineRedes list-inlineRedesTop">
+                                        <li className="list-inline-item">
+                                            <a>
+                                                <FacebookShareButton
+                                                    // url={props.infoCursos.share}
+                                                    // quote={props.infoCursos.titulo}
+                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                >
+
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                        network="facebook"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                    />
+                                                </FacebookShareButton>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <TwitterShareButton
+                                                    // url={props.infoCursos.share}
+                                                    // title={props.infoCursos.titulo}
+                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                    target_blank
+                                                >
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                        network="twitter"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                    />
+                                                </TwitterShareButton>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noopener noreferrer Demo__some-network__share-buttonPadding">
+                                                <WhatsappShareButton
+                                                    // title={props.infoCursos.titulo}
+                                                    // url={props.infoCursos.share}
+                                                    className="Demo__some-network__share-button"
+
+                                                >
+                                                    <SocialIcon
+                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                        network="whatsapp"
+                                                        bgColor="#01B7E8"
+                                                        fgColor="white"
+                                                        
+                                                    />
+                                                </WhatsappShareButton >
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        </Col>
+                                    </Row>
+                                </Container>
 
                             </Container>
 

@@ -3533,6 +3533,15 @@ top: 9% !important;
     .imgBackReqCursos{
      max-width: 108% !important;
     }
+    .lineasIncentivo3{
+        margin-left: -12em;
+        margin-top: -2em;
+    }
+    .colImg {
+        position: absolute;
+        margin-left: -74%;
+        margin-top: 5.2%;
+    }
 }
 
 
@@ -3690,4 +3699,12 @@ top: 9% !important;
     align-items: center;
     margin-top: -18%;
     margin-left: 20%;
+}
+
+.Demo__some-network__share-buttonPadding{
+    padding: .3em!important;
+}
+
+.compartirCursoTitulo{
+    margin-left: 1%;
 }
