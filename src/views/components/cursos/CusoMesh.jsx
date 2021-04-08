@@ -118,7 +118,7 @@ const Curso4 = (props) => {
     const classes = useStyles();
 
     //Dialog Form para quiero que me avisen
-
+    const [open, setOpen] = React.useState(false);
     const [nombre, setNombre] = useState();
     const [apellido, setApellido] = useState();
     const [dni, setDni] = useState();
@@ -137,7 +137,6 @@ const Curso4 = (props) => {
       }
     
 
-    const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -773,10 +772,10 @@ const Curso4 = (props) => {
                                                 onClose={handleClose}
                                                 aria-labelledby="responsive-dialog-title"
                                             >
-                                                {/* <DialogTitle id="responsive-dialog-title">{"Detalle de Cotización"}</DialogTitle> */}
+                                              {/* <DialogTitle id="responsive-dialog-title">{"Completá tus datos para que podamos notificarte"}</DialogTitle>  */}
                                                 <DialogContent>
                                                     <DialogContentText>
-                                                        {/* Nos comunicaremos con vos a tu correo electrónico/teléfono para coordinar el envío de tu paquete */}
+                                                    Completá tus datos para que podamos notificarte 
                                                     </DialogContentText>
                                                     <TextField
                                                         autoFocus
@@ -830,12 +829,19 @@ const Curso4 = (props) => {
                                                     />
                                                 </DialogContent>
                                                 <DialogActions>
-                                                    <Button autoFocus onClick={handleClose} color="primary">
+                                                    <Button 
+                                                        autoFocus onClick={handleClose} 
+                                                        color="primary"
+                                                        className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
+                                                    >
                                                         CANCELAR
                                                     </Button>
                                                     <Button
                                                         onClick={handlerEnviar}
-                                                        color="primary" autoFocus>
+                                                        color="primary" autoFocus
+                                                                                                                className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
+    
+                                                    >
                                                         CONTINUAR
                                                     </Button>
 
