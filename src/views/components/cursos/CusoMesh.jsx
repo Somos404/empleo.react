@@ -474,8 +474,14 @@ const Curso4 = (props) => {
                                             )
                                             :
                                             (
-                                                <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero que me avisen cuando abran inscripciones </a>
-                                            )
+                                                <Button  
+                                                // to={curso.UrlToRedirect}
+                                                 className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
+                                                 onClick={handleClickOpen}
+
+                                            >
+                                                Quiero que me avisen cuando abran inscripciones 
+                                            </Button>                                            )
 
                                     }
                                 </Row>
@@ -750,7 +756,14 @@ const Curso4 = (props) => {
                                                     )
                                                     :
                                                     (
-                                                        <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero que me avisen cuando abran inscripciones </a>
+                                                        <Button  
+                                                            // to={curso.UrlToRedirect}
+                                                             className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
+                                                             onClick={handleClickOpen}
+
+                                                        >
+                                                            Quiero que me avisen cuando abran inscripciones 
+                                                        </Button>
                                                     )
 
                                             }
@@ -760,10 +773,10 @@ const Curso4 = (props) => {
                                                 onClose={handleClose}
                                                 aria-labelledby="responsive-dialog-title"
                                             >
-                                                <DialogTitle id="responsive-dialog-title">{"Detalle de Cotización"}</DialogTitle>
+                                                {/* <DialogTitle id="responsive-dialog-title">{"Detalle de Cotización"}</DialogTitle> */}
                                                 <DialogContent>
                                                     <DialogContentText>
-                                                        Nos comunicaremos con vos a tu correo electrónico/teléfono para coordinar el envío de tu paquete
+                                                        {/* Nos comunicaremos con vos a tu correo electrónico/teléfono para coordinar el envío de tu paquete */}
                                                     </DialogContentText>
                                                     <TextField
                                                         autoFocus
