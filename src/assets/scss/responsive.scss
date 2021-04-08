@@ -437,8 +437,23 @@ redirecciones
 @media(max-width:767px) {
     /*This is for the Global*/
 
-   
-
+    .contenedor-logos-footerInfoCapResponsive1{
+        margin-top: -19%!important;
+    }
+    .contenedor-logos-footerInfoCapHeiht2{
+        height: 2em!important;
+        display: flex;
+        left: 0;
+        align-items: center;
+        margin-top: -18%!important;
+        margin-left: 0%!important;
+    }
+    .contenedor-minMarginTop{
+        margin-top: -6%!important;
+    }
+    .imgRepsonsiveInfoCapWidth{
+        width: 11em!important;
+    }
     .topbar{
         // background-color: rgba(204, 204, 204, .80);
 
@@ -682,7 +697,7 @@ redirecciones
 }
 
 .team2{
-    margin-top: 12%!important;
+    margin-top: 0%!important;
 }
 //Cpacitaciones
 .parrafoHiddenCap{
@@ -1689,8 +1704,8 @@ width: 30%;
 //   }
 
 .static-slider-headCapacitaciones{
-    min-height: 28vh;
-    margin-top: -2em !important;
+    min-height: 40vh;
+    margin-top: 0em !important;
 }
 
 .img-redireccionesBtnInform2Responsive{
@@ -1719,7 +1734,7 @@ width: 30%;
 
 .titulosInfoCapHab{
     position: relative;
-    margin-top: -1em;
+    margin-top: -4em;
     margin-left: 8%;
     width: 20em;
 }
@@ -1806,8 +1821,16 @@ line-height: 1;
 
 .imgResponsiveInformatCap{
     width: 15em !important;
-    height: 7em !important;
-    margin-top: -27% !important;
+    height: 4em !important;
+    margin-top: -1% !important;
+}
+
+.imgResponsiveInformatCapHeader{
+    
+    width: 15em !important;
+    height: 8em !important;
+    margin-top: -18% !important;
+
 }
 .imgResponsiveInformatCapMArginLeft{
     margin-left: inherit!important;

@@ -253,7 +253,7 @@ const CapacitacionesDemo = (props) => {
             </div>
                 <div>
                 <BlogComponent />
-                <Footer3 />
+                {/* <Footer3 /> */}
                 </div>
             
      

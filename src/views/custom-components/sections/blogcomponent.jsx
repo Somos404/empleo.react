@@ -15,7 +15,7 @@ import img7 from '../../../assets/images/capacitaciones/lineaInforCap3.svg';
 import img8 from '../../../assets/images/capacitaciones/lineaInforCap4.svg';
 import imgInfo from '../../../assets/images/capacitaciones/logo_membrete.png';
 
-
+import Footer3 from '../../../components/footer/footer3'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
@@ -191,11 +191,12 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                             </div>
                         </Col>
                     </Row>
-
+                   
 
                 </Container>
 
             </div>
+            <Footer3 />
         </div>
     );
 }
