@@ -95,7 +95,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </NavItem>
-                                <NavItem><a className="btn btn-outline-success btonIngCap" href="#">INGRESAR</a></NavItem>
+                                <NavItem className="nav-itemLogin"><a className="btn btn-outline-success btonIngCap" href="#">INGRESAR</a></NavItem>
 
                             </Nav>
                              {/*

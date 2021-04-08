@@ -663,11 +663,12 @@ redirecciones
         background-color: white!important;
     }
     .btnCursosModificado2{
-        margin-top: 1em;
         color: white;
         background-color: #3C3C3B;
-        font-weight: 800;
+        font-weight: 500;
         margin-bottom: 2em;
+        width: 105%;
+        font-size: 0.8rem;
     }
     .flechaSem4{
         margin-top: -7%;
@@ -1858,7 +1859,17 @@ line-height: 1;
 .imgRepsonsiveInfoCap{
     width: 18em;
 }
+.contenedorCompartirRedesCentrado{
+    text-align: center;
+}
 
+.header6 {
+    background-color: rgba(255, 255, 255, .60);
+}
+
+.nav-itemLogin {
+    margin-top: -12em;
+}
 @media (max-width: 360px){
     .rowincentivosResponsive2 {
         margin-left: 2.5em;

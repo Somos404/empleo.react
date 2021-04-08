@@ -920,7 +920,7 @@ const Curso4 = (props) => {
                                     </div>
                                 </Col>
 
-                                <Container>
+                                <Container className="contenedorCompartirRedesCentrado">
                                     <Row>
                                         <Col>
                                         <h4 className="compartirCursoTitulo">Compartír</h4>
