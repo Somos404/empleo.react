@@ -19,8 +19,6 @@ import img1 from '../../../assets/images/cursos/btnDuracion.png';
 import img2 from '../../../assets/images/cursos/btnSemanas.png';
 import img3 from '../../../assets/images/cursos/btnGratuito.png';
 import img4 from '../../../assets/images/cursos/btnCertificado.png';
-
-
 //import banner from '../../../assets/images/form-banners/banner1/banner-img.png';
 import banner from '../../../assets/images/cursos/imagenPrimConten.png';
 
@@ -28,7 +26,6 @@ import banner from '../../../assets/images/cursos/imagenPrimConten.png';
 import { cursosAndCategias } from '../cursos/cursosAndCategias';
 
 //Material UI
-
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -40,8 +37,14 @@ import { makeStyles } from '@material-ui/core/styles';
 // import img6 from '../../assets/images/oficios/flachaIzq.svg';
 // import img7 from '../../assets/images/capacitaciones/logo_membrete.png';
 
-
 import { Helmet } from "react-helmet";
+
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -52,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex: 3,
         marginBottom: '1.3em',
     },
-    
+
     acordeonEscritorio: {
         borderRadius: '20em!important',
         zIndex: 3,
@@ -113,6 +116,37 @@ const Curso4 = (props) => {
     const [isOpen2, setIsOpen2] = useState(false);
     const toggle2 = () => setIsOpen2(!isOpen2);
     const classes = useStyles();
+
+    //Dialog Form para quiero que me avisen
+
+    const [nombre, setNombre] = useState();
+    const [apellido, setApellido] = useState();
+    const [dni, setDni] = useState();
+    const [email, setEmail] = useState();
+    const [tel, setTel] = useState();
+
+
+      const handlerEnviar = () => {
+        const body = {
+        nombre: nombre,
+        apellido: apellido,
+        dni: dni,
+        email: email,
+        tel: tel
+        }
+      }
+    
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
 
     const [curso, setCurso] = useState({
         nombre: '',
@@ -212,7 +246,7 @@ const Curso4 = (props) => {
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoBold">
                                                     {
                                                         curso.requerimientos.length > 0 &&
-                                                        <><strong>Para cursarlo necesitarás:</strong> <br/></>
+                                                        <><strong>Para cursarlo necesitarás:</strong> <br /></>
                                                     }
                                                     {
                                                         curso.requerimientos.map(text => (
@@ -300,24 +334,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[0]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[0]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[0]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[0]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -336,23 +370,23 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[1]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[1]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[1]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[1]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -371,24 +405,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[2]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[2]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[2]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[2]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -408,24 +442,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[3]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[3]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[3]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[3]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -475,7 +509,7 @@ const Curso4 = (props) => {
                                     <p className="text-left parrafoCursosBold">
                                         {
                                             curso.requerimientos.length > 0 &&
-                                            <><strong>Para cursarlo necesitarás:</strong> <br/></>
+                                            <><strong>Para cursarlo necesitarás:</strong> <br /></>
                                         }
                                         {
                                             curso.requerimientos.map(Text => (
@@ -577,24 +611,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[0]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[0]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[0]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[0]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -613,24 +647,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[1]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[1]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[1]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[1]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -649,24 +683,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[2]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[2]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[2]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[2]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
 
                                             </Accordion>
@@ -687,24 +721,24 @@ const Curso4 = (props) => {
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
                                                 </AccordionSummary>
-                                                <AccordionDetails  className={classes.acordionDetails}>
+                                                <AccordionDetails className={classes.acordionDetails}>
                                                     <Row>
-                                                    <Typography className={classes.tituloAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenidoTitulo[3]
-                                                        }
+                                                        <Typography className={classes.tituloAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenidoTitulo[3]
+                                                            }
 
-                                                    </Typography>
+                                                        </Typography>
                                                     </Row>
-                                                   
+
                                                     <Row>
-                                                    <Typography className={classes.parrafoAcordeonEscritorio}>
-                                                        {
-                                                            curso.contenido[3]
-                                                        }
-                                                    </Typography>
+                                                        <Typography className={classes.parrafoAcordeonEscritorio}>
+                                                            {
+                                                                curso.contenido[3]
+                                                            }
+                                                        </Typography>
                                                     </Row>
-                                                 
+
                                                 </AccordionDetails>
                                             </Accordion>
                                         }
@@ -720,6 +754,80 @@ const Curso4 = (props) => {
                                                     )
 
                                             }
+                                            <Dialog
+                                                // fullScreen={fullScreen}
+                                                open={open}
+                                                onClose={handleClose}
+                                                aria-labelledby="responsive-dialog-title"
+                                            >
+                                                <DialogTitle id="responsive-dialog-title">{"Detalle de Cotización"}</DialogTitle>
+                                                <DialogContent>
+                                                    <DialogContentText>
+                                                        Nos comunicaremos con vos a tu correo electrónico/teléfono para coordinar el envío de tu paquete
+                                                    </DialogContentText>
+                                                    <TextField
+                                                        autoFocus
+                                                        margin="dense"
+                                                        id="name"
+                                                        label="Nombre"
+                                                        value={nombre}
+                                                        onChange={(event) => setNombre(event.target.value)}
+                                                        type="name"
+                                                        fullWidth
+                                                    />
+                                                     <TextField
+                                                        autoFocus
+                                                        margin="dense"
+                                                        id="apellido"
+                                                        label="Apellido"
+                                                        value={apellido}
+                                                        onChange={(event) => setApellido(event.target.value)}
+                                                        type="name"
+                                                        fullWidth
+                                                    />
+                                                    <TextField
+                                                        autoFocus
+                                                        margin="dense"
+                                                        id="dni"
+                                                        label="DNI"
+                                                        value={dni}
+                                                        onChange={(event) => setDni(event.target.value)}
+                                                        type="number"
+                                                        fullWidth
+                                                    />
+                                                     <TextField
+                                                        autoFocus
+                                                        margin="dense"
+                                                        id="email"
+                                                        label="Email"
+                                                        value={email}
+                                                        onChange={(event) => setEmail(event.target.value)}
+                                                        type="email"
+                                                        fullWidth
+                                                    />
+                                                     <TextField
+                                                        autoFocus
+                                                        margin="dense"
+                                                        id="tel"
+                                                        label="Teléfono"
+                                                        value={tel}
+                                                        onChange={(event) => setTel(event.target.value)}
+                                                        type="number"
+                                                        fullWidth
+                                                    />
+                                                </DialogContent>
+                                                <DialogActions>
+                                                    <Button autoFocus onClick={handleClose} color="primary">
+                                                        CANCELAR
+                                                    </Button>
+                                                    <Button
+                                                        onClick={handlerEnviar}
+                                                        color="primary" autoFocus>
+                                                        CONTINUAR
+                                                    </Button>
+
+                                                </DialogActions>
+                                            </Dialog>
 
                                         </Row>
                                     </div>
