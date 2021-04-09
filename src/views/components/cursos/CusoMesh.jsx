@@ -501,8 +501,8 @@ const Curso4 = (props) => {
                                         <li className="list-inline-item">
                                             <a>
                                                 <FacebookShareButton
-                                                    // url={props.infoCursos.share}
-                                                    // quote={props.infoCursos.titulo}
+                                                   url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                    // quote={curso.nombre}
                                                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                                                 >
 
@@ -518,8 +518,8 @@ const Curso4 = (props) => {
                                         <li>
                                             <a>
                                                 <TwitterShareButton
-                                                    // url={props.infoCursos.share}
-                                                    // title={props.infoCursos.titulo}
+                                                   url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                //    title={curso.nombre}
                                                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                                                     target_blank
                                                 >
@@ -535,8 +535,8 @@ const Curso4 = (props) => {
                                         <li>
                                             <a target="_blank" rel="noopener noreferrer">
                                                 <WhatsappShareButton
-                                                    // title={props.infoCursos.titulo}
-                                                    // url={props.infoCursos.share}
+                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                //  url={curso.nombre}
                                                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
 
                                                 >
@@ -928,8 +928,8 @@ const Curso4 = (props) => {
                                         <li className="list-inline-item">
                                             <a>
                                                 <FacebookShareButton
-                                                    // url={props.infoCursos.share}
-                                                    // quote={props.infoCursos.titulo}
+                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                    // quote={curso.nombre}
                                                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                                                 >
 
@@ -945,8 +945,8 @@ const Curso4 = (props) => {
                                         <li>
                                             <a>
                                                 <TwitterShareButton
-                                                    // url={props.infoCursos.share}
-                                                    // title={props.infoCursos.titulo}
+                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                //    title={curso.nombre}
                                                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                                                     target_blank
                                                 >
@@ -962,8 +962,8 @@ const Curso4 = (props) => {
                                         <li>
                                             <a target="_blank" rel="noopener noreferrer Demo__some-network__share-buttonPadding">
                                                 <WhatsappShareButton
-                                                    // title={props.infoCursos.titulo}
-                                                    // url={props.infoCursos.share}
+                                                //  title={curso.nombre}
+                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
                                                     className="Demo__some-network__share-button"
 
                                                 >
