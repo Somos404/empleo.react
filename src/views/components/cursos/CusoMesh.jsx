@@ -185,7 +185,7 @@ const Curso4 = (props) => {
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
-                    eje: curso.eje ? true : false,
+                    tipo: curso.tipo,
                     fechaInscrpcion: checkDate(curso.fechaInscrpcion),
                     imgUrl: curso.imgUrl
                 }
@@ -204,7 +204,7 @@ const Curso4 = (props) => {
                     UrlToRedirect: curso.UrlToRedirect,
                     horasSemanales: curso.horasSemanales,
                     semanas: curso.contenido.length,
-                    eje: curso.eje ? true : false,
+                    tipo: curso.tipo,
                     fechaInscrpcion: checkDate(curso.fechaInscrpcion),
                     imgUrl: curso.imgUrl
                 }
@@ -336,7 +336,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '55%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursosEscritorio">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenidoEscritorio">1</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.tipo} <stronger className="numeroContenidoEscritorio">1</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -372,7 +372,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '70%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursosEscritorio">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenidoEscritorio">2</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.tipo} <stronger className="numeroContenidoEscritorio">2</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -407,7 +407,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '89%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursosEscritorio">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenidoEscritorio">3</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.tipo} <stronger className="numeroContenidoEscritorio">3</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -444,7 +444,7 @@ const Curso4 = (props) => {
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '100%', position: 'absolute', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em', marginTop: '-1.5em' }} >
 
-                                                        <span className="tituloCardCursosEscritorio">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenidoEscritorio">4</stronger></span>
+                                                        <span className="tituloCardCursosEscritorio">{curso.tipo} <stronger className="numeroContenidoEscritorio">4</stronger></span>
                                                         <i className="fa fa-angle-down m-l-5 flechaSem4"></i>
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -679,7 +679,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '55%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursos">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenido">1</stronger></span>
+                                                        <span className="tituloCardCursos">{curso.tipo} <stronger className="numeroContenido">1</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -715,7 +715,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '70%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursos">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenido">2</stronger></span>
+                                                        <span className="tituloCardCursos">{curso.tipo} <stronger className="numeroContenido">2</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -751,7 +751,7 @@ const Curso4 = (props) => {
 
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '99%', position: 'relative', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em' }} >
-                                                        <span className="tituloCardCursos">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenido">3</stronger></span>
+                                                        <span className="tituloCardCursos">{curso.tipo} <stronger className="numeroContenido">3</stronger></span>
 
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>
@@ -789,7 +789,7 @@ const Curso4 = (props) => {
                                                 >
                                                     <div className="progress-bar" role="progressbar" style={{ width: '100%', position: 'absolute', zIndex: 2, borderRadius: '20em', height: '3em', marginLeft: '-1em', marginTop: '-1.5em' }} >
 
-                                                        <span className="tituloCardCursos">{curso.eje ? 'Eje' : 'SEMANA'} <stronger className="numeroContenido">4</stronger></span>
+                                                        <span className="tituloCardCursos">{curso.tipo} <stronger className="numeroContenido">4</stronger></span>
                                                         <i className="fa fa-angle-down m-l-5 flechaSem4"></i>
                                                     </div>
                                                     <Typography className={classes.heading}> </Typography>

@@ -5,6 +5,7 @@ export const cursosAndCategias = [
     imgUrl: "EmpleoyEmprendimientos",
     cursos: [
       {
+        tipo: 'Semana',
         nombre: "Gestión de redes sociales",
         imgUrl: "GestiónDeRedesSociales",
         descripcionLarga:[
@@ -43,6 +44,7 @@ export const cursosAndCategias = [
         ],
       },
       {
+        tipo: 'Semana',
         nombre: "Formalización de emprendimientos",
         descripcionLarga:[
           `¿Querés inscribir tu emprendimiento ante los organismos correspondientes, y también aprender cómo efectivizar liquidaciones y pagos mensuales?
@@ -67,6 +69,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Diseño gráfico  para emprendimientos",
         descripcionLarga:[
           "En este curso aprenderás nociones básicas de diseño gráfico utilizando la herramienta Canva, la cual te permite crear soportes gráficos para difundir y promocionar tu emprendimiento en las redes sociales.",
@@ -95,6 +98,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Administración de emprendimientos",
         descripcionLarga:[
           "En este curso te brindaremos los conocimientos necesarios para administrar un emprendimiento de manera económica y financieramente sostenible, con información clara de costos y márgenes de rentabilidad, la aplicación de conceptos claves y el uso de herramientas simples y prácticas que te permitan tomar decisiones fundadas para hacer crecer un emprendimiento.",
@@ -128,6 +132,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Edición de videos para emprendimientos",
         descripcionLarga:[
           `En este curso aprenderás a generar y editar contenido audiovisual con tu celular mediante la aplicación "YouCut", para compartir tu emprendimiento con seguidores, clientes actuales y potenciales. Te servirá para generar contenido audiovisual que contribuya al posicionamiento de tu marca y la promoción de tus productos.`,
@@ -157,6 +162,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Introducición al desarrollo de videojuegos",
         descripcionLarga:[
           "En este curso te vamos a mostrar muchos elementos que tienen que ver con los videojuegos: su diseño, su desarrollo y su producción. Vamos a crear personajes y enemigos, ítems a consumir, plataformas, trampas, portales, sistemas de partículas, animaciones, power ups; vamos a manejar físicas y muchas cosas más para iniciarse en este mundo, a través del motor de desarrollo de videojuegos llamado GODOT.",
@@ -186,6 +192,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Herramientas para el empleo",
         descripcionLarga:[
           "En cuatro semanas vamos a compartir herramientas, saberes y sugerencias para favorecer tu inserción laboral. Abordaremos aquellos aspectos que son importantes a la hora de buscar trabajo, y profundizaremos en cuestiones que son valiosas al momento de acceder a un empleo.",
@@ -214,6 +221,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Vender online",
         descripcionLarga:[
           "En este curso aprenderás a usar las redes sociales como herramientas que facilitan y amplían las posibilidades de venta de tus productos o servicios, y crean la identidad digital de tu emprendimiento.",
@@ -242,6 +250,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Manipulación higiénica de alimentos",
         descripcionLarga:[
           "En este curso aprenderás la importancia de la Manipulación Higiénica de los Alimentos, y a aplicar buenas prácticas de seguridad y manufactura alimentaria en emprendimientos gastronómicos o cualquier trabajo que involucre el manejo de alimentos.",
@@ -269,6 +278,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Excel Inicial",
         descripcionLarga:[
           "En este curso aprenderemos a utilizar el programa Excel de Microsoft Office, y veremos las cuestiones más importantes para que puedas crear un archivo de datos en tu computadora, ya sea un listado con diferente información, una planilla de stock de productos, o cualquier tabla que necesites, para enviarla por medios electrónicos, imprimirla o simplemente guardarla y modificarla en tu computadora.",
@@ -296,6 +306,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Excel Avanzado",
         descripcionLarga:[
           "En este curso lograrás un conocimiento avanzado del programa Excel de Microsoft Office, herramienta indispensable para el trabajo con datos en una oficina, institución o empresa. En este curso podrás mejorar tu desempeño en esta herramienta, lo que ayudará a que tengas un mejor manejo de datos e información, para así poder realizar análisis y generar valor agregado a las estrategias y proyectos que lleves adelante.",
@@ -324,6 +335,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Word Inicial",
         descripcionLarga:[
           "En este curso te vamos a mostrar las cuestiones más importantes para que puedas escribir en la computadora notas, cartas, informes, tu currículum vitae, entre otros. Durante cuatro semanas te iremos mostrando las funcionalidades básicas de Word, aprendiendo a trabajar con él y entendiendo su navegación. Vas a incorporar nociones básicas sobre cómo crear, modificar, configurar y corregir un documento, para tenerlo listo y compartir el trabajo finalizado por medios electrónicos, imprimirlo o simplemente guardarlo.",
@@ -351,6 +363,7 @@ export const cursosAndCategias = [
         fechaInscrpcion: [],
       },
       {
+        tipo: 'Semana',
         nombre: "Word Avanzado",
         descripcionLarga:[
           "En este curso aprenderás conocimientos avanzados del Programa Microsoft Word, que te servirán para elaborar documentos extensos, como ser libros, manuales, folletos o informes. Durante cuatro semanas profundizarás sobre diseño de documentos, utilización de columnas, manejo de imágenes, creación de tablas de contenido, entre otras posibilidades que ofrece la herramienta ofimática más utilizada a nivel administrativo.",
@@ -377,7 +390,7 @@ export const cursosAndCategias = [
         horasSemanales: 3,
         fechaInscrpcion: [],
       },
-    ],
+    ]
   },
   /** -----------INFORMATORIO------------ */
   {
@@ -385,7 +398,7 @@ export const cursosAndCategias = [
     imgUrl: 'Informatorio',
     cursos:[
         {
-          eje: true,
+          tipo: 'Eje',
           nombre: 'Talleres para emprender en TICs',
           descripcionLarga:[
             `Adquirirás herramientas que te permitan iniciar un emprendimiento vinculado a las TICs, y podrás acceder a ﬁnanciamiento para su puesta en marcha al ﬁnalizar el ciclo. Aprenderás a transformar tu idea en proyecto, a administración un emprendimiento, y a desarrollar un plan de negocios.
@@ -406,7 +419,7 @@ export const cursosAndCategias = [
           fechaInscrpcion: []
         },
         {
-          eje: true,
+          tipo: 'Eje',
           nombre: 'Especialización en tecnologías de desarrollo',
           descripcionLarga:[
             'Podrás continuar con tu perfeccionamiento en lenguajes especíﬁcos, y orientar tu formación hacia los perﬁles laborales requeridos por las empresas locales. Profundizarás en desarrollo web con JAVA, y podrás elegir entre herramientas de testing para desarrollos o front end con React JS. Este curso es la etapa de 3 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 2 del Informatorio: el curso de "Programación y Desarrollo Web".',
@@ -439,7 +452,7 @@ export const cursosAndCategias = [
           fechaInscrpcion: []
         },
         {
-          eje: true,
+          tipo: 'Eje',
           nombre: 'Programación y Desarrollo Web',
           descripcionLarga:[
             'Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perﬁl profesional para el sector Software y Servicios Informáticos. Profundizarás en programación con Python y Django, y en bases de datos con SQL Server y MySQL. Este curso es la etapa de 2 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para realizarlo es requisito haber aprobado la etapa 1 del Informatorio: el curso de "Introducción a la Programación".',
@@ -470,7 +483,7 @@ export const cursosAndCategias = [
           fechaInscrpcion: []
         },
         {
-          eje: true,
+          tipo: 'Eje',
           nombre: 'Introducción a la Programación',
           descripcionLarga:[
             'En este curso conocerás de qué se trata el mundo de la programación y te iniciarás en sus lenguajes. Durante un mes te proporcionaremos las bases mínimas necesarias para tener una primera noción de  las implicancias del desarrollo de software y sus principales componentes. Este curso es la etapa de 1 del trayecto formativo del "Informatorio", un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS, creado para que chaqueñas y chaqueños tengan más y mejores oportunidades de incorporarse a la economía del conocimiento, especíﬁcamente en el sector de Software y Servicios Informáticos a través de la formación en programación. Para este curso necesitarás un dispositivo con acceso a internet, y no se requieren conocimientos previos.',
@@ -507,62 +520,62 @@ export const cursosAndCategias = [
     imgUrl: 'UniMOOC',
     cursos:[
         {
-            nombre: 'Blockchain: la innovación disruptiva detrás del Bitcoin',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'BlockchainlainnovacióndisruptivadetrásdeBitcoin',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                '3 HORAS SEMANALES',
-                'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
+          tipo: 'Módulo',
+          nombre: 'Blockchain: la innovación disruptiva detrás del Bitcoin',
+          descripcionLarga: [
+            `Conocé Blockchain, la tecnología detrás de Bitcoin. En este curso descubrirás de una forma rápida y sencilla cómo funciona Blockchain y qué usos tiene además del aplicado a las criptomonedas.`,
+          ],
+          imgUrl: 'BlockchainlainnovacióndisruptivadetrásdeBitcoin',
+          requerimientos: [],
+          especificaciones: [
+            '1 SEMANAS DE DURACIÓN',
+            'GRATUITO',
+            'CERTIFICADO'
+          ],
+          contenidoTitulo: [],
+          contenido: [
+            `Conocerás qué es Blockchain, cómo se realiza su registro de cuentas y dónde están los Bitcoins en la virtualidad.`,
+            `Aprenderás sobre los valores de Blockchain.`,
+            `Conocerás los usos de Blockchain, entre ellos las transacciones bancarias y también verás qué es Smart property y algunos ejemplos de su uso.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=64',
+          horasSemanales: 0,
+          fechaInscrpcion: [
+            {
+              empieza: ``,
+              termina: ``
+            }
+          ]
         },
         {
-            nombre: 'Generación de ideas de negocios',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'GeeracionDeIdeasDeNegocios',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
+          tipo: 'Módulo',
+          nombre: 'Generación de ideas de negocios',
+          descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+          imgUrl: 'GeeracionDeIdeasDeNegocios',
+          requerimientos: 
+              ['1.Computadora o celular con acceso a redes sociales.',
+                '2. Cuenta de Facebook e Instagram (requerido).',
+                  '3. Cuenta de Youtube y Linkedin (opcional).'
+              ],
+          especificaciones: 
+              ['4 SEMANAS DE DURACIÓN',
+                '3 HORAS SEMANALES',
+                'GRATUITO', 'CERTIFICADO'
+              ],
+          contenido: 
+              ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
+                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
+              ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
+          horasSemanales: 3,
+          fechaInscrpcion: [
+              {
+                  empieza: '',
+                  termina: ``
+              }
+          ]
         }
         ,
         {
