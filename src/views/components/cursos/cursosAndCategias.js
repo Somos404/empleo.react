@@ -528,11 +528,13 @@ export const cursosAndCategias = [
           imgUrl: 'BlockchainlainnovacióndisruptivadetrásdeBitcoin',
           requerimientos: [],
           especificaciones: [
-            '1 SEMANAS DE DURACIÓN',
-            'GRATUITO',
-            'CERTIFICADO'
+            '1 SEMANAS DE DURACIÓN'
           ],
-          contenidoTitulo: [],
+          contenidoTitulo: [
+            `Introducción`,
+            `Valores de Blockchain`,
+            `Usos de Blockchain`
+          ],
           contenido: [
             `Conocerás qué es Blockchain, cómo se realiza su registro de cuentas y dónde están los Bitcoins en la virtualidad.`,
             `Aprenderás sobre los valores de Blockchain.`,
@@ -541,64 +543,336 @@ export const cursosAndCategias = [
           UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=64',
           horasSemanales: 0,
           fechaInscrpcion: [
-            {
-              empieza: ``,
-              termina: ``
-            }
+            
           ]
         },
         {
           tipo: 'Módulo',
           nombre: 'Generación de ideas de negocios',
-          descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
+          descripcionLarga: [
+            `Una idea de negocio es una descripción breve y clara de las operaciones básicas del negocio que se desea poner en marcha. Una idea innovadora de negocio no es necesariamente un invento, sino que parte de la observación de las necesidades que se producen en la sociedad que nos rodea. `,
+            `Durante este curso aprenderás cómo aplicar las herramientas necesarias para el desarrollo y concreción de una idea de negocio, sus características y funcionamiento.`
+          ],
           imgUrl: 'GeeracionDeIdeasDeNegocios',
-          requerimientos: 
-              ['1.Computadora o celular con acceso a redes sociales.',
-                '2. Cuenta de Facebook e Instagram (requerido).',
-                  '3. Cuenta de Youtube y Linkedin (opcional).'
-              ],
-          especificaciones: 
-              ['4 SEMANAS DE DURACIÓN',
-                '3 HORAS SEMANALES',
-                'GRATUITO', 'CERTIFICADO'
-              ],
-          contenido: 
-              ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                  'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-              ],
-          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
+          requerimientos: [],
+          especificaciones: [],
+          tipo: 'Módulo',
+          contenidoTitulo: [
+            `Emprender con éxito`,
+            `Lógica, técnica y oportunidades`
+          ],
+          contenido: [
+            `Conocerás las principales características de un emprendedor y las formas de desarrollar un plan de vida emprendedora, con conjunto de metas y objetivos. También verás las características de una idea de negocio innovador, Design Thinking y pasos para identificar buenas ideas de negocios.`,
+            `Aprenderás sobre el pensamiento creativo y conocerás herramientas para la creación de un modelo de negocio nuevo e innovador. Conocerás cómo es una idea que responda a las oportunidades del mercado mediante el sondeo, prototipo y la metodología FODA.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=63',
+          horasSemanales: 0,
+          fechaInscrpcion: [
+            
+          ]
+        },
+        {
+          nombre: 'Desarrolla tu propuesta de valor',
+          descripcionLarga: [
+            `En este curso conocerás cómo generar una Propuesta de Valor única para tu producto, para llegar a la mente del consumidor y ser diferente a la competencia, aplicando la misma en las diferentes estrategias de comunicación que elijas para tu emprendimiento. A través del desarrollo de tu Propuesta, conocerás una serie de pasos para que puedas mostrar la mejor versión de tu producto, basándote en las necesidades de tu comprador y oportunidades de mejora.`,
+          ],
+          imgUrl: 'DesarrollaTuPropuestaDeValor',
+          requerimientos: [],
+          especificaciones: [],
+          tipo: 'Módulo',
+          contenidoTitulo: [
+            `¿Por qué una propuesta de valor?`,
+            `Genera una proposición de valor`
+          ],
+          contenido: [
+            `Conocerás la definición de mercado y cómo entender un proceso económico basado en las necesidades de las personas, viendo cómo estudiar y segmentar el mercado de acuerdo a estilos de vida. También podrás analizar la diferenciación y valor y técnicas para diferenciarte de la competencia. Para finalizar el módulo, conocerás la utilidad experimentada, y cómo analizar las experiencias de cada cliente.`,
+            `En este Módulo, aprenderás a desarrollar el Estado de Valor con una serie de pasos para que puedas mostrar la mejor versión de tu producto, basándote en las necesidades de tu comprador y oportunidades de mejora. Al finalizar, contarás con las herramientas para desarrollar una Propuesta de Valor diferente a la competencia, y aplicarla en las diferentes estrategias de comunicación de tu emprendimiento y generar posicionamiento.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=62',
+          horasSemanales: 0,
+          fechaInscrpcion: [
+          
+          ]
+        },
+        {
+          nombre: 'Herramientas para analizar a la competencia y tu público objetivo',
+          descripcionLarga: [
+            `En este curso aprenderás la importancia de conocer al público objetivo para una mejor planificación de la estrategia, los factores a tener en cuenta para la elaboración de un perfil de usuario y las principales herramientas existentes para conseguir información del usuario y de nuestra competencia.`,
+          ],
+          imgUrl: 'HerramientasPAraAlanizarALaCompetenciaYATuPublicoObjetivo',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Análisis de la competencia`,
+            `Conociendo a nuestro público`
+          ],
+          contenido:[
+            `Aprenderás la importancia de conocer a la competencia, y el funcionamiento de diferentes herramientas de investigación competetiva (Woorank y Semrush) para la obtención de datos para analizarla, como también a interpretar correctamente  la información que proporcionan. A su vez, conocerás qué herramienta se debe utilizar en función de la información que se pretende obtener de la competencia. También, verás cómo descubrir las debilidades en el posicionamiento SEO de la página web, tanto de los competidores, como de la tuya.`,
+            `Aprenderás porqué es importante definir al público objetivo y cuales son los datos básicos que necesitás para conocerlo, como también los problemas y los sentimientos que impulsan sus decisiones. Entenderás la importancia de conocer las aspiraciones del cliente y la necesidad de conocer qué influye en su toma de decisiones. Para analizarlo, conocerás el papel de las encuestas como herramienta y la importancia de utilizar Google Trends para conocer los intereses del mercado`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=61',
           horasSemanales: 3,
+          fechaInscrpcion: [
+           
+          ]
+        },
+        {
+          nombre: 'Herramientas para mejorar la usabilidad web balsamiq',
+          descripcionLarga: [
+            `La usabilidad web es una métrica que se refiere a la satisfacción que el usuario obtiene al navegar por una web. En esta sensación influyen la forma en que está creada la página, las estrategias que se ponen en marcha para lograr que su uso sea óptimo y que su navegación sea fácil, comprensible e intuitiva para el usuario. En definitiva, que se puedan cumplir los objetivos del usuario dentro de una página, lo que puede marcar el éxito o fracaso de la misma.`,
+            `En este curso, profundizarás en estos conceptos y estrategias, y aprenderás a utilizar una de las mejores herramientas para mejorar la usabilidad web de tus proyectos: Balsamiq.`
+          ],
+          imgUrl: 'HerramientasParaMejorarLaUsabilidadWebBalsaminq',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Módulo 1: La experiencia de usuario`,
+            `Módulo 2: Balsamiq`
+          ],
+          contenido:[
+            `En este Módulo entenderás la experiencia del usuario en la web, y cuáles factores inciden en ella.Comprenderás también la estructura y navegación de la web y los mobile firts, es decir, la intención destinada al móvil. También, conocerás la arquitectura de la información y el concepto de producto mínimo viable`,
+            `En este Módulo conocerás la herramienta Balsamiq que permite la creación de prototipos, bocetos o wireframes de páginas web. Te adentrarás en este software, y aprenderás sobre su interfaz y los elementos interactivos que ofrece.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=60',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Emprender proyectos online',
+          descripcionLarga: [
+            `En este curso incorporarás las nociones básicas que como emprendedor debés tener en cuenta a la hora de plantear tu proyecto y desarrollar un modelo de negocio viable. Aprenderás a categorizar productos según el tipo de problema que resuelven y cuáles son las posibles vías de financiación de proyectos. También, verás cómo clasificar startups según la tipología de la idea, y distintas técnicas para la validación de ideas de negocio.`,
+          ],
+          imgUrl: 'EmprenderProyectosOnline',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Módulo 1: Arranca tu proyecto online`,
+            `Módulo 2: Poniendo las ideas sobre la mesa`
+          ],
+          contenido:[
+            `En este Módulo verás cómo existen apps que solucionan ciertos problemas que existen en la sociedad, y conocerás qué son las startups, y qué tipos de productos o servicios ofrecen.`,
+            `En este Módulo conocerás las claves de un proceso productivo innovador, con distintas técnicas y herramientas para el trabajo grupal, para llevar adelante el desarrollo de tu producto o servicio. También verás la Matriz Stakeholder.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=59',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Como tener presencia en internet',
+          descripcionLarga: [
+            `La presencia en Internet de las marcas personales o empresas se ha convertido en un punto fundamental de cualquier estrategia emprendedora. En este curso analizarás las diferentes vías de comunicación disponibles para tu proyecto, qué redes sociales podes optimizar y qué estrategias de anuncios podes poner en marcha en las diferentes plataformas.`,
+          ],
+          imgUrl: 'ComoTenerPresenciaEnInternet',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Dónde comunicar nuestro proyecto`,
+            `Redes sociales y Páginas web`,
+            `Anunciarse en Facebook`
+          ],
+          contenido:[
+            `En este Módulo conocerás distintas herramientas para comunicar tu proyecto, cómo tener presencia y cuidar esa presencia en las redes, y las distintas posibilidades que tenés: desde páginas web a Google My Business y otras redes sociales.`,
+            `En este Módulo incursionarás en el mundo de las Redes Sociales como Instagram, Twitter, Pinterest O Linkedin, y la web, y sus interacciones. También conocerás la herramienta Google My Business, en la que podés gestionar la presencia online de tu emprendimiento en los productos de Google, como la Búsqueda y Maps, para ayudar a los clientes a encontrar tu negocio y contarles tu historia. También verás cómo crear páginas web con distintas opciones como: WordPress, plataformas gratuitas de creación de webs o la creación de una web especifica y única para tu emprendimiento.`,
+            `- Crear anuncios en facebook: facebook ofrece las opciones de "crear anuncios" o "crear campañas", esto permite tener una llegada más directa a los clientes o potenciales clientes. Explica en el video como hacerlo paso a paso.
+
+            - Dirigir una campaña en facebook: a donde dirigir una campaña. Explica en el video como hacerlo paso a paso.
+            
+            - Formato de los anuncios: es la forma en que se van a ver los anuncios/ las publicidades. Explica en el video como hacerlo paso a paso.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=58',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Uso de las redes sociales para la gestión de la marca',
+          descripcionLarga: [
+            `En este curso conocerás la importancia de las redes sociales para poder gestionar la imagen de tu emprendimiento, así como algunos consejos, experiencias y casos de éxito. `,
+          ],
+          imgUrl: 'UsoDELasRedesSocialesParaLaGestionDeLaMarca',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Introducción`,
+            `¿Qué estrategia elegir?`,
+            `Presencia y formato`
+          ],
+          contenido:[
+            `En este Módulo verás la importancia de las redes sociales como canales de comunicación clave para la generación de marcas. También conocerás algunos conceptos de marketing relacional y transaccional, como la búsqueda de la relación con el público y de fidelizar al cliente.  Por último conocerás distintos tipos de consumidores, como también analizarás la relación cliente - marca`,
+            `En este Módulo verás contenidos generales para los usuarios, como el CGU (Contenido Generado por los Usuarios). También conocerás los pilares fundamentales para construir la estrategia de comunicaciones: el planteamiento de objetivos, detección de público y mediante qué redes sociales te conviene llevarla adelante.`,
+            `En este Módulo comprenderás los distintos tipos de presencia, frecuencia y formato según las redes sociales en las que lleves adelante la estrategia comunicacional, entendiéndolas como herramientas para vender y potenciar tu marca. También conocerás la especificidad de contenidos dependiendo de tu tipo de emprendimiento. Por último, verás cómo evaluar tu estrategia de marketing.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=57',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'La franquicia para la expansión de la marca',
+          descripcionLarga: [
+            `En este curso descubrirás las diferentes opciones que proporcionan los sistemas de franquiciado como herramientas para la expansión del negocio y la marca comercial. Conocerás sus ventajas, debilidades, oportunidades y amenazas que ha de tener en cuenta un emprendedor a la hora de utilizar la franquicia como una opción de crecimiento.`,
+          ],
+          imgUrl: 'LaFranquiciaParaLaExpansionDeLaMarca',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Introducción al modelo de franquicias`,
+            `Expansión y marca`,
+            `Internacionalización y sectores clave`
+          ],
+          contenido:[
+            `En este Módulo verás qué son las Franquicias y cómo funcionan, qué es el know-how como elemento clave en ellas, y qué ventajas y desventajas tienen, como también qué errores comunes pueden aparecer.`,
+            `Cuando se tiene un negocio consolidado, exitoso, rentable y que es operativamente viable de replicar, resulta atrayente emplear la expansión del mismo a través de franquicias. El modelo puede ser una buena opción cuando no se cuenta con capital propio o fuentes de financiamiento para abrir nuevas sucursales, pero si se cuenta con la fórmula del éxito y la disposición para compartirla.`,
+            `Cuando un franquiciador quiere seguir expandiéndose y el territorio nacional se le ha hecho corto, es el momento de pensar en franquiciar en el exterior. Para ello, se deben analizar las posibilidades y así decidir por cual camino ir. Uno de los factores más importantes para tener en cuenta es el idioma y la cultura del país donde se busca franquiciar. Adicionalmente, el determinar la disponibilidad de financiación del país de destino y analizar el nivel de desarrollo de las franquicias son factores a
+            tener en cuenta.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=56',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Claves para diseñar un modelo de negocios económicamente viable',
+          descripcionLarga: [
+            `Cada día son muchos los emprendedores que a raíz de una idea tienen la intención de comenzar un negocio, y en el camino a concretarlo pueden encontrarse con distintos obstáculos que no tuvieron en cuenta. En este curso aprendé a determinar la viabilidad económica de un proyecto tras haber realizado el modelo Lean Canvas, explorado los canales de distribución, analizado los aliados clave y los costes del proyecto.`,
+          ],
+          imgUrl: 'ClavePAraDiseñarUnModeloDeNegocio',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Claves para diseñar un modelo de negocio económicamente viable`,
+            `Salir al mercado`,
+            `Financiación`
+          ],
+          contenido:[
+            `En este Módulo conocerás los requisitos, aspectos o factores que cualquier emprendedor debe tener en cuenta para iniciar un emprendimiento, y qué define la viabilidad de una idea de negocio.`,
+            `En este Módulo verás un pantallazo de lo que es el Mercado, qué son los prototipos, y cómo definir canales de distribución y distinguir aliados clave y su grado de colaboración.`,
+            `En este Módulo conocerás cuáles son los costos de un proyecto, y cómo definir tu Plan Financiero, también podrás conocer cuáles son las posibles fuentes de financiación de un proyecto.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=55',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Cambios en la oferta turística: de Airbnb a la masificación de los destinos',
+          descripcionLarga: [
+            `En este curso conocerás cómo la era digital transforma la oferta turística, con conceptos revolucionarios como el low cost en los 90, a la “economía colaborativa” de los 2010. Aprenderás cómo compañías como Airbnb han sacudido la realidad turística de numerosos destinos de una forma casi sin precedentes, y como esta nueva oferta de alojamiento ha generado oportunidades, retos y preocupaciones a partes iguales.`,
+          ],
+          imgUrl: 'CambiosEnLaOfertaTuristica',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `La nueva oferta turística y Airbnb`,
+            `Economía colaborativa y turismo`,
+            `Masificación turística y over-tourism`
+          ],
+          contenido:[
+            `Conocerás los retos que afronta el sector turístico, y el impacto de las nuevas tecnologías en el transporte aéreo y turismo. `,
+            `Conocerás las vinculaciones de la economía colaborativa y el turismo, su escenario legal, y su impacto en el empleo.`,
+            `Aprenderás sobre la innovación en el sector turístico, su masificación y su impacto en el alojamiento, viendo el ejemplo de Airbnb. Verás también cuestiones referidas al exceso de oferta de alojamiento en el sector turístico.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=54',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Machine Learning: ¿Qué es y cómo funciona?',
+          descripcionLarga: [
+            `El Machine Learning o aprendizaje automático es un campo que nace en los años 60 's, que se encarga de conseguir que sistemas sean capaces de aprender a partir de la experiencia. Es decir, consiste en el desarrollo de procesos que permitan a las máquinas aprender por sí solas a partir de un conjunto de datos que le son suministrados. `,
+            `En este curso, se tratarán los aspectos más importantes para entender el funcionamiento del Machine Learning, se expondrán algunas investigaciones y conocerás el potencial de su aplicación y las necesidades para aplicar esta tecnología.`,
+          ],
+          imgUrl: 'MachineLearning',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `¿Qué es Machine Learning?`,
+            `Aprendizaje supervisado`,
+            `Aprendizaje no supervisado`
+          ],
+          contenido:[
+            `Conocerás qué es el Machine Learning y cómo funciona, cuáles son los tipos de datos con los que trabaja y sus características.`,
+            `Aprenderás cómo los algoritmos se convierten en secuencias de instrucciones para cumplimentar tareas, y verás cuestiones sobre los modelos econométricos. También conocerás sobre el aprendizaje supervisado con distintos tipos de algoritmos de clasificación y regresión.`,
+            `Conocerás más sobre el aprendizaje no supervisado y su gestión de los datos, también verás más tipos de algoritmos: jerárquicos y planos. Aprenderás también que fases componen este aprendizaje, desde definir la serie de datos, afinarlos y evaluar el sistema.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=53',
+          horasSemanales: 0,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'Trabajo deslocalizado y gestión de tareas en equipos remotos',
+          descripcionLarga: [
+            `En este curso conocerás las ventajas y desventajas del teletrabajo, las mejores estrategias para coordinar equipos deslocalizados, cómo implantarlo y consejos para mantener o aumentar la productividad. Aprenderás las mejores técnicas y aplicaciones para trabajar en remoto o con equipos formados por miembros deslocalizados. `,
+          ],
+          imgUrl: 'TRabajoDeslocalizadoYGestionDeTareasEnEquiposREmotos',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `El trabajo remoto`,
+            `Ventajas, desventajas y productividad`,
+            `Implantación en la empresa`
+          ],
+          contenido:[
+            `Verás qué es y qué no es trabajar en remoto, también cuáles son las condiciones que debe tener un equipo de trabajo deslocalizado, con qué criterios conformarlo y cuáles son las características de un trabajador que lo conforma.`,
+            `Conocerás ventajas y desventajas del trabajo remoto, y cómo son los flujos de trabajo eficaces. Verás metodologías de trabajo ágiles que posibiliten la comunicación, monitoreo y cumplimiento de objetivos para lograr productividad.`,
+            `Conocerás herramientas de comunicación y coordinación del trabajo remoto, como Asana y Trello. Aprenderás sobre las relaciones interpersonales en el trabajo remoto, y el rol del Project manager en la coordinación del trabajo. Verás también cómo implementarlo en tu proyecto o emprendimiento.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=52',
+          horasSemanales: 0,
           fechaInscrpcion: [
               {
                   empieza: '',
                   termina: ``
               }
           ]
-        }
-        ,
+        },
         {
-            nombre: 'Desarrolla tu propuesta de valor',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'DesarrollaTuPropuestaDeValor',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
+          nombre: 'Economía del conocimiento y sector turístico',
+          descripcionLarga: [
+            `En este curso conocerás cómo la economía del conocimiento y las TICs modifican el comportamiento de empresas turísticas y usuarios o turistas.`,
+          ],
+          imgUrl: 'EconomiaDelConocimientoYElSectorTuristico',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Economía del conocimiento, efectos y cambios provocados por las TICs`,
+            `Turistas, turismo y economía`
+          ],
+          contenido:[
+            `En este Módulo conocerás qué factores de la economía del conocimiento se relacionan al turismo. Verás también cuestiones innovadoras en el sector como marketing digital, uso de tecnologías. Big Data o inteligencia artificial, y cómo las TICs se posicionan en la cadena de valor con el uso de distintas apps.`,
+            `Verás cuestiones de economía inteligente y sostenibilidad, cuáles son los nuevos tipos de turistas y las nuevas oportunidades de empleo que se generan con la transformación digital del sector turístico.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=51',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
+        {
+          nombre: 'El Business intelligence para controlar la estrategia empresarial',
+          descripcionLarga: [
+            `En este curso conocerás el potencial del análisis de datos para mejorar las decisiones de tu negocio y generar tu estrategia empresarial. Aprenderás la importancia de implantar Cuadros de Mando Integral, control de indicadores y análisis de información aplicados a las empresas.`,
+          ],
+          imgUrl: 'ElBusinessInteligencePAraControlarLaEStrategiaEmpresarial',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Comenzando a emprender`,
+            `El Business Intelligence`,
+            `Estrategia con Business Intelligence`
+          ],
+          contenido:[
+            `En este Módulo verás la importancia de definir un modelo de negocio, y cómo los objetivos y motivación de tu empresa generan valor. Conocerás distintos conceptos empresariales como capital utilizado, costo de capital y utilidad neta. Verás algunas cuestiones de Marketing social y cómo el cliente es el centro de la estrategia para lograr fidelizarlos.`,
+            `En este Módulo conocerás cuándo y por qué implementar el Business Intelligence, cómo también qué herramientas ofrece para monitorear en tiempo real que está pasando en cada área de tu negocio.`,
+            `En este Módulo verás qué es un cuadro de mando integral, qué son los KPI's y cómo usarlos, y cómo cambiar de estrategia minimizando pérdidas.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=50',
             horasSemanales: 3,
             fechaInscrpcion: [
                 {
@@ -606,457 +880,114 @@ export const cursosAndCategias = [
                     termina: ``
                 }
             ]
-        }
-        ,
+        },
         {
-            nombre: 'Herramientas para analizar a la competencia y tu público objetivo',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'HerramientasPAraAlanizarALaCompetenciaYATuPublicoObjetivo',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
+          nombre: 'Big Data para aplicaciones de negocios',
+          descripcionLarga: [
+            `La gestión de datos a gran escala permite a las empresas detectar problemas, definir estrategias y aplicar soluciones, para lograr ventajas competitivas. En este curso encontrarás los conocimiento básicos para que cualquier emprendedor o profesional conozca el significado de BigData y sus aplicaciones para la mejora del rendimiento empresarial.`,
+          ],
+          imgUrl: 'BigDataPAraAplicacionesDeNegocios',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Introducción a Big Data`,
+            `Inteligencia de negocios de Big Data`,
+            `Fuentes de datos`,
+            `Open Data`,
+            `Arquitectura Big Data`,
+            `Desarrollo de soluciones Big Data para inteligencia de negocios`
+          ],
+          contenido:[
+            `En este Módulo verás contexto, definición y aplicaciones analíticas de BigData. Conocerás temas introductorios que te permitirán avanzar durante el resto del curso.`,
+            `Verás el uso del Business Intelligence para la toma de decisiones. Conocerás sobre el Análisis OLAP, Data Warehouses, Cuadros de Mando y herramientas de Business Intelligence para BigData.`,
+            `Conocerás la definición, relevancia, naturaleza y clasificación de la selección de las fuentes de datos y de los procesos de integración y verificación de datos de BigData.`,
+            `Verás la definición, beneficios, características y ejemplos de usos reales del Open Data.`,
+            `Conocerás las principales aquitecturas para BigData (como Hadoop) y las soluciones y herramientas de Google y Microsoft aplicables.`,
+            `Descubrirás las etapas de desarrollo para aplicaciones BigData: la correcta selección de la arquitectura, la gestión de las fuentes de datos, las técnicas y procesos para el análisis y las soluciones “Self Service” de Microsoft para Inteligencia de Negocio.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=49',
+          horasSemanales: 0,
+          fechaInscrpcion: []
+        },
         {
-            nombre: 'Herramientas para mejorar la usabilidad web balsamiq',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'HerramientasParaMejorarLaUsabilidadWebBalsaminq',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Emprender proyectos online',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'EmprenderProyectosOnline',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Como tener presencia en internet',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'ComoTenerPresenciaEnInternet',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
+          nombre: 'Lean Startup Desarrollo de modelos de negocio',
+          descripcionLarga: [
+            `El modelo Canvas o conocido también como el “lienzo de desarrollo de modelos de negocio” es una herramienta que tiene como objetivo que todo procedimiento de gestión de una startup sea más sencillo. En este curso conocerás a Lean Canvas, el sistema que está revolucionando los modelos de negocio y que usan la mayor parte de las startups tecnológicas de todo el mundo. `,
+          ],
+          imgUrl: 'LeanStartupDesarrolloDeModelosDeNegocio',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Introducción al modelo de negocio y el desarrollo de clientes`,
+            `La propuesta de valor`,
+            `El arquetipo del cliente y tipos de mercados`,
+            `Canales`,
+            `Relaciones con los clientes`,
+            `Modelo de ingresos.`,
+            `Asociaciones.`,
+            `Recursos, actividades y costes`
+          ],
+          contenido:[
+            `Plantea preguntarse ¿Por qué estoy aquí?, la importancia de definir hipótesis y salir a la calle para reconocer clientes, conocer el mercado y determinar si merece la pena fundar este negocio.`,
+            `Invita a definir el producto o servicio que se va a desarrollar. A responder para quienes lo están desarrollando y qué características tendrá ese producto o servicio.`,
+            `Se refiere a los distintos segmentos del mercado, para conocer quienes comprarán nuestros productos, y qué adaptaciones del producto debemos hacer por el mercado.
 
+            Ayuda a Identificar las necesidades y problemas que se buscan satisfacer en los clientes.
+            
+            Invita a volcar en un esquema "Un día en la vida de un cliente"`,
+            `Se compone de 8 videos cortos.
+
+            Menciona los cambios que trajo la llegada de internet en cuanto a las ventas, tanto físicas, como virtuales y el impacto de ello en canales 
+            
+            webs y móviles; producción tangible e intangibl`,
+            `Presenta el tema de la relación con los clientes y propone un ciclo de vida de los mismos: "captar- fidelizar e incrementar".
+
+            Menciona distintas formas de captar clientes (pagas y gratuitas)`,
+            `Busca responder a la pregunta ¿Cómo ganar dinero?
+
+            Cómo establecer precios, si es mejor que sean fijos o dinámicos.
+            
+            Cuáles son los errores más comunes al momento de fijar precios.
+            
+            Que valor dan y cómo pagan los productos los clientes.`,
+            `¿Con quienes nos asociamos? ¿con quienes formamos" Alianzas estratégicas"? Invita a pensar alianzas entre empresas donde ambas se vean beneficiadas.`,
+            `Invita a pensar el modelo de negocio en sí: ¿que  necesito para ponerlo en marcha?.
+
+            ¿Qué recursos necesito? ¿Qué 
+            
+            adaptaciones del proyecto debo realizar?`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=48',
+          horasSemanales: 3,
+          fechaInscrpcion: []
+        },
         {
-            nombre: 'Uso de las redes sociales para la gestión de la marca',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'UsoDELasRedesSocialesParaLaGestionDeLaMarca',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'La franquicia para la expansión de la marca',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'LaFranquiciaParaLaExpansionDeLaMarca',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Claves para diseñar un modelo de negocios económicamente viable',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'ClavePAraDiseñarUnModeloDeNegocio',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Cambios en la oferta turística: de Airbnb a la masificación de los destinos',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'CambiosEnLaOfertaTuristica',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Machine Learning: ¿Qué es y cómo funciona?',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'MachineLearning',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Trabajo deslocalizado y gestión de tareas en equipos remotos',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'TRabajoDeslocalizadoYGestionDeTareasEnEquiposREmotos',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Economía del conocimiento y sector turístico',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'EconomiaDelConocimientoYElSectorTuristico',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'El Business intelligence para controlar la estrategia empresarial',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'ElBusinessInteligencePAraControlarLaEStrategiaEmpresarial',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Big Data para aplicaciones de negocios',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'BigDataPAraAplicacionesDeNegocios',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Lean Startup Desarrollo de modelos de negocio',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'LeanStartupDesarrolloDeModelosDeNegocio',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
-        }
-        ,
-        {
-            nombre: 'Herramientas para el Busines Intelligence',
-            descripcionLarga: 'En este curso aprenderás a utilizar las redes sociales para promocionar tu emprendimiento, planificando y gestionando estrategias de comunicación, de acuerdo a las características de tu proyecto y a las posibilidades que ofrece cada red social.',
-            imgUrl: 'HerramientasparaelBusinessIntelligence',
-            requerimientos: 
-                ['1.Computadora o celular con acceso a redes sociales.',
-                  '2. Cuenta de Facebook e Instagram (requerido).',
-                    '3. Cuenta de Youtube y Linkedin (opcional).'
-                ],
-            especificaciones: 
-                ['4 SEMANAS DE DURACIÓN',
-                  '3 HORAS SEMANALES',
-                  'GRATUITO', 'CERTIFICADO'
-                ],
-            contenido: 
-                ['Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.',
-                    'Reconocer las diferencias entre las distintas redes sociales, para poder elegir la que más te convenga según tus necesidades.'
-                ],
-            UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/course/view.php?id=28rso3',
-            horasSemanales: 3,
-            fechaInscrpcion: [
-                {
-                    empieza: '',
-                    termina: ``
-                }
-            ]
+          nombre: 'Herramientas para el Busines Intelligence',
+          descripcionLarga: [
+            `El Business Intelligence (BI) hace referencia a un grupo de técnicas mediante las cuales se hace posible que las grandes cantidades de datos obtenidos por una empresa sean posteriormente convertidas en información con valor, útil y descifrable, que tenga un impacto en las decisiones tomadas. `,
+            `En este curso conocerás además de las técnicas propias de BI, a una serie de aplicaciones y tecnologías que buscan facilitar este proceso.`,
+          ],
+          imgUrl: 'HerramientasparaelBusinessIntelligence',
+          requerimientos:[],
+          especificaciones:[],
+          tipo: 'Módulo',
+          contenidoTitulo:[
+            `Introducción al Business Intelligence, clasificación de herramientas y factores importantes`,
+            `Data Warehouse, Data Marts, dimensiones y métricas`,
+            `Protección de datos, Minería de datos, Machine Learning, Deep Learning e Inteligencia Artificial`,
+            `Criterios para el uso de herramientas y visualización de datos`
+          ],
+          contenido:[
+            `Conocerás la importancia del Business Intelligence, como un grupo de técnicas para que las empresas puedan mejorar sus procesos, obtener datos y con ellos convertirlos en información útil, para optimizar la toma de decisiones. Verás que funciones cumple, cómo se clasifican las herramientas y su utilidad en la gestión de datos y qué factores son importantes en su uso.`,
+            `En este Módulo conocerás la implementación de Data Warehouse, Data Marts, y análisis de los datos almacenados. Verás distintos conceptos de Business Intelligence, como dimensiones y métricas, y cómo permiten ver el valor del éxito.`,
+            `Conocerás distintas herramientas para la protección de datos y para el análisis de datos. También aprenderás sobre Minería de Datos, Machine Learning, Deep Learning e inteligencia artificial aplicadas al Business Inteligence.`,
+            `En este módulo verás criterios para determinar el uso de herramientas y visualización de datos.`
+          ],
+          UrlToRedirect: 'https://capacitaciones.chaco.gob.ar/enrol/index.php?id=47',
+          horasSemanales: 0,
+          fechaInscrpcion: []
         }
     ]
   },
