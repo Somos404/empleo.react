@@ -129,7 +129,7 @@ const CardCursos = (props) => {
         //se muestran 4 por fila
         if(table && !mobile) return (((state.cursosFiltrados.length>=2?Math.ceil((state.cursosFiltrados.length)/2):1))*240)+200+(Math.ceil((state.cursosFiltrados.length/2)*30))
         //se muestran 4 por fila
-        if(mobile) return ((state.cursosFiltrados.length)*235)+250+(Math.ceil((state.cursosFiltrados.length)*30))
+        if(mobile) return ((state.cursosFiltrados.length)*240)+250+(Math.ceil((state.cursosFiltrados.length)*30))
     }
 
     const classes = useStyles(
