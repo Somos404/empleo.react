@@ -53,6 +53,8 @@ import {
     WhatsappShareButton,
 } from "react-share";
 
+import UserService from '../../../services/UserService';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -142,6 +144,25 @@ const Curso4 = (props) => {
         email: email,
         tel: tel
         }
+
+        UserService.sendMailsInscripcion(body).then(
+            data => {
+              if (data.status === "sent") {
+                console.log('anda');
+                alert("Mensaje Enviado");
+              } else if (data.status === "failed") {
+                  console.log('no anda');
+                alert("Message Failed");
+                
+              }
+            },
+            error => {
+              //mensaje de error sacael el spiner 
+              alert("Error Envio");
+              console.log(' ==> error', error);
+              console.log('error', error);
+            }
+          );
       }
     
 

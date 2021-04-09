@@ -19,6 +19,40 @@ class UserService {
     }
   }
 
+  
+  sendMailsInscripcion(body) {
+    try {
+      return axios.post(API_URL + 'mail/inscripcion-contacto',
+        body
+      ).then(response => {
+        return response.data;
+      }).catch((err) => {
+        return { err, data: { msg: 'Server error!!!' } };
+      });
+
+    } catch (error) {
+      console.log('error: ', error);
+    }
+  }
+
+
+  
+  // sendMails(body) {
+  //   try {
+  //     return axios.post(API_URL + 'mail/contact',
+  //       body
+  //     ).then(response => {
+  //       return response.data;
+  //     }).catch((err) => {
+  //       return { err, data: { msg: 'Server error!!!' } };
+  //     });
+
+  //   } catch (error) {
+  //     console.log('error: ', error);
+  //   }
+  // }
+
+
   sendMailsEmpresa(body) {
     try {
       return axios.post(API_URL + 'mail/contactEmpresa',
