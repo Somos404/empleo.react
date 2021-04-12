@@ -54,7 +54,7 @@ import {
 } from "react-share";
 
 import UserService from '../../../services/UserService';
-
+import Swal from 'sweetalert2'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -135,47 +135,6 @@ const Curso4 = (props) => {
     const [email, setEmail] = useState();
     const [tel, setTel] = useState();
 
-
-      const handlerEnviar = () => {
-        const body = {
-        nombre: nombre,
-        apellido: apellido,
-        dni: dni,
-        email: email,
-        tel: tel
-        }
-
-        UserService.sendMailsInscripcion(body).then(
-            data => {
-              if (data.status === "sent") {
-                console.log('anda');
-                alert("Mensaje Enviado");
-              } else if (data.status === "failed") {
-                  console.log('no anda');
-                alert("Message Failed");
-                
-              }
-            },
-            error => {
-              //mensaje de error sacael el spiner 
-              alert("Error Envio");
-              console.log(' ==> error', error);
-              console.log('error', error);
-            }
-          );
-      }
-    
-
-
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
-
     const [curso, setCurso] = useState({
         nombre: '',
         descripcionLarga: [],
@@ -189,6 +148,60 @@ const Curso4 = (props) => {
         semanas: '',
 
     });
+
+    const handlerEnviar = () => {
+        const body = {
+            nombre: nombre,
+            nombreCurso: curso.nombre,
+            apellido: apellido,
+            dni: dni,
+            email: email,
+            estado: 1,
+            tel: tel
+        }
+
+        UserService.sendMailsInscripcion(body).then(
+            data => {
+                if (data.status === "sent") {
+                    setOpen(false)
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Éxito',
+                        text: 'Gracias, te avisaremos por correo electrónico cuando abran las inscripciones a este curso',
+                        footer: ''
+                    })
+                    //console.log('anda');
+                    //alert("Mensaje Enviado");
+                } else if (data.status === "failed") {
+                    //console.log('no anda');
+                    //lert("Message Failed");
+                    setOpen(false)
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo salió mal intenta de nuevo',
+                        footer: ''
+                    })
+                }
+            },
+            error => {
+                //mensaje de error sacael el spiner 
+                alert("Error Envio");
+                console.log(' ==> error', error);
+                console.log('error', error);
+            }
+            );
+    }
+    
+
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);

@@ -35,7 +35,8 @@
         "react-share": "^4.4.0",
         "react-visibility-sensor": "^5.1.1",
         "reactstrap": "^8.0.1",
-        "styled-components": "^5.2.1"
+        "styled-components": "^5.2.1",
+        "sweetalert2": "^10.16.0"
     },
     "scripts": {
         "start": "react-scripts start",
