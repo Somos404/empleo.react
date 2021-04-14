@@ -38,6 +38,8 @@ import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
 import {municipios} from './views/components/municipios/municipios';
 import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
+import CursosDashboard from './views/components/cursos/cursosDashboard';
+
 import { Category } from "@material-ui/icons";
 
 
@@ -75,6 +77,15 @@ function App() {
                 path="/informatorio" 
                 render={props => (
                 <Informatorio
+                {...props}
+                />
+            )}
+            />
+            <Route 
+                
+                path="/cursos-dashboard" 
+                render={props => (
+                <CursosDashboard
                 {...props}
                 />
             )}
