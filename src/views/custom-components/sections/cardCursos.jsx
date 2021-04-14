@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
@@ -7,8 +7,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-/**Cursos */
-import {cursosAndCategias} from '../../components/cursos/cursosAndCategias';
 import 'animate.css/animate.min.css'
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -19,6 +17,8 @@ import Card from '../../custom-components/sections/Card'
 import img from '../../../assets/images/cursos/card/Rectangulo.png'
 
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+
+import UserService from '../../../services/UserService'
 
 const useStyles = makeStyles((theme) => ({
     container:{
@@ -102,26 +102,49 @@ const filtro = (Arr, value) => {
     if(value === 'Todos'){
         let array = []
         Arr.forEach(element => {
-            array = array.concat(element.cursos.map(v => ({...v, categoria: element.categoria})));
+            array = array.concat(element.Cursos.map(v => ({...v, categoria: element.categoria})));
         });
         return array
     }else{
-        return Arr.find(e => e.categoria === value).cursos.map(obj=> ({ ...obj, categoria: value}))
+        return Arr.find(e => e.categoria === value).Cursos.map(obj=> ({ ...obj, categoria: value}))
     }
 }
 
 const CardCursos = (props) => {
+
     const desk = useMediaQuery('(min-width:992px)');
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
 
-    const [state, setState] = React.useState({
+    const [cursosAndCategias, setCursosAndCategias] = useState([])
+    const [state, setState] = useState({
         categoria: props.categoria,
         search: '',
         name: 'hai',
-        cursosFiltrados: filtro(cursosAndCategias, props.categoria)
+        cursosFiltrados: []
     });
-   
+    
+
+    useEffect(() => {
+        UserService.getCursos().then(
+            data => {
+                setCursosAndCategias(data)
+                setState({
+                    categoria: props.categoria,
+                    search: '',
+                    name: 'hai',
+                    cursosFiltrados: filtro(data, props.categoria)
+                })
+            },
+            error => {
+                //mensaje de error
+                alert("Error Envio");
+                console.log(' ==> error', error);
+            }
+        );
+       
+    }, []);
+
     const setHeight = () => {
         // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
         //se muestran 4 por fila

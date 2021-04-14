@@ -23,7 +23,7 @@ import img4 from '../../../assets/images/cursos/btnCertificado.png';
 import banner from '../../../assets/images/cursos/imagenPrimConten.png';
 
 // se cambia por llamad api cunado tengamos back
-import { cursosAndCategias } from '../cursos/cursosAndCategias';
+//import { cursosAndCategias } from '../cursos/cursosAndCategias';
 
 //Material UI
 import Accordion from '@material-ui/core/Accordion';
@@ -121,6 +121,7 @@ const checkDate = (fecha) => {
 
 const Curso4 = (props) => {
 
+
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const [isOpen2, setIsOpen2] = useState(false);
@@ -192,8 +193,6 @@ const Curso4 = (props) => {
             }
             );
     }
-    
-
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -225,24 +224,35 @@ const Curso4 = (props) => {
                 }
             )
         } else {
-            curso = cursosAndCategias.find(element => element.categoria == props.categoria).cursos.find(element => element.nombre == props.nombre)
-            setCurso(
-                {
-                    nombre: curso.nombre,
-                    categoria: props.categoria,
-                    descripcionLarga: curso.descripcionLarga,
-                    requerimientos: curso.requerimientos,
-                    especificaciones: curso.especificaciones,
-                    contenidoTitulo: curso.contenidoTitulo,
-                    contenido: curso.contenido,
-                    UrlToRedirect: curso.UrlToRedirect,
-                    horasSemanales: curso.horasSemanales,
-                    semanas: curso.contenido.length,
-                    tipo: curso.tipo,
-                    fechaInscrpcion: checkDate(curso.fechaInscrpcion),
-                    imgUrl: curso.imgUrl
+
+            UserService.getCursos().then(
+                data => {
+        
+                    console.log(data);
+                    curso = data.find(element => element.categoria == props.categoria).Cursos.find(element => element.nombre == props.nombre)
+                    setCurso({
+                        nombre: curso.nombre,
+                        categoria: props.categoria,
+                        descripcionLarga: curso.descripcionLarga,
+                        requerimientos: curso.requerimientos,
+                        especificaciones: curso.especificaciones,
+                        contenidoTitulo: curso.contenidoTitulo,
+                        contenido: curso.contenido,
+                        UrlToRedirect: curso.UrlToRedirect,
+                        horasSemanales: curso.horasSemanales,
+                        semanas: curso.contenido.length,
+                        tipo: curso.tipo,
+                        fechaInscrpcion: checkDate(curso.fechaInscrpcion),
+                        imgUrl: curso.imgUrl
+                        }
+                    )
+                },
+                error => {
+                    //mensaje de error
+                    alert("Error Envio");
+                    console.log(' ==> error', error);
                 }
-            )
+            );
         }
     }, []);
 

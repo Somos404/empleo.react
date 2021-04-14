@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from 'react-dom';
 
 import { createBrowserHistory } from "history";
@@ -37,13 +37,26 @@ import FormCustomComponents from "./views/custom-components/form";
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
 import {municipios} from './views/components/municipios/municipios';
-import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
-import { Category } from "@material-ui/icons";
-
-
-var hist = createBrowserHistory();
+//import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
+import UserService from './services/UserService'
 
 function App() {
+
+    const [cursosAndCategias, setCursosAndCategias] = useState(undefined)
+
+    useEffect(() => {
+        UserService.getCursos().then(
+            data => {
+                setCursosAndCategias(data)
+            },
+            error => {
+                //mensaje de error
+                alert("Error Envio");
+                console.log(' ==> error', error);
+            }
+        );
+       
+    }, []);
 
     return (
         <BrowserRouter>
@@ -199,9 +212,9 @@ function App() {
 
             {/* ----------------SUB PÁGINAS DE CURSOS */}
 
-            {
+            { cursosAndCategias != undefined &&
                 cursosAndCategias.map(Category =>  (
-                    Category.cursos.map(curso =>  (
+                    Category.Cursos.map(curso =>  (
                         <Route
                             path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
                             render={props => (
