@@ -43,6 +43,21 @@ class UserService {
       return axios.get(API_URL + 'cursosAndCategias', {
           headers: headers
       }).then(response => {
+        return response.data;
+      }).catch((err) => {
+        return { err, data: { msg: 'Server error!!!' } };
+      });
+
+    } catch (error) {
+      console.log('error: ', error);
+    }
+  }
+
+  getMuni() {
+    try {
+      return axios.get(API_URL + 'muni', {
+          headers: headers
+      }).then(response => {
         return response.data.res;
       }).catch((err) => {
         return { err, data: { msg: 'Server error!!!' } };

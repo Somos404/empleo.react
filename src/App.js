@@ -36,18 +36,34 @@ import FormCustomComponents from "./views/custom-components/form";
 
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
-import {municipios} from './views/components/municipios/municipios';
+//import {municipios} from './views/components/municipios/municipios';
 //import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
 import UserService from './services/UserService'
 
 function App() {
 
     const [cursosAndCategias, setCursosAndCategias] = useState(undefined)
+    const [municipios, setMunicipios] = useState(undefined)
 
     useEffect(() => {
         UserService.getCursos().then(
             data => {
-                setCursosAndCategias(data)
+                if (data.ok) {
+                    setCursosAndCategias(data.res)
+                }
+            },
+            error => {
+                //mensaje de error
+                alert("Error Envio");
+                console.log(' ==> error', error);
+            }
+        );
+
+        UserService.getCursos().then(
+            data => {
+                if (data.ok) {
+                    setMunicipios(data.res)
+                }
             },
             error => {
                 //mensaje de error
@@ -196,7 +212,7 @@ function App() {
              />
             {/* ---------------SUB PÁGINAS DE MUNICIPIOS */}
 
-            {
+            { municipios != undefined &&
                 municipios.map(muni =>  (
                     <Route
                         path={`/${muni.nombre}`}

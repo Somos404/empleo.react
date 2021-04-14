@@ -227,25 +227,25 @@ const Curso4 = (props) => {
 
             UserService.getCursos().then(
                 data => {
-        
-                    console.log(data);
-                    curso = data.find(element => element.categoria == props.categoria).Cursos.find(element => element.nombre == props.nombre)
-                    setCurso({
-                        nombre: curso.nombre,
-                        categoria: props.categoria,
-                        descripcionLarga: curso.descripcionLarga,
-                        requerimientos: curso.requerimientos,
-                        especificaciones: curso.especificaciones,
-                        contenidoTitulo: curso.contenidoTitulo,
-                        contenido: curso.contenido,
-                        UrlToRedirect: curso.UrlToRedirect,
-                        horasSemanales: curso.horasSemanales,
-                        semanas: curso.contenido.length,
-                        tipo: curso.tipo,
-                        fechaInscrpcion: checkDate(curso.fechaInscrpcion),
-                        imgUrl: curso.imgUrl
-                        }
-                    )
+                    if (data.ok) {
+                        curso = data.res.find(element => element.categoria == props.categoria).Cursos.find(element => element.nombre == props.nombre)
+                        setCurso({
+                            nombre: curso.nombre,
+                            categoria: props.categoria,
+                            descripcionLarga: curso.descripcionLarga,
+                            requerimientos: curso.requerimientos,
+                            especificaciones: curso.especificaciones,
+                            contenidoTitulo: curso.contenidoTitulo,
+                            contenido: curso.contenido,
+                            UrlToRedirect: curso.UrlToRedirect,
+                            horasSemanales: curso.horasSemanales,
+                            semanas: curso.contenido.length,
+                            tipo: curso.tipo,
+                            fechaInscrpcion: checkDate(curso.fechaInscrpcion),
+                            imgUrl: curso.imgUrl
+                            }
+                        )  
+                    } 
                 },
                 error => {
                     //mensaje de error

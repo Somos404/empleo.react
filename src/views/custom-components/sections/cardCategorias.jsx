@@ -104,7 +104,9 @@ const CardCursos = (props) => {
     useEffect(() => {
         UserService.getCursos().then(
             data => {
-                setCursosAndCategias(data)
+                if (data.ok) {
+                    setCursosAndCategias(data.res)
+                }
             },
             error => {
                 //mensaje de error

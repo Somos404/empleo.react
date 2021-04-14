@@ -128,13 +128,16 @@ const CardCursos = (props) => {
     useEffect(() => {
         UserService.getCursos().then(
             data => {
-                setCursosAndCategias(data)
-                setState({
-                    categoria: props.categoria,
-                    search: '',
-                    name: 'hai',
-                    cursosFiltrados: filtro(data, props.categoria)
-                })
+                if (data.ok) {
+                    setCursosAndCategias(data.res)
+                    setState({
+                        categoria: props.categoria,
+                        search: '',
+                        name: 'hai',
+                        cursosFiltrados: filtro(data.res, props.categoria)
+                    }) 
+                }
+               
             },
             error => {
                 //mensaje de error
