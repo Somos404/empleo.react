@@ -138,6 +138,7 @@ const Curso4 = (props) => {
 
     const [curso, setCurso] = useState({
         nombre: '',
+        active: false,
         descripcionLarga: [],
         categoria: '',
         requerimientos: [],
@@ -169,7 +170,7 @@ const Curso4 = (props) => {
                         icon: 'success',
                         title: 'Éxito',
                         text: 'Gracias, te avisaremos por correo electrónico cuando abran las inscripciones a este curso',
-                        footer: ''
+                        footer: '',
                     })
                     //console.log('anda');
                     //alert("Mensaje Enviado");
@@ -181,7 +182,7 @@ const Curso4 = (props) => {
                         icon: 'error',
                         title: 'Oops...',
                         text: 'Algo salió mal intenta de nuevo',
-                        footer: ''
+                        footer: '',
                     })
                 }
             },
@@ -208,6 +209,7 @@ const Curso4 = (props) => {
         if (curso) {
             setCurso(
                 {
+                    active: curso.active,
                     nombre: curso.nombre,
                     categoria: props.categoria,
                     descripcionLarga: curso.descripcionLarga,
@@ -230,6 +232,7 @@ const Curso4 = (props) => {
                     if (data.ok) {
                         curso = data.res.find(element => element.categoria == props.categoria).Cursos.find(element => element.nombre == props.nombre)
                         setCurso({
+                            active: curso.active,
                             nombre: curso.nombre,
                             categoria: props.categoria,
                             descripcionLarga: curso.descripcionLarga,
@@ -284,7 +287,7 @@ const Curso4 = (props) => {
                                         <Row>
                                             <Col lg="5" md="7" className="align-self-center colCursosInfo">
                                                 <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
-                                                <hr class="justify-content-center lineaCopada" />
+                                                <hr className="justify-content-center lineaCopada" />
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoLight">
                                                     {
                                                         curso.descripcionLarga.map(text => (
@@ -519,20 +522,20 @@ const Curso4 = (props) => {
                                 </Container>
                                 <Row className="justify-content-center">
                                     {
-                                        curso.fechaInscrpcion ?
+                                        curso.fechaInscrpcion && curso.active?
                                             (
                                                 <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                             )
                                             :
                                             (
                                                 <Button  
-                                                // to={curso.UrlToRedirect}
-                                                 className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
-                                                 onClick={handleClickOpen}
-
-                                            >
-                                                Quiero que me avisen cuando abran inscripciones 
-                                            </Button>                                            )
+                                                    // to={curso.UrlToRedirect}
+                                                    className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
+                                                    onClick={handleClickOpen}
+                                                >
+                                                    Quiero que me avisen cuando abran inscripciones 
+                                                </Button>                                            
+                                            )
 
                                     }
                                 </Row>
@@ -608,7 +611,7 @@ const Curso4 = (props) => {
                                     <h1 className="text-center title titleCursosResponsive">{curso.nombre}</h1>
 
                                 </Row>
-                                <hr class="justify-content-center lineaCopada" />
+                                <hr className="justify-content-center lineaCopada" />
                                 <div className="separadorM"></div>
                                 <Row className="justify-content-left">
                                     <p className="text-left parrafoCursos">
@@ -710,7 +713,7 @@ const Curso4 = (props) => {
                                         }
 
                                     </Row>
-                                    <hr class="justify-content-center lineaCopada" />
+                                    <hr className="justify-content-center lineaCopada" />
 
                                     <div className={classes.root}>
                                         {curso.semanas >= 1 &&
@@ -861,7 +864,7 @@ const Curso4 = (props) => {
                                         }
                                         <Row className="justify-content-center">
                                             {
-                                                curso.fechaInscrpcion ?
+                                                curso.fechaInscrpcion  && curso.active?
                                                     (
                                                         <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                                     )

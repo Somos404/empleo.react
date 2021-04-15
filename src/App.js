@@ -1,7 +1,4 @@
 import React, {useState, useEffect} from "react";
-import ReactDOM from 'react-dom';
-
-import { createBrowserHistory } from "history";
 import {
     Route,
     Switch,
@@ -11,8 +8,6 @@ import {
 } from "react-router-dom";
 
 import './assets/scss/style.scss';
-//import App from './App'
-// pages for this product
 import Components from "./views/components/components.jsx";
 import Informatorio from "./views/components/informatorio.jsx";
 import Capacitaciones from "./views/components/capacitaciones.jsx";
@@ -36,8 +31,6 @@ import FormCustomComponents from "./views/custom-components/form";
 
 import '../src/views/components/loader.css';
 import Loader from '../src/views/components/Loader.jsx';
-//import {municipios} from './views/components/municipios/municipios';
-//import {cursosAndCategias} from './views/components/cursos/cursosAndCategias';
 import UserService from './services/UserService'
 
 function App() {
@@ -215,6 +208,7 @@ function App() {
             { municipios != undefined &&
                 municipios.map(muni =>  (
                     <Route
+                        key={muni.nombre}
                         path={`/${muni.nombre}`}
                         render={props => (
                             <MuniMesh
@@ -232,6 +226,7 @@ function App() {
                 cursosAndCategias.map(Category =>  (
                     Category.Cursos.map(curso =>  (
                         <Route
+                            key={Category.categoria}
                             path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
                             render={props => (
                                 <CursoMesh

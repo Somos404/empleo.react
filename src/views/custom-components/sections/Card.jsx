@@ -73,7 +73,6 @@ const CardCustom = (props) => {
                                                     url={props.infoCursos.share}
                                                     title={props.infoCursos.titulo}
                                                     className="Demo__some-network__share-button"
-                                                    target_blank
                                                 >
                                                     <SocialIcon
                                                         style={{ height: 35, width: 35, marginTop: -9.5 }}
@@ -85,7 +84,7 @@ const CardCustom = (props) => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a target="_blank" rel="noopener noreferrer">
+                                            <a>
                                                 <WhatsappShareButton
                                                     title={props.infoCursos.titulo}
                                                     url={props.infoCursos.share}
@@ -161,7 +160,7 @@ const CardCustom = (props) => {
 const useStyles = makeStyles((theme) => ({
     card: {
         flexGrow: 1,
-        minHeight: '13.5em'
+        minHeight: '13.5em',
     },
     root: {
         minHeight: '13.5em',
