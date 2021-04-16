@@ -48,20 +48,19 @@ const Header = () => {
                                         <i className="fa fa-instagram icono-ig"></i>
                                     </div>
                                 </a>
-                            </NavItem>
-                       
+                            </NavItem>  
                         </Nav>
                         <NavbarToggler onClick={toggle}><span className="ti-menu"></span></NavbarToggler>
                         
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 ml-auto" id="h6-info">
                             <Nav navbar className="ml-auto">
                                 <NavItem>
-                                    <a className="nav-link" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
                                         INICIO
 										</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a className="nav-link" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
                                         CURSOS
                                     </a>
                                 </NavItem>
@@ -82,14 +81,14 @@ const Header = () => {
                                     	</Link>
                                 </NavItem> */}
                                 <NavItem className="navHiddenSocialResponsiveFb">
-                                    <a className="nav-link" href="https://www.facebook.com/empleochaco">
+                                    <a className="nav-link  nav-linkColor" href="https://www.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer" >
                                         <div className="round-social light">
                                             <i className="fa fa-facebook icono-face"></i>
                                         </div>
                                     </a>
                                 </NavItem>
                                 <NavItem>
-                                    <a className="nav-link navHiddenSocialResponsiveIg"href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link navHiddenSocialResponsiveIg  nav-linkColor"href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
                                         <div className="round-social light">
                                             <i className="fa fa-instagram icono-ig"></i>
                                         </div>

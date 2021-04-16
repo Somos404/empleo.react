@@ -24,7 +24,7 @@ import img1 from '../../assets/images/capacitaciones/iconoGratis.svg';
 import img2 from '../../assets/images/capacitaciones/iconoCertificados.svg';
 import img3 from '../../assets/images/capacitaciones/iconoTutorados.svg';
 import img4 from '../../assets/images/capacitaciones/iconoHorarios.svg';
-import imgInfo from '../../assets/images/capacitaciones/logoCapHeader.svg';
+import imgInfo from '../../assets/images/capacitaciones/logoCapHeaderv1.png';
 
 
 const CapacitacionesDemo = (props) => {
@@ -39,7 +39,7 @@ const CapacitacionesDemo = (props) => {
                                             <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader" width="200" />
 
                                             </Row>
-                    <div className="spacer-Header">
+                    <div className="spacer-Header spacer-HeaderCap">
                         <Container className="containerPCap">
                             <Row xs="2">
                                 <Col lg="6" className="">
@@ -53,7 +53,7 @@ const CapacitacionesDemo = (props) => {
                                                 <h1 className="text-center  titulo1ContResponsiveModificado">Cursos para tu formación laboral y emprendedora
                                                 </h1>
                                             </Row>
-                                            <hr/>
+                                            <hr class="justify-content-center lineaCopada" />
                                             <Row className="justify-content-center">
                                                 <p className="text-center parrafoCursos">Desde el Gobierno del Chaco ponemos a tu disposición una plataforma online de capacitaciones con cursos cortos,
                                                 dinámicos y entretenidos para que puedas desarrollar tus
@@ -102,7 +102,7 @@ const CapacitacionesDemo = (props) => {
                                             </h1>
 
                                                 </div>
-                                                <hr />
+                                                <hr className="lineaEscritorioHidden"/>
                                                 <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP parrafoHiddenCap">
                                                     <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">Desde el Gobierno del Chaco ponemos a tu disposición una plataforma online de capacitaciones con cursos cortos,
                                                     dinámicos y entretenidos para que puedas desarrollar tus
@@ -160,7 +160,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col>
+                                            <Col class="col-md-2">
                                                 <div className="m-r-20"><img src={img1} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -177,7 +177,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col>
+                                            <Col class="col-md-2">
                                                 <div className="m-r-20"><img src={img2} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -198,7 +198,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col>
+                                            <Col class="col-md-2">
                                                 <div className="m-r-20"><img src={img3} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -215,7 +215,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col>
+                                            <Col class="col-md-2">
                                                 <div className="m-r-20"><img src={img4} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -237,8 +237,8 @@ const CapacitacionesDemo = (props) => {
                         {
                             categoria === 'categoria' ?
                                 <CardCategorias
-                                    cursosAndCategias = {props.cursosAndCategias}
-                                    changeCategory={(categ) => {
+                                cursosAndCategias = {props.cursosAndCategias}
+                                changeCategory={(categ) => {
                                         setCategoria(categ)
                                     }}
                                 />

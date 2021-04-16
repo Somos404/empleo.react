@@ -25,12 +25,18 @@ Topbar
     transition: 0.2s ease-in;
     width: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, .40);
+    // background-color: rgba(255, 255, 255, .40);
     z-index: 20;
     position: fixed;
+    
+}
+
+.nav-linkColor{
+    color: white!important;
 }
 .topbar.active{
     background-color: rgb(233, 233, 233);
+    color: black!important;
 }
 /*******************
 REDIRECCIONES
@@ -38,14 +44,17 @@ REDIRECCIONES
 
 .btonIngCap{
     margin-top: 20%;
-    color: black!important;
-    font-weight: bold!important;
-    border-radius: 1rem!important;
-    border: 3px solid #ca4c96ba!important;
+    color: white !important;
+    font-weight: 500 !important;
+    height: 2em;
+    padding-top: 0.1em;
+    border-radius: 1rem !important;
+    border: 3px solid #ca4c96ba !important;
 }
 
 .btonIngCap:hover{
     background-color: white!important;
+    color: black!important;
 }
 
 .cont-img{
@@ -2947,6 +2956,11 @@ Modal in center
     margin-top: 8%;
 }
 
+.spacer-HeaderCap{
+    margin-top: 0%!important;
+
+}
+
 
 
 .segContRed{
@@ -3259,9 +3273,9 @@ Modal in center
 }
 
 .imgResponsiveInformatCapHeader{
-    width: 28em!important;
+    width: 40em!important;
     height: 51%!important;
-    margin-top: -10% !important;
+    margin-top: -15% !important;
     margin-left: 1%!important;
 }
 
@@ -3707,4 +3721,9 @@ top: 9% !important;
 
 .compartirCursoTitulo{
     margin-left: 1%;
+}
+
+//DASHBOARD
+.siderbarEscritorio{
+    margin-top: 10em;
 }

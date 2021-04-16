@@ -31,12 +31,8 @@ const CardCustom = (props) => {
             onMouseEnter={() => toggleHover(false)}
             onMouseLeave={() => toggleHover(true)}
         >
-                <Col 
-                    md="12" 
-                    className="col-md-12 heightWidthCard pro-pic"
-                    style={{backgroundColor: 'rgba(153,153,153,.5)' ,backgroundImage: `url(https://empleo.chaco.gob.ar/card/cursosimg/${props.infoCursos.imgUrl}.png)`}}
-                >
-                    <div className={`cards-inline ${classes.card}`}>
+            <Col md="12" className={`col-md-12 heightWidthCard pro-pic ${props.infoCursos.imgUrl}`}>
+                <div className={`cards-inline ${classes.card}`}>
                     {
                         isHovered && <div className={classes.titulo}
 
@@ -77,6 +73,7 @@ const CardCustom = (props) => {
                                                     url={props.infoCursos.share}
                                                     title={props.infoCursos.titulo}
                                                     className="Demo__some-network__share-button"
+                                                    target_blank
                                                 >
                                                     <SocialIcon
                                                         style={{ height: 35, width: 35, marginTop: -9.5 }}
@@ -88,7 +85,7 @@ const CardCustom = (props) => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a>
+                                            <a target="_blank" rel="noopener noreferrer">
                                                 <WhatsappShareButton
                                                     title={props.infoCursos.titulo}
                                                     url={props.infoCursos.share}
@@ -164,7 +161,7 @@ const CardCustom = (props) => {
 const useStyles = makeStyles((theme) => ({
     card: {
         flexGrow: 1,
-        minHeight: '13.5em',
+        minHeight: '13.5em'
     },
     root: {
         minHeight: '13.5em',
@@ -193,7 +190,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 25,
+        fontSize: 22,
+        lineHeight: 1.2,
         paddingTop: '0px',
         paddingBottom: '0px',
         //backgroundColor: 'blue',
@@ -218,8 +216,9 @@ const useStyles = makeStyles((theme) => ({
     },
     tituloText: {
         color: 'white',
-        fontSize: 25,
+        fontSize: 22,
         textAlign: 'center',
+        lineHeight: 1.2
 
     }
 }));

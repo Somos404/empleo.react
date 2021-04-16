@@ -10,7 +10,7 @@ File: scss
  For Laptop & above all (1650px) 
  ============================================================== */
 
-@media(min-width:1650px) {
+ @media(min-width:1650px) {
 
 }
 
@@ -1549,6 +1549,9 @@ width: 30%;
 }
 
 .tituloHiddenCap{
+    display: none!important;
+}
+.lineaEscritorioHidden{
     display: none;
 }
 .cont-img1BtnCap {
@@ -1829,10 +1832,15 @@ line-height: 1;
 .imgResponsiveInformatCapHeader{
     
     width: 15em !important;
-    height: 8em !important;
-    margin-top: -18% !important;
+    height: 15em !important;
+    margin-top: -28% !important;
 
 }
+
+.spacer-HeaderCapResponsive{
+    margin-top: -7%;
+}
+
 .imgResponsiveInformatCapMArginLeft{
     margin-left: inherit!important;
 }
