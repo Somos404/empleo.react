@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
@@ -121,6 +121,7 @@ const checkDate = (fecha) => {
 
 const Curso4 = (props) => {
 
+    window.scrollTo(0, 0);
 
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -137,18 +138,10 @@ const Curso4 = (props) => {
     const [tel, setTel] = useState();
 
     const [curso, setCurso] = useState({
-        nombre: '',
-        active: false,
-        descripcionLarga: [],
-        categoria: '',
-        requerimientos: [],
-        especificaciones: [],
-        contenidoTitulo: [],
-        contenido: [],
-        UrlToRedirect: '',
-        horasSemanales: '',
-        semanas: '',
-
+        ...props.curso,
+        categoria: props.categoria,
+        semanas: props.curso.contenido.length,
+        fechaInscrpcion: checkDate(props.curso.fechaInscrpcion),
     });
 
     const handlerEnviar = () => {
@@ -202,62 +195,6 @@ const Curso4 = (props) => {
     const handleClose = () => {
         setOpen(false);
     };
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        let curso = props.location.curso
-        if (curso) {
-            setCurso(
-                {
-                    active: curso.active,
-                    nombre: curso.nombre,
-                    categoria: props.categoria,
-                    descripcionLarga: curso.descripcionLarga,
-                    requerimientos: curso.requerimientos,
-                    especificaciones: curso.especificaciones,
-                    contenidoTitulo: curso.contenidoTitulo,
-                    contenido: curso.contenido,
-                    UrlToRedirect: curso.UrlToRedirect,
-                    horasSemanales: curso.horasSemanales,
-                    semanas: curso.contenido.length,
-                    tipo: curso.tipo,
-                    fechaInscrpcion: checkDate(curso.fechaInscrpcion),
-                    imgUrl: curso.imgUrl
-                }
-            )
-        } else {
-
-            UserService.getCursos().then(
-                data => {
-                    if (data.ok) {
-                        curso = data.res.find(element => element.categoria == props.categoria).Cursos.find(element => element.nombre == props.nombre)
-                        setCurso({
-                            active: curso.active,
-                            nombre: curso.nombre,
-                            categoria: props.categoria,
-                            descripcionLarga: curso.descripcionLarga,
-                            requerimientos: curso.requerimientos,
-                            especificaciones: curso.especificaciones,
-                            contenidoTitulo: curso.contenidoTitulo,
-                            contenido: curso.contenido,
-                            UrlToRedirect: curso.UrlToRedirect,
-                            horasSemanales: curso.horasSemanales,
-                            semanas: curso.contenido.length,
-                            tipo: curso.tipo,
-                            fechaInscrpcion: checkDate(curso.fechaInscrpcion),
-                            imgUrl: curso.imgUrl
-                            }
-                        )  
-                    } 
-                },
-                error => {
-                    //mensaje de error
-                    alert("Error Envio");
-                    console.log(' ==> error', error);
-                }
-            );
-        }
-    }, []);
 
     return (
         <div className="page-wrapper page-wrapperCursos">

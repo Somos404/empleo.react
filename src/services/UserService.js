@@ -55,10 +55,10 @@ class UserService {
 
   getMuni() {
     try {
-      return axios.get(API_URL + 'muni', {
+      return axios.get(API_URL + 'municipios', {
           headers: headers
       }).then(response => {
-        return response.data.res;
+        return response.data;
       }).catch((err) => {
         return { err, data: { msg: 'Server error!!!' } };
       });

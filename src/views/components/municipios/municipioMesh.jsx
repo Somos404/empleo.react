@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React, { useState, useEffect }  from "react";
 import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
@@ -20,16 +20,34 @@ import img4 from '../../../assets/images/capacitaciones/img4Red.svg';
 
 import img5 from '../../../assets/images/oficios/flechaDer.svg';
 import img6 from '../../../assets/images/oficios/flachaIzq.svg';
-import img7 from '../../../assets/images/capacitaciones/castelli.svg';
 import img8 from '../../../assets/images/capacitaciones/logo_membrete.png';
+import UserService from '../../../services/UserService'
 
 import {municipios} from './municipios';
-import { stat } from "fs";
 
 const MunicipioMesh = (props) => {
 
-    let muni = municipios.find(element => element.nombre == props.muni)
-    const [state, setState] = useState(muni); 
+    const [state, setState] = useState(props.muni); 
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+       /*  UserService.getMuni().then(
+            data => {
+                if (data.ok) {
+                    console.log(data.res);
+                    setState(data.res)
+                }
+            },
+            error => {
+                //mensaje de error
+                alert("Error Envio");
+                console.log(' ==> error', error);
+            }
+        ); */
+        
+    }, []);
+
+    
     return (
         <div>
             <Header />
@@ -67,7 +85,7 @@ const MunicipioMesh = (props) => {
                                 </Col>
                                 <Row md="8" lg="12" className="colRequerimientosCap">
                                     <Row className="imagenInfo">
-                                    <img src={state.img} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
+                                    <img src={`https://empleo.chaco.gob.ar/municipios/${state.img}.svg`} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMun" width="200" />
                                     </Row>
                                     <Row className="textoInfo textoInfoTop">
                                     <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">

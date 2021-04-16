@@ -31,8 +31,12 @@ const CardCustom = (props) => {
             onMouseEnter={() => toggleHover(false)}
             onMouseLeave={() => toggleHover(true)}
         >
-            <Col md="12" className={`col-md-12 heightWidthCard pro-pic ${props.infoCursos.imgUrl}`}>
-                <div className={`cards-inline ${classes.card}`}>
+            <Col 
+                    md="12" 
+                    className="col-md-12 heightWidthCard pro-pic"
+                    style={{backgroundImage: `url(https://empleo.chaco.gob.ar/card/cursosimg/${props.infoCursos.imgUrl}.png)`}}
+                >
+                    <div className={`cards-inline ${classes.card}`}>
                     {
                         isHovered && <div className={classes.titulo}
 

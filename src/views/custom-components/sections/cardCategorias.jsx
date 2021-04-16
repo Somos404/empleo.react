@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
@@ -93,30 +93,13 @@ const CardCursos = (props) => {
     
     
     
-    const [cursosAndCategias, setCursosAndCategias] = useState(undefined)
+    const [cursosAndCategias, setCursosAndCategias] = useState(props.cursosAndCategias)
 
     const [state, setState] = useState({
         search: '',
         categoriasFiltradas: cursosAndCategias,
         filtroCategoria: []
     });
-
-    useEffect(() => {
-        UserService.getCursos().then(
-            data => {
-                if (data.ok) {
-                    setCursosAndCategias(data.res)
-                }
-            },
-            error => {
-                //mensaje de error
-                alert("Error Envio");
-                console.log(' ==> error', error);
-            }
-        );
-       
-    }, []);
-
 
     const searchFilter = (event) => {
         

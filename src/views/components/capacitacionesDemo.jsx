@@ -237,6 +237,7 @@ const CapacitacionesDemo = (props) => {
                         {
                             categoria === 'categoria' ?
                                 <CardCategorias
+                                    cursosAndCategias = {props.cursosAndCategias}
                                     changeCategory={(categ) => {
                                         setCategoria(categ)
                                     }}
@@ -244,6 +245,7 @@ const CapacitacionesDemo = (props) => {
                                 :
                                 <CardCursos
                                     categoria={categoria}
+                                    cursosAndCategias = {props.cursosAndCategias}
                                 />
                         }
                         <Cursosfuturos />

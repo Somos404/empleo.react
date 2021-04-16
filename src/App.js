@@ -52,9 +52,10 @@ function App() {
             }
         );
 
-        UserService.getCursos().then(
+        UserService.getMuni().then(
             data => {
                 if (data.ok) {
+                    console.log(data.res);
                     setMunicipios(data.res)
                 }
             },
@@ -102,26 +103,30 @@ function App() {
             )}
             />
                 {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
-                <Route 
                 
-                path="/capacitaciones" 
-                render={props => (
-                <Capacitaciones
-                {...props}
+                <Route 
+                    path="/capacitaciones" 
+                    render={props => (
+                    <Capacitaciones
+                    {...props}
                 />
             )}
             />
               
                 {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
-                <Route 
+                {
+                    cursosAndCategias &&
+                    <Route 
+                        path="/capacitaciones-demo" 
+                        render={props => (
+                            <CapacitacionesDemo
+                                cursosAndCategias = {cursosAndCategias}
+                                {...props}
+                            />
+                        )}
+                    />
+                }
                 
-                path="/capacitaciones-demo" 
-                render={props => (
-                <CapacitacionesDemo
-                {...props}
-                />
-            )}
-            />
                 {/* <Route exact path="/contact" component={Contacto} /> */}
                 <Route 
                 
@@ -212,7 +217,7 @@ function App() {
                         path={`/${muni.nombre}`}
                         render={props => (
                             <MuniMesh
-                                muni={muni.nombre}
+                                muni={muni}
                                 {...props}
                             />
                         )}
@@ -230,7 +235,7 @@ function App() {
                             path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
                             render={props => (
                                 <CursoMesh
-                                    nombre={curso.nombre}
+                                    curso={curso}
                                     categoria={Category.categoria}
                                     {...props}
                                 />

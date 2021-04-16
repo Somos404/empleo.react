@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
@@ -17,8 +17,6 @@ import Card from '../../custom-components/sections/Card'
 import img from '../../../assets/images/cursos/card/Rectangulo.png'
 
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-
-import UserService from '../../../services/UserService'
 
 const useStyles = makeStyles((theme) => ({
     container:{
@@ -116,37 +114,13 @@ const CardCursos = (props) => {
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
 
-    const [cursosAndCategias, setCursosAndCategias] = useState([])
+    const [cursosAndCategias, setCursosAndCategias] = useState(props.cursosAndCategias)
     const [state, setState] = useState({
         categoria: props.categoria,
         search: '',
         name: 'hai',
-        cursosFiltrados: []
+        cursosFiltrados: filtro(props.cursosAndCategias, props.categoria)
     });
-    
-
-    useEffect(() => {
-        UserService.getCursos().then(
-            data => {
-                if (data.ok) {
-                    setCursosAndCategias(data.res)
-                    setState({
-                        categoria: props.categoria,
-                        search: '',
-                        name: 'hai',
-                        cursosFiltrados: filtro(data.res, props.categoria)
-                    }) 
-                }
-               
-            },
-            error => {
-                //mensaje de error
-                alert("Error Envio");
-                console.log(' ==> error', error);
-            }
-        );
-       
-    }, []);
 
     const setHeight = () => {
         // retorno la altura de cada card + el la separacien entre cada una dependiendo de la cantidad que se muestran en cada fila 
