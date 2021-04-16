@@ -32,7 +32,7 @@ Topbar
 }
 
 .nav-linkColor{
-    color: white!important;
+    color: white;
 }
 .topbar.active{
     background-color: rgb(233, 233, 233);
@@ -44,7 +44,7 @@ REDIRECCIONES
 
 .btonIngCap{
     margin-top: 20%;
-    color: white !important;
+    color: white;
     font-weight: 500 !important;
     height: 2em;
     padding-top: 0.1em;
@@ -3145,6 +3145,7 @@ Modal in center
 .BannerPContenedorEsc{
     background: rgb(44,176,207);
     background: linear-gradient(90deg, rgba(44,176,207,0.3) 0%, rgba(212,17,131,0.3) 100%);
+    padding-top: 10%;
 }
 .rowSecondParrafoLight{
     color: black;
@@ -3580,6 +3581,17 @@ top: 9% !important;
         
     }
 }
+@media (max-width:1200px){
+    .rowSecondParrafoBold{
+        width: 19em!important;
+    }
+    .contenidoCursos {
+        position: absolute;
+        margin-top: -21em!important;
+        margin-left: 6em;
+    }
+}
+
 @media (max-width:1467px){
     
     .static-slider10InfoCap {
@@ -3726,4 +3738,9 @@ top: 9% !important;
 //DASHBOARD
 .siderbarEscritorio{
     margin-top: 10em;
+}
+
+//titulo de los cursos
+.rowSecondParrafoBold{
+    width: 19em!important;
 }
