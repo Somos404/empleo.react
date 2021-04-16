@@ -53,7 +53,7 @@ const CapacitacionesDemo = (props) => {
                                                 <h1 className="text-center  titulo1ContResponsiveModificado">Cursos para tu formación laboral y emprendedora
                                                 </h1>
                                             </Row>
-                                            <hr className="justify-content-center lineaCopada" />
+                                            <hr/>
                                             <Row className="justify-content-center">
                                                 <p className="text-center parrafoCursos">Desde el Gobierno del Chaco ponemos a tu disposición una plataforma online de capacitaciones con cursos cortos,
                                                 dinámicos y entretenidos para que puedas desarrollar tus
@@ -160,7 +160,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col className="col-md-2">
+                                            <Col>
                                                 <div className="m-r-20"><img src={img1} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -177,7 +177,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col className="col-md-2">
+                                            <Col>
                                                 <div className="m-r-20"><img src={img2} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -198,7 +198,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col className="col-md-2">
+                                            <Col>
                                                 <div className="m-r-20"><img src={img3} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>
@@ -215,7 +215,7 @@ const CapacitacionesDemo = (props) => {
                                     <Card className="cardsecondContRed">
                                         {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                                         <CardBody className="d-flex no-block cardBodyRed">
-                                            <Col className="col-md-2">
+                                            <Col>
                                                 <div className="m-r-20"><img src={img4} width="55" className="rounded" alt="img" /></div>
 
                                             </Col>

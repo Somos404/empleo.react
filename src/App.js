@@ -55,7 +55,6 @@ function App() {
         UserService.getMuni().then(
             data => {
                 if (data.ok) {
-                    console.log(data.res);
                     setMunicipios(data.res)
                 }
             },
