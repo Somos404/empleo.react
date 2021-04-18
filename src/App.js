@@ -200,12 +200,12 @@ function App() {
             {/* ---------------BUSCAR */}
             <Route 
                  
-                 path="/buscar-cursos" 
-                 render={props => (
-                 <Buscar
-                 {...props}
-                 />
-             )}
+                path="/buscar-cursos" 
+                render={props => (
+                    <Buscar
+                        {...props}
+                    />
+                )}
              />
             {/* ---------------SUB PÁGINAS DE MUNICIPIOS */}
 
