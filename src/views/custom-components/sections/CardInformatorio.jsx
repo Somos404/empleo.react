@@ -47,16 +47,18 @@ const CardInformatorio = (props) => {
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
     const [curso, setCurso] = useState(props.curso);
-
+    const iconoCard = [img1, img2, img3, img4];
+    const lineaCard = [img5, img6, img7, img8];
+    // console.log(iconoCard);
     return (
         <div>
             {
             curso && desk && 
             <Card className="capacitacionesInfoCard">
-            <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
-            <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
+            <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={iconoCard[props.pos]} alt="wrappixel kit" /></span>
+            <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">0{props.pos+1}</span></div>
             <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">{curso.nombre}</a></h5>
-            <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={img5} alt="wrappixel kit" /></span>
+            <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={lineaCard[props.pos]} alt="wrappixel kit" /></span>
 
             <p className="m-t-20 paraffoInfoCap">{curso.descrip_card}</p>
             <Row className="justify-content-center">
@@ -74,16 +76,16 @@ const CardInformatorio = (props) => {
             <Container ClassName="containerCardInforResponsive">
             <Row className="rowCardInforResponsive">
             <Col>
-            <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea img-redireccionesInfoCapResp" src={img5} alt="wrappixel kit" /></span>
+            <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea img-redireccionesInfoCapResp" src={lineaCard[props.pos]} alt="wrappixel kit" /></span>
             </Col>
             <Col>
-            <span className="img-ho contenedorImgCap contenedorImgCapInfResponsive"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
+            <span className="img-ho contenedorImgCap contenedorImgCapInfResponsive"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap "  src={iconoCard[props.pos]} alt="wrappixel kit" /></span>
             </Col>
             </Row>
             
             </Container>
             
-            <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">0#</span></div>
+            <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">0{props.pos+1}</span></div>
             <h5 className="font-medium m-t-30 tituloCardInfoCap tituloCardInfoCapResponsive"><a href="#" className="link">{curso.nombre}</a></h5>
             <p className="m-t-20 paraffoInfoCap paraffoInfoCapResponsive">{curso.descrip_card}</p>
             <Row className="justify-content-center btnMasInfoCapRepsons">
