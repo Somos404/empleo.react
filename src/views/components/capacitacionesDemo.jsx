@@ -29,6 +29,7 @@ import imgInfo from '../../assets/images/capacitaciones/logoCapHeaderv1.png';
 
 const CapacitacionesDemo = (props) => {
     const [categoria, setCategoria] = React.useState(props.location.categoria?props.location.categoria:'Todos')
+    console.log('============>>>>', props.cursosAndCategias.find(object => object.categoria === 'Informatorio'));
     return (
         <div>
             <HeaderCapacitaciones />
@@ -254,7 +255,9 @@ const CapacitacionesDemo = (props) => {
                 </div>
             </div>
                 <div>
-                <BlogComponent />
+               <BlogComponent 
+                   cardCursosInfo = {props.cursosAndCategias.find(object => object.categoria === 'Informatorio')}
+                /> 
                 {/* <Footer3 /> */}
                 </div>
             

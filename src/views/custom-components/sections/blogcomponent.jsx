@@ -1,9 +1,9 @@
 /* eslint-disable */
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { Row, Col, Container, Card } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 import img1 from '../../../assets/images/capacitaciones/icono01InfoCap.svg';
 import img2 from '../../../assets/images/capacitaciones/icono02InfoCap.svg';
@@ -15,32 +15,37 @@ import img7 from '../../../assets/images/capacitaciones/lineaInforCap3.svg';
 import img8 from '../../../assets/images/capacitaciones/lineaInforCap4.svg';
 import imgInfo from '../../../assets/images/capacitaciones/logo_membrete.png';
 
-import Footer3 from '../../../components/footer/footer3'
+import Footer3 from '../../../components/footer/footer3';
+import CardInformatorio from './CardInformatorio';
 
-import { makeStyles } from '@material-ui/core/styles';
+
+
+ import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
-    extendedIcon: {
-        marginRight: theme.spacing(1),
-    },
-    botonFab: {
-        color: "#fff",
-        backgroundColor: "#0629F9 !important",
-        width: "35px",
-        height: "35px"
-    }
+//  const useStyles = makeStyles((theme) => ({
+//     root: {
+//         '& > *': {
+//             margin: theme.spacing(1),
+//         },
+//     },
+//     extendedIcon: {
+//         marginRight: theme.spacing(1),
+//     },
+//     botonFab: {
+//         color: "#fff",
+//         backgroundColor: "#0629F9 !important",
+//         width: "35px",
+//         height: "35px"
+//     }
 
-}));
+//  }));
 
-const BlogComponent = () => {
-    const classes = useStyles();
+
+
+const BlogComponent = (props) => {
+console.log('============', props.cardCursosInfo.Cursos);
     return (
         <div>
             <div className="coming-soon" id="coming">
@@ -81,7 +86,7 @@ const BlogComponent = () => {
                         <Row className="rowSubtInfoCap">
                             <Col md="6" className="text-left marginDescInfo">
                                 <p className="m-t-20 parrafoCursos">Para que tengas más y mejores oportunidades de incorporarte a la Economía del Conocimiento, especíﬁcamente en el sector del Software a través de la formación en programación.
-</p>
+                                </p>
                             </Col>
                             <Col md="6" className="text-left marginDescInfo">
                                 <p className="m-t-20 parrafoCursos">Es un programa del Gobierno del Chaco en conjunto con las empresas del Polo IT Chaco, Globant, UTN y UNCAUS.
@@ -90,87 +95,17 @@ const BlogComponent = () => {
                         </Row>
 
                     </Row>
+
                     <Row className="m-t-40 justify-content-center">
-                        <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard">
-                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={img1} alt="wrappixel kit" /></span>
-                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">01</span></div>
-                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Introducción a <br />la Programación</a></h5>
-                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={img5} alt="wrappixel kit" /></span>
-
-                                <p className="m-t-20 paraffoInfoCap">Para que sin necesidad de poseer conocimientos previos en
-                                programación, puedas adentrarte en ese mundo de manera didáctica y entretenida, iniciando tu camino en el aprendizaje de sus lenguajes, en poco tiempo y de manera intensiva.</p>
-                                <Row className="justify-content-center">
-                                    <Link to="/curso/Informatorio/Introducción-a-la-Programación">
-                                        <Fab className={classes.botonFab} aria-label="add">
-                                            <AddIcon />
-                                        </Fab>
-                                    </Link>
-                                </Row>
-                            </Card>
-                        </Col>
-                        <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard">
-                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img2} alt="wrappixel kit" /></span>
-                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">02</span></div>
-                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Programación y <br />
-                                Desarrollo Web</a></h5>
-                                <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={img6} alt="wrappixel kit" /></span>
-                                <p className="m-t-20 paraffoInfoCap">Podrás profundizar en herramientas básicas para desarrollar aplicaciones web con bases de datos, y adquirir conocimientos que te permitan seguir construyendo tu perfil profesional para el sector Software y Servicios
-                                Informáticos.</p>
-                                <Row className="justify-content-center">
-                                    <Link to="/curso/Informatorio/Programación-y-Desarrollo-Web">
-                                        <Fab className={classes.botonFab} aria-label="add">
-                                            <AddIcon />
-                                        </Fab>
-                                    </Link>
-                                </Row>
-                            </Card>
-                        </Col>
-                        <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard capacitacionesInfoCard1">
-                                <span className="img-ho contenedorImgCap">
-                                    <img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img3} alt="wrappixel kit" width="200" />
-                                </span>
-                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">03</span></div>
-                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Especialización <br />
-                                en Lenguajes<br />
-de Programación</a></h5>
-                                <span className=" contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap img-responsiveInfoCapLinea" src={img7} alt="wrappixel kit" /></span>
-                                <p className="m-t-20 paraffoInfoCap">Podrás continuar con tu
-perfeccionamiento en lenguajes específicos, y orientar tu formación hacia los perfiles laborales requeridos por las empresas locales. </p>
-                                <Row className="justify-content-center rowBtnMas">
-                                    <Link to="/curso/Informatorio/Especialización-en-tecnologías-de-desarrollo">
-                                        <Fab className={classes.botonFab} aria-label="add">
-                                            <AddIcon />
-                                        </Fab>
-                                    </Link>
-
-                                </Row>
-                            </Card>
-                        </Col>
-                        <Col lg="3" md="4">
-                            <Card className="capacitacionesInfoCard capacitacionesInfoCard1">
-                                <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap" src={img4} alt="wrappixel kit" /></span>
-                                <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">04</span></div>
-                                <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">Talleres para<br />
-                                Emprender<br />
-                                en TICs
-</a></h5>
-                                <span className="contenedorImgLineaCap"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap img-responsiveInfoCapLinea" src={img8} alt="wrappixel kit" /></span>
-                                <p className="m-t-20 paraffoInfoCap">Adquirirás herramientas que te
-                                permitan iniciar un emprendimiento vinculado a las TICs, y podrás
-acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
-                                <Row className="justify-content-center rowBtnMas">
-                                    <Link to="/curso/Informatorio/Talleres-para-emprender-en-TICs">
-                                        <Fab className={classes.botonFab} aria-label="add">
-                                            <AddIcon />
-                                        </Fab>
-                                    </Link>
-
-                                </Row>
-                            </Card>
-                        </Col>
+                         {
+                            props.cardCursosInfo.Cursos.map(cursoCard => ( 
+                            <Col lg="3" md="4">
+                                  <CardInformatorio 
+                                    curso = {cursoCard}
+                                />   
+                            </Col>
+                        ))
+                        }   
                     </Row>
                 </Container>
             </div>
@@ -191,7 +126,7 @@ acceder a financiamiento para su puesta en marcha al finalizar el ciclo.</p>
                             </div>
                         </Col>
                     </Row>
-                   
+
 
                 </Container>
 

@@ -10,16 +10,20 @@ import { scroller } from 'react-scroll';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    const [topbar, setTopbar] = useState(false)
+    const [topbar, setTopbar] = useState(false);
+    const [color, setColor] = useState('white');
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
     /*--------------------------------------------------------------------------------*/
     const changeBackground = () => {
+        
         if(window.scrollY >= 10){
             setTopbar(true);
+            setColor('black');
         } else{
             setTopbar(false);
+            setColor('white');
         }
     };
 
@@ -55,12 +59,12 @@ const Header = () => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 ml-auto" id="h6-info">
                             <Nav navbar className="ml-auto">
                                 <NavItem>
-                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer"  style={{color: color}}>
                                         INICIO
 										</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link nav-linkColor" href="https://empleo.chaco.gob.ar/capacitaciones"  target="_blank" rel="noopener noreferrer"  style={{color: color }}>
                                         CURSOS
                                     </a>
                                 </NavItem>
@@ -81,20 +85,20 @@ const Header = () => {
                                     	</Link>
                                 </NavItem> */}
                                 <NavItem className="navHiddenSocialResponsiveFb">
-                                    <a className="nav-link  nav-linkColor" href="https://www.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer" >
+                                    <a className="nav-link  nav-linkColor" href="https://www.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer"  style={{color: color}}>
                                         <div className="round-social light">
                                             <i className="fa fa-facebook icono-face"></i>
                                         </div>
                                     </a>
                                 </NavItem>
                                 <NavItem>
-                                    <a className="nav-link navHiddenSocialResponsiveIg  nav-linkColor"href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link navHiddenSocialResponsiveIg  nav-linkColor"href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer"  style={{color: color}}>
                                         <div className="round-social light">
                                             <i className="fa fa-instagram icono-ig"></i>
                                         </div>
                                     </a>
                                 </NavItem>
-                                <NavItem className="nav-itemLogin"><a className="btn btn-outline-success btonIngCap" href="#">INGRESAR</a></NavItem>
+                                <NavItem className="nav-itemLogin"><a className="btn btn-outline-success btonIngCap" href="https://capacitaciones.chaco.gob.ar/login/" style={{color: color}}>INGRESAR</a></NavItem>
 
                             </Nav>
                              {/*
