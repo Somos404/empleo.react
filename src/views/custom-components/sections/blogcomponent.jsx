@@ -98,9 +98,10 @@ console.log('============', props.cardCursosInfo.Cursos);
 
                     <Row className="m-t-40 justify-content-center">
                          {
-                            props.cardCursosInfo.Cursos.map(cursoCard => ( 
+                            props.cardCursosInfo.Cursos.map((cursoCard, i) => ( 
                             <Col lg="3" md="4">
-                                  <CardInformatorio 
+                                  <CardInformatorio
+                                    pos = {i} 
                                     curso = {cursoCard}
                                 />   
                             </Col>
