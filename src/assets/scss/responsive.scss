@@ -1952,6 +1952,9 @@ line-height: 1;
   /*-------------INFORMATORIO*/
         /*-------------galaxi*/
         @media(max-width:414px) {
+            .capacitacionesInfoCardResponsive{
+                height: 12.5em!important;
+            }
             .imgFondo{
                 position: absolute;
                 margin-left: 14em;
@@ -1959,6 +1962,30 @@ line-height: 1;
                 width: 37%;
                 height: 39%;
                 overflow: hidden;
+            }
+            .contenedorImgCapInfResponsive{
+                margin-left: 18%!important;
+            }
+            .img-redireccionesInfoCapResp{
+                width: 12em !important;
+                height: 4em !important;
+            }
+            .tituloCardInfoCapResponsive{
+                margin-left: 7% !important;
+                margin-top: 9px  !important;
+            }
+            .paraffoInfoCapResponsive{
+                font-size: 0.6rem;
+                color: black;
+                padding: 7%;
+                margin-top: -31px !important;
+                margin-left: 0% !important;
+                width: 89%;
+            }
+            .btnMasInfoCapRepsons{
+                align-self: flex-end;
+                margin-right: 2%;
+                margin-top: -17%;
             }
         }
     

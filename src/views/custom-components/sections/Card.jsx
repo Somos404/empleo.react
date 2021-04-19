@@ -190,7 +190,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 22,
+        fontSize: 20,
         lineHeight: 1.2,
         paddingTop: '0px',
         paddingBottom: '0px',

@@ -3602,7 +3602,15 @@ top: 9% !important;
     .static-slider-headCapacitaciones {
         min-height: 81vh;
         margin-left: -1%;
+    }
+    .titulosInfoCapHab{
+        position: relative; 
+        margin-top: -12em;
     }    
+    .imgResponsiveInformatCapMArginLeft {
+    
+        margin-top: 7%;
+    }
 }
 
 @media (min-width:1468px){
