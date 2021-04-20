@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import logo from '../../assets/images/logos/logo1.png';
 import { scroller } from 'react-scroll';
@@ -11,7 +12,10 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const [topbar, setTopbar] = useState(false);
-    const [color, setColor] = useState('white');
+    const desk = useMediaQuery('(min-width:992px)');
+    const table = useMediaQuery('(max-width:992px)');
+    const mobile = useMediaQuery('(max-width:768px)');
+    const [color, setColor] = useState(!desk ? 'black' : 'white');
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
@@ -21,9 +25,12 @@ const Header = () => {
         if(window.scrollY >= 10){
             setTopbar(true);
             setColor('black');
+           
         } else{
             setTopbar(false);
-            setColor('white');
+            if(!mobile){
+                setColor('white');
+            }
         }
     };
 
