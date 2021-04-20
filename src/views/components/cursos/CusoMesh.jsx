@@ -250,8 +250,9 @@ const Curso4 = (props) => {
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
                                             </Col>
 
-                                            <div className="contenedorCompartirCursosCap">
-                                                <Col>
+                                            <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
+
+                                                <div className="contenedorCompartirCursosCap">
                                                     <h4 className="compartirCursoTitulo">Compartír</h4>
                                                     <ul className="list-inline list-inlineRedes list-inlineRedesTop">
                                                         <li className="list-inline-item">
@@ -307,11 +308,8 @@ const Curso4 = (props) => {
                                                             </a>
                                                         </li>
                                                     </ul>
-                                                </Col>
-                                            </div>
+                                                </div>
 
-
-                                            <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
                                                 <div className="contenedorImagenyContenido">
                                                     <img src={banner} alt="We are Digital Agency" className="img-fluid imgBackReqCursos"></img>
                                                     <div className="contenidoCursos">
