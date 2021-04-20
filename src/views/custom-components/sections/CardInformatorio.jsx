@@ -57,7 +57,7 @@ const CardInformatorio = (props) => {
             <Card className="capacitacionesInfoCard">
             <span className="img-ho contenedorImgCap"><img className="img-responsive img-thumbnail img-redirecciones img-InfoCap " src={iconoCard[props.pos]} alt="wrappixel kit" /></span>
             <div className="date-pos bg-info-gradiant imgAmarillaInfoCap"><span className="numeroCardInfoCap">0{props.pos+1}</span></div>
-            <h5 className="font-medium m-t-30 tituloCardInfoCap"><a href="#" className="link">{curso.nombre}</a></h5>
+            <h5 className="font-medium m-t-30 tituloCardInfoCap"><Link to={`/curso/Informatorio/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`} className="link">{curso.nombre}</Link></h5>
             <span className=" contenedorImgLineaCap contenedorImgLineaCap1"><img className="img-responsive img-thumbnail img-redirecciones imgLinea-InfoCap imgLinea-InfoCap1 img-responsiveInfoCapLinea" src={lineaCard[props.pos]} alt="wrappixel kit" /></span>
 
             <p className="m-t-20 paraffoInfoCap">{curso.descrip_card}</p>
