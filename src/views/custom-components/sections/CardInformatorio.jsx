@@ -62,10 +62,12 @@ const CardInformatorio = (props) => {
 
             <p className="m-t-20 paraffoInfoCap">{curso.descrip_card}</p>
             <Row className="justify-content-center">
-                <Link to="/curso/Informatorio/Introducción-a-la-Programación">
-                    <Fab className={classes.botonFab} aria-label="add">
-                        <AddIcon />
-                    </Fab>
+                <Link 
+                    to={`/curso/Informatorio/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                    >
+                        <Fab className={classes.botonFab} aria-label="add">
+                            <AddIcon />
+                        </Fab>
                 </Link>
             </Row>
             </Card>
