@@ -185,7 +185,7 @@ const Curso4 = (props) => {
                 console.log(' ==> error', error);
                 console.log('error', error);
             }
-            );
+        );
     }
 
     const handleClickOpen = () => {
@@ -249,66 +249,68 @@ const Curso4 = (props) => {
                                                 </p>
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
                                             </Col>
-                                        
-{/*                                 
-                                        <Col>
-                                        <h4 className="compartirCursoTitulo">Compartír</h4>
-                                        <ul className="list-inline list-inlineRedes list-inlineRedesTop">
-                                        <li className="list-inline-item">
-                                            <a>
-                                                <FacebookShareButton
-                                                   url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                    // quote={curso.nombre}
-                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
-                                                >
 
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
-                                                        network="facebook"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                    />
-                                                </FacebookShareButton>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a>
-                                                <TwitterShareButton
-                                                   url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                //    title={curso.nombre}
-                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
-                                                    target_blank
-                                                >
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
-                                                        network="twitter"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                    />
-                                                </TwitterShareButton>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" rel="noopener noreferrer">
-                                                <WhatsappShareButton
-                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                //  url={curso.nombre}
-                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+                                            <div className="contenedorCompartirCursosCap">
+                                                <Col>
+                                                    <h4 className="compartirCursoTitulo">Compartír</h4>
+                                                    <ul className="list-inline list-inlineRedes list-inlineRedesTop">
+                                                        <li className="list-inline-item">
+                                                            <a>
+                                                                <FacebookShareButton
+                                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                                    // quote={curso.nombre}
+                                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                                >
 
-                                                >
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
-                                                        network="whatsapp"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                        
-                                                    />
-                                                </WhatsappShareButton >
-                                            </a>
-                                        </li>
-                                    </ul>
-                                        </Col> */}
-                                 
+                                                                    <SocialIcon
+                                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                                        network="facebook"
+                                                                        bgColor="#01B7E8"
+                                                                        fgColor="white"
+                                                                    />
+                                                                </FacebookShareButton>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a>
+                                                                <TwitterShareButton
+                                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                                    //    title={curso.nombre}
+                                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                                    target_blank
+                                                                >
+                                                                    <SocialIcon
+                                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                                        network="twitter"
+                                                                        bgColor="#01B7E8"
+                                                                        fgColor="white"
+                                                                    />
+                                                                </TwitterShareButton>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" rel="noopener noreferrer">
+                                                                <WhatsappShareButton
+                                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                                    //  url={curso.nombre}
+                                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+
+                                                                >
+                                                                    <SocialIcon
+                                                                        style={{ height: 35, width: 35, marginTop: -9.5, padding: 2 }}
+                                                                        network="whatsapp"
+                                                                        bgColor="#01B7E8"
+                                                                        fgColor="white"
+
+                                                                    />
+                                                                </WhatsappShareButton >
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </Col>
+                                            </div>
+
+
                                             <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
                                                 <div className="contenedorImagenyContenido">
                                                     <img src={banner} alt="We are Digital Agency" className="img-fluid imgBackReqCursos"></img>
@@ -519,25 +521,25 @@ const Curso4 = (props) => {
                                 </Container>
                                 <Row className="justify-content-center">
                                     {
-                                        curso.fechaInscrpcion && curso.active?
+                                        curso.fechaInscrpcion && curso.active ?
                                             (
                                                 <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                             )
                                             :
                                             (
-                                                <Button  
+                                                <Button
                                                     // to={curso.UrlToRedirect}
                                                     className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
                                                     onClick={handleClickOpen}
                                                 >
-                                                    Quiero que me avisen cuando abran inscripciones 
-                                                </Button>                                            
+                                                    Quiero que me avisen cuando abran inscripciones
+                                                </Button>
                                             )
 
                                     }
                                 </Row>
                             </section>
-                            
+
                         </div>
                     </div>
                     <div className="ContenedorResponsiveCursosHidden">
@@ -801,19 +803,19 @@ const Curso4 = (props) => {
                                         }
                                         <Row className="justify-content-center">
                                             {
-                                                curso.fechaInscrpcion  && curso.active?
+                                                curso.fechaInscrpcion && curso.active ?
                                                     (
                                                         <a href={curso.UrlToRedirect} className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2">Quiero inscribirme</a>
                                                     )
                                                     :
                                                     (
-                                                        <Button  
+                                                        <Button
                                                             // to={curso.UrlToRedirect}
-                                                             className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
-                                                             onClick={handleClickOpen}
+                                                            className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado2"
+                                                            onClick={handleClickOpen}
 
                                                         >
-                                                            Quiero que me avisen cuando abran inscripciones 
+                                                            Quiero que me avisen cuando abran inscripciones
                                                         </Button>
                                                     )
 
@@ -824,10 +826,10 @@ const Curso4 = (props) => {
                                                 onClose={handleClose}
                                                 aria-labelledby="responsive-dialog-title"
                                             >
-                                              {/* <DialogTitle id="responsive-dialog-title">{"Completá tus datos para que podamos notificarte"}</DialogTitle>  */}
+                                                {/* <DialogTitle id="responsive-dialog-title">{"Completá tus datos para que podamos notificarte"}</DialogTitle>  */}
                                                 <DialogContent>
                                                     <DialogContentText>
-                                                    Completá tus datos para que podamos notificarte 
+                                                        Completá tus datos para que podamos notificarte
                                                     </DialogContentText>
                                                     <TextField
                                                         autoFocus
@@ -839,7 +841,7 @@ const Curso4 = (props) => {
                                                         type="name"
                                                         fullWidth
                                                     />
-                                                     <TextField
+                                                    <TextField
                                                         autoFocus
                                                         margin="dense"
                                                         id="apellido"
@@ -859,7 +861,7 @@ const Curso4 = (props) => {
                                                         type="number"
                                                         fullWidth
                                                     />
-                                                     <TextField
+                                                    <TextField
                                                         autoFocus
                                                         margin="dense"
                                                         id="email"
@@ -869,7 +871,7 @@ const Curso4 = (props) => {
                                                         type="email"
                                                         fullWidth
                                                     />
-                                                     <TextField
+                                                    <TextField
                                                         autoFocus
                                                         margin="dense"
                                                         id="tel"
@@ -881,8 +883,8 @@ const Curso4 = (props) => {
                                                     />
                                                 </DialogContent>
                                                 <DialogActions>
-                                                    <Button 
-                                                        autoFocus onClick={handleClose} 
+                                                    <Button
+                                                        autoFocus onClick={handleClose}
                                                         color="primary"
                                                         className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
                                                     >
@@ -891,8 +893,8 @@ const Curso4 = (props) => {
                                                     <Button
                                                         onClick={handlerEnviar}
                                                         color="primary" autoFocus
-                                                    className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
-    
+                                                        className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive"
+
                                                     >
                                                         CONTINUAR
                                                     </Button>
@@ -907,61 +909,61 @@ const Curso4 = (props) => {
                                 <Container className="contenedorCompartirRedesCentrado">
                                     <Row>
                                         <Col>
-                                        <h4 className="compartirCursoTitulo">Compartír</h4>
-                                        <ul className="list-inline list-inlineRedes list-inlineRedesTop">
-                                        <li className="list-inline-item">
-                                            <a>
-                                                <FacebookShareButton
-                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                    // quote={curso.nombre}
-                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
-                                                >
+                                            <h4 className="compartirCursoTitulo">Compartír</h4>
+                                            <ul className="list-inline list-inlineRedes list-inlineRedesTop">
+                                                <li className="list-inline-item">
+                                                    <a>
+                                                        <FacebookShareButton
+                                                            url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                            // quote={curso.nombre}
+                                                            className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                        >
 
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
-                                                        network="facebook"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                    />
-                                                </FacebookShareButton>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a>
-                                                <TwitterShareButton
-                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                //    title={curso.nombre}
-                                                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
-                                                    target_blank
-                                                >
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
-                                                        network="twitter"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                    />
-                                                </TwitterShareButton>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" rel="noopener noreferrer Demo__some-network__share-buttonPadding">
-                                                <WhatsappShareButton
-                                                //  title={curso.nombre}
-                                                    url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
-                                                    className="Demo__some-network__share-button"
+                                                            <SocialIcon
+                                                                style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                                network="facebook"
+                                                                bgColor="#01B7E8"
+                                                                fgColor="white"
+                                                            />
+                                                        </FacebookShareButton>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <TwitterShareButton
+                                                            url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                            //    title={curso.nombre}
+                                                            className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                                                            target_blank
+                                                        >
+                                                            <SocialIcon
+                                                                style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                                network="twitter"
+                                                                bgColor="#01B7E8"
+                                                                fgColor="white"
+                                                            />
+                                                        </TwitterShareButton>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" rel="noopener noreferrer Demo__some-network__share-buttonPadding">
+                                                        <WhatsappShareButton
+                                                            //  title={curso.nombre}
+                                                            url={`https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`}
+                                                            className="Demo__some-network__share-button"
 
-                                                >
-                                                    <SocialIcon
-                                                        style={{ height: 35, width: 35, marginTop: -9.5 }}
-                                                        network="whatsapp"
-                                                        bgColor="#01B7E8"
-                                                        fgColor="white"
-                                                        
-                                                    />
-                                                </WhatsappShareButton >
-                                            </a>
-                                        </li>
-                                    </ul>
+                                                        >
+                                                            <SocialIcon
+                                                                style={{ height: 35, width: 35, marginTop: -9.5 }}
+                                                                network="whatsapp"
+                                                                bgColor="#01B7E8"
+                                                                fgColor="white"
+
+                                                            />
+                                                        </WhatsappShareButton >
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </Col>
                                     </Row>
                                 </Container>

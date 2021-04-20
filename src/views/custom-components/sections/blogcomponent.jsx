@@ -114,9 +114,9 @@ console.log('============', props.cardCursosInfo.Cursos);
                 <Container>
                     <Row className="justify-content-left">
                         <Col md="6" className="align-self-left text-left">
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
-                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href=""><span>CONTACTO <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href="https://capacitaciones.chaco.gob.ar/mod/page/view.php?id=697"><span>PREGUNTAS FRECUENTES  <i className="ti-arrow-right"></i></span></a>
+                            <a className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" href="https://docs.google.com/forms/d/e/1FAIpQLSePDRc-9AWh5h59F5WY3cY52v9AtcphAokKId_Nw93ZsRkyBA/viewform"><span>QUIERO OTRAS CAPACITACIONES <i className="ti-arrow-right"></i></span></a>
+                            <Link className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btonContactoInfoCap btonContactoInfoCapResponsive" data-toggle="collapse" to="/contact"><span>CONTACTO <i className="ti-arrow-right"></i></span></Link>
                         </Col>
                     </Row>
                     <Row className="justify-content-left">

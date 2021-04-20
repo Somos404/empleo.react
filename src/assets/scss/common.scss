@@ -1289,6 +1289,15 @@ Incentivos Cards
     .containerRequerimientosResponsive {
         display: none;    
     }
+    .contenedor-logos-footerInfoCapHeiht{
+        // background-size: cover;
+     height: inherit!important;
+    display: flex;
+    left: 0;
+    align-items: center;
+    margin-top: -21%!important;
+    margin-left: 20%;
+    }
 }
 
 .card-sumate{
@@ -3558,13 +3567,32 @@ top: 9% !important;
         margin-top: 5.2%;
     }
 }
+.backImagenSeconCont{
+    // margin-right: -11.1%!important;
+    position: relative;
+    margin-right: -11.1% !important;
+    margin-top: -27em;
+}
+.contenedorCompartirCursosCap {
+    height: 70px;
+    /* align-items: center; */
+    margin-left: 18em;
+}
 
 
 @media (max-width:1468px){
     .backImagenSeconCont{
         margin-right: -11.1%!important;
-       
+        position: relative;
+        margin-right: -11.1% !important;
+        margin-top: -27em;
     }
+    .contenedorCompartirCursosCap {
+        height: 70px;
+        /* align-items: center; */
+        margin-left: 18em;
+    }
+    
     .textoEspeEscritorio{
         line-height: 35px;
     }
@@ -3609,7 +3637,7 @@ top: 9% !important;
     }    
     .imgResponsiveInformatCapMArginLeft {
     
-        margin-top: 7%;
+        margin-top: 10%;
     }
 }
 
@@ -3740,7 +3768,7 @@ top: 9% !important;
 }
 
 .compartirCursoTitulo{
-    margin-left: 1%;
+    margin-left: 7%;
 }
 
 //DASHBOARD
@@ -3751,4 +3779,8 @@ top: 9% !important;
 //titulo de los cursos
 .rowSecondParrafoBold{
     width: 19em!important;
+}
+
+.contenedorCompartirCursosCap{
+    display: fle;
 }
