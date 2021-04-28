@@ -229,7 +229,7 @@ const CardCursos = (props) => {
                                             key={i+'cards'}
                                             infoCursos = {{
                                                 ...curso, 
-                                                share: `https://empleo.chaco.gob.ar/curso/${curso.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`
+                                                share: `https://empleo.chaco.gob.ar/capacitaciones/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\?/g, '').replace(/\¿/g, '')}`
                                             }}
                                         />
                                     ))
