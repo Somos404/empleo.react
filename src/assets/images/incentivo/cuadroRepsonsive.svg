@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106.612" height="72.08" viewBox="0 0 106.612 72.08">
+  <g id="cuadroRepsonsive" transform="translate(-60.271 -583.081)">
+    <g id="Grupo_528" data-name="Grupo 528" transform="translate(1)">
+      <path id="Trazado_2905" data-name="Trazado 2905" d="M155.135,610.753v-22.69a4.232,4.232,0,0,0-4.232-4.232H67.627a4.232,4.232,0,0,0-4.232,4.232v22.69" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Trazado_2906" data-name="Trazado 2906" d="M63.4,627.489v22.69a4.232,4.232,0,0,0,4.232,4.232H150.9a4.232,4.232,0,0,0,4.232-4.232v-22.69" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="Grupo_530" data-name="Grupo 530">
+      <path id="Trazado_2909" data-name="Trazado 2909" d="M166.133,618.526a4.834,4.834,0,1,1-4.834-4.834A4.835,4.835,0,0,1,166.133,618.526Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Trazado_2910" data-name="Trazado 2910" d="M161.3,620.846a2.32,2.32,0,1,1,2.32-2.32A2.323,2.323,0,0,1,161.3,620.846Z" fill="#00b7e8" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <line id="Línea_63" data-name="Línea 63" x1="92.584" transform="translate(63.395 618.526)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.75"/>
+    <path id="Trazado_2911" data-name="Trazado 2911" d="M63.341,620.847a2.32,2.32,0,1,1,2.32-2.32A2.322,2.322,0,0,1,63.341,620.847Z" fill="#00b7e8" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

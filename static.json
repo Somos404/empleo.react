@@ -1,0 +1,7 @@
+{
+    "root": "build/",
+    "routes": {
+      "/**": "index.html",
+      "/informatorio**": "informatorio.jsx"
+    }
+  }

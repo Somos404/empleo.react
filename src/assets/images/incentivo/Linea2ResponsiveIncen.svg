@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.62" height="10.908" viewBox="0 0 104.62 10.908">
+  <g id="Linea2ResponsiveIncen" transform="translate(-160.69 -620.935)">
+    <g id="lineaIncenRepsonsive2" transform="translate(264.561 628.246) rotate(180)">
+      <line id="Línea_63" data-name="Línea 63" x1="96.587" transform="translate(2.477 2.421)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.75"/>
+      <path id="Trazado_2911" data-name="Trazado 2911" d="M2.42,4.842a2.421,2.421,0,1,1,2.42-2.42A2.423,2.423,0,0,1,2.42,4.842Z" fill="#00b7e8" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="Grupo_530" data-name="Grupo 530" transform="translate(170.849 631.094) rotate(180)">
+      <path id="Trazado_2909" data-name="Trazado 2909" d="M9.408,4.7A4.7,4.7,0,1,1,4.7,0,4.7,4.7,0,0,1,9.408,4.7Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Trazado_2910" data-name="Trazado 2910" d="M2.258,4.516A2.258,2.258,0,1,1,4.516,2.258,2.261,2.261,0,0,1,2.258,4.516Z" transform="translate(2.446 2.445)" fill="#00b7e8" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
