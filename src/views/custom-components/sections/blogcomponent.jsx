@@ -45,7 +45,7 @@ import AddIcon from '@material-ui/icons/Add';
 
 
 const BlogComponent = (props) => {
-// console.log('============', props.cardCursosInfo.Cursos);
+console.log('============', props.cardCursosInfo.Cursos);
     return (
         <div>
             <div className="coming-soon" id="coming">

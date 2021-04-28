@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-
 import logo from '../../assets/images/logos/logo1.png';
 import { scroller } from 'react-scroll';
 
@@ -49,7 +48,6 @@ const Header = () => {
                             <NavItem>
                                 <a className="nav-link navSocialResponsive" href="https://www.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer">
                                     <div className="round-social light">
-
                                         <i className="fa fa-facebook icono-face"></i>
                                     </div>
                                 </a>
@@ -143,7 +141,6 @@ const Header = () => {
                                 boton copete <Link to="/#coming" className="btn btn-success-gradiant font-14">Incentivos para el Empleo</Link>
                             </div>*/}
                         </Collapse>
-
                     </Navbar>
                 </Container>
             </div>

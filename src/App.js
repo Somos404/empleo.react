@@ -99,18 +99,18 @@ function App() {
                 <Informatorio
                 {...props}
                 />
-            )}
-            />
+                )}
+                />
                 {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
                 
                 <Route 
-                    path="/capacitaciones" 
+                    exact path="/capacitaciones" 
                     render={props => (
                     <Capacitaciones
                     {...props}
+                    />
+                    )}
                 />
-            )}
-            />
               
                 {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
                 {
@@ -231,7 +231,7 @@ function App() {
                     Category.Cursos.map(curso =>  (
                         <Route
                             key={Category.categoria}
-                            path={`/curso/${Category.categoria.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
+                            path={`/capacitaciones/${curso.nombre.replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\s+/g, '-').replace(/\¿/g, '').replace(/\?/g, '')}`}
                             render={props => (
                                 <CursoMesh
                                     curso={curso}
