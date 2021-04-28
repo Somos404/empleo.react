@@ -102,7 +102,8 @@ const filtro = (Arr, value) => {
         Arr.forEach(element => {
             array = array.concat(element.Cursos.map(v => ({...v, categoria: element.categoria})));
         });
-        return array
+        return array.filter((v,i,a)=>a.findIndex(t=>(t.id === v.id))===i)
+        //return array
     }else{
         return Arr.find(e => e.categoria === value).Cursos.map(obj=> ({ ...obj, categoria: value}))
     }
