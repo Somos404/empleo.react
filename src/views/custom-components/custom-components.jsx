@@ -23,7 +23,7 @@ import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import CallToAction from "../../components/call-to-action/CallToAction"
 
-const CustomComponents = () => {
+const CustomComponents = (props) => {
     return (
         <div id="main-wrapper">
             <Header />
@@ -41,7 +41,7 @@ const CustomComponents = () => {
                     <PricingComponent />
                     {/* <CardCursos /> */}
                     <TestimonialComponent />
-                    <BlogComponent />
+              
                     <C2aComponent />
                     <ContactComponent />
                     <CallToAction />

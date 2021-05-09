@@ -1,0 +1,156 @@
+
+
+.previousButton, .nextButton {
+    position: absolute;
+    top: 78%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url('https://svgshare.com/i/X31.svg') no-repeat center center / 16px;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    cursor: pointer;
+    color: white;
+    border: 5px solid white;
+    border-radius: 30em;
+}
+
+.previousButton:hover, .nextButton:hover {
+background: url('https://svgshare.com/i/X31.svg') no-repeat center center / 16px;
+}
+.lineaSlider{
+    background-color: white;
+    width: 17em;
+    margin-left: 5em;
+    margin-top: -3em;
+}
+.previousButton {
+margin-left: 5em;
+-webkit-transform: rotate(90deg) translateY(calc(50% + 0px));
+      transform: rotate(90deg) translateY(calc(50% + 0px));
+}
+
+.previousButton:hover {
+
+}
+
+.nextButton {
+right: 5em;
+-webkit-transform: rotate(270deg) translateY(calc(50% + 0px));
+      transform: rotate(270deg) translateY(calc(50% + 0px));
+}
+
+.nextButton:hover {
+
+}
+
+.slider-content {
+text-align: center;
+}
+
+.slider-content .inner {
+padding: 0 70px;
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+.slider-content .inner button{
+-webkit-transition-delay: 0s;
+      transition-delay: 0s;
+}
+
+.slider-content .inner h1 {
+font-weight: 900;
+margin: 0 auto;
+max-width: 840px;
+color: #FFFFFF;
+font-size: 64px;
+line-height: 1;
+}
+
+.slider-content .inner p {
+color: #FFFFFF;
+font-size: 14px;
+line-height: 1.5;
+margin: 20px auto 30px;
+max-width: 640px;
+}
+
+.slider-content section {
+position: absolute;
+bottom: 20px;
+left: 20px;
+}
+
+.slider-content section span {
+color: #FFFFFF;
+}
+
+.slider-content section span {
+color: rgba(255, 255, 255, 0.5);
+font-size: 12px;
+display: inline-block;
+text-align: left;
+line-height: 1.4;
+vertical-align: middle;
+margin-left: 10px;
+}
+
+.slider-content section img {
+width: 40px;
+height: 40px;
+border: solid 2px rgba(255, 255, 255, 0.5);
+border-radius: 100%;
+vertical-align: middle;
+}
+
+.slider-content section span strong {
+color: #FFFFFF;
+font-size: 14px;
+display: block;
+}
+
+@media (max-height: 500px) {
+.slider-wrapper, .slide {
+height: calc(100vh - 75px);
+}    
+}
+
+@media (max-width: 640px) {
+.slider-wrapper, .slide {
+height: calc(80vh - 75px);
+}    
+}
+
+@media (max-height: 600px) {
+.slider-content .inner h1 {
+font-size: 32px;
+}    
+      
+.previousButton, .nextButton {
+    position: absolute;
+    top: 90%!important;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url('https://svgshare.com/i/X31.svg') no-repeat center center / 16px;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    cursor: pointer;
+    color: white;
+    border: 5px solid white;
+    border-radius: 30em;
+}
+
+}
+
+@media (max-width: 640px) {
+.slider-content .inner h1 {
+font-size: 32px;
+}
+}

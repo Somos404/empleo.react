@@ -17,6 +17,7 @@ import Card from '../../custom-components/sections/Card'
 import img from '../../../assets/images/cursos/card/Rectangulo.png'
 
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import SliderCapacitaciones from "./Slider";
 
 const useStyles = makeStyles((theme) => ({
     container:{
@@ -36,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     sectionCard:{
         zIndex: '9',
         position: 'absolute',
-        marginTop: props => props.marginTop,
         width: '100%',
         height: '16em',
     },
@@ -167,9 +167,13 @@ const CardCursos = (props) => {
     return (
         <div className={`${classes.container} team2`} /* style={{position: 'relative',width: '100%',height: `${setHeight()}px`}} */>
             <div className={classes.sectionSearch}>
-                <Row className="justify-content-center">
+            <div>
+               <SliderCapacitaciones /> 
+              
+                </div>
+                <Row className="contenedor-busquedaCap justify-content-center">
                     <Col md="12" className="text-center">
-                        <h1 className="tituloCursosFiltro">Seleccioná tu curso</h1>
+                        <h1 className="tituloCursosFiltro">Màs Cursos</h1>
                         <div className={classes.search}>
                             <FormControl variant="outlined" className={classes.formControl}>
                                 <Select

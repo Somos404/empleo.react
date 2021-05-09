@@ -1995,6 +1995,64 @@ line-height: 1;
                 margin-right: 2%;
                 margin-top: -17%;
             }
+            .containerCardCategorias{
+        
+                margin-top: 39em;
+            }
+            .headerSliderCapDemo{
+                display: flex;
+                align-items: center;
+                height: 50;
+               margin-top: 5em;
+                background-color: red;
+            }
+            .tituloSliderCursos{
+                font-size: 1rem;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 600!important;
+                line-height: 1.5;
+                text-align: center!important;
+                letter-spacing: 0.00938em;
+                margin-top: 10em!important;
+                color: white;
+                position: absolute;
+                z-index: 3;
+            }
+            .descripcionCursos{
+                font-size: 1rem;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 300!important;
+                line-height: 1.5;
+                text-align: center;
+                letter-spacing: 0.00938em;
+                margin-top: 15em!important;
+                color: white;
+                position: absolute;
+                z-index: 3;
+            }
+            .colTituloSlider {
+                width: 5em;
+                margin-left: 0;
+                font-size: 1.3rem;
+                text-align: center;
+                padding: 0em;
+                margin-top: -2.5em;
+                padding: .3em;
+            }
+            .tituloSlider{
+                font-size: 1.3rem;
+            }
+            .lineaSlider{
+                display: none;
+            }
+                        
+            .coldescripcionloSlider{
+                display: none;
+            }
+            .tituloCursosFiltro{
+                color: black;
+                margin-top: -18em;
+            }
         }
     
         @media(max-width:360px) {

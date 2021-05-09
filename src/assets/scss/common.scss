@@ -3329,6 +3329,7 @@ top: 9% !important;
 
 .containerCardCategorias{
     max-width: 1569px;
+    margin-top: 39em;
 }
 .marginColHeaderCap{
     margin-top: 5%;
@@ -3598,6 +3599,11 @@ top: 9% !important;
     margin-left: 18em;
 }
 
+.contenedor-busquedaCap{
+    margin-top: 25em;
+}
+
+
 
 @media (max-width:1468px){
     .backImagenSeconCont{
@@ -3756,8 +3762,16 @@ top: 9% !important;
 .tituloCursosFiltro{
     font-size: 31px!important;
     font-weight: bold;
-    color: #ffffff;
+    color: black;
     margin-top: 1em;
+}
+.colTituloSlider{
+    width: 5em;
+    margin-left: 7em;
+}
+.coldescripcionloSlider{
+    width: 45em;
+    margin-right: 25em;
 }
 
 .backAccordeonRespuesta{

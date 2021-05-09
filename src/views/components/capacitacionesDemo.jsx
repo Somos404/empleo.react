@@ -12,6 +12,7 @@ import Cursosfuturos from "../custom-components/sections/cursosfuturos";
 import CardCursos from "../custom-components/sections/cardCursos";
 import BlogComponent from "./informatorioCapacitaciones";
 
+
 import {
     Card,
     CardTitle,
@@ -234,7 +235,10 @@ const CapacitacionesDemo = (props) => {
                                     </Card>
                                 </CardGroup>
                             </Container>
+           
+            
                         </div>
+          
                         {
                             categoria === 'categoria' ?
                                 <CardCategorias
