@@ -167,6 +167,7 @@ const CardCursos = (props) => {
     return (
         <div className={`${classes.container} team2`} /* style={{position: 'relative',width: '100%',height: `${setHeight()}px`}} */>
             <div className={classes.sectionSearch}>
+            <h1 className="tituloCursosInscripciones">Inscripciones abiertas</h1>
             <div>
                <SliderCapacitaciones /> 
               

@@ -108,7 +108,7 @@ const content = [
             <div
                 key={index}
                 className="slider-content"
-                style={{ background: `url('${item.image}') no-repeat center center`, height: '20em', marginTop: '3.5em', color: 'white' }}
+                style={{ background: `url('${item.image}') no-repeat center center`, height: '20em', marginTop: '0em', color: 'white' }}
             >
                  <div className="center">
                  <Row>
