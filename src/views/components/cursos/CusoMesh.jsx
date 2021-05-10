@@ -241,7 +241,7 @@ const Curso4 = (props) => {
                                                     <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
                                                     </Grid>
                                                 </div>                                                                                          
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight fontWeight">
                                                     {
                                                         curso.descripcionLarga.map(text => (
                                                             <>
@@ -250,10 +250,10 @@ const Curso4 = (props) => {
                                                         ))
                                                     }
                                                 </p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight parrafoCursos ">
                                                     {
                                                         curso.requerimientos.length > 0 &&
-                                                        <><strong>Para cursarlo necesitarás:</strong> <br /></>
+                                                        <>Para cursarlo necesitarás: <br /></>
                                                     }
                                                     {
                                                         curso.requerimientos.map(text => (
@@ -602,10 +602,10 @@ const Curso4 = (props) => {
                                 </Row>
                                 <div className="separadorSM"></div>
                                 <Row className="justify-content-left">
-                                    <p className="text-left parrafoCursosBold">
+                                    <p className="text-left parrafoCursos">
                                         {
                                             curso.requerimientos.length > 0 &&
-                                            <><strong>Para cursarlo necesitarás:</strong> <br /></>
+                                            <>Para cursarlo necesitarás: <br /></>
                                         }
                                         {
                                             curso.requerimientos.map(Text => (
@@ -618,7 +618,7 @@ const Curso4 = (props) => {
                                 </Row>
                                 <div className="separadormM"></div>
                                 <Row className="justify-content-left">
-                                    <p className="text-left parrafoCursos">
+                                    <p className="text-left parrafoCursos fontWeight">
                                         Aprovechalo!
                                             </p>
                                 </Row>
@@ -629,8 +629,10 @@ const Curso4 = (props) => {
                             <Container>
                                 <Col>
                                     <Row className="justify-content-center">
-                                        <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado">Especificaciones</a>
+                                        <h1  className="text-center title titleCursosResponsive tituloCotnenidoCursosTop">Especificaciones</h1>
                                     </Row>
+                                    <hr className="justify-content-center lineaCopada" />
+
                                     <Row className="justify-content-center">
                                         <Col md="8">
 

@@ -48,28 +48,28 @@ const Header = () => {
                             <NavItem>
                                 <a className="nav-link navSocialResponsive" href="https://www.facebook.com/empleochaco" target="_blank" rel="noopener noreferrer">
                                     <div className="round-social light">
-                                        <i className="fa fa-facebook icono-face"></i>
+                                        <i className="fa fa-facebook icono-face sizeIcon"></i>
                                     </div>
                                 </a>
                             </NavItem>
                             <NavItem>
                                 <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
                                     <div className="round-social light">
-                                        <i className="fa fa-instagram icono-ig"></i>
+                                        <i className="fa fa-instagram icono-ig sizeIcon"></i>
                                     </div>
                                 </a>
                             </NavItem>
                             <NavItem>
                                     <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
                                         <div className="round-social light">
-                                            <i className="fa fa-linkedin icono-lk"></i>
+                                            <i className="fa fa-linkedin icono-lk sizeIcon"></i>
                                         </div>
                                     </a>
                                 </NavItem>
                                 <NavItem>
                                     <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
                                         <div className="round-social light">
-                                            <i className="fa  fa-twitter icono-tw"></i>
+                                            <i className="fa  fa-twitter icono-tw sizeIcon"></i>
                                         </div>
                                     </a>
                                 </NavItem>
@@ -118,13 +118,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </NavItem>
-                                <NavItem>
-                                    <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer" style={{ color: color }}>
-                                        <div className="round-social light">
-                                            <i className="fa fa-linkedin icono-lk"></i>
-                                        </div>
-                                    </a>
-                                </NavItem>
+                               
                                 <NavItem>
                                     <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer" style={{ color: color }}>
                                         <div className="round-social light">
