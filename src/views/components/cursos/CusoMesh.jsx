@@ -57,6 +57,8 @@ import {
 import UserService from '../../../services/UserService';
 import Swal from 'sweetalert2'
 
+import Grid from '@material-ui/core/Grid';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -97,6 +99,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: theme.typography.pxToRem(15),
         fontWeight: "bold"
     },
+    rowTitulosCursos: {
+       
+    }
 }));
 
 const checkDate = (fecha) => {
@@ -221,11 +226,21 @@ const Curso4 = (props) => {
                         <div className="containerEscritorioCursosHidden">
                             <section>
                                 <div className="banner spacer BannerPContenedorEsc">
-                                    <Container>
+                                    <Container className="containerCursosHeight">
                                         <Row>
                                             <Col lg="5" md="7" className="align-self-center colCursosInfo">
-                                                <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
-                                                <hr className="justify-content-center lineaCopada" />
+                                                <div className="contenedorTituloCursos">
+                                                    <Grid 
+                                                        className={classes.rowTitulosCursos}
+                                                        container
+                                                        direction="row"
+                                                        justify="flex-start"
+                                                        alignItems="center"
+                                                     
+                                                    >
+                                                    <h2 className="title font-bold rowSecondParrafoBold">{curso.nombre}</h2>
+                                                    </Grid>
+                                                </div>                                                                                          
                                                 <p className="m-t-40 m-b-30 rowSecondParrafoLight">
                                                     {
                                                         curso.descripcionLarga.map(text => (
@@ -248,12 +263,13 @@ const Curso4 = (props) => {
                                                         ))
                                                     }
                                                 </p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight fontWeight">¡Aprovechalo!</p>
                                             </Col>
 
-                                            <Col lg="6" md="5" className="align-self-center ml-auto  backImagenSeconCont">
+                                            <Col lg="6" md="5" className="align-self-center ml-auto">
 
                                                 <div className="contenedorCompartirCursosCap">
+                                                    <Row>
                                                     <h4 className="compartirCursoTitulo">Compartír</h4>
                                                     <ul className="list-inline list-inlineRedes list-inlineRedesTop">
                                                         <li className="list-inline-item">
@@ -329,14 +345,14 @@ const Curso4 = (props) => {
                                                         </li>
 
                                                     </ul>
+                                                    </Row>
+                                                    
                                                 </div>
 
                                                 <div className="contenedorImagenyContenido">
-                                                    <img src={banner} alt="We are Digital Agency" className="img-fluid imgBackReqCursos"></img>
+                                                    <div className="fondoGrisCursos"></div>
                                                     <div className="contenidoCursos">
-                                                        <Row className="justify-content-center">
-                                                            <span className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificadoEscritorio btnCursosModificadoEscritorioCursorNone">Especificaciones</span>
-                                                        </Row>
+                                                     
                                                         {
                                                             curso.especificaciones[0] != undefined &&
                                                             <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
@@ -357,6 +373,7 @@ const Curso4 = (props) => {
                                                             </CardBody>
 
                                                         }
+                                                   
 
                                                         <CardBody className="d-flex no-block cardEspecificacionesResponsive cardEspecificacionesEscritorio">
                                                             <div className="m-r-20 contenedorImgEspecificaciones"> <img src={img3} width="70" className="rounded imagenEspecificacionesEscritorio" alt="img" /></div>
@@ -371,6 +388,7 @@ const Curso4 = (props) => {
                                                             </div>
                                                         </CardBody>
                                                     </div>
+                                                    <div className="fondoGrisCursosF"></div>
                                                 </div>
                                             </Col>
 

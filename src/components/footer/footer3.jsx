@@ -14,8 +14,9 @@ const Footer3 = () => {
                
                    {/* <Col lg="12" md="12" sm="4" className="col-subse">  */}
                        <div className="contenedor contenedor-min contenedor-minMarginTop">
+                       <img src={img3} alt="img" className="imgRepsonsiveInfoCap imgRepsonsiveInfoCapWidthMin"  />    
                        <img src={img1} alt="img" className="imgRepsonsiveInfoCap imgRepsonsiveInfoCapWidth"  />  
-                       <img src={img3} alt="img" className="imgRepsonsiveInfoCap imgRepsonsiveInfoCapWidth"  />                      
+                                        
                        </div>
                    {/* </Col>  */}
                

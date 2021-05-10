@@ -33,6 +33,7 @@ import 'react-animated-slider/build/horizontal.css';
 
 import { AutoRotatingCarousel } from 'material-auto-rotating-carousel';
 import "./slider.css";
+import  imgSlider1  from "./slider/fondoSlider1.png";
 import "./slider-animations.css";
 
 
@@ -83,7 +84,7 @@ const content = [
 		title: 'Herramientas para el empleo',
 		description:
 		'En cuatro semanas vamos a compartir herramientas, saberes y sugerencias para favorecer tu inserciòn laboral. Abordaremos aquellos aspectos que son importantes a la hora de buscar trabajo, y profundizaremos en cuestiones que son valiosas al momento de acceder a un empleo',
-        image: 'https://i.imgur.com/DCdBXcq.jpg',
+        image: imgSlider1,
 	},
 	{
         title: 'Herramientas para el empleo',
@@ -108,7 +109,7 @@ const content = [
             <div
                 key={index}
                 className="slider-content"
-                style={{ background: `url('${item.image}') no-repeat center center`, height: '20em', marginTop: '0em', color: 'white' }}
+                style={{ background: `url('${item.image}') no-repeat center center`, height: '20em', marginTop: '0em', color: 'white', width: '100%' }}
             >
                  <div className="center">
                  <Row>
