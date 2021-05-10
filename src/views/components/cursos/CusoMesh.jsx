@@ -250,7 +250,7 @@ const Curso4 = (props) => {
                                                         ))
                                                     }
                                                 </p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoBold">
+                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">
                                                     {
                                                         curso.requerimientos.length > 0 &&
                                                         <><strong>Para cursarlo necesitarás:</strong> <br /></>
@@ -685,7 +685,7 @@ const Curso4 = (props) => {
                                     <Row className="justify-content-center">
                                         {
                                             curso.semanas != 0 &&
-                                            <h1 className="text-center title titleCursosResponsive">Contenido</h1>
+                                            <h1 className="text-center title titleCursosResponsive tituloCotnenidoCursosTop">Contenido</h1>
                                         }
 
                                     </Row>
