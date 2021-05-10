@@ -125,10 +125,10 @@ const Informatorio = (props) => {
                                                 <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
                                                     <Col>
                                                         <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform" width="200" /></span>
-                                                        <Col className="colbtnBtnEmpleo">
-                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Ingresar</h5>
+                                                        <Col className="colbtnBtnEmpleo colbtnBtnEmpleoTop">
+                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform botonAvisenLarge ">Quiero que me avisen cuando abran las inscripciones</h5>
                                                         </Col>
-                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2" width="200" /></span>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2 img-redireccionesBtnInform2Top" width="200" /></span>
                                                     </Col>
                                                 </CardBody>
                                             </Card>
@@ -205,7 +205,6 @@ const Informatorio = (props) => {
                                             <div className="paso-p">
                                                 Para conocer de qué se trata el mundo de la
                                                 programación e iniciarte en sus lenguajes.
-                                                Se realizará del 10/03/2021 al 10/04/2021.
                                                 </div>
                                             <div className="linea">
                                                 <img className="img-fluid" src={img9} alt="" />

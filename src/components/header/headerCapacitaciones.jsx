@@ -40,7 +40,7 @@ const Header = () => {
             <div className="header6">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
-                        <NavbarBrand href="https://empleo.chaco.gob.ar/capacitaciones" target="_blank" rel="noopener noreferrer"><img src={logo} alt="wrapkit" /></NavbarBrand>
+                        <NavbarBrand href="https://empleo.chaco.gob.ar/capacitaciones" target="_blank" rel="noopener noreferrer"><img className="logoResponsiveCap" src={logo} alt="wrapkit" /></NavbarBrand>
                         {/**
                          Iconos de Redes sociales -> Header Responsive 
                          */}
@@ -60,7 +60,7 @@ const Header = () => {
                                 </a>
                             </NavItem>
                             <NavItem>
-                                    <a className="nav-link navSocialResponsiveIg" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer">
+                                    <a className="nav-link navSocialResponsiveIg" href="https://www.linkedin.com/in/empleo-chaco-3142a4210/" target="_blank" rel="noopener noreferrer">
                                         <div className="round-social light">
                                             <i className="fa fa-linkedin icono-lk sizeIcon"></i>
                                         </div>
@@ -115,6 +115,13 @@ const Header = () => {
                                     <a className="nav-link navHiddenSocialResponsiveIg  nav-linkColor" href="https://www.instagram.com/empleochaco/" target="_blank" rel="noopener noreferrer" style={{ color: color }}>
                                         <div className="round-social light">
                                             <i className="fa fa-instagram icono-ig"></i>
+                                        </div>
+                                    </a>
+                                </NavItem>
+                                <NavItem>
+                                    <a className="nav-link navSocialResponsiveIg" href="https://www.linkedin.com/in/empleo-chaco-3142a4210/" target="_blank" rel="noopener noreferrer">
+                                        <div className="round-social light">
+                                            <i className="fa fa-linkedin icono-lk sizeIcon"></i>
                                         </div>
                                     </a>
                                 </NavItem>
