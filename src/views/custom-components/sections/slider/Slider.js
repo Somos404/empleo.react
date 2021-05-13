@@ -3,7 +3,7 @@ import { Row, Col} from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import customCss from './slider.scss';
+import './slider.scss';
 
 const Slidercustom = (props) => {
     const classes = useStyles();
@@ -21,7 +21,7 @@ const Slidercustom = (props) => {
                 {props.content.map((item, index) => (
                     <div
                         className={classes.contanerslider}
-                        style={{background: `url(http://localhost:3000/slider/${item.imgUrl}.png)`, backgroundSize: 'cover'}}
+                        style={{background: `url(https://empleo.chaco.gob.ar/slider/${item.imgUrl}.png)`, backgroundSize: 'cover'}}
                         key={index+'slider'}
                     >
                         <Row className={`${classes.mainContaner} mx-5 center center`}>
