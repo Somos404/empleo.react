@@ -27,9 +27,10 @@ import img4 from '../../assets/images/capacitaciones/iconoHorarios.svg';
 import imgInfo from '../../assets/images/capacitaciones/logoCapHeaderv1.png';
 import Slider from '../custom-components/sections/slider/Slider'
 import UserService from '../../services/UserService'
+import { makeStyles } from '@material-ui/core/styles';
 
 const CapacitacionesDemo = (props) => {
-
+    const classes = useStyles();
     const [slider, setSlider] = useState(undefined)
     
     useEffect(() => {
@@ -60,7 +61,7 @@ const CapacitacionesDemo = (props) => {
                         <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader" width="200" />
                     </Row>
                     <div className="spacer-Header spacer-HeaderCap">
-                        <Container className="containerPCap">
+                        <Container className={`${classes.containerPCapDemo} containerPCap`}>
                             <Row xs="2">
                                 <Col lg="6" className="">
                                     <section className="text-gray-600 body-font">
@@ -293,5 +294,15 @@ const CapacitacionesDemo = (props) => {
 CapacitacionesDemo.propTypes = {
     classes: PropTypes.object
 };
+
+
+const useStyles = makeStyles((theme) => ({
+    containerPCapDemo: {
+        [theme.breakpoints.down('sm')]: {
+            width: '195%',
+        },  
+    }
+   
+}));
 
 export default CapacitacionesDemo;

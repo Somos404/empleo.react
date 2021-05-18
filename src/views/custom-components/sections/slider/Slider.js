@@ -10,6 +10,7 @@ const Slidercustom = (props) => {
     const proppsslider = {
         autoplay: '10000',
     }
+
     return (
         <>
             <div className={classes.preslider}>
@@ -25,11 +26,10 @@ const Slidercustom = (props) => {
                         key={index+'slider'}
                     >
                         <Row className={`${classes.mainContaner} mx-5 center center`}>
-                            <Col className={classes.colContaner}>
+                            <Col className={classes.colContanerTitulo}>
                                 <h1 className={classes.title}>
                                     {item.title}
                                 </h1>
-                                <hr/>
                             </Col>
                             <Col className={classes.colContaner}>
                                 <p className={classes.descripcion}>
@@ -58,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
         color: 'white', 
         fontWeight: '900', 
         fontSize: '1.7rem',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.2rem',
+        },  
     },
     contanerslider:{
         //background: 'red',
@@ -69,18 +72,42 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         height: '17em'
     },
+    colContanerTitulo:{
+        textAlign: 'center',
+        alignItems: 'left',
+        lineHeight: 1,
+        marginTop: '-1em',
+        justifyContent: 'center',
+        maxWidth: '35em',
+        [theme.breakpoints.down('md')]: {
+            alignItems: 'center',
+            maxWidth: '100%',
+        },  
+    },
     colContaner:{
         alignItems: 'center',
         justifyContent: 'center',
+        maxWidth: '50%',
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
+        },  
     },
     title:{
         color: 'white', 
         fontWeight: '900', 
         fontSize: '1.5rem', 
+        textAlign: 'center',
+        textDecoration: 'underline white',
+        textUnderlineOffset: '2px',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.4rem',
+        }, 
     },
+   
     descripcion:{
         color: 'white', 
-        fontSize: '1rem'  
+        fontSize: '1rem',
+       
     }
    
 }));

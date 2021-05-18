@@ -15,7 +15,7 @@ const Header = () => {
     const desk = useMediaQuery('(min-width:992px)');
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
-    const [color, setColor] = useState(!desk ? 'black' : 'white');
+    const [color, setColor] = useState(!desk ? 'white' : 'black');
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
