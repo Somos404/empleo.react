@@ -53,6 +53,21 @@ class UserService {
     }
   }
 
+  getSlider() {
+    try {
+      return axios.get(API_URL + 'slider', {
+          headers: headers
+      }).then(response => {
+        return response.data;
+      }).catch((err) => {
+        return { err, data: { msg: 'Server error!!!' } };
+      });
+
+    } catch (error) {
+      console.log('error: ', error);
+    }
+  }
+
   getMuni() {
     try {
       return axios.get(API_URL + 'municipios', {

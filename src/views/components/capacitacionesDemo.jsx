@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
@@ -25,11 +25,31 @@ import img2 from '../../assets/images/capacitaciones/iconoCertificados.svg';
 import img3 from '../../assets/images/capacitaciones/iconoTutorados.svg';
 import img4 from '../../assets/images/capacitaciones/iconoHorarios.svg';
 import imgInfo from '../../assets/images/capacitaciones/logoCapHeaderv1.png';
-
+import Slider from '../custom-components/sections/slider/Slider'
+import UserService from '../../services/UserService'
 
 const CapacitacionesDemo = (props) => {
+
+    const [slider, setSlider] = useState(undefined)
+    
+    useEffect(() => {
+        UserService.getSlider().then(
+            data => {
+                if (data.ok) {
+                    setSlider(data.res)
+                }
+            },
+            error => {
+                //mensaje de error
+                alert("Error Envio");
+                console.log(' ==> error', error);
+            }
+        );
+    }, []);
+
+
+
     const [categoria, setCategoria] = React.useState(props.location.categoria?props.location.categoria:'Todos')
-    console.log('============>>>>', props.cursosAndCategias.find(object => object.categoria === 'Informatorio'));
     return (
         <div>
             <HeaderCapacitaciones />
@@ -37,9 +57,8 @@ const CapacitacionesDemo = (props) => {
                 <div className="container-fluid">
                     <HeaderBannerCapacitaciones />
                     <Row className="justify-content-center">
-                                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader" width="200" />
-
-                                            </Row>
+                        <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader" width="200" />
+                    </Row>
                     <div className="spacer-Header spacer-HeaderCap">
                         <Container className="containerPCap">
                             <Row xs="2">
@@ -235,6 +254,11 @@ const CapacitacionesDemo = (props) => {
                                 </CardGroup>
                             </Container>
                         </div>
+                        { slider &&
+                            <Slider
+                                content = {slider}
+                            />
+                        }
                         {
                             categoria === 'categoria' ?
                                 <CardCategorias

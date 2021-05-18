@@ -25,12 +25,13 @@ const useStyles = makeStyles((theme) => ({
         height: props => props.height,
     },
     sectionSearch:{
-        backgroundImage: `url(${img})`,
+        background: '(246,216,246)',
+        background: 'linear-gradient(180deg, rgba(246,216,246,1) 0%, rgba(255,255,255,1) 84%)',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         position: 'absolute',
-        height: '16em',
+        height: '32em',
         width: '100%',
     },
     sectionCard:{
@@ -169,7 +170,7 @@ const CardCursos = (props) => {
             <div className={classes.sectionSearch}>
                 <Row className="justify-content-center">
                     <Col md="12" className="text-center">
-                        <h1 className="tituloCursosFiltro">Seleccioná tu curso</h1>
+                        <h1 className="tituloCursosFiltro">Más Cursos</h1>
                         <div className={classes.search}>
                             <FormControl variant="outlined" className={classes.formControl}>
                                 <Select
@@ -241,82 +242,6 @@ const CardCursos = (props) => {
             </div>
         </div>
     )
-
-
-   /*  return (
-        <div className="spacer team2">
-            <Container className="containerCardCategorias">
-                <div className={classes.root}>
-                    <AppBar position="static" className={classes.appbar}>
-                        <Toolbar>
-                            <Typography className={classes.title} variant="h6" noWrap>
-                                {state.cursosFiltrados.length?state.cursosFiltrados.length:'0'} Cursos
-                            </Typography>
-
-                            <FormControl variant="outlined" className={classes.formControl}>
-                                <InputLabel className={classes.textColor} id="demo-simple-select-outlined-label">Categoria</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-outlined-label"
-                                    id="demo-simple-select-outlined"
-                                    value={state.categoria}
-                                    onChange={handleChange}
-                                    label="Categoria"
-                                >
-                                <MenuItem value="">
-                                    <em>Todos</em>
-                                </MenuItem>
-                                {
-                                    cursosAndCategias.map((e, i) =>  (
-                                        <MenuItem key={i+'MenuItemdropdow'} value={e.categoria}>{e.categoria}</MenuItem>
-                                    ))
-                                }
-                                </Select>
-                            </FormControl>
-                            <div className={classes.search}>
-                                <FormControl className={clsx(classes.margin, classes.textField)} variant="outlined">
-                                    <OutlinedInput
-                                        className={classes.textColor}
-                                        id="outlined-adornment-weight"
-                                        placeholder='Buscar...'
-                                        onChange={searchFilter}
-                                        value={state.search}
-                                        endAdornment={
-                                            <InputAdornment position="end">
-                                                <IconButton
-                                                    aria-label="toggle password visibility"
-                                                    edge="end"
-                                                >
-                                                <SearchIcon />
-                                                </IconButton>
-                                            </InputAdornment>
-                                            }
-                                        aria-describedby="outlined-weight-helper-text"
-                                        inputProps={{
-                                        'aria-label': 'weight',
-                                        }}
-                                        labelWidth={0}
-                                    />
-                                </FormControl>
-                            </div>
-                        </Toolbar>
-                    </AppBar>
-                </div>
-                <Row className="m-t-30 ">
-                    {
-                        state.cursosFiltrados.map((curso, i) =>  (
-                            <Card
-                                key={i+'cards'}
-                                categoria={state.categoria}
-                                infoCursos = {curso}
-                                imgUrl={curso.imgUrl} 
-                                UrlToRedirect={curso.UrlToRedirect}
-                            />
-                        ))
-                    }
-                </Row>
-            </Container>
-        </div> 
-    ) */
 }
 
 export default CardCursos;

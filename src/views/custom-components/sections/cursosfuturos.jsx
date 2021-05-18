@@ -16,7 +16,7 @@ const CardCursos = (props) => {
 
     const [state, setState] = React.useState({
         show : false,
-        text : 'VER MÁS CURSOS'
+        text : 'PRÓXIMOS CURSOS'
     })
     const classes = useStyles(state.show);
     return (
@@ -30,7 +30,7 @@ const CardCursos = (props) => {
                                     onClick={() => {
                                         setState({
                                             show: !state.show,
-                                            text: state.text === 'VER MÁS CURSOS'?'VER MENOS CURSOS':'VER MÁS CURSOS'
+                                            text: state.text === 'PRÓXIMOS CURSOS'?'VER MENOS CURSOS':'PRÓXIMOS CURSOS'
                                         })
                                     }}
                                     className={classes.button}

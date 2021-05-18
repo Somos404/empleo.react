@@ -664,6 +664,8 @@ redirecciones
     }
     .btnCursosModificado2{
         color: white;
+        white-space: normal;
+        word-wrap: break-word;
         background-color: #3C3C3B;
         font-weight: 500;
         margin-bottom: 2em;
@@ -1752,7 +1754,7 @@ width: 30%;
 .tituloCursosFiltro{
     font-size: 31px!important;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     margin-top: 1em;
 }
 .titleInfoCaHab{
