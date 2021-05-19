@@ -7,6 +7,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import logo from '../../assets/images/logos/logo1.png';
 import { scroller } from 'react-scroll';
+import { makeStyles } from '@material-ui/core/styles';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,8 @@ const Header = () => {
     const table = useMediaQuery('(max-width:992px)');
     const mobile = useMediaQuery('(max-width:768px)');
     const [color, setColor] = useState(!desk ? 'white' : 'black');
-    
+    const classes = useStyles();
+
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
@@ -38,7 +40,7 @@ const Header = () => {
     window.addEventListener('scroll', changeBackground);
     return (
         <div className={topbar ? 'topbar active' : 'topbarCap'} id="top">
-            <div className="header6">
+            <div className={`${classes.headerResponsive} header6`}>
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
                         <NavbarBrand href="https://empleo.chaco.gob.ar/capacitaciones" target="_blank" rel="noopener noreferrer"><img src={logo} alt="wrapkit" /></NavbarBrand>
@@ -149,4 +151,15 @@ const Header = () => {
     );
 
 }
+
+
+const useStyles = makeStyles((theme) => ({
+    headerResponsive: {
+        [theme.breakpoints.down('sm')]: {
+            backgroundColor: 'rgb(107 112 157);'
+        },  
+    }
+   
+}));
+
 export default Header;
