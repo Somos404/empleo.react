@@ -123,8 +123,8 @@ const BlogComponent = (props) => {
                             <div className="round-social light">
                                 <a href="https://www.facebook.com/empleochaco" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook facefooter"></i></a>
                                 <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram facefooter"></i></a>
-                                <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin facefooter"></i></a>
-                                <a href="https://www.instagram.com/empleochaco/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter facefooter"></i></a>
+                                <a href="https://www.linkedin.com/in/empleo-chaco-3142a4210/" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin facefooter"></i></a>
+                                <a href="https://twitter.com/empleochaco" className="link hvr-sweep-to-right fade-in " target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter facefooter"></i></a>
                             </div>
                         </Col>
                     </Row>

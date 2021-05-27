@@ -8,7 +8,7 @@ import './slider.scss';
 const Slidercustom = (props) => {
     const classes = useStyles();
     const proppsslider = {
-        autoplay: '10000',
+        autoplay: '5000',
     }
 
     return (
