@@ -57,85 +57,6 @@ import {
 import UserService from '../../../services/UserService';
 import Swal from 'sweetalert2'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '100%',
-    },
-    Especifi: {
-        height: '5em',
-        width: '100%',
-        backgroundColor: 'rgba(240, 240, 241, 0.4)',
-    },
-    cursoTituiloContainer: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
-        height: '5em',
-        backgroundColor: '#565251',
-    },
-    cursoTituiloText: {
-        marginLeft: '3em',
-        color: 'white',
-        fontSize: '25px',
-        fontWeight: '60px'
-    },
-    shareContainer:{
-        backgroundColor: '#565251',
-    },
-    shareTitle:{
-        color: 'white',
-        marginLeft: '2.5em',
-        marginRight: '.75em',
-    },
-    shareSeccion: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'start',
-        width: '100%',
-        height: '5em',
-        backgroundColor: '#2CB0CF',
-        backgroundImage: 'linear-gradient(to right, #2CB0CF, #7d446e, #a5427c)',
-        borderStartStartRadius: '20em',
-        borderEndStartRadius: '20em',
-    },
-    acordeon1: {
-        borderRadius: '20em!important',
-        zIndex: 3,
-        marginBottom: '1.3em',
-    },
-
-    acordeonEscritorio: {
-        borderRadius: '20em!important',
-        zIndex: 3,
-        marginBottom: '1.3em',
-    },
-    parrafoAcordeon: {
-        fontSize: ".7rem",
-        padding: "1em",
-        marginTop: "-2em"
-    },
-    acordionDetails: {
-        display: 'block',
-    },
-    tituloAcordeonEscritorio: {
-        padding: "1em",
-        fontSize: "1rem",
-        marginLeft: "2%",
-        marginTop: "-1em",
-        fontWeight: "bold",
-    },
-    parrafoAcordeonEscritorio: {
-        padding: "1em",
-        fontSize: "1rem",
-        marginLeft: "2%",
-        marginTop: "-1em",
-    },
-    heading: {
-        fontSize: theme.typography.pxToRem(15),
-        fontWeight: "bold"
-    },
-}));
 
 const checkDate = (fecha) => {
     let valido = false
@@ -328,7 +249,7 @@ const Curso4 = (props) => {
                                         </Row>
                                         <Row>
                                             <Col lg="7" md="7" className="align-self-center colCursosInfo">
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">
+                                                <p className={`${classes.textoCurso} m-t-40 m-b-30 rowSecondParrafoLight"`}>
                                                     {
                                                         curso.descripcionLarga.map(text => (
                                                             <>
@@ -337,7 +258,7 @@ const Curso4 = (props) => {
                                                         ))
                                                     }
                                                 </p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoBold">
+                                                <p className="m-t-40 m-b-30">
                                                     {
                                                         curso.requerimientos.length > 0 &&
                                                         <><strong>Para cursarlo necesitarás:</strong> <br /></>
@@ -350,7 +271,7 @@ const Curso4 = (props) => {
                                                         ))
                                                     }
                                                 </p>
-                                                <p className="m-t-40 m-b-30 rowSecondParrafoLight">¡Aprovechalo!</p>
+                                                <p  className={`${classes.textoCurso} m-t-40 m-b-30 rowSecondParrafoLight"`}>¡Aprovechalo!</p>
                                             </Col>
                                             <Col lg="5" md="5" className="align-self-center ml-auto  backImagenSeconCont">
                                                 <div>
@@ -591,7 +512,7 @@ const Curso4 = (props) => {
                                 </div>
                                 <hr className="justify-content-center lineaCopada" />
                                 <div className="justify-content-left">
-                                    <p className="text-left parrafoCursos">
+                                    <strong className={`${classes.textoCurso} text-left parrafoCursos"`}>
                                         {
                                             curso.descripcionLarga.map(text => (
                                                 <>
@@ -599,13 +520,13 @@ const Curso4 = (props) => {
                                                 </>
                                             ))
                                         }
-                                    </p>
+                                    </strong>
                                 </div>
                                 <div className="justify-content-left">
-                                    <p className="text-left parrafoCursosBold">
+                                    <p className="text-left mt-3">
                                         {
                                             curso.requerimientos.length > 0 &&
-                                            <><strong>Para cursarlo necesitarás:</strong> <br /></>
+                                            <>Para cursarlo necesitarás:<br /></>
                                         }
                                         {
                                             curso.requerimientos.map(Text => (
@@ -617,9 +538,9 @@ const Curso4 = (props) => {
                                     </p>
                                 </div>
                                 <div className="justify-content-left">
-                                    <p className="text-left parrafoCursos">
+                                    <strong className={`${classes.textoCurso} text-left parrafoCursos"`}>
                                         Aprovechalo!
-                                    </p>
+                                    </strong>
                                 </div>
                             </div>
                         </Container>
@@ -628,8 +549,9 @@ const Curso4 = (props) => {
                             <Container>
                                 <Col>
                                     <Row className="justify-content-center">
-                                        <a href="" className="btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 btnCursosModificado">Especificaciones</a>
+                                        <h1 className={`${classes.tituloContenido} text-center title titleCursosResponsive`}>Especificaciones</h1>
                                     </Row>
+                                    <hr className="justify-content-center lineaCopada" />
                                     <Row className="justify-content-center">
                                         <Col md="8">
 
@@ -684,7 +606,7 @@ const Curso4 = (props) => {
                                     <Row className="justify-content-center">
                                         {
                                             curso.semanas != 0 &&
-                                            <h1 className="text-center title titleCursosResponsive">Contenido</h1>
+                                            <h1 className={`${classes.tituloContenido} text-center title titleCursosResponsive`}>Contenido</h1>
                                         }
 
                                     </Row>
@@ -1015,6 +937,92 @@ const Curso4 = (props) => {
         </div>
     );
 }
+
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+    },
+    Especifi: {
+        height: '5em',
+        width: '100%',
+        backgroundColor: 'rgba(240, 240, 241, 0.4)',
+    },
+    cursoTituiloContainer: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        height: '5em',
+        backgroundColor: '#565251',
+    },
+    cursoTituiloText: {
+        marginLeft: '3em',
+        color: 'white',
+        fontSize: '25px',
+        fontWeight: '60px'
+    },
+    shareContainer:{
+        backgroundColor: '#565251',
+    },
+    shareTitle:{
+        color: 'white',
+        marginLeft: '2.5em',
+        marginRight: '.75em',
+    },
+    shareSeccion: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'start',
+        width: '100%',
+        height: '5em',
+        backgroundColor: '#2CB0CF',
+        backgroundImage: 'linear-gradient(to right, #2CB0CF, #7d446e, #a5427c)',
+        borderStartStartRadius: '20em',
+        borderEndStartRadius: '20em',
+    },
+    textoCurso: {
+        fontWeight: 600,
+    },
+    tituloContenido: {
+        marginTop: '1em',
+    },
+    acordeon1: {
+        borderRadius: '20em!important',
+        zIndex: 3,
+        marginBottom: '1.3em',
+    },
+    acordeonEscritorio: {
+        borderRadius: '20em!important',
+        zIndex: 3,
+        marginBottom: '1.3em',
+    },
+    parrafoAcordeon: {
+        fontSize: ".7rem",
+        padding: "1em",
+        marginTop: "-2em"
+    },
+    acordionDetails: {
+        display: 'block',
+    },
+    tituloAcordeonEscritorio: {
+        padding: "1em",
+        fontSize: "1rem",
+        marginLeft: "2%",
+        marginTop: "-1em",
+        fontWeight: "bold",
+    },
+    parrafoAcordeonEscritorio: {
+        padding: "1em",
+        fontSize: "1rem",
+        marginLeft: "2%",
+        marginTop: "-1em",
+    },
+    heading: {
+        fontSize: theme.typography.pxToRem(15),
+        fontWeight: "bold"
+    },
+}));
 
 Curso4.propTypes = {
     classes: PropTypes.object
