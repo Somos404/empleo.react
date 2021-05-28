@@ -45,7 +45,7 @@ const Header = () => {
   window.addEventListener("scroll", changeBackground);
   return (
     <div className={topbar ? "topbar active" : "topbarCap"} id="top">
-      <div className="header6">
+      <div className={`${classes.headerResponsive} header6`}>
         <Container className="po-relative">
           <Navbar className="navbar-expand-lg h6-nav-bar">
             <NavbarBrand
@@ -166,7 +166,7 @@ const Header = () => {
                 <NavItem>
                   <a
                     className="nav-link navSocialResponsiveIg"
-                    href="https://www.instagram.com/empleochaco/"
+                    href="https://www.linkedin.com/in/empleo-chaco-3142a4210/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: color }}
@@ -179,7 +179,7 @@ const Header = () => {
                 <NavItem>
                   <a
                     className="nav-link navSocialResponsiveIg"
-                    href="https://www.instagram.com/empleochaco/"
+                    href="https://twitter.com/empleochaco"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: color }}
