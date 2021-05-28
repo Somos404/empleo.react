@@ -658,11 +658,15 @@ const Curso4 = (props) => {
             </section>
           </div>
           <div className="ContenedorResponsiveCursosHidden">
-            <Container className="backgroundPrimerContenedor">
+            <Container
+              className={`${classes.primerContenedor} backgroundPrimerContenedor"`}
+            >
               <div>
                 <div className="justify-content-center">
                   {/**REsponsive */}
-                  <h1 className="text-center title titleCursosResponsive">
+                  <h1
+                    className={`${classes.titleCursosResponsiveUI} text-center title titleCursosResponsive"`}
+                  >
                     {curso.nombre}
                   </h1>
                 </div>
@@ -1224,6 +1228,16 @@ const Curso4 = (props) => {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+  },
+  primerContenedor: {
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "7em",
+    },
+  },
+  titleCursosResponsiveUI: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.7rem",
+    },
   },
   Especifi: {
     height: "5em",
