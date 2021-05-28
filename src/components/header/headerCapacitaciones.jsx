@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
 
 import {
   Container,
@@ -15,7 +16,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import logo from "../../assets/images/logos/logo1.png";
 import { scroller } from "react-scroll";
-import { makeStyles } from "@material-ui/core/styles";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,11 @@ const Header = () => {
       <div className={`${classes.headerResponsive} header6`}>
         <Container className="po-relative">
           <Navbar className="navbar-expand-lg h6-nav-bar">
-            <NavbarBrand href="https://empleo.chaco.gob.ar/capacitaciones">
+            <NavbarBrand
+              href="https://empleo.chaco.gob.ar/capacitaciones"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={logo} alt="wrapkit" />
             </NavbarBrand>
             {/**
@@ -82,7 +86,7 @@ const Header = () => {
               <NavItem>
                 <a
                   className="nav-link navSocialResponsiveIg"
-                  href="https://www.instagram.com/empleochaco/"
+                  href="https://www.linkedin.com/in/empleo-chaco-3142a4210/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,7 +98,7 @@ const Header = () => {
               <NavItem>
                 <a
                   className="nav-link navSocialResponsiveIg"
-                  href="https://www.instagram.com/empleochaco/"
+                  href="https://twitter.com/empleochaco"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,22 +137,6 @@ const Header = () => {
                     CURSOS
                   </a>
                 </NavItem>
-
-                {/* <NavItem>
-                                    <Link className="nav-link" to="/#posLinea">
-                                    <div onClick={() => {
-                                            scroller.scrollTo('posLinea', {
-                                                duration: 1000,
-                                                delay: 50,
-                                                smooth: true, // linear “easeInQuint” “easeOutCubic”
-                                                offset: -10,
-                                            });
-                                        }}>
-
-                                            INCENTIVOS PARA EL EMPLEO
-                                        </div>
-                                    	</Link>
-                                </NavItem> */}
                 <NavItem className="navHiddenSocialResponsiveFb">
                   <a
                     className="nav-link  nav-linkColor"
@@ -178,7 +166,7 @@ const Header = () => {
                 <NavItem>
                   <a
                     className="nav-link navSocialResponsiveIg"
-                    href="https://www.instagram.com/empleochaco/"
+                    href="https://www.linkedin.com/in/empleo-chaco-3142a4210/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: color }}
@@ -191,7 +179,7 @@ const Header = () => {
                 <NavItem>
                   <a
                     className="nav-link navSocialResponsiveIg"
-                    href="https://www.instagram.com/empleochaco/"
+                    href="https://twitter.com/empleochaco"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: color }}
@@ -211,11 +199,6 @@ const Header = () => {
                   </a>
                 </NavItem>
               </Nav>
-              {/*
-                            <div className="act-buttons">
-                                <Link to="/" className="nav-link" color="#ffffff">Incentivos para el Empleo</Link>
-                                boton copete <Link to="/#coming" className="btn btn-success-gradiant font-14">Incentivos para el Empleo</Link>
-                            </div>*/}
             </Collapse>
           </Navbar>
         </Container>
