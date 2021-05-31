@@ -193,15 +193,11 @@ const Curso4 = (props) => {
                       <h4 className={classes.shareTitle}>Compartír</h4>
                       <a>
                         <FacebookShareButton
-                          url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                          url={`/capacitaciones/${curso.nombre
                             .replace(/([a-z])([A-Z])/g, "$1-$2")
                             .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}`}
+                            .replace(/\¿/g, "")
+                            .replace(/-–-/g, "-")}`}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                         >
                           <SocialIcon
@@ -220,15 +216,11 @@ const Curso4 = (props) => {
 
                       <a>
                         <TwitterShareButton
-                          url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                          url={`/capacitaciones/${curso.nombre
                             .replace(/([a-z])([A-Z])/g, "$1-$2")
                             .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}`}
+                            .replace(/\¿/g, "")
+                            .replace(/-–-/g, "-")}`}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                           target_blank
                         >
@@ -248,15 +240,11 @@ const Curso4 = (props) => {
 
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
-                          url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                          url={`/capacitaciones/${curso.nombre
                             .replace(/([a-z])([A-Z])/g, "$1-$2")
                             .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}`}
+                            .replace(/\¿/g, "")
+                            .replace(/-–-/g, "-")}`}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                         >
                           <SocialIcon
@@ -274,15 +262,11 @@ const Curso4 = (props) => {
                       </a>
                       <a target="_blank" rel="noopener noreferrer">
                         <LinkedinShareButton
-                          url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                          url={`/capacitaciones/${curso.nombre
                             .replace(/([a-z])([A-Z])/g, "$1-$2")
                             .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\?/g, "")
-                            .replace(/\¿/g, "")}`}
+                            .replace(/\¿/g, "")
+                            .replace(/-–-/g, "-")}`}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                         >
                           <SocialIcon
@@ -658,15 +642,11 @@ const Curso4 = (props) => {
             </section>
           </div>
           <div className="ContenedorResponsiveCursosHidden">
-            <Container
-              className={`${classes.primerContenedor} backgroundPrimerContenedor"`}
-            >
+            <Container className="backgroundPrimerContenedor">
               <div>
                 <div className="justify-content-center">
                   {/**REsponsive */}
-                  <h1
-                    className={`${classes.titleCursosResponsiveUI} text-center title titleCursosResponsive"`}
-                  >
+                  <h1 className="text-center title titleCursosResponsive">
                     {curso.nombre}
                   </h1>
                 </div>
@@ -1103,18 +1083,14 @@ const Curso4 = (props) => {
 
                 <Container className="contenedorCompartirRedesCentrado">
                   <div>
-                    <h4 className={classes.shareTitlemobile}>Compartir</h4>
+                    <h4 className={classes.shareTitlemobile}>Compartír</h4>
                     <a>
                       <FacebookShareButton
-                        url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                        url={`/capacitaciones/${curso.nombre
                           .replace(/([a-z])([A-Z])/g, "$1-$2")
                           .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}`}
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                       >
                         <SocialIcon
@@ -1133,15 +1109,11 @@ const Curso4 = (props) => {
 
                     <a>
                       <TwitterShareButton
-                        url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                        url={`/capacitaciones/${curso.nombre
                           .replace(/([a-z])([A-Z])/g, "$1-$2")
                           .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}`}
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                         target_blank
                       >
@@ -1161,15 +1133,11 @@ const Curso4 = (props) => {
 
                     <a target="_blank" rel="noopener noreferrer">
                       <WhatsappShareButton
-                        url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                        url={`/capacitaciones/${curso.nombre
                           .replace(/([a-z])([A-Z])/g, "$1-$2")
                           .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}`}
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                       >
                         <SocialIcon
@@ -1187,15 +1155,11 @@ const Curso4 = (props) => {
                     </a>
                     <a target="_blank" rel="noopener noreferrer">
                       <LinkedinShareButton
-                        url={`https://empleo.chaco.gob.ar/curso/${curso.categoria
+                        url={`/capacitaciones/${curso.nombre
                           .replace(/([a-z])([A-Z])/g, "$1-$2")
                           .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\?/g, "")
-                          .replace(/\¿/g, "")}`}
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                       >
                         <SocialIcon
@@ -1228,16 +1192,6 @@ const Curso4 = (props) => {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-  },
-  primerContenedor: {
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7em",
-    },
-  },
-  titleCursosResponsiveUI: {
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "1.7rem",
-    },
   },
   Especifi: {
     height: "5em",
