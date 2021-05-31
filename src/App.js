@@ -9,6 +9,7 @@ import {
 
 import "./assets/scss/style.scss";
 import Components from "./views/components/components.jsx";
+import AcompañarChaco from "./views/custom-components/sections/AcompañarChaco.jsx";
 import Informatorio from "./views/components/informatorio.jsx";
 import Capacitaciones from "./views/components/capacitaciones.jsx";
 import CapacitacionesDemo from "./views/components/capacitacionesDemo.jsx";
@@ -70,6 +71,10 @@ function App() {
       <Switch>
         {/* <Route exact path="/" component={Components} /> */}
         <Route exact path="/" render={(props) => <Components {...props} />} />
+        <Route
+          path="/acompañar-chaco"
+          render={(props) => <AcompañarChaco {...props} />}
+        />
         <Route
           path="/custom-components"
           render={(props) => <CustomComponents {...props} />}
