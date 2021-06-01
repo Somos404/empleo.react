@@ -82,10 +82,7 @@ const Empresas = (props) => {
                       >
                         <CardBody className=" card-body-reqBtn">
                           <Col>
-                            <span
-                              to="/informatorio"
-                              className="img-ho cont-img cont-img1BtnCap"
-                            >
+                            <span className="img-ho cont-img cont-img1BtnCap">
                               <img
                                 src={img5}
                                 alt="img"
@@ -102,10 +99,7 @@ const Empresas = (props) => {
                                 Quiero que <br /> me contacten
                               </h5>
                             </Col>
-                            <span
-                              to="/informatorio"
-                              className="img-ho cont-img cont-img2Btn"
-                            >
+                            <span className="img-ho cont-img cont-img2Btn">
                               <img
                                 src={img6}
                                 alt="img"
@@ -149,12 +143,7 @@ const Empresas = (props) => {
                     </h2>
                   </Row>
                   <Row className={`${classes.rowBtn} justify-content-center`}>
-                    <a
-                      className="linkRedirecciones"
-                      href="https://gobiernodigital.chaco.gob.ar/login"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link className="linkRedirecciones" to="/acompañar-chaco">
                       <Card
                         className={`${classes.cardBtn} card-reqBoton cardReqBotonCap cardReqBotonCapMargin`}
                       >
@@ -177,7 +166,7 @@ const Empresas = (props) => {
                               <h5
                                 className={`${classes.tituloBtn} font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn`}
                               >
-                                Quiero acceder a <br /> GOBIERNO DEL CHACO
+                                Quiero acceder a <br /> ACOMPAÑAR CHACO
                               </h5>
                             </Col>
                             <span
@@ -194,7 +183,7 @@ const Empresas = (props) => {
                           </Col>
                         </CardBody>
                       </Card>
-                    </a>
+                    </Link>
                   </Row>
                 </Col>
               </Row>
