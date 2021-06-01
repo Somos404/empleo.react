@@ -178,7 +178,7 @@ const Capacitaciones = (props) => {
                       <CardTitle className="card-title-red" tag="h5">
                         Gratuitos
                       </CardTitle>
-                      {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
+
                       <hr className="lineaCard" />
                       <CardText className="card-sub-title-red">
                         Se trata de una inversión que realizan 1.200.000
