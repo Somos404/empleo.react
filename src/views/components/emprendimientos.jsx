@@ -38,7 +38,7 @@ const Emprendimientos = (props) => {
         <div className="container-fluid empleoHeight">
           <HeaderBannerEmprendimientos />
           <div className="spacer-Header"></div>
-          <div>
+          <div className={classes.contenedorPrincipal}>
             <Container>
               <Row xs="12" className="justify-content-center flex mx-3">
                 <Col lg="6" md="6" xs="12" className="justify-content-center">
@@ -163,6 +163,11 @@ const Emprendimientos = (props) => {
 };
 
 const useStyles = makeStyles((theme) => ({
+  contenedorPrincipal: {
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: "2%",
+    },
+  },
   contenedor1: {
     width: "100%",
     marginLeft: "3%",
@@ -203,6 +208,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginBottom: "2%",
       marginLeft: "-5%",
+      marginTop: "-4%",
     },
   },
 }));
