@@ -93,7 +93,7 @@ const CapacitacionesDemo = (props) => {
                           Cursos para tu formación laboral y emprendedora
                         </h1>
                       </Row>
-                      <hr class="justify-content-center lineaCopada" />
+                      <hr className="justify-content-center lineaCopada" />
                       <Row className="justify-content-center">
                         <p className="text-center parrafoCursos">
                           Desde el Gobierno del Chaco ponemos a tu disposición
@@ -257,7 +257,7 @@ const CapacitacionesDemo = (props) => {
                   <Card className="cardsecondContRed">
                     {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                     <CardBody className="d-flex no-block cardBodyRed">
-                      <Col class="col-md-2">
+                      <Col className="col-md-2">
                         <div className="m-r-20">
                           <img
                             src={img3}
@@ -290,7 +290,7 @@ const CapacitacionesDemo = (props) => {
                   <Card className="cardsecondContRed">
                     {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                     <CardBody className="d-flex no-block cardBodyRed">
-                      <Col class="col-md-2">
+                      <Col className="col-md-2">
                         <div className="m-r-20">
                           <img
                             src={img4}
