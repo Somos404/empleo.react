@@ -127,10 +127,7 @@ const AcompañarChaco = (props) => {
                             Quiero acceder a <br /> ACOMPAÑAR CHACO
                           </h5>
                         </Col>
-                        <span
-                          to="/informatorio"
-                          className="img-ho cont-img cont-img2Btn"
-                        >
+                        <span className="img-ho cont-img cont-img2Btn">
                           <img
                             src={img6}
                             alt="img"

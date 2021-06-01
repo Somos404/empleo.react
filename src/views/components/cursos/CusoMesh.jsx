@@ -190,7 +190,7 @@ const Curso4 = (props) => {
                     className={classes.shareContainer}
                   >
                     <div className={classes.shareSeccion}>
-                      <h4 className={classes.shareTitle}>Compartír</h4>
+                      <h4 className={classes.shareTitle}>Compartir</h4>
                       <a>
                         <FacebookShareButton
                           url={`/capacitaciones/${curso.nombre
@@ -1083,7 +1083,7 @@ const Curso4 = (props) => {
 
                 <Container className="contenedorCompartirRedesCentrado">
                   <div>
-                    <h4 className={classes.shareTitlemobile}>Compartír</h4>
+                    <h4 className={classes.shareTitlemobile}>Compartir</h4>
                     <a>
                       <FacebookShareButton
                         url={`/capacitaciones/${curso.nombre
