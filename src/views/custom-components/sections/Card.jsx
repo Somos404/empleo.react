@@ -34,7 +34,10 @@ const CardCustom = (props) => {
     >
       <Col
         md="12"
-        className={`col-md-12 heightWidthCard pro-pic ${props.infoCursos.imgUrl}`}
+        className="col-md-12 heightWidthCard pro-pic"
+        style={{
+          backgroundImage: `url(https://empleo.chaco.gob.ar/card/cursosimg/${props.infoCursos.imgUrl}.png)`,
+        }}
       >
         <div className={`cards-inline ${classes.card}`}>
           {isHovered && (
