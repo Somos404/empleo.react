@@ -93,57 +93,73 @@ const Capacitaciones = (props) => {
                       width="200"
                     />
                   </Row>
-                  <Row className="textoInfo">
-                    <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
-                      <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">
-                        Espacio de formación intensiva en programación, para que
-                        tengas más y mejores oportunidades de incorporarte a la
-                        Economía del Conocimiento, especíﬁcamente en el sector
-                        de Software y Servicios Informáticos, a través del
-                        empleo en empresas de la industria o iniciando tu propio
-                        emprendimiento de base tecnológica. Es un programa del
-                        Gobierno del Chaco, trabajando en conjunto con las
-                        empresas del Polo IT Chaco, Globant, la UTN-FRRe y la
-                        UNCAUS.
-                      </p>
-                    </div>
+                  <Row className="justify-content-center textoInfo">
+                    <Col
+                      xs="12"
+                      className={`${classes.contenedor2} justify-content-center`}
+                    >
+                      <div
+                        className={`${classes.contenedorparrafo2} lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap`}
+                      >
+                        <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">
+                          Espacio de formación intensiva en programación, para
+                          que tengas más y mejores oportunidades de incorporarte
+                          a la Economía del Conocimiento, especíﬁcamente en el
+                          sector de Software y Servicios Informáticos, a través
+                          del empleo en empresas de la industria o iniciando tu
+                          propio emprendimiento de base tecnológica. Es un
+                          programa del Gobierno del Chaco, trabajando en
+                          conjunto con las empresas del Polo IT Chaco, Globant,
+                          la UTN-FRRe y la UNCAUS.
+                        </p>
+                      </div>
+                    </Col>
                   </Row>
 
-                  <Link className="linkRedirecciones" to="/informatorio">
-                    <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin">
-                      <CardBody className=" card-body-reqBtn">
-                        <Col>
-                          <span
-                            to="/informatorio"
-                            className="img-ho cont-img cont-img1BtnCap"
-                          >
-                            <img
-                              src={img5}
-                              alt="img"
-                              className="img-responsive img-thumbnail img-redireccionesBtn"
-                              width="200"
-                            />
-                          </span>
-                          <Col className="colbtnBtnEmpleo">
-                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">
-                              Quiero capacitarme
-                            </h5>
-                          </Col>
-                          <span
-                            to="/informatorio"
-                            className="img-ho cont-img cont-img2Btn"
-                          >
-                            <img
-                              src={img6}
-                              alt="img"
-                              className="img-responsive img-thumbnail img-redireccionesBtn2"
-                              width="200"
-                            />
-                          </span>
-                        </Col>
-                      </CardBody>
-                    </Card>
-                  </Link>
+                  <Row className="justify-content-center ">
+                    <Col
+                      xs="12"
+                      className={`${classes.contenedor2} justify-content-center`}
+                    >
+                      <Link className="linkRedirecciones" to="/informatorio">
+                        <Card
+                          className={`${classes.contenedorCard} card-reqBoton cardReqBotonCap cardReqBotonCapMargin`}
+                        >
+                          <CardBody className=" card-body-reqBtn">
+                            <Col>
+                              <span
+                                to="/informatorio"
+                                className="img-ho cont-img cont-img1BtnCap"
+                              >
+                                <img
+                                  src={img5}
+                                  alt="img"
+                                  className="img-responsive img-thumbnail img-redireccionesBtn"
+                                  width="200"
+                                />
+                              </span>
+                              <Col className="colbtnBtnEmpleo">
+                                <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">
+                                  Quiero capacitarme
+                                </h5>
+                              </Col>
+                              <span
+                                to="/informatorio"
+                                className="img-ho cont-img cont-img2Btn"
+                              >
+                                <img
+                                  src={img6}
+                                  alt="img"
+                                  className="img-responsive img-thumbnail img-redireccionesBtn2"
+                                  width="200"
+                                />
+                              </span>
+                            </Col>
+                          </CardBody>
+                        </Card>
+                      </Link>
+                    </Col>
+                  </Row>
                 </Row>
               </Row>
             </Container>
@@ -162,7 +178,7 @@ const Capacitaciones = (props) => {
                       <CardTitle className="card-title-red" tag="h5">
                         Gratuitos
                       </CardTitle>
-                      {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
+
                       <hr className="lineaCard" />
                       <CardText className="card-sub-title-red">
                         Se trata de una inversión que realizan 1.200.000
@@ -230,7 +246,7 @@ const Capacitaciones = (props) => {
                     />
                     <CardBody className="cardBodyRed">
                       <CardTitle
-                        className="card-title-red card-title-redResponsive"
+                        className={`${classes.textoDias} card-title-red card-title-redResponsive`}
                         tag="h5"
                       >
                         Sin días y horarios fijos
@@ -257,6 +273,21 @@ const useStyles = makeStyles((theme) => ({
   contenedor1: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "42%",
+    },
+  },
+  contenedorparrafo2: {
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
+  },
+  contenedorCard: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "15%",
+    },
+  },
+  textoDias: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "19%",
     },
   },
 }));
