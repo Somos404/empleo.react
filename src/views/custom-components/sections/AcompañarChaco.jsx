@@ -168,7 +168,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black",
     marginLeft: "-2%",
     border: "1pxsolid",
-    width: "65%",
+    width: "70%",
   },
   parrafo1: {
     fontSize: "1rem",
