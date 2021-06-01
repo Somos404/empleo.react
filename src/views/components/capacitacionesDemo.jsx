@@ -267,7 +267,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red  card-title-redResponsive"
@@ -300,7 +302,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -361,6 +365,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "195%",
     },
+  },
+  tituloDesc: {
+    marginLeft: "0em!important",
   },
 }));
 
