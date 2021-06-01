@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import {
   Container,
-  NavbarBrand,
   Navbar,
   Nav,
   NavItem,
@@ -15,7 +14,6 @@ import {
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import logo from "../../assets/images/logos/logo1.png";
-import { scroller } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,13 +46,9 @@ const Header = () => {
       <div className={`${classes.headerResponsive} header6`}>
         <Container className="po-relative">
           <Navbar className="navbar-expand-lg h6-nav-bar">
-            <NavbarBrand
-              href="https://empleo.chaco.gob.ar/capacitaciones"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="/capacitaciones">
               <img src={logo} alt="wrapkit" />
-            </NavbarBrand>
+            </Link>
             {/**
                          Iconos de Redes sociales -> Header Responsive 
                          */}
@@ -120,22 +114,22 @@ const Header = () => {
             >
               <Nav navbar className="ml-auto">
                 <NavItem>
-                  <a
+                  <Link
                     className="nav-link nav-linkColor"
-                    href="https://empleo.chaco.gob.ar/capacitaciones"
+                    to="/capacitaciones"
                     style={{ color: color }}
                   >
                     INICIO
-                  </a>
+                  </Link>
                 </NavItem>
                 <NavItem>
-                  <a
+                  <Link
                     className="nav-link nav-linkColor"
-                    href="https://empleo.chaco.gob.ar/capacitaciones"
+                    to="/capacitaciones"
                     style={{ color: color }}
                   >
                     CURSOS
-                  </a>
+                  </Link>
                 </NavItem>
                 <NavItem className="navHiddenSocialResponsiveFb">
                   <a

@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import {
   Container,
-  NavbarBrand,
   Navbar,
   Nav,
   NavItem,
@@ -39,9 +38,9 @@ const Header = () => {
       <div className="header6">
         <Container className="po-relative">
           <Navbar className="navbar-expand-lg h6-nav-bar">
-            <NavbarBrand href="/">
+            <Link to="/">
               <img src={logo} alt="wrapkit" />
-            </NavbarBrand>
+            </Link>
             {/**
                          Iconos de Redes sociales -> Header Responsive 
                          */}
