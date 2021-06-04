@@ -85,11 +85,28 @@ const AcompañarChaco = (props) => {
                 <Row>
                   <h2 className={`${classes.parrafo3}`}>
                     Recibirán por única vez un aporte de $22.000 por cada
-                    empleada y empleado que se haya inscripto en el Programa
-                    Nacional REPRO II y que no haya percibido el beneficio. Las
-                    y los monotributistas también podrán aplicar a la
-                    iniciativa.
+                    empleada y empleado, siempre que no haya obtenido el
+                    beneficio del programa REPRO II por el mismo período.
+                    Monotributistas y autónomos también podrán aplicar a la
+                    iniciativa obteniendo el beneficio como trabajadores/as
+                    independientes.
                   </h2>
+                </Row>
+                <Row className={`${classes.rowDescarga}`}>
+                  <a
+                    className={`${classes.linkdescarga}`}
+                    href="/downloads/inst_inscrip.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className={`${classes.icDescarga} fa fa-cloud-download `}
+                    >
+                      <p className={classes.textoDescarga}>
+                        Descargar instructivo.
+                      </p>
+                    </i>
+                  </a>
                 </Row>
               </Col>
             </Row>
@@ -196,11 +213,33 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     lineHeight: "25px",
   },
+  rowDescarga: {
+    alignContent: "center",
+    justifyContent: "center",
+    marginTop: "5%",
+  },
   parrafo3: {
     fontSize: "1rem",
     marginBottom: "5%",
     fontWeight: 500,
     lineHeight: "25px",
+  },
+  linkdescarga: {
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "15%",
+    },
+  },
+  icDescarga: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  textoDescarga: {
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: "0%",
+    marginLeft: "2%",
+    width: "10em",
   },
   cardBtn: {
     marginLeft: "0%",

@@ -642,7 +642,9 @@ const Curso4 = (props) => {
             </section>
           </div>
           <div className="ContenedorResponsiveCursosHidden">
-            <Container className="backgroundPrimerContenedor">
+            <Container
+              className={`${classes.contenedor1} backgroundPrimerContenedor`}
+            >
               <div>
                 <div className="justify-content-center">
                   {/**REsponsive */}
@@ -1192,6 +1194,10 @@ const Curso4 = (props) => {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+  },
+  contenedor1: {
+    marginTop: "18%",
+    height: "675px",
   },
   Especifi: {
     height: "5em",

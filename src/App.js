@@ -26,7 +26,6 @@ import MuniMesh from "./views/components/municipios/municipioMesh";
 
 import CursoMesh from "views/components/cursos/CusoMesh";
 
-import CustomComponents from "./views/custom-components/custom-components.jsx";
 import FormCustomComponents from "./views/custom-components/form";
 
 import "../src/views/components/loader.css";
@@ -75,12 +74,7 @@ function App() {
           path="/acompañar-chaco"
           render={(props) => <AcompañarChaco {...props} />}
         />
-        <Route
-          path="/custom-components"
-          render={(props) => <CustomComponents {...props} />}
-        />
-        {/* <Route exact path="/custom-components" component={CustomComponents} /> */}
-        {/* <Route exact path="/informatorio" component={Informatorio} /> */}
+
         <Route
           path="/informatorio"
           render={(props) => <Informatorio {...props} />}
