@@ -39,7 +39,7 @@ const AcompañarChaco = (props) => {
           <HeaderBanner />
 
           <div className="spacer-Header">
-            <Row className="justify-content-center flex mx-5">
+            <Row className="justify-content-center flex mx-2">
               <Col lg="12" md="12" xs="12" className="justify-content-center">
                 <Row>
                   <h1 className={`${classes.titulo}`}>ACOMPAÑAR CHACO</h1>
