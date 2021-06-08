@@ -96,6 +96,26 @@ const CardCustom = (props) => {
                       </a>
                     </li>
                     <li>
+                      <a
+                        href="https://www.instagram.com/empleochaco/"
+                        className="Demo__some-network__share-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon
+                          style={{
+                            height: 35,
+                            width: 35,
+                            marginTop: -9.5,
+                            padding: 2,
+                          }}
+                          network="instagram"
+                          bgColor="#01B7E8"
+                          fgColor="white"
+                        />
+                      </a>
+                    </li>
+                    <li>
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
                           title={props.infoCursos.titulo}

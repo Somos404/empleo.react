@@ -238,6 +238,29 @@ const Curso4 = (props) => {
                         </TwitterShareButton>
                       </a>
 
+                      <a
+                        href="https://www.instagram.com/empleochaco/"
+                        /*    url={`/capacitaciones/${curso.nombre
+                          .replace(/([a-z])([A-Z])/g, "$1-$2")
+                          .replace(/\s+/g, "-")
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`} */
+                        className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon
+                          style={{
+                            height: 35,
+                            width: 35,
+                            marginTop: -9.5,
+                            padding: 2,
+                          }}
+                          network="instagram"
+                          bgColor="#01B7E8"
+                          fgColor="white"
+                        />
+                      </a>
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
                           url={`/capacitaciones/${curso.nombre
@@ -639,6 +662,126 @@ const Curso4 = (props) => {
                   </Button>
                 )}
               </Row>
+              <Container
+                className={`${classes.contenedorCompartir} contenedorCompartirRedesCentrado"`}
+              >
+                <div>
+                  <h4 className={classes.shareTitlemobile}>Compartir</h4>
+                  <a>
+                    <FacebookShareButton
+                      url={`/capacitaciones/${curso.nombre
+                        .replace(/([a-z])([A-Z])/g, "$1-$2")
+                        .replace(/\s+/g, "-")
+                        .replace(/\¿/g, "")
+                        .replace(/-–-/g, "-")}`}
+                      className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                    >
+                      <SocialIcon
+                        style={{
+                          height: 35,
+                          width: 35,
+                          marginTop: -9.5,
+                          padding: 2,
+                        }}
+                        network="facebook"
+                        bgColor="#01B7E8"
+                        fgColor="white"
+                      />
+                    </FacebookShareButton>
+                  </a>
+
+                  <a>
+                    <TwitterShareButton
+                      url={`/capacitaciones/${curso.nombre
+                        .replace(/([a-z])([A-Z])/g, "$1-$2")
+                        .replace(/\s+/g, "-")
+                        .replace(/\¿/g, "")
+                        .replace(/-–-/g, "-")}`}
+                      className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                      target_blank
+                    >
+                      <SocialIcon
+                        style={{
+                          height: 35,
+                          width: 35,
+                          marginTop: -9.5,
+                          padding: 2,
+                        }}
+                        network="twitter"
+                        bgColor="#01B7E8"
+                        fgColor="white"
+                      />
+                    </TwitterShareButton>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/empleochaco/"
+                    /*    url={`/capacitaciones/${curso.nombre
+                          .replace(/([a-z])([A-Z])/g, "$1-$2")
+                          .replace(/\s+/g, "-")
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`} */
+                    className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SocialIcon
+                      style={{
+                        height: 35,
+                        width: 35,
+                        marginTop: -9.5,
+                        padding: 2,
+                      }}
+                      network="instagram"
+                      bgColor="#01B7E8"
+                      fgColor="white"
+                    />
+                  </a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <WhatsappShareButton
+                      url={`/capacitaciones/${curso.nombre
+                        .replace(/([a-z])([A-Z])/g, "$1-$2")
+                        .replace(/\s+/g, "-")
+                        .replace(/\¿/g, "")
+                        .replace(/-–-/g, "-")}`}
+                      className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+                    >
+                      <SocialIcon
+                        style={{
+                          height: 35,
+                          width: 35,
+                          marginTop: -9.5,
+                          padding: 2,
+                        }}
+                        network="whatsapp"
+                        bgColor="#01B7E8"
+                        fgColor="white"
+                      />
+                    </WhatsappShareButton>
+                  </a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <LinkedinShareButton
+                      url={`/capacitaciones/${curso.nombre
+                        .replace(/([a-z])([A-Z])/g, "$1-$2")
+                        .replace(/\s+/g, "-")
+                        .replace(/\¿/g, "")
+                        .replace(/-–-/g, "-")}`}
+                      className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+                    >
+                      <SocialIcon
+                        style={{
+                          height: 35,
+                          width: 35,
+                          marginTop: -9.5,
+                          padding: 2,
+                        }}
+                        network="linkedin"
+                        bgColor="#01B7E8"
+                        fgColor="white"
+                      />
+                    </LinkedinShareButton>
+                  </a>
+                </div>
+              </Container>
             </section>
           </div>
           <div className="ContenedorResponsiveCursosHidden">
@@ -1132,7 +1275,29 @@ const Curso4 = (props) => {
                         />
                       </TwitterShareButton>
                     </a>
-
+                    <a
+                      href="https://www.instagram.com/empleochaco/"
+                      /*    url={`/capacitaciones/${curso.nombre
+                          .replace(/([a-z])([A-Z])/g, "$1-$2")
+                          .replace(/\s+/g, "-")
+                          .replace(/\¿/g, "")
+                          .replace(/-–-/g, "-")}`} */
+                      className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SocialIcon
+                        style={{
+                          height: 35,
+                          width: 35,
+                          marginTop: -9.5,
+                          padding: 2,
+                        }}
+                        network="instagram"
+                        bgColor="#01B7E8"
+                        fgColor="white"
+                      />
+                    </a>
                     <a target="_blank" rel="noopener noreferrer">
                       <WhatsappShareButton
                         url={`/capacitaciones/${curso.nombre
@@ -1277,6 +1442,9 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: "bold",
+  },
+  contenedorCompartir: {
+    textAlign: "center",
   },
 }));
 
