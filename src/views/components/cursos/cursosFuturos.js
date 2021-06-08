@@ -21,7 +21,7 @@ export const cursosFuturos = [
     imgUrl: "pro-pic introduccionalbusinessintelligence",
   },
   {
-    imgUrl: "pro-pic introduccionaldiseouxui",
+    imgUrl: "pro-pic introduccionaldiseoouxui",
   },
   {
     imgUrl: "pro-pic introduccionalsoportetecnicoeninformatica",
