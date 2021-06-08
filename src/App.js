@@ -13,6 +13,7 @@ import AcompañarChaco from "./views/custom-components/sections/AcompañarChaco.
 import Informatorio from "./views/components/informatorio.jsx";
 import Capacitaciones from "./views/components/capacitaciones.jsx";
 import CapacitacionesDemo from "./views/components/capacitacionesDemo.jsx";
+import Admin from "./views/components/Admin.jsx";
 
 import Empleo from "./views/components/empleo.jsx";
 import Emprendimientos from "./views/components/emprendimientos.jsx";
@@ -96,6 +97,14 @@ function App() {
                 cursosAndCategias={cursosAndCategias}
                 {...props}
               />
+            )}
+          />
+        )}
+        {cursosAndCategias && (
+          <Route
+            path="/se-admin"
+            render={(props) => (
+              <Admin cursosAndCategias={cursosAndCategias} {...props} />
             )}
           />
         )}
