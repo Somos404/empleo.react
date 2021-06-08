@@ -13,6 +13,7 @@ import AcompañarChaco from "./views/custom-components/sections/AcompañarChaco.
 import Informatorio from "./views/components/informatorio.jsx";
 import Capacitaciones from "./views/components/capacitaciones.jsx";
 import CapacitacionesDemo from "./views/components/capacitacionesDemo.jsx";
+import Admin from "./views/components/Admin.jsx";
 
 import Empleo from "./views/components/empleo.jsx";
 import Emprendimientos from "./views/components/emprendimientos.jsx";
@@ -26,7 +27,6 @@ import MuniMesh from "./views/components/municipios/municipioMesh";
 
 import CursoMesh from "views/components/cursos/CusoMesh";
 
-import CustomComponents from "./views/custom-components/custom-components.jsx";
 import FormCustomComponents from "./views/custom-components/form";
 
 import "../src/views/components/loader.css";
@@ -75,12 +75,7 @@ function App() {
           path="/acompañar-chaco"
           render={(props) => <AcompañarChaco {...props} />}
         />
-        <Route
-          path="/custom-components"
-          render={(props) => <CustomComponents {...props} />}
-        />
-        {/* <Route exact path="/custom-components" component={CustomComponents} /> */}
-        {/* <Route exact path="/informatorio" component={Informatorio} /> */}
+
         <Route
           path="/informatorio"
           render={(props) => <Informatorio {...props} />}
@@ -102,6 +97,14 @@ function App() {
                 cursosAndCategias={cursosAndCategias}
                 {...props}
               />
+            )}
+          />
+        )}
+        {cursosAndCategias && (
+          <Route
+            path="/se-admin"
+            render={(props) => (
+              <Admin cursosAndCategias={cursosAndCategias} {...props} />
             )}
           />
         )}

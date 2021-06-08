@@ -81,7 +81,7 @@ const CapacitacionesDemo = (props) => {
           <div className="spacer-Header spacer-HeaderCap">
             <Container className={`${classes.containerPCapDemo} containerPCap`}>
               <Row xs="2">
-                <Col lg="6" className="">
+                <Col lg="6">
                   <section className="text-gray-600 body-font">
                     <div className="ResponsiveHiddenCapacitaciones">
                       {/* <Row className="justify-content-center">
@@ -188,7 +188,7 @@ const CapacitacionesDemo = (props) => {
                   <Card className="cardsecondContRed">
                     {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                     <CardBody className="d-flex no-block cardBodyRed">
-                      <Col class="col-md-2">
+                      <Col className="col-md-2">
                         <div className="m-r-20">
                           <img
                             src={img1}
@@ -267,7 +267,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red  card-title-redResponsive"
@@ -300,7 +302,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -361,6 +365,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "195%",
     },
+  },
+  tituloDesc: {
+    marginLeft: "0em!important",
   },
 }));
 
