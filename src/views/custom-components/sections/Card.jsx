@@ -61,7 +61,9 @@ const CardCustom = (props) => {
                   color="textSecondary"
                   gutterBottom
                 >
-                  <ul className="list-inline list-inlineRedes list-inlineRedesTop">
+                  <ul
+                    className={`${classes.contenedorRedesCardOverlay} list-inline list-inlineRedes list-inlineRedesTop`}
+                  >
                     <li className="list-inline-item">
                       <a>
                         <FacebookShareButton
@@ -163,7 +165,7 @@ const CardCustom = (props) => {
                     <li className="list-inline-item">
                       <a>
                         <Link
-                          className="nav-link"
+                          className={`${classes.nombreCardoverlay} nav-link`}
                           to={{
                             pathname: `/capacitaciones/${props.infoCursos.nombre
                               .replace(/([a-z])([A-Z])/g, "$1-$2")
@@ -289,6 +291,19 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 22,
     textAlign: "center",
     lineHeight: 1.2,
+  },
+  contenedorRedesCardOverlay: {
+    marginLeft: "0%",
+    [theme.breakpoints.only("xl")]: {
+      marginLeft: "0%",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "18em",
+      marginLeft: "-10%",
+    },
+  },
+  nombreCardoverlay: {
+    fontSize: "18px",
   },
 }));
 
