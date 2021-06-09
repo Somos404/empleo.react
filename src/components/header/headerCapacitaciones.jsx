@@ -52,7 +52,7 @@ const Header = () => {
             {/**
                          Iconos de Redes sociales -> Header Responsive 
                          */}
-            <Nav navbar className="ml-auto nav-scoial-responsive">
+            {/*  <Nav navbar className="ml-auto nav-scoial-responsive">
               <NavItem>
                 <a
                   className="nav-link navSocialResponsive"
@@ -101,7 +101,7 @@ const Header = () => {
                   </div>
                 </a>
               </NavItem>
-            </Nav>
+            </Nav> */}
             <NavbarToggler onClick={toggle}>
               <span className="ti-menu"></span>
             </NavbarToggler>
@@ -123,13 +123,15 @@ const Header = () => {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link
+                  <a
                     className="nav-link nav-linkColor"
-                    to="/capacitaciones"
+                    href="https://capacitaciones.chaco.gob.ar/mod/page/view.php?id=103"
                     style={{ color: color }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    CURSOS
-                  </Link>
+                    CONTACTO
+                  </a>
                 </NavItem>
                 <NavItem className="navHiddenSocialResponsiveFb">
                   <a
