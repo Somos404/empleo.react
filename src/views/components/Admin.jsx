@@ -9,7 +9,7 @@ import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaci
 import Footer3 from "../../components/footer/footer3.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
 import Cursosfuturos from "../custom-components/sections/cursosfuturos";
-import CardCursos from "../custom-components/sections/cardCursos";
+import CardAdmin from "../custom-components/sections/cardCursos";
 import BlogComponent from "./informatorioCapacitaciones";
 
 import { Card, CardTitle, CardText, CardGroup, CardBody } from "reactstrap";
@@ -149,7 +149,7 @@ const Admin = (props) => {
                   }}
                 />
               ) : (
-                <CardCursos
+                <CardAdmin
                   categoria={categoria}
                   cursosAndCategias={props.cursosAndCategias}
                 />

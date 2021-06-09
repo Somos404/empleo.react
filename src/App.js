@@ -26,6 +26,7 @@ import Buscar from "./views/components/buscar.jsx";
 import MuniMesh from "./views/components/municipios/municipioMesh";
 
 import CursoMesh from "views/components/cursos/CusoMesh";
+import CursoMeshAdmin from "views/components/cursos/CursoMeshAdmin";
 
 import FormCustomComponents from "./views/custom-components/form";
 
@@ -163,6 +164,26 @@ function App() {
                   .replace(/-–-/g, "-")}`}
                 render={(props) => (
                   <CursoMesh
+                    curso={curso}
+                    categoria={Category.categoria}
+                    {...props}
+                  />
+                )}
+              />
+            ))
+          )}
+        {cursosAndCategias != undefined &&
+          cursosAndCategias.map((Category) =>
+            Category.Cursos.map((curso) => (
+              <Route
+                key={Category.categoria}
+                path={`/capacitaciones/admin-${curso.nombre
+                  .replace(/([a-z])([A-Z])/g, "$1-$2")
+                  .replace(/\s+/g, "-")
+                  .replace(/\¿/g, "")
+                  .replace(/-–-/g, "-")}`}
+                render={(props) => (
+                  <CursoMeshAdmin
                     curso={curso}
                     categoria={Category.categoria}
                     {...props}

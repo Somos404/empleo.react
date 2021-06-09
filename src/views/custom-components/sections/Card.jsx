@@ -295,15 +295,15 @@ const useStyles = makeStyles((theme) => ({
   contenedorRedesCardOverlay: {
     marginLeft: "0%",
     [theme.breakpoints.only("xl")]: {
-      marginLeft: "0%",
+      textAlign: "center",
     },
     [theme.breakpoints.down("lg")]: {
       width: "18em",
-      marginLeft: "-10%",
+      textAlign: "center",
     },
     [theme.breakpoints.down("xs")]: {
       width: "18em",
-      marginLeft: "0%",
+      textAlign: "center",
     },
   },
   nombreCardoverlay: {
