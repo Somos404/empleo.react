@@ -301,6 +301,10 @@ const useStyles = makeStyles((theme) => ({
       width: "18em",
       marginLeft: "-10%",
     },
+    [theme.breakpoints.down("xs")]: {
+      width: "18em",
+      marginLeft: "0%",
+    },
   },
   nombreCardoverlay: {
     fontSize: "18px",
