@@ -165,6 +165,11 @@ function App() {
                   <CursoMesh
                     curso={curso}
                     categoria={Category.categoria}
+                    share={`https://empleo.chaco.gob.ar/capacitaciones/${curso.nombre
+                      .replace(/([a-z])([A-Z])/g, "$1-$2")
+                      .replace(/\s+/g, "-")
+                      .replace(/\¿/g, "")
+                      .replace(/-–-/g, "-")}`}
                     {...props}
                   />
                 )}
