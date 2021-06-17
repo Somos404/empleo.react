@@ -188,7 +188,7 @@ const Header = () => {
                 <NavItem className="nav-itemLogin">
                   <a
                     className="btn btn-outline-success btonIngCap"
-                    href="https://capacitaciones.chaco.gob.ar/?redirect=0"
+                    href="https://capacitaciones.chaco.gob.ar/my"
                     style={{ color: color }}
                   >
                     INGRESAR

@@ -154,7 +154,7 @@ const CapacitacionesDemo = (props) => {
                   <Card className="cardsecondContRed">
                     {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                     <CardBody className="d-flex no-block cardBodyRed">
-                      <Col class="col-md-2">
+                      <Col className="col-md-2">
                         <div className="m-r-20">
                           <img
                             src={img2}
