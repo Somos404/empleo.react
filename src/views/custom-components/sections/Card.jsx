@@ -79,7 +79,6 @@ const CardCustom = (props) => {
                           url={props.infoCursos.share}
                           title={props.infoCursos.titulo}
                           className="Demo__some-network__share-button"
-                          target_blank
                         >
                           <SocialIcon
                             style={{ height: 35, width: 35, marginTop: -9.5 }}
@@ -113,8 +112,8 @@ const CardCustom = (props) => {
                     <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
-                          title={props.infoCursos.titulo}
                           url={props.infoCursos.share}
+                          title={props.infoCursos.titulo}
                           className="Demo__some-network__share-button"
                         >
                           <SocialIcon
@@ -129,7 +128,8 @@ const CardCustom = (props) => {
                     <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a target="_blank" rel="noopener noreferrer">
                         <LinkedinShareButton
-                          url={`https://empleo.chaco.gob.ar/`}
+                          url={props.infoCursos.share}
+                          title={props.infoCursos.titulo}
                           className="Demo__some-network__share-button"
                         >
                           <SocialIcon
@@ -200,8 +200,6 @@ const CardCustom = (props) => {
                                 .replace(/\¿/g, "")
                                 .replace(/-–-/g, "-")}`,
                               nombre: props.infoCursos.nombre,
-                              /* search: "?sort=name",
-                                                                hash: "#the-hash", */
                               curso: props.infoCursos,
                             }}
                           >

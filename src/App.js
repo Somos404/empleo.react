@@ -91,7 +91,7 @@ function App() {
         {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
         {cursosAndCategias && (
           <Route
-            path="/capacitaciones-demo"
+            path="/cenit"
             render={(props) => (
               <CapacitacionesDemo
                 cursosAndCategias={cursosAndCategias}
@@ -165,6 +165,11 @@ function App() {
                   <CursoMesh
                     curso={curso}
                     categoria={Category.categoria}
+                    share={`https://empleo.chaco.gob.ar/capacitaciones/${curso.nombre
+                      .replace(/([a-z])([A-Z])/g, "$1-$2")
+                      .replace(/\s+/g, "-")
+                      .replace(/\¿/g, "")
+                      .replace(/-–-/g, "-")}`}
                     {...props}
                   />
                 )}

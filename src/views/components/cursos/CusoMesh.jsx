@@ -193,11 +193,7 @@ const Curso4 = (props) => {
                       <h4 className={classes.shareTitle}>Compartir</h4>
                       <a>
                         <FacebookShareButton
-                          url={`/capacitaciones/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\¿/g, "")
-                            .replace(/-–-/g, "-")}`}
+                          url={props.share}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                         >
                           <SocialIcon
@@ -216,11 +212,7 @@ const Curso4 = (props) => {
 
                       <a>
                         <TwitterShareButton
-                          url={`/capacitaciones/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\¿/g, "")
-                            .replace(/-–-/g, "-")}`}
+                          url={props.share}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                           target_blank
                         >
@@ -240,11 +232,6 @@ const Curso4 = (props) => {
 
                       <a
                         href="https://www.instagram.com/empleochaco/"
-                        /*    url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`} */
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -263,11 +250,7 @@ const Curso4 = (props) => {
                       </a>
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
-                          url={`/capacitaciones/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\¿/g, "")
-                            .replace(/-–-/g, "-")}`}
+                          url={props.share}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                         >
                           <SocialIcon
@@ -285,11 +268,7 @@ const Curso4 = (props) => {
                       </a>
                       <a target="_blank" rel="noopener noreferrer">
                         <LinkedinShareButton
-                          url={`/capacitaciones/${curso.nombre
-                            .replace(/([a-z])([A-Z])/g, "$1-$2")
-                            .replace(/\s+/g, "-")
-                            .replace(/\¿/g, "")
-                            .replace(/-–-/g, "-")}`}
+                          url={props.share}
                           className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                         >
                           <SocialIcon
@@ -669,11 +648,7 @@ const Curso4 = (props) => {
                   <h4 className={classes.shareTitlemobile}>Compartir</h4>
                   <a>
                     <FacebookShareButton
-                      url={`/capacitaciones/${curso.nombre
-                        .replace(/([a-z])([A-Z])/g, "$1-$2")
-                        .replace(/\s+/g, "-")
-                        .replace(/\¿/g, "")
-                        .replace(/-–-/g, "-")}`}
+                      url={props.share}
                       className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                     >
                       <SocialIcon
@@ -692,11 +667,7 @@ const Curso4 = (props) => {
 
                   <a>
                     <TwitterShareButton
-                      url={`/capacitaciones/${curso.nombre
-                        .replace(/([a-z])([A-Z])/g, "$1-$2")
-                        .replace(/\s+/g, "-")
-                        .replace(/\¿/g, "")
-                        .replace(/-–-/g, "-")}`}
+                      url={props.share}
                       className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                       target_blank
                     >
@@ -715,11 +686,6 @@ const Curso4 = (props) => {
                   </a>
                   <a
                     href="https://www.instagram.com/empleochaco/"
-                    /*    url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`} */
                     className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -738,11 +704,7 @@ const Curso4 = (props) => {
                   </a>
                   <a target="_blank" rel="noopener noreferrer">
                     <WhatsappShareButton
-                      url={`/capacitaciones/${curso.nombre
-                        .replace(/([a-z])([A-Z])/g, "$1-$2")
-                        .replace(/\s+/g, "-")
-                        .replace(/\¿/g, "")
-                        .replace(/-–-/g, "-")}`}
+                      url={props.share}
                       className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                     >
                       <SocialIcon
@@ -760,11 +722,7 @@ const Curso4 = (props) => {
                   </a>
                   <a target="_blank" rel="noopener noreferrer">
                     <LinkedinShareButton
-                      url={`/capacitaciones/${curso.nombre
-                        .replace(/([a-z])([A-Z])/g, "$1-$2")
-                        .replace(/\s+/g, "-")
-                        .replace(/\¿/g, "")
-                        .replace(/-–-/g, "-")}`}
+                      url={props.share}
                       className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                     >
                       <SocialIcon
@@ -1231,11 +1189,7 @@ const Curso4 = (props) => {
                     <h4 className={classes.shareTitlemobile}>Compartir</h4>
                     <a>
                       <FacebookShareButton
-                        url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`}
+                        url={props.share}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                       >
                         <SocialIcon
@@ -1254,11 +1208,7 @@ const Curso4 = (props) => {
 
                     <a>
                       <TwitterShareButton
-                        url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`}
+                        url={props.share}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                         target_blank
                       >
@@ -1277,11 +1227,6 @@ const Curso4 = (props) => {
                     </a>
                     <a
                       href="https://www.instagram.com/empleochaco/"
-                      /*    url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`} */
                       className="Demo__some-network__share-button Demo__some-network__share-buttonPadding"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -1300,11 +1245,7 @@ const Curso4 = (props) => {
                     </a>
                     <a target="_blank" rel="noopener noreferrer">
                       <WhatsappShareButton
-                        url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`}
+                        url={props.share}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                       >
                         <SocialIcon
@@ -1322,11 +1263,7 @@ const Curso4 = (props) => {
                     </a>
                     <a target="_blank" rel="noopener noreferrer">
                       <LinkedinShareButton
-                        url={`/capacitaciones/${curso.nombre
-                          .replace(/([a-z])([A-Z])/g, "$1-$2")
-                          .replace(/\s+/g, "-")
-                          .replace(/\¿/g, "")
-                          .replace(/-–-/g, "-")}`}
+                        url={props.share}
                         className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
                       >
                         <SocialIcon
