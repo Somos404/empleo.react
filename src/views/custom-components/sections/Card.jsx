@@ -130,7 +130,6 @@ const CardCustom = (props) => {
                         <LinkedinShareButton
                           url={props.infoCursos.share}
                           title={props.infoCursos.titulo}
-                          source="empleo chaco"
                           className="Demo__some-network__share-button"
                         >
                           <SocialIcon

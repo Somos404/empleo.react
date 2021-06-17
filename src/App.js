@@ -91,7 +91,7 @@ function App() {
         {/* <Route exact path="/capacitaciones" component={Capacitaciones} /> */}
         {cursosAndCategias && (
           <Route
-            path="/capacitaciones-demo"
+            path="/cenit"
             render={(props) => (
               <CapacitacionesDemo
                 cursosAndCategias={cursosAndCategias}
