@@ -359,6 +359,10 @@ const useStyles = makeStyles((theme) => ({
   },
   tituloDesc: {
     marginLeft: "0em!important",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: "0em!important",
+      textAlign: "left",
+    },
   },
 }));
 
