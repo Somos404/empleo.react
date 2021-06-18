@@ -33,7 +33,6 @@ const CardCustom = (props) => {
       onMouseLeave={() => toggleHover(true)}
     >
       <Col
-        md="12"
         className="col-md-12 heightWidthCard pro-pic"
         style={{
           backgroundImage: `url(https://empleo.chaco.gob.ar/card/cursosimg/${props.infoCursos.imgUrl}.png)`,
@@ -56,15 +55,9 @@ const CardCustom = (props) => {
           <div className="card-img-overlay">
             <Card className={classes.root}>
               <CardContent className={classes.CardContent}>
-                <Typography
-                  className={classes.CardTitle}
-                  color="textSecondary"
-                  gutterBottom
-                >
-                  <ul
-                    className={`${classes.contenedorRedesCardOverlay} list-inline list-inlineRedes list-inlineRedesTop`}
-                  >
-                    <li className="list-inline-item">
+                <div className={`${classes.CardTitle}`}>
+                  <ul className={`${classes.contenedorRedesCardOverlay}`}>
+                    <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a>
                         <FacebookShareButton
                           url={props.infoCursos.share}
@@ -80,7 +73,7 @@ const CardCustom = (props) => {
                         </FacebookShareButton>
                       </a>
                     </li>
-                    <li>
+                    <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a>
                         <TwitterShareButton
                           url={props.infoCursos.share}
@@ -97,7 +90,7 @@ const CardCustom = (props) => {
                         </TwitterShareButton>
                       </a>
                     </li>
-                    <li>
+                    <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a
                         href="https://www.instagram.com/empleochaco/"
                         className="Demo__some-network__share-button"
@@ -117,7 +110,7 @@ const CardCustom = (props) => {
                         />
                       </a>
                     </li>
-                    <li>
+                    <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a target="_blank" rel="noopener noreferrer">
                         <WhatsappShareButton
                           title={props.infoCursos.titulo}
@@ -133,12 +126,11 @@ const CardCustom = (props) => {
                         </WhatsappShareButton>
                       </a>
                     </li>
-                    <li>
+                    <li className={`${classes.contenedorRedesCardOverlay}`}>
                       <a target="_blank" rel="noopener noreferrer">
                         <LinkedinShareButton
                           url={`https://empleo.chaco.gob.ar/`}
-                          //  url={curso.nombre}
-                          className="Demo__some-network__share-button Demo__some-network__share-buttonPadding "
+                          className="Demo__some-network__share-button"
                         >
                           <SocialIcon
                             style={{
@@ -155,7 +147,7 @@ const CardCustom = (props) => {
                       </a>
                     </li>
                   </ul>
-                </Typography>
+                </div>
                 <Typography
                   className={classes.Cardbody}
                   variant="body2"
@@ -251,9 +243,10 @@ const useStyles = makeStyles((theme) => ({
   },
   // dentro del CardContent
   CardTitle: {
-    minHeight: "2em",
-    //backgroundColor: 'red',
-    paddingTop: "4%",
+    minHeight: "3em",
+    //backgroundColor: "red",
+    marginLeft: "-18%",
+    paddingTop: "5%",
   },
   // dentro del CardContent
   Cardbody: {
@@ -293,18 +286,16 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.2,
   },
   contenedorRedesCardOverlay: {
-    marginLeft: "0%",
-    [theme.breakpoints.only("xl")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.down("lg")]: {
-      width: "18em",
-      textAlign: "center",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "18em",
-      textAlign: "center",
-    },
+    listStyleType: "none",
+    display: "flex",
+    justifyContent: "center",
+  },
+
+  listaRedesSociles: {
+    display: "list-item",
+    padding: "5px 10px",
+    color: "white",
+    margin: "0 3px",
   },
   nombreCardoverlay: {
     fontSize: "18px",
