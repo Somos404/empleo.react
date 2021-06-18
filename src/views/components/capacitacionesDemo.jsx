@@ -18,7 +18,7 @@ import img1 from "../../assets/images/capacitaciones/iconoGratis.svg";
 import img2 from "../../assets/images/capacitaciones/iconoCertificados.svg";
 import img3 from "../../assets/images/capacitaciones/iconoTutorados.svg";
 import img4 from "../../assets/images/capacitaciones/iconoHorarios.svg";
-import imgInfo from "../../assets/images/capacitaciones/logoCapHeaderv1.png";
+import imgInfo from "../../assets/images/capacitaciones/logoCapHeaderv2.png";
 import Slider from "../custom-components/sections/slider/Slider";
 import UserService from "../../services/UserService";
 import { makeStyles } from "@material-ui/core/styles";
@@ -70,7 +70,7 @@ const CapacitacionesDemo = (props) => {
       <div className="page-wrapper">
         <div className="container-fluid">
           <HeaderBannerCapacitaciones />
-          <Row className="justify-content-center">
+          <Row className={classes.imagenRowCenit}>
             <img
               src={imgInfo}
               alt="img"
@@ -80,106 +80,40 @@ const CapacitacionesDemo = (props) => {
           </Row>
           <div className="spacer-Header spacer-HeaderCap">
             <Container className={`${classes.containerPCapDemo} containerPCap`}>
-              <Row xs="2">
-                <Col lg="6">
-                  <section className="text-gray-600 body-font">
-                    <div className="ResponsiveHiddenCapacitaciones">
-                      {/* <Row className="justify-content-center">
-                                            <img src={imgInfo} alt="img" className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap" width="200" />
-
-                                            </Row> */}
-                      <Row className="justify-content-center">
-                        <h1 className="text-center  titulo1ContResponsiveModificado">
-                          Cursos para tu formación laboral y emprendedora
-                        </h1>
-                      </Row>
-                      <hr className="justify-content-center lineaCopada" />
-                      <Row className="justify-content-center">
-                        <p className="text-center parrafoCursos">
-                          Desde el Gobierno del Chaco ponemos a tu disposición
-                          una plataforma online de capacitaciones con cursos
-                          cortos, dinámicos y entretenidos para que puedas
-                          desarrollar tus capacidades, mejorar tus posibilidades
-                          para conseguir empleo, e iniciar o fortalecer tu
-                          emprendimiento.
-                        </p>
-                        {/* <p className="text-center parrafoCursos">Buscamos que cada persona de la comunidad chaqueña encuentre inspiración y herramientas concretas para
-                                                    mejorar su situación laboral. Acompañarte en tu
-                                                    desarrollo personal, en el mejoramiento de tu presente
-                                                    y la construcción de tu futuro es lo que nos moviliza.
-
-                                                            </p> */}
-                      </Row>
-                      <Row className="justify-content-center">
-                        {/* <img src={img7} alt="img" className="img-responsive img-thumbnail imgResponsiveInformat imgResponsiveInformatMod" width="200" /> */}
-                        <p className="text-center parrafoCursos">
-                          Trabajamos para que cada persona de la comunidad
-                          chaqueña encuentre inspiración y herramientas
-                          concretas para mejorar su situación laboral.
-                          Acompañarte en tu desarrollo personal, en el
-                          mejoramiento de tu presente y la construcción de tu
-                          futuro es lo que nos moviliza.
-                        </p>
-                      </Row>
-                      {/* <Row className="justify-content-center">
-                                                <Link className="linkRedirecciones" to="/informatorio">
-                                                    <Card className="card-reqBoton cardReqBotonCap cardReqBotonCapMargin cardReqBotonCapMarginModificado">
-                                                        <CardBody className=" card-body-reqBtn">
-                                                            <Col>
-                                                                <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn" width="200" /></span>
-                                                                <Col className="colbtnBtnEmpleo">
-                                                                    <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn">Quiero capacitarme</h5>
-                                                                </Col>
-                                                                <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img6} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2" width="200" /></span>
-                                                            </Col>
-                                                        </CardBody>
-                                                    </Card>
-                                                </Link>
-                                            </Row> */}
-                    </div>
-                    {/* <Row className="justify-content-center">
-                                        <h1 className="text-center  titulo1ContResponsiveModificado">Te brindamos cursos para tu formación laboral y emprendedora
-                                            </h1>
-                                        </Row> */}
-                    <Container>
-                      <div className="container px-5 py-24 mx-auto cont1Izq contIzqResponsive contIzqTop">
-                        <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft tituloHiddenCap">
-                          <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 titulo1ContCap">
-                            Cursos para tu formación laboral y emprendedora
-                          </h1>
-                        </div>
-                        <hr className="lineaEscritorioHidden" />
-                        <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContLeftP parrafoHiddenCap">
-                          <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">
-                            Desde el Gobierno del Chaco ponemos a tu disposición
-                            una plataforma online de capacitaciones con cursos
-                            cortos, dinámicos y entretenidos para que puedas
-                            desarrollar tus capacidades, mejorar tus
-                            posibilidades para conseguir empleo, e iniciar o
-                            fortalecer tu emprendimiento.
-                          </p>
-                        </div>
-                      </div>
-                    </Container>
-                  </section>
-                </Col>
-                <Row
-                  md="8"
-                  lg="12"
-                  className="colRequerimientosCap colRequerimientosCapTop"
-                >
-                  <Row className="textoInfo ComponentHiddenRepsonsive">
-                    <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto contLeft ContDereCap">
-                      <p className="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 parrafo1Cont">
-                        Trabajamos para que cada persona de la comunidad
-                        chaqueña encuentre inspiración y herramientas concretas
-                        para mejorar su situación laboral. Acompañarte en tu
-                        desarrollo personal, en el mejoramiento de tu presente y
-                        la construcción de tu futuro es lo que nos moviliza.
-                      </p>
-                    </div>
+              {/* 1 columna para el titulo */}
+              <Row className="justify-content-center flex">
+                <Col lg="12" md="12" xs="12" className="justify-content-center">
+                  <Row>
+                    <h1 className={classes.titulo}>
+                      Cursos para tu formación laboral y emprendedora
+                    </h1>
                   </Row>
-                </Row>
+                </Col>
+              </Row>
+              {/* 2 columnas de texto */}
+              <Row className="justify-content-center flex">
+                <Col lg="6" md="6" xs="12" className="justify-content-center">
+                  <Row>
+                    <h2 className={classes.parrafoCursos}>
+                      Desde el Gobierno del Chaco ponemos a tu disposición una
+                      plataforma online de capacitaciones con cursos cortos,
+                      dinámicos y entretenidos para que puedas desarrollar tus
+                      capacidades, mejorar tus posibilidades para conseguir
+                      empleo, e iniciar o fortalecer tu emprendimiento
+                    </h2>
+                  </Row>
+                </Col>
+                <Col lg="6" md="6" xs="12" className="justify-content-center">
+                  <Row>
+                    <h2 className={classes.parrafoCursos}>
+                      Trabajamos para que cada persona de la comunidad chaqueña
+                      encuentre inspiración y herramientas concretas para
+                      mejorar su situación laboral. Acompañarte en tu desarrollo
+                      personal, en el mejoramiento de tu presente y la
+                      construcción de tu futuro es lo que nos moviliza.
+                    </h2>
+                  </Row>
+                </Col>
               </Row>
             </Container>
             <div className="container-fluid segContRed">
@@ -198,7 +132,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -220,7 +156,7 @@ const CapacitacionesDemo = (props) => {
                   <Card className="cardsecondContRed">
                     {/* <CardImg top width="100%" src={img1} alt="Card image cap" className="cardImgRed" /> */}
                     <CardBody className="d-flex no-block cardBodyRed">
-                      <Col class="col-md-2">
+                      <Col className="col-md-2">
                         <div className="m-r-20">
                           <img
                             src={img2}
@@ -230,7 +166,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -361,9 +299,62 @@ CapacitacionesDemo.propTypes = {
 };
 
 const useStyles = makeStyles((theme) => ({
+  titulo: {
+    fontSize: "17px",
+    lineHeight: "23px",
+    fontWeight: "900",
+    color: "black",
+  },
+  /*  contDescrip: {
+    [theme.breakpoints.up("xl")]: {
+      marginLeft: "0em",
+    },
+  }, */
+  parrafoCursos: {
+    lineHeight: "23px",
+    fontWeight: "400",
+    fontSize: "0.8rem",
+  },
+  /*  value         |0px     600px    960px    1280px   1920px
+      key           |xs      sm       md       lg       xl
+      screen width  |--------|--------|--------|--------|-------->
+      range         |   xs   |   sm   |   md   |   lg   |   xl */
+  imagenRowCenit: {
+    justifyContent: "center",
+    // portrait and landscape
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "3rem",
+    },
+    [`${theme.breakpoints.down("sm")} and (orientation: landscape)`]: {
+      marginTop: "6rem",
+    },
+    // portrait and landscape
+    [theme.breakpoints.only("sm")]: {
+      marginTop: "-13%",
+      marginBottom: "2rem",
+    },
+    [`${theme.breakpoints.only("sm")} and (orientation: landscape)`]: {
+      marginTop: "8rem",
+    },
+    // portrait and landscape
+    [theme.breakpoints.only("lg")]: {
+      marginBottom: "5rem",
+    },
+    // portrait and landscape
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "3rem",
+      marginBottom: "5rem",
+    },
+  },
   containerPCapDemo: {
     [theme.breakpoints.down("sm")]: {
-      width: "195%",
+      /* padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px */
+
+      padding: "0px 2rem 0px 2rem",
     },
   },
   tituloDesc: {
