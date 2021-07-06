@@ -74,8 +74,7 @@ const CapacitacionesDemo = (props) => {
             <img
               src={imgInfo}
               alt="img"
-              className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader"
-              width="200"
+              className={`${classes.containerIsologo} img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader`}
             />
           </Row>
           <div className="spacer-Header spacer-HeaderCap">
@@ -299,6 +298,13 @@ CapacitacionesDemo.propTypes = {
 };
 
 const useStyles = makeStyles((theme) => ({
+  containerIsologo: {
+    width: "25em!important",
+    [theme.breakpoints.down("sm")]: {
+      width: "15em!important",
+      height: "10em!important",
+    },
+  },
   titulo: {
     fontSize: "17px",
     lineHeight: "23px",
@@ -323,7 +329,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     // portrait and landscape
     [theme.breakpoints.down("sm")]: {
-      marginTop: "3rem",
+      marginTop: "6rem",
     },
     [`${theme.breakpoints.down("sm")} and (orientation: landscape)`]: {
       marginTop: "6rem",
@@ -342,7 +348,7 @@ const useStyles = makeStyles((theme) => ({
     },
     // portrait and landscape
     [theme.breakpoints.up("lg")]: {
-      marginTop: "3rem",
+      marginTop: "6rem",
       marginBottom: "5rem",
     },
   },

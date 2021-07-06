@@ -116,10 +116,10 @@ const Header = () => {
                 <NavItem>
                   <Link
                     className="nav-link nav-linkColor"
-                    to="/capacitaciones"
+                    to="/"
                     style={{ color: color }}
                   >
-                    INICIO
+                    VOLVER A EMPLEO
                   </Link>
                 </NavItem>
                 <NavItem>
@@ -127,8 +127,6 @@ const Header = () => {
                     className="nav-link nav-linkColor"
                     href="https://capacitaciones.chaco.gob.ar/mod/page/view.php?id=103"
                     style={{ color: color }}
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     CONTACTO
                   </a>
