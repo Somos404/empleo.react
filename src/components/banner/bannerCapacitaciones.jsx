@@ -25,7 +25,7 @@ const HeaderBannerCapacitaciones = () => {
                         </Link>
                         <Typography color="textPrimary">Belts</Typography>
                     </Breadcrumbs> */}
-            <h1 className="title-1 title-1ResponsiveCapheader">Aprendé</h1>
+            <h1 className="title-1 title-1ResponsiveCapheader">Potenciá</h1>
             <h1 className="title-1 title-1ResponsiveCapheader">
               habilidades para
             </h1>

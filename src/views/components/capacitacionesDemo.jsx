@@ -74,8 +74,7 @@ const CapacitacionesDemo = (props) => {
             <img
               src={imgInfo}
               alt="img"
-              className="img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader"
-              width="200"
+              className={`${classes.containerIsologo} img-responsive img-thumbnail imgResponsiveInformatMun imgResponsiveInformatCap imgResponsiveInformatCapHeader`}
             />
           </Row>
           <div className="spacer-Header spacer-HeaderCap">
@@ -132,7 +131,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -164,7 +165,9 @@ const CapacitacionesDemo = (props) => {
                           />
                         </div>
                       </Col>
-                      <Col className="col-md-10 colDescripcionInfo colDescripcionInfoResponsive">
+                      <Col
+                        className={`${classes.tituloDesc}col-md-10 colDescripcionInfoResponsive`}
+                      >
                         <Row className="justify-content-left">
                           <CardTitle
                             className="card-title-red card-title-redResponsive"
@@ -295,12 +298,24 @@ CapacitacionesDemo.propTypes = {
 };
 
 const useStyles = makeStyles((theme) => ({
+  containerIsologo: {
+    width: "25em!important",
+    [theme.breakpoints.down("sm")]: {
+      width: "15em!important",
+      height: "10em!important",
+    },
+  },
   titulo: {
     fontSize: "17px",
     lineHeight: "23px",
     fontWeight: "900",
     color: "black",
   },
+  /*  contDescrip: {
+    [theme.breakpoints.up("xl")]: {
+      marginLeft: "0em",
+    },
+  }, */
   parrafoCursos: {
     lineHeight: "23px",
     fontWeight: "400",
@@ -314,7 +329,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     // portrait and landscape
     [theme.breakpoints.down("sm")]: {
-      marginTop: "3rem",
+      marginTop: "6rem",
     },
     [`${theme.breakpoints.down("sm")} and (orientation: landscape)`]: {
       marginTop: "6rem",
@@ -333,7 +348,7 @@ const useStyles = makeStyles((theme) => ({
     },
     // portrait and landscape
     [theme.breakpoints.up("lg")]: {
-      marginTop: "3rem",
+      marginTop: "6rem",
       marginBottom: "5rem",
     },
   },
@@ -350,6 +365,10 @@ const useStyles = makeStyles((theme) => ({
   },
   tituloDesc: {
     marginLeft: "0em!important",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: "0em!important",
+      textAlign: "left",
+    },
   },
 }));
 

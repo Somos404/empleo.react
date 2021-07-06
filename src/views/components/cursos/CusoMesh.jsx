@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Form } from "reactstrap";
 // core components
-import HeaderCapacitaciones from "../../../components/header/headerCapacitaciones";
+import HeaderCursos from "../../../components/header/headerCursos";
 import HeaderBannerCursos from "../../../components/banner/headerBannerCursos";
 
 import Footer2 from "../../../components/footer/footer2.jsx";
@@ -168,7 +168,7 @@ const Curso4 = (props) => {
         />
       </Helmet>
 
-      <HeaderCapacitaciones />
+      <HeaderCursos />
       <div className="page-wrapper">
         <div className="container-fluid">
           <div className="containerEscritorioCursosHidden">
@@ -190,7 +190,9 @@ const Curso4 = (props) => {
                     className={classes.shareContainer}
                   >
                     <div className={classes.shareSeccion}>
-                      <h4 className={classes.shareTitle}>Compartir</h4>
+                      <h4 className={classes.shareTitle}>
+                        Recomendá este curso
+                      </h4>
                       <a>
                         <FacebookShareButton
                           url={props.share}
@@ -645,7 +647,9 @@ const Curso4 = (props) => {
                 className={`${classes.contenedorCompartir} contenedorCompartirRedesCentrado"`}
               >
                 <div>
-                  <h4 className={classes.shareTitlemobile}>Compartir</h4>
+                  <h4 className={classes.shareTitlemobile}>
+                    Recomendá este curso
+                  </h4>
                   <a>
                     <FacebookShareButton
                       url={props.share}
@@ -1186,7 +1190,9 @@ const Curso4 = (props) => {
 
                 <Container className="contenedorCompartirRedesCentrado">
                   <div>
-                    <h4 className={classes.shareTitlemobile}>Compartir</h4>
+                    <h4 className={classes.shareTitlemobile}>
+                      Recomendá este curso
+                    </h4>
                     <a>
                       <FacebookShareButton
                         url={props.share}
