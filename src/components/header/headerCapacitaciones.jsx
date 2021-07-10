@@ -123,13 +123,13 @@ const Header = () => {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <a
+                  <Link
                     className="nav-link nav-linkColor"
-                    href="https://capacitaciones.chaco.gob.ar/mod/page/view.php?id=103"
+                    to="/contact-cenit"
                     style={{ color: color }}
                   >
                     CONTACTO
-                  </a>
+                  </Link>
                 </NavItem>
                 <NavItem className="navHiddenSocialResponsiveFb">
                   <a

@@ -20,6 +20,7 @@ import Emprendimientos from "./views/components/emprendimientos.jsx";
 import Empresas from "./views/components/empresas.jsx";
 import Oficios from "./views/components/oficios.jsx";
 import Contacto from "./views/components/contacto.jsx";
+import ContactoCap from "./views/components/contactoCap.jsx";
 import ContactoEmpresas from "./views/components/contactoEmpresas.jsx";
 import Buscar from "./views/components/buscar.jsx";
 
@@ -112,6 +113,11 @@ function App() {
 
         {/* <Route exact path="/contact" component={Contacto} /> */}
         <Route path="/contact" render={(props) => <Contacto {...props} />} />
+        <Route
+          path="/contact-cenit"
+          render={(props) => <ContactoCap {...props} />}
+        />
+
         <Route
           path="/contacto-empresas"
           render={(props) => <ContactoEmpresas {...props} />}
