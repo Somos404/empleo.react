@@ -15,18 +15,47 @@ Topbar
     transition: 0.2s ease-in;
     width: 100%;
     position: absolute;
-    // background-color: rgba(255, 255, 255, .60);
+    background-color: rgba(255, 255, 255, .60);
     z-index: 20;
     position: fixed;
 }
+
+.topbarCap {
+    padding: 0px;
+    transition: 0.2s ease-in;
+    width: 100%;
+    position: absolute;
+    // background-color: rgba(255, 255, 255, .40);
+    z-index: 20;
+    position: fixed;
+    
+}
+
+.nav-linkColor{
+    color: white;
+}
 .topbar.active{
     background-color: rgb(233, 233, 233);
+    color: black!important;
 }
 /*******************
 REDIRECCIONES
 *******************/
 
+.btonIngCap{
+    margin-top: 20%;
+    color: white;
+    font-weight: 500 !important;
+    height: 2em;
+    padding-top: 0.1em;
+    border-radius: 1rem !important;
+    border: 3px solid #ca4c96ba !important;
+}
 
+.btonIngCap:hover{
+    background-color: white!important;
+    color: black!important;
+}
 
 .cont-img{
     margin-left: 4em;
@@ -305,6 +334,18 @@ redes-sociales-nav
     font-size: 20px;
     margin-left: -1em;
 }
+
+
+.icono-lk{
+    font-size: 20px;
+    margin-left: -1.5em;
+}
+
+.icono-tw{
+    font-size: 20px;
+    margin-left: -2.3em;
+}
+
 
 .nav-link{
     font-family: Montserrat;
@@ -1253,14 +1294,30 @@ Incentivos Cards
     height: 7em;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .cont1{
         max-width: 91%;
     }
     .containerRequerimientosResponsive {
         display: none;    
     }
+    .contenedor-logos-footerInfoCapHeiht{
+        // background-size: cover;
+     height: inherit!important;
+    display: flex;
+    left: 0;
+    align-items: center;
+    margin-top: -21%!important;
+    margin-left: 20%;
+    }
 }
+
+@media (min-width: 1100px) and (max-wdth: 1200px) {
+    .titulosInfoCapHab {
+        position: relative;
+        margin-top: -16em;
+    }
+    }
 
 .card-sumate{
      background-color:  rgba(1,183,232,0);
@@ -2927,6 +2984,13 @@ Modal in center
     margin-top: 8%;
 }
 
+.spacer-HeaderCap{
+    margin-top: 0%!important;
+
+}
+
+
+
 .segContRed{
     background-color: #F2F2F2;
     height: auto;
@@ -3109,6 +3173,7 @@ Modal in center
 .BannerPContenedorEsc{
     background: rgb(44,176,207);
     background: linear-gradient(90deg, rgba(44,176,207,0.3) 0%, rgba(212,17,131,0.3) 100%);
+    padding-top: 10%;
 }
 .rowSecondParrafoLight{
     color: black;
@@ -3237,9 +3302,9 @@ Modal in center
 }
 
 .imgResponsiveInformatCapHeader{
-    width: 28em!important;
+    width: 40em!important;
     height: 51%!important;
-    margin-top: -12% !important;
+    margin-top: -15% !important;
     margin-left: 1%!important;
 }
 
@@ -3425,7 +3490,7 @@ top: 9% !important;
 .TopContenedorInfo{
     padding: 6px 0;
     position: relative;
-    margin-top: -10em;
+    margin-top: -7em;
 }
 
 .rowSubtInfoCap{
@@ -3511,14 +3576,42 @@ top: 9% !important;
     .imgBackReqCursos{
      max-width: 108% !important;
     }
+    .lineasIncentivo3{
+        margin-left: -12em;
+        margin-top: -2em;
+    }
+    .colImg {
+        position: absolute;
+        margin-left: -74%;
+        margin-top: 5.2%;
+    }
+}
+.backImagenSeconCont{
+    // margin-right: -11.1%!important;
+    position: relative;
+    margin-right: -11.1% !important;
+    margin-top: 0em;
+}
+.contenedorCompartirCursosCap {
+    height: 70px;
+    /* align-items: center; */
+    margin-left: 18em;
 }
 
 
 @media (max-width:1468px){
     .backImagenSeconCont{
         margin-right: -11.1%!important;
-       
+        position: relative;
+        margin-right: -11.1% !important;
+        margin-top: 0em;
     }
+    .contenedorCompartirCursosCap {
+        height: 70px;
+        /* align-items: center; */
+        margin-left: 18em;
+    }
+    
     .textoEspeEscritorio{
         line-height: 35px;
     }
@@ -3535,6 +3628,17 @@ top: 9% !important;
         
     }
 }
+@media (max-width:1200px){
+    .rowSecondParrafoBold{
+        width: 19em!important;
+    }
+    .contenidoCursos {
+        position: absolute;
+        margin-top: -21em!important;
+        margin-left: 6em;
+    }
+}
+
 @media (max-width:1467px){
     
     .static-slider10InfoCap {
@@ -3545,7 +3649,15 @@ top: 9% !important;
     .static-slider-headCapacitaciones {
         min-height: 81vh;
         margin-left: -1%;
+    }
+    .titulosInfoCapHab{
+        position: relative; 
+        margin-top: -14em;
     }    
+    .imgResponsiveInformatCapMArginLeft {
+    
+        margin-top: 10%;
+    }
 }
 
 @media (min-width:1468px){
@@ -3642,8 +3754,53 @@ top: 9% !important;
    
    
 .tituloCursosFiltro{
-    font-size: 31px!important;
+    font-size: 40px!important;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     margin-top: 1em;
 }
+
+.backAccordeonRespuesta{
+        display: "block"!important;
+    }
+
+.contenedor-minMarginTop{
+    margin-top: 14%;
+}
+
+.imgRepsonsiveInfoCapWidth{
+    width: 20em;
+}
+
+.contenedor-logos-footerInfoCapHeiht{
+    background-size: cover;
+    height: 20em;
+    display: flex;
+    left: 0;
+    align-items: center;
+    margin-top: -18%;
+    margin-left: 20%;
+}
+
+.Demo__some-network__share-buttonPadding{
+    padding: .3em!important;
+}
+
+.compartirCursoTitulo{
+    margin-left: 13%;
+}
+
+//DASHBOARD
+.siderbarEscritorio{
+    margin-top: 10em;
+}
+
+//titulo de los cursos
+.rowSecondParrafoBold{
+    width: 19em!important;
+}
+
+.contenedorCompartirCursosCap{
+    //display: flex;
+}
+

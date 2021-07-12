@@ -20,7 +20,7 @@ const PostulateComponent = () => {
                                 <CardBody className="card-sumate2">
                                     <Col md="9" className="colSumate">
                                         <Row className="m-t-40 row-sumate">
-                                            <h5 className="titulo-sumate">¿Buscas Empleo?</h5>
+                                            <h5 className="titulo-sumate">¿Buscás empleo?</h5>
                                         </Row>
                                         <Row className="m-t-40 row-sumate2">
                                             <Link to="/empleo" className="botones-1 hvr-sweep-to-right">Postulate</Link>{' '}

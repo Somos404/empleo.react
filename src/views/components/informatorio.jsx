@@ -69,18 +69,6 @@ import img43 from '../../informatorio/img/RectánguloVideo.png';
 
 import '../../informatorio/css/styles.css';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '100%',
-    },
-    heading: {
-        fontSize: theme.typography.pxToRem(15),
-        fontWeight: "bold"
-    },
-}));
-
-
-
 const Informatorio = (props) => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -125,10 +113,10 @@ const Informatorio = (props) => {
                                                 <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
                                                     <Col>
                                                         <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform" width="200" /></span>
-                                                        <Col className="colbtnBtnEmpleo">
-                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Ingresar</h5>
+                                                        <Col className={`${classes.TextoCol} colbtnBtnEmpleo`}>
+                                                            <h5 className={`${classes.TextoBoton} font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform`}>quiero que me avisen cuando abran las inscripciones</h5>
                                                         </Col>
-                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2" width="200" /></span>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className={`${classes.TextoImg} img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2`} width="200" /></span>
                                                     </Col>
                                                 </CardBody>
                                             </Card>
@@ -205,7 +193,6 @@ const Informatorio = (props) => {
                                             <div className="paso-p">
                                                 Para conocer de qué se trata el mundo de la
                                                 programación e iniciarte en sus lenguajes.
-                                                Se realizará del 10/03/2021 al 10/04/2021.
                                                 </div>
                                             <div className="linea">
                                                 <img className="img-fluid" src={img9} alt="" />
@@ -224,10 +211,10 @@ const Informatorio = (props) => {
                                                 <CardBody className="card-body-reqBtn card-body-reqBtnInfor">
                                                     <Col>
                                                         <span to="/informatorio" className="img-ho cont-img cont-img1BtnCap"><img src={img41} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn img-redireccionesBtnInform img-redireccionesBtnInscribirme" width="200" /></span>
-                                                        <Col className="colbtnBtnEmpleo colbtnBtnInscribirm">
-                                                            <h5 className="font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform ">Ingresar</h5>
+                                                        <Col className={`${classes.TextoCol} colbtnBtnEmpleo colbtnBtnInscribirm`}>
+                                                            <h5 className={`${classes.TextoBoton} font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform`}>quiero que me avisen cuando abran las inscripciones</h5>
                                                         </Col>
-                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className="img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2 img-redireccionesBtnInform2Responsive" width="200" /></span>
+                                                        <span to="/informatorio" className="img-ho cont-img cont-img2Btn"><img src={img42} alt="img" className={`${classes.TextoImg} img-responsive img-thumbnail img-redireccionesBtn2 img-redireccionesBtnInform2 img-redireccionesBtnInform2Responsive`} width="200" /></span>
                                                     </Col>
                                                 </CardBody>
                                             </Card>
@@ -784,6 +771,29 @@ const Informatorio = (props) => {
 
     );
 }
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+    },
+    heading: {
+        fontSize: theme.typography.pxToRem(15),
+        fontWeight: "bold"
+    },
+    TextoBoton:{
+        lineHeight: '17px',
+        fontSize: '14px !important',
+    },
+    TextoCol:{
+        marginTop: '2em',
+    },
+    TextoImg:{
+        marginTop: '-16%',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '-15% !important',
+        },  
+    }
+}));
 
 Informatorio.propTypes = {
     classes: PropTypes.object
