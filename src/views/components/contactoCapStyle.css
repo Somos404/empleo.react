@@ -1,0 +1,38 @@
+.contenedor1 {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 176, 207, 0.3) 0%,
+    rgba(212, 17, 131, 0.3) 100%
+  );
+}
+
+.contenedor2 {
+  padding-top: 100px;
+}
+
+.contenedorBoton {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 470px) {
+  .hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    background-color: #ffbb00;
+    text-align: center;
+    color: white;
+    border-radius: 20em;
+    border: none;
+    width: 35%;
+    font-weight: 800;
+    height: 2em;
+    padding: 0;
+    font-size: 17px;
+    padding: 0%;
+    cursor: pointer;
+  }
+}
