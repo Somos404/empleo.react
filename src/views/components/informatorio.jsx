@@ -224,7 +224,7 @@ const Informatorio = (props) => {
                       <img className="img-fluid imgFondo" src={img43} alt="" />
                       <div className="embed-responsive embed-responsive-16by9">
                         <iframe
-                          src="https://www.youtube.com/watch?v=pPnEqtnaLmQ"
+                          src="https://www.youtube.com/embed/pPnEqtnaLmQ"
                           frameBorder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
@@ -447,22 +447,6 @@ const Informatorio = (props) => {
                   <div className="w-100"></div>
                   <div className="col-12">
                     <div className="accordion" id="preguntasFrecuentes">
-                      {/* <div className="card">
-                                                    <div className="card-header" id="pregunta1">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left" onClick={toggle}>
-                                                                ¿Los cursos tienen algún costo o arancel?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta1" className="collapse show" aria-labelledby="pregunta1" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Todos los cursos del Informatorio son y serán siempre gratuitos, porque es una política del Gobierno Provincial que busca formar a chaqueños y chaqueñas en programación, para potenciar la industria del software y servicios informáticos.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                       <div className={classes.root}>
                         <Accordion>
                           <AccordionSummary
@@ -503,22 +487,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta2">
-                                                        <h2 className="mb-0">
-                                                            <Button  className="btn btn-link btn-block text-left collapsed"  onClick={toggle2}>
-                                                                ¿Al ﬁnalizar el cursado obtengo algún certiﬁcado?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen2={isOpen2}>
-                                                    <div id="respuesta2" className="collapse" aria-labelledby="pregunta2" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Sí, por cada curso/taller que realices y finalices satisfactoriamente obtendrás un certificado que valide tus conocimientos. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -539,22 +507,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta3">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Qué requisitos se exigen para participar del Informatorio?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta3" className="collapse" aria-labelledby="pregunta3" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Para participar de los cursos del Informatorio sólo es necesario que residas en la provincia del Chaco y que tengas 18 años o más al momento de iniciar el curso. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -578,22 +530,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta4">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Se requieren conocimientos previos para participar?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta4" className="collapse" aria-labelledby="pregunta4" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No es un requisito. Los contenidos del Informatorio están diseñado tanto para quienes se acercan a la programación por primera vez como también para quienes tienen conocimientos en el tema, ya que los cursos van de lo más simple a lo más complejo. Esto no significa que será fácil, tendrás que dedicarle tiempo y empeño.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -616,22 +553,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta5">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Puedo inscribirme si estoy cursando una carrera universitaria o terciaria?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta5" className="collapse" aria-labelledby="pregunta5" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No existe impedimento alguno. Los cursos del Informatorio son complementarios con cualquier carrera terciaria o universitaria. Sin embargo, tenés que considerar que el Informatorio al ser un curso intensivo, requerirá que le dediques mucho tiempo. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -654,22 +575,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta6">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Los cursos del Informatorio me sirven para reparar computadoras?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta6" className="collapse" aria-labelledby="pregunta6" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No. En los cursos del Informatorio aprenderás a manejar herramientas necesarias para desempeñarte como programador o programadora en la industria local. Estos cursos no abarcan conceptos relacionados a reparación de PC o cualquier otro dispositivo electrónico. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -682,30 +588,14 @@ const Informatorio = (props) => {
                           </AccordionSummary>
                           <AccordionDetails>
                             <Typography>
-                              El recorrido que proponemos se inicia con el curso
-                              Introducción a la Programación, cuya inscripción
-                              estará abierta desde el 20/02/2021 hasta el
-                              05/03/2021, y su cursado se realizará de manera
-                              online del 10/03/2021 al 10/04/2021.{" "}
+                              Para que puedas estar informado sobre las fechas
+                              de inscripción, es importante estar atentos/as a
+                              las redes sociales, allí publicamos todas las
+                              novedades. Buscanos en Instagram y Facebook como
+                              @empleochaco.
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta7">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Qué cursos tienen inscripción abierta?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta7" className="collapse" aria-labelledby="pregunta7" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            El recorrido que proponemos se inicia con el curso Introducción a la Programación, cuya inscripción estará abierta desde el 1 al 20 de julio de 2020, y su cursado se realizará de manera online durante el mes de agosto.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -725,22 +615,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta8">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Qué necesito para hacer el curso de Introducción a la programación?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta8" className="collapse" aria-labelledby="pregunta8" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Debés contar con un dispositivo con acceso a internet, ya que la capacitación es a través de una plataforma educativa online. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -763,22 +637,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta9">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Cómo me inscribo al curso Introducción a la programación?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta9" className="collapse" aria-labelledby="pregunta9" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Debés completar el formulario online con todos los datos requeridos, y tener en cuenta que la inscripción se confirma con el envío de dos archivos: imagen de tu DNI y un video de presentación personal o carta de motivación.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -786,42 +645,17 @@ const Informatorio = (props) => {
                             id="panel10a-header"
                           >
                             <Typography className={classes.heading}>
-                              {" "}
                               Ingresé mal los datos en el formulario, ¿cómo hago
                               para cambiarlo?
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
                             <Typography>
-                              Comunicate con nosotros a través del{" "}
-                              <strong>
-                                <a href="mailto:informatorio@chaco.gob.ar">
-                                  correo
-                                </a>
-                                ,
-                              </strong>{" "}
-                              con el asunto “SOLICITUD DE CAMBIO DE DATOS” y
-                              contanos cuáles son los datos que necesitas
-                              modificar.{" "}
+                              Si consideras que completaste mal el formulario o
+                              no lo concluiste, completalo nuevamente.
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta10">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                Ingresé mal los datos en el formulario, ¿cómo hago para cambiarlo?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta10" className="collapse" aria-labelledby="pregunta10" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Comunicate con nosotros a través del <strong><a href="mailto:informatorio@chaco.gob.ar">correo</a>,</strong> con el asunto “SOLICITUD DE CAMBIO DE DATOS” y contanos cuáles son los datos que necesitas modificar.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -846,22 +680,34 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta11">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Puedo inscribirme a cualquier curso durante el período de inscripción?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta11" className="collapse" aria-labelledby="pregunta11" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No, los cursos del Informatorio están diseñados por etapas correlativas. Es necesario aprobar el curso de “Introducción a la Programación” para luego poder cursar “Programación y Desarrollo Web”, y aprobar este último para iniciar los “Talleres de Especialización en Lenguajes de Programación” o el “Taller para Emprender en TICs”.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+                        <Accordion>
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel12a-content"
+                            id="panel12a-header"
+                          >
+                            <Typography className={classes.heading}>
+                              ¿Si aprobé Introducción a la Programación en una
+                              edición anterior, puedo inscribirme a la siguiente
+                              etapa en cualquier otra edición?
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <Typography>
+                              No. Si terminaste Introducción a la Programación y
+                              no continúas de manera inmediata con la segunda
+                              etapa del Informatorio, debés iniciar el recorrido
+                              desde el comienzo. El Informatorio es un programa
+                              dinámico, que se va adaptando constantemente a lo
+                              cambios de la industria del software, y se
+                              desarrolla en etapas correlativas diseñadas para
+                              realizarse consecutivamente, sin demasiada
+                              dilación entre una y otra. Por ello, en caso de
+                              querer retormar tu formación en programación,
+                              debés hacerlo desde la primera etapa.
+                            </Typography>
+                          </AccordionDetails>
+                        </Accordion>
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -875,32 +721,17 @@ const Informatorio = (props) => {
                           </AccordionSummary>
                           <AccordionDetails>
                             <Typography>
-                              El curso de Introducción a la Programación tiene
-                              una duración de un mes, con una carga semanal de
-                              12 hs que deberás dedicarle. Lógicamente el tiempo
-                              podrá ser menor o mayor dependiendo de si tenés o
-                              no conocimientos previos y de qué tan rápido le
-                              agarres la mano.
+                              Contarás con un mes para completar el curso de
+                              Introducción a la Programación, en modalidad
+                              asincrónica. Se recomienda, dedicar 12 horas de
+                              carga semanal, para concluir en el tiempo
+                              estipulado. Si finalizas antes del periodo, solo
+                              debes esperar a que comience la inscripción a la
+                              siguiente etapa.
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
                       </div>
-                      {/* <div className="card">
-                                                    <div className="card-header" id="pregunta12">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Cuánto tiempo tendré que dedicarle al curso de Introducción a la Programación?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta12" className="collapse" aria-labelledby="pregunta12" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            El curso de Introducción a la Programación se realizará durante todo el mes de agosto, y  tiene una duración total de 50 hs. Por lo tanto, tendrás que dedicarle no menos de 12 hs semanales. Lógicamente el tiempo podrá ser menor o mayor dependiendo de si tenés o no conocimientos previos y de qué tan rápido le agarres la mano.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                     </div>
                   </div>
                 </div>
