@@ -92,8 +92,8 @@ const Header = () => {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/acompañar-chaco">
-                    ACOMPAÑAR CHACO
+                  <Link className="nav-link" to="/informatorio">
+                    INFORMATORIO
                   </Link>
                 </NavItem>
                 <NavItem>

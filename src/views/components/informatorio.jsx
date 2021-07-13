@@ -117,7 +117,7 @@ const Informatorio = (props) => {
                       <img src={img3} alt="" />
                     </div>
                     <h4 className="tituloInfoIngresar">
-                      INSCRIPCIONES CERRADAS
+                      INSCRIPCIONES ABIERTAS
                       <br />
                       lntroducción a la Programación
                     </h4>
@@ -128,7 +128,7 @@ const Informatorio = (props) => {
                     </div>
                     <a
                       className="linkRedirecciones"
-                      href="https://mumuki.io/informatorio"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeoQZDA6kK-4qI-32Egn_Lo__IUME0crib8S2JaAFOFKOxOnQ/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -152,8 +152,7 @@ const Informatorio = (props) => {
                               <h5
                                 className={`${classes.TextoBoton} font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform`}
                               >
-                                quiero que me avisen cuando abran las
-                                inscripciones
+                                quiero inscribirme
                               </h5>
                             </Col>
                             <span
@@ -179,7 +178,7 @@ const Informatorio = (props) => {
                     <h4 className="tituloInfoIngresar">
                       Tenés tiempo para completar hasta el
                       <br />
-                      10/04 inclusive
+                      31/07 inclusive
                     </h4>
                   </div>
                 </div>
@@ -189,7 +188,7 @@ const Informatorio = (props) => {
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
-                    <h2>Qué es el Informatorio?</h2>
+                    <h2>¿Qué es el Informatorio?</h2>
                     <div className="subrayado">
                       <img src={img7} alt="" />
                     </div>
@@ -211,11 +210,12 @@ const Informatorio = (props) => {
                         base tecnológica.
                       </p>
                       <p>
-                        Es un programa del Gobierno del Chaco, llevado adelante
-                        por la Subsecretaría de Empleo, dependiente del
-                        Ministerio de Producción, Industria y Empleo, trabajando
-                        en conjunto con las empresas del Polo IT Chaco, la
-                        UTN-FRRe y la UNCAUS.
+                        Es un programa del Gobierno del Chaco que se implementa
+                        desde el año 2012, llevado adelante por la Subsecretaría
+                        de Empleo, dependiente del Ministerio de Producción,
+                        Industria y Empleo, trabajando en conjunto con las
+                        empresas del Polo IT Chaco, Globant, la UTN-FRRe y la
+                        UNCAUS.
                       </p>
                     </div>
                   </div>
@@ -255,7 +255,10 @@ const Informatorio = (props) => {
                       </div>
                       <div className="paso-p">
                         Para conocer de qué se trata el mundo de la programación
-                        e iniciarte en sus lenguajes.
+                        e iniciarte en sus lenguajes, darás tus primeros pasos
+                        en Gobstones y JavaScript. La 2da edición 2021 de este
+                        curso se realizará del 05/08 al 05/09, y tenés plazo
+                        para inscribirte hasta el 31/07 inclusive.
                       </div>
                       <div className="linea">
                         <img className="img-fluid" src={img9} alt="" />
@@ -272,7 +275,7 @@ const Informatorio = (props) => {
                       </ul>
                       <a
                         className="linkRedirecciones"
-                        href="https://mumuki.io/informatorio"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeoQZDA6kK-4qI-32Egn_Lo__IUME0crib8S2JaAFOFKOxOnQ/viewform"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -296,8 +299,7 @@ const Informatorio = (props) => {
                                 <h5
                                   className={`${classes.TextoBoton} font-medium m-b-0 tituloBtnSP titulo-requerimientosBtn titulo-requerimientosBtnInform`}
                                 >
-                                  quiero que me avisen cuando abran las
-                                  inscripciones
+                                  quiero inscribirme
                                 </h5>
                               </Col>
                               <span
@@ -367,9 +369,9 @@ const Informatorio = (props) => {
                         <img className="img-fluid" src={img14} alt="" />
                       </div>
                       <ul className="pas">
-                        <li className="modalis">Modalidad: Semipresencial</li>
+                        <li className="modalis">Modalidad: Online</li>
                         <li className="dura">
-                          Duración: De 2 a 4 meses, (dependiendo de la temática)
+                          Duración: 4 meses, (dependiendo de la temática)
                         </li>
                         <li className="requi">
                           Requisitos: <br />- Haber aprobado curso Programación
@@ -409,19 +411,21 @@ const Informatorio = (props) => {
               </div>
               <div className="tit-cursos2"></div>
             </section>
-            <section className="resultados d-flex align-items-end">
+            <section
+              className={`${classes.resutadosJs} resultados d-flex align-items-end`}
+            >
               <div className="container containerResutlados">
                 <div className="row">
                   <div className="col-md-6">
-                    <h2>Resultados 2020</h2>
+                    {/* <h2>Resultados</h2>
                     <div className="subrayado">
                       <img src={img17} alt="" />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-md-6"></div>
                 </div>
                 <div className="row">
-                  <div className="col-md-12">
+                  <div className="col-md-12 mt-5">
                     <img className="img-fluid" src={img18} alt="" />
                   </div>
                   {/* <div className="col-md-6">
@@ -443,22 +447,6 @@ const Informatorio = (props) => {
                   <div className="w-100"></div>
                   <div className="col-12">
                     <div className="accordion" id="preguntasFrecuentes">
-                      {/* <div className="card">
-                                                    <div className="card-header" id="pregunta1">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left" onClick={toggle}>
-                                                                ¿Los cursos tienen algún costo o arancel?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta1" className="collapse show" aria-labelledby="pregunta1" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Todos los cursos del Informatorio son y serán siempre gratuitos, porque es una política del Gobierno Provincial que busca formar a chaqueños y chaqueñas en programación, para potenciar la industria del software y servicios informáticos.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                       <div className={classes.root}>
                         <Accordion>
                           <AccordionSummary
@@ -499,22 +487,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta2">
-                                                        <h2 className="mb-0">
-                                                            <Button  className="btn btn-link btn-block text-left collapsed"  onClick={toggle2}>
-                                                                ¿Al ﬁnalizar el cursado obtengo algún certiﬁcado?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen2={isOpen2}>
-                                                    <div id="respuesta2" className="collapse" aria-labelledby="pregunta2" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Sí, por cada curso/taller que realices y finalices satisfactoriamente obtendrás un certificado que valide tus conocimientos. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -535,22 +507,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta3">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Qué requisitos se exigen para participar del Informatorio?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta3" className="collapse" aria-labelledby="pregunta3" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Para participar de los cursos del Informatorio sólo es necesario que residas en la provincia del Chaco y que tengas 18 años o más al momento de iniciar el curso. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -574,22 +530,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta4">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Se requieren conocimientos previos para participar?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta4" className="collapse" aria-labelledby="pregunta4" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No es un requisito. Los contenidos del Informatorio están diseñado tanto para quienes se acercan a la programación por primera vez como también para quienes tienen conocimientos en el tema, ya que los cursos van de lo más simple a lo más complejo. Esto no significa que será fácil, tendrás que dedicarle tiempo y empeño.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -612,22 +553,6 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta5">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Puedo inscribirme si estoy cursando una carrera universitaria o terciaria?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta5" className="collapse" aria-labelledby="pregunta5" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No existe impedimento alguno. Los cursos del Informatorio son complementarios con cualquier carrera terciaria o universitaria. Sin embargo, tenés que considerar que el Informatorio al ser un curso intensivo, requerirá que le dediques mucho tiempo. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -650,22 +575,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta6">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Los cursos del Informatorio me sirven para reparar computadoras?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta6" className="collapse" aria-labelledby="pregunta6" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            No. En los cursos del Informatorio aprenderás a manejar herramientas necesarias para desempeñarte como programador o programadora en la industria local. Estos cursos no abarcan conceptos relacionados a reparación de PC o cualquier otro dispositivo electrónico. 
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -727,22 +637,7 @@ const Informatorio = (props) => {
                             </Typography>
                           </AccordionDetails>
                         </Accordion>
-                        {/* <div className="card">
-                                                    <div className="card-header" id="pregunta9">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Cómo me inscribo al curso Introducción a la programación?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta9" className="collapse" aria-labelledby="pregunta9" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            Debés completar el formulario online con todos los datos requeridos, y tener en cuenta que la inscripción se confirma con el envío de dos archivos: imagen de tu DNI y un video de presentación personal o carta de motivación.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
+
                         <Accordion>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -837,28 +732,14 @@ const Informatorio = (props) => {
                           </AccordionDetails>
                         </Accordion>
                       </div>
-                      {/* <div className="card">
-                                                    <div className="card-header" id="pregunta12">
-                                                        <h2 className="mb-0">
-                                                            <Button className="btn btn-link btn-block text-left collapsed" onClick={toggle}>
-                                                                ¿Cuánto tiempo tendré que dedicarle al curso de Introducción a la Programación?
-                                                            </Button>
-                                                        </h2>
-                                                    </div>
-                                                    <Collapse isOpen={isOpen}>
-                                                    <div id="respuesta12" className="collapse" aria-labelledby="pregunta12" data-parent="#preguntasFrecuentes">
-                                                        <div className="card-body">
-                                                            El curso de Introducción a la Programación se realizará durante todo el mes de agosto, y  tiene una duración total de 50 hs. Por lo tanto, tendrás que dedicarle no menos de 12 hs semanales. Lógicamente el tiempo podrá ser menor o mayor dependiendo de si tenés o no conocimientos previos y de qué tan rápido le agarres la mano.
-                                                        </div>
-                                                    </div>
-                                                    </Collapse>
-                                                </div> */}
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section className="foot d-flex align-items-end">
+            <section
+              className={`${classes.footJs} foot d-flex align-items-end`}
+            >
               <div className="container">
                 <div className="row">
                   {/*<!-- desktop -->*/}
@@ -934,7 +815,9 @@ const Informatorio = (props) => {
                     </div>
                     <div className="los-cumpa">
                       <h4>ACOMPAÑAN:</h4>
-                      <div className="d-flex justify-content-around">
+                      <div
+                        className={`${classes.colLogosSp} d-flex justify-content-around`}
+                      >
                         <span>
                           <img width="70" src={img34} alt="" />
                         </span>
@@ -949,7 +832,9 @@ const Informatorio = (props) => {
                         </span>
                       </div>
                     </div>
-                    <div className="gobierno d-flex flex-column">
+                    <div
+                      className={`${classes.colLogosSp} d-flex justify-content-around`}
+                    >
                       <span>
                         <img width="100" src={img38} alt="" />
                       </span>
@@ -1002,12 +887,29 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "14px !important",
   },
   TextoCol: {
-    marginTop: "2em",
+    marginTop: "3em",
   },
   TextoImg: {
-    marginTop: "-16%",
+    marginTop: "-10%",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "-15% !important",
+      marginTop: "-10% !important",
+    },
+  },
+  resutadosJs: {
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "0%",
+    },
+  },
+  colLogosSp: {
+    [theme.breakpoints.down("sm")]: {
+      display: "flex!important",
+      flexDirection: "column",
+      lineHeight: "2.2em",
+    },
+  },
+  footJs: {
+    [theme.breakpoints.down("sm")]: {
+      height: "80vh",
     },
   },
 }));
