@@ -6,7 +6,6 @@ import { Container, Row, Col } from "reactstrap";
 // core components
 import HeaderCapacitaciones from "../../components/header/headerCapacitaciones";
 import HeaderBannerCapacitaciones from "../../components/banner/bannerCapacitaciones.jsx";
-import Footer3 from "../../components/footer/footer3.jsx";
 import CardCategorias from "../custom-components/sections/cardCategorias";
 import Cursosfuturos from "../custom-components/sections/cursosfuturos";
 import CardCursos from "../custom-components/sections/cardCursos";
@@ -20,7 +19,6 @@ import img3 from "../../assets/images/capacitaciones/iconoTutorados.svg";
 import img4 from "../../assets/images/capacitaciones/iconoHorarios.svg";
 import imgInfo from "../../assets/images/capacitaciones/logoCapHeaderv2.png";
 import Slider from "../custom-components/sections/slider/Slider";
-import UserService from "../../services/UserService";
 import { makeStyles } from "@material-ui/core/styles";
 
 const checkDate = (fecha) => {
