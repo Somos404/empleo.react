@@ -235,11 +235,13 @@ const Informatorio = (props) => {
                 </div>
               </div>
             </section>
-            <section className="cursos">
+            <section className="mt-2">
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-12">
-                    <div className="tit-cursos">Cursos del Informatorio</div>
+                    <div className="tit-cursos mb-2">
+                      Cursos del Informatorio
+                    </div>
                   </div>
                 </div>
               </div>
@@ -409,11 +411,9 @@ const Informatorio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="tit-cursos2"></div>
+              <div className="tit-cursos2 mt-2"></div>
             </section>
-            <section
-              className={`${classes.resutadosJs} resultados d-flex align-items-end`}
-            >
+            <section className="">
               <div className="container containerResutlados">
                 <div className="row">
                   <div className="col-md-6">
@@ -425,7 +425,7 @@ const Informatorio = (props) => {
                   <div className="col-md-6"></div>
                 </div>
                 <div className="row">
-                  <div className="col-md-12 mt-5">
+                  <div className="col-md-12 mt-2">
                     <img className="img-fluid" src={img18} alt="" />
                   </div>
                   {/* <div className="col-md-6">
@@ -893,11 +893,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-10%",
     [theme.breakpoints.down("sm")]: {
       marginTop: "-10% !important",
-    },
-  },
-  resutadosJs: {
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "0%",
     },
   },
   colLogosSp: {
